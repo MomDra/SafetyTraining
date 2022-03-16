@@ -5,27 +5,27 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637800000363213543
-    m_Hash: 2117073717
+      ticks: 637829993275651908
+    m_Hash: 4027432299
   m_LockFileStatus:
     m_FilePath: C:/Users/Huiyong/Desktop/GraduationProject/SafetyTraining/SafetyTraining/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637800000554349895
-    m_Hash: 2352843445
+      ticks: 637829993423136247
+    m_Hash: 3508394250
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
-    - packageId: com.unity.collab-proxy@1.15.7
+    - packageId: com.unity.collab-proxy@1.15.12
       testable: 0
       isDirectDependency: 1
-      version: 1.15.7
+      version: 1.15.12
       source: 1
-      resolvedPath: C:\Users\Huiyong\Desktop\GraduationProject\SafetyTraining\SafetyTraining\Library\PackageCache\com.unity.collab-proxy@1.15.7
+      resolvedPath: C:\Users\Huiyong\Desktop\GraduationProject\SafetyTraining\SafetyTraining\Library\PackageCache\com.unity.collab-proxy@1.15.12
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -75,11 +75,13 @@ m_PackageAssets:
         - 1.14.7
         - 1.14.9
         - 1.14.12
+        - 1.14.13
         - 1.15.1
         - 1.15.4
         - 1.15.7
         - 1.15.9
         - 1.15.12
+        - 1.15.13
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -91,9 +93,8 @@ m_PackageAssets:
         - 2.1.0-preview.5
         - 2.1.0-preview.6
         compatible:
-        - 1.15.7
-        - 1.15.9
         - 1.15.12
+        - 1.15.13
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -104,15 +105,11 @@ m_PackageAssets:
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
-        verified: 1.15.12
+        verified: 1.15.13
       dependencies:
-      - name: com.unity.nuget.newtonsoft-json
-        version: 2.0.0
       - name: com.unity.services.core
         version: 1.0.1
       resolvedDependencies:
-      - name: com.unity.nuget.newtonsoft-json
-        version: 2.0.0
       - name: com.unity.services.core
         version: 1.0.1
       - name: com.unity.modules.unitywebrequest
@@ -143,13 +140,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637744672890000000
+      datePublishedTicks: 637789721280000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-        revision: d208594e5483cdf10d303b6ee17df4d6bf58d3de
+        revision: 5ca1fd4ca9f999e087d19e98afaf99905a582771
         path: 
     - packageId: com.unity.ide.rider@2.0.7
       testable: 0
@@ -264,12 +261,12 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
         revision: abb44f053e9a41d2e00e149e32a19bcec76e98b4
         path: 
-    - packageId: com.unity.ide.visualstudio@2.0.12
+    - packageId: com.unity.ide.visualstudio@2.0.14
       testable: 0
       isDirectDependency: 1
-      version: 2.0.12
+      version: 2.0.14
       source: 1
-      resolvedPath: C:\Users\Huiyong\Desktop\GraduationProject\SafetyTraining\SafetyTraining\Library\PackageCache\com.unity.ide.visualstudio@2.0.12
+      resolvedPath: C:\Users\Huiyong\Desktop\GraduationProject\SafetyTraining\SafetyTraining\Library\PackageCache\com.unity.ide.visualstudio@2.0.14
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -347,13 +344,13 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637720564750000000
+      datePublishedTicks: 637782923640000000
       documentationUrl: 
-      hasRepository: 1
+      hasRepository: 0
       repository:
-        type: git
-        url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-        revision: 8d436ff053b9c59677b5e9799208143553cd02d9
+        type: 
+        url: 
+        revision: 
         path: 
     - packageId: com.unity.ide.vscode@1.2.4
       testable: 0
@@ -389,6 +386,7 @@ m_PackageAssets:
         - 1.2.2
         - 1.2.3
         - 1.2.4
+        - 1.2.5
         compatible:
         - 1.0.2
         - 1.0.3
@@ -402,7 +400,8 @@ m_PackageAssets:
         - 1.2.2
         - 1.2.3
         - 1.2.4
-        verified: 1.2.4
+        - 1.2.5
+        verified: 1.2.5
       dependencies: []
       resolvedDependencies: []
       keywords: []
@@ -626,14 +625,16 @@ m_PackageAssets:
         - 1.1.27
         - 1.1.29
         - 1.1.30
+        - 1.1.31
         - 2.0.1-pre.12
         - 2.0.1-pre.18
         compatible:
         - 1.1.29
         - 1.1.30
+        - 1.1.31
         - 2.0.1-pre.12
         - 2.0.1-pre.18
-        verified: 1.1.30
+        verified: 1.1.31
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6
@@ -773,6 +774,7 @@ m_PackageAssets:
         - 2.1.6
         - 2.2.0-preview.1
         - 2.2.0-preview.2
+        - 2.2.0-preview.3
         - 3.0.0-preview.1
         - 3.0.0-preview.3
         - 3.0.0-preview.4
@@ -792,11 +794,13 @@ m_PackageAssets:
         - 3.0.6
         - 3.2.0-pre.1
         - 3.2.0-pre.2
+        - 3.2.0-pre.3
         - 4.0.0-pre.1
         compatible:
         - 3.0.6
         - 3.2.0-pre.1
         - 3.2.0-pre.2
+        - 3.2.0-pre.3
         verified: 3.0.6
       dependencies:
       - name: com.unity.ugui
@@ -925,6 +929,8 @@ m_PackageAssets:
         - 1.6.4
         - 1.7.0-pre.1
         - 1.7.0-pre.2
+        - 1.7.0
+        - 1.7.1
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -951,6 +957,8 @@ m_PackageAssets:
         - 1.6.4
         - 1.7.0-pre.1
         - 1.7.0-pre.2
+        - 1.7.0
+        - 1.7.1
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
@@ -1262,17 +1270,22 @@ m_PackageAssets:
         - 1.10.1-preview.3
         - 1.11.0
         - 1.11.2
+        - 1.12.0
         - 2.0.0-preview.1
         - 2.0.0-preview.2
         - 2.0.0-preview.4
+        - 2.0.0-preview.5
         - 3.0.0-pre.1
         - 3.0.0-pre.2
         - 3.0.0-pre.4
+        - 3.0.0
         compatible:
         - 1.11.2
+        - 1.12.0
         - 2.0.0-preview.1
         - 2.0.0-preview.2
         - 2.0.0-preview.4
+        - 2.0.0-preview.5
         - 3.0.0-pre.2
         verified: 1.11.2
       dependencies:
@@ -1444,7 +1457,7 @@ m_PackageAssets:
       - name: com.unity.xr.interactionsubsystems
         version: 1.0.1
       - name: com.unity.xr.arsubsystems
-        version: 4.1.7
+        version: 4.1.9
       keywords:
       - windows
       - ar
@@ -3279,12 +3292,12 @@ m_PackageAssets:
         url: git@github.cds.internal.unity3d.com:unity/com.unity.xr.interactionsubsystems.git
         revision: c9d1e6a52c5806d8ec4d9f74ec9eaaf54f07d2c6
         path: 
-    - packageId: com.unity.xr.arsubsystems@4.1.7
+    - packageId: com.unity.xr.arsubsystems@4.1.9
       testable: 0
       isDirectDependency: 0
-      version: 4.1.7
+      version: 4.1.9
       source: 1
-      resolvedPath: C:\Users\Huiyong\Desktop\GraduationProject\SafetyTraining\SafetyTraining\Library\PackageCache\com.unity.xr.arsubsystems@4.1.7
+      resolvedPath: C:\Users\Huiyong\Desktop\GraduationProject\SafetyTraining\SafetyTraining\Library\PackageCache\com.unity.xr.arsubsystems@4.1.9
       assetPath: Packages/com.unity.xr.arsubsystems
       name: com.unity.xr.arsubsystems
       displayName: AR Subsystems
@@ -3349,16 +3362,16 @@ m_PackageAssets:
         - 4.1.1
         - 4.1.3
         - 4.1.5
-        - 4.1.7
+        - 4.1.9
         - 4.2.0-pre.2
         - 4.2.0-pre.3
         - 4.2.0-pre.4
         compatible:
-        - 4.1.7
+        - 4.1.9
         - 4.2.0-pre.2
         - 4.2.0-pre.3
         - 4.2.0-pre.4
-        verified: 4.1.7
+        verified: 4.1.9
       dependencies:
       - name: com.unity.subsystemregistration
         version: 1.1.0
@@ -3391,7 +3404,7 @@ m_PackageAssets:
       repository:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/arfoundation.git
-        revision: b5352c36faf68b8ffc1bbddaa0f204f75d4ac5fb
+        revision: 2094ce3ed076044be0e3a742424fd720dfd838ce
         path: 
     - packageId: com.unity.xr.legacyinputhelpers@2.1.8
       testable: 0
@@ -3441,9 +3454,11 @@ m_PackageAssets:
         - 2.1.6
         - 2.1.7
         - 2.1.8
+        - 2.1.9
         compatible:
         - 2.1.8
-        verified: 2.1.8
+        - 2.1.9
+        verified: 2.1.9
       dependencies:
       - name: com.unity.modules.vr
         version: 1.0.0
@@ -3478,7 +3493,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637623088970000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -3513,6 +3528,7 @@ m_PackageAssets:
         - 1.0.0
         - 1.0.5
         - 1.0.6
+        - 2.0.2
         compatible:
         - 0.1.5-preview
         - 0.1.6-preview
@@ -3520,6 +3536,7 @@ m_PackageAssets:
         - 1.0.0
         - 1.0.5
         - 1.0.6
+        - 2.0.2
         verified: 1.0.6
       dependencies: []
       resolvedDependencies: []
@@ -3638,6 +3655,8 @@ m_PackageAssets:
         - 1.0.1
         - 1.0.2
         - 1.0.3
+        - 2.0.0
+        - 2.0.1
         compatible:
         - 0.1.0-preview.4
         - 0.1.0-preview.8
@@ -3645,6 +3664,8 @@ m_PackageAssets:
         - 1.0.1
         - 1.0.2
         - 1.0.3
+        - 2.0.0
+        - 2.0.1
         verified: 1.0.3
       dependencies: []
       resolvedDependencies: []
@@ -3668,82 +3689,6 @@ m_PackageAssets:
         type: git
         url: git+https://github.com/Unity-Technologies/com.unity.settings-manager.git
         revision: e8eedc87ca7850bac0f7b2257db4edb8c300a0f3
-        path: 
-    - packageId: com.unity.nuget.newtonsoft-json@2.0.0
-      testable: 0
-      isDirectDependency: 0
-      version: 2.0.0
-      source: 1
-      resolvedPath: C:\Users\Huiyong\Desktop\GraduationProject\SafetyTraining\SafetyTraining\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0
-      assetPath: Packages/com.unity.nuget.newtonsoft-json
-      name: com.unity.nuget.newtonsoft-json
-      displayName: Newtonsoft Json
-      author:
-        name: 
-        email: 
-        url: 
-      category: 
-      type: 
-      description: 'Newtonsoft Json for use in Unity projects and Unity packages.
-        Currently synced to version 12.0.2.
-
-
-        This package is used for advanced
-        json serialization and deserialization. Most Unity users will be better suited
-        using the existing json tools built into Unity.
-
-        To avoid assembly
-        clashes, please use this package if you intend to use Newtonsoft Json.'
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 1.0.0-preview.2
-        - 1.0.0-preview.3
-        - 1.0.0-preview.4
-        - 1.0.1-preview.1
-        - 1.1.2
-        - 2.0.0-preview
-        - 2.0.0-preview.1
-        - 2.0.0-preview.2
-        - 2.0.0
-        - 2.0.1-preview.1
-        - 2.0.2
-        compatible:
-        - 1.0.0-preview.2
-        - 1.0.0-preview.3
-        - 1.0.0-preview.4
-        - 1.0.1-preview.1
-        - 1.1.2
-        - 2.0.0-preview
-        - 2.0.0-preview.1
-        - 2.0.0-preview.2
-        - 2.0.0
-        - 2.0.1-preview.1
-        - 2.0.2
-        verified: 2.0.2
-      dependencies: []
-      resolvedDependencies: []
-      keywords: []
-      registry:
-        id: main
-        name: 
-        url: https://packages.unity.com
-        scopes: []
-        isDefault: 1
-        capabilities: 7
-      hasRegistry: 1
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 637237898320000000
-      documentationUrl: 
-      hasRepository: 1
-      repository:
-        type: git
-        url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
-        revision: d2fd6ed876261bbd82f59199ad711e7667bf633a
         path: 
     - packageId: com.unity.services.core@1.0.1
       testable: 0
@@ -3776,6 +3721,8 @@ m_PackageAssets:
         - 1.1.0-pre.10
         - 1.1.0-pre.11
         - 1.1.0-pre.41
+        - 1.1.0-pre.69
+        - 1.2.0
         compatible:
         - 1.0.1
         - 1.1.0-pre.7
@@ -3784,6 +3731,8 @@ m_PackageAssets:
         - 1.1.0-pre.10
         - 1.1.0-pre.11
         - 1.1.0-pre.41
+        - 1.1.0-pre.69
+        - 1.2.0
         verified: 1.0.1
       dependencies:
       - name: com.unity.modules.unitywebrequest
@@ -3838,10 +3787,12 @@ m_PackageAssets:
         - 1.0.5
         - 1.0.6
         - 1.1.0
+        - 1.1.1
         compatible:
         - 1.0.6
         - 1.1.0
-        verified: 1.1.0
+        - 1.1.1
+        verified: 1.1.1
       dependencies:
       - name: com.unity.modules.subsystems
         version: 1.0.0
@@ -3877,4 +3828,4 @@ m_PackageAssets:
   m_LocalPackages:
     m_LocalFileStatus: []
 m_ProjectPath: C:/Users/Huiyong/Desktop/GraduationProject/SafetyTraining/SafetyTraining/Packages
-m_EditorVersion: 2020.3.27f1 (e759542391ea)
+m_EditorVersion: 2020.3.30f1 (1fb1bf06830e)
