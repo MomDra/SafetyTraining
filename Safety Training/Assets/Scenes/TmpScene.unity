@@ -1025,7 +1025,7 @@ GameObject:
   - component: {fileID: 795478527}
   - component: {fileID: 795478526}
   - component: {fileID: 795478525}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: GrabableHandle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1262,7 +1262,7 @@ GameObject:
   - component: {fileID: 1011377460}
   - component: {fileID: 1011377459}
   - component: {fileID: 1011377458}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: StaticHandle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1390,7 +1390,7 @@ GameObject:
   - component: {fileID: 1112789284}
   - component: {fileID: 1112789283}
   - component: {fileID: 1112789282}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: StaticHandle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1950,7 +1950,7 @@ GameObject:
   - component: {fileID: 1932165935}
   - component: {fileID: 1932165934}
   - component: {fileID: 1932165933}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: GrabableHandle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
