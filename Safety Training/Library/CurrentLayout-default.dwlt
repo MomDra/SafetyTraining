@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 135
+  controlID: 117
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -226,7 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 87
+  controlID: 16
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 88
+  controlID: 17
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -343,23 +343,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Big_laboratory/scenes
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Big_laboratory/scenes
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Huiyong\Desktop\GraduationProject\SafetyTraining\Safety
-    Training
+  m_LastProjectPath: C:\Github\SafetyTraining\Safety Training
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 120}
-    m_SelectedIDs: 467e0000
-    m_LastClickedID: 32326
-    m_ExpandedIDs: 000000001a5500001c5500001e550000187e00001c7e00003e7e000000ca9a3b
+    scrollPos: {x: 0, y: 185}
+    m_SelectedIDs: 9ae90100
+    m_LastClickedID: 125338
+    m_ExpandedIDs: 0000000048e901004ae901004ce901004ee9010050e9010052e9010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -387,7 +386,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001a5500001c5500001e550000
+    m_ExpandedIDs: 0000000048e901004ae901004ce901004ee9010050e9010052e90100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -414,7 +413,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -507,10 +506,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ac880000ec89000002880000c684000066840000ac82000010850000fa820000e4890000948900007a840000d0870000d882000044850000dc88000086860000a4890000348400002e8500001c8300004c87000064890000ba8800003a8900009e830000f8850000268a00007e850000b2860000648700007485000050880000f0820000c4820000ce8300000286000024850000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 90c7ffff70fbffff
+      scrollPos: {x: 0, y: 1131}
+      m_SelectedIDs: 0265fdff
+      m_LastClickedID: -170750
+      m_ExpandedIDs: d26efdff5a72fdff20f1fdff661a0200d8200200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -570,9 +569,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.6165147, y: -0.38030243, z: 16.596241}
+    m_Target: {x: 4.6131597, y: 1.1666297, z: -12.836068}
     speed: 2
-    m_Value: {x: 0.6165147, y: -0.38030243, z: 16.596241}
+    m_Value: {x: 4.6131597, y: 1.1666297, z: -12.836068}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -619,20 +618,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.042277385, y: 0.030565126, z: -0.0012944671, w: -0.99864686}
+    m_Target: {x: 0.016814744, y: -0.3106297, z: -0.0054949615, w: -0.9503776}
     speed: 2
-    m_Value: {x: -0.04227738, y: 0.030565126, z: -0.0012944671, w: -0.99864686}
+    m_Value: {x: 0.0154040195, y: -0.3077817, z: -0.00498275, w: -0.9513193}
   m_Size:
-    m_Target: 10
+    m_Target: 1.7417103
     speed: 2
-    m_Value: 10
+    m_Value: 1.6667085
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 0.88056
+    m_SpeedNormalized: 0.44
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
