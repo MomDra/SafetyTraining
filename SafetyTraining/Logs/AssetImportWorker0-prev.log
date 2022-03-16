@@ -1,0 +1,858 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Education' Language: 'ko' Physical Memory: 16333 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Huiyong/Desktop/GraduationProject/SafetyTraining/SafetyTraining
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55853
+Successfully changed project path to: C:/Users/Huiyong/Desktop/GraduationProject/SafetyTraining/SafetyTraining
+C:/Users/Huiyong/Desktop/GraduationProject/SafetyTraining/SafetyTraining
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 158.61 ms, found 12 plugins.
+Preloading 2 native plugins for Editor in 3.49 ms.
+Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Huiyong/Desktop/GraduationProject/SafetyTraining/SafetyTraining/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 SUPER (ID=0x2187)
+    Vendor:   
+    VRAM:     3955 MB
+    Driver:   30.0.15.1179
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007133 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 107.51 ms, found 12 plugins.
+Preloading 2 native plugins for Editor in 0.33 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.708 seconds
+Domain Reload Profiling:
+	ReloadAssembly (708ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (495ms)
+			LoadAssemblies (109ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (137ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (212ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (108ms)
+				BeforeProcessingInitializeOnLoad (10ms)
+				ProcessInitializeOnLoadAttributes (66ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.027950 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 108.48 ms, found 12 plugins.
+Preloading 2 native plugins for Editor in 0.33 ms.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+[XR] OVRP version 1.69.0
+Mono: successfully reloaded assembly
+- Completed reload, in  1.443 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1444ms)
+		BeginReloadAssembly (193ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1159ms)
+			LoadAssemblies (196ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (311ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (492ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (109ms)
+				BeforeProcessingInitializeOnLoad (169ms)
+				ProcessInitializeOnLoadAttributes (167ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.37 ms, found 12 plugins.
+Preloading 2 native plugins for Editor in 0.34 ms.
+Unloading 4221 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 181.7 MB.
+System memory in use after: 181.9 MB.
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 4637.
+Total: 3.890300 ms (FindLiveObjects: 0.362800 ms CreateObjectMapping: 0.130900 ms MarkObjects: 3.292700 ms  DeleteObjects: 0.103200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Big_laboratory
+  artifactKey: Guid(5c3ba445d19e8e842b984f6f2efd982d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Big_laboratory using Guid(5c3ba445d19e8e842b984f6f2efd982d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf32223b423a217949b2c4a631716d83') in 0.010606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.710507 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c06159d389c40feed711741a6693bd2') in 0.017740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 70.572394 seconds.
+  path: Assets/Big_laboratory/Terrain.asset
+  artifactKey: Guid(af02ab49f24018d4db19af8446e230ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Big_laboratory/Terrain.asset using Guid(af02ab49f24018d4db19af8446e230ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43cf0bd6e09c998265847bc4b925b3dd') in 0.132862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.624268 seconds.
+  path: Assets/Big_laboratory/scenes
+  artifactKey: Guid(28482fd3d8cb7314c99d220c7bdc0283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Big_laboratory/scenes using Guid(28482fd3d8cb7314c99d220c7bdc0283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f8aa581b380e3be97c83d2c9d6ed877') in 0.006922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.919279 seconds.
+  path: Assets/Big_laboratory/scenes/Big_laboratory.unity
+  artifactKey: Guid(becf7735e43c0754dbb3026bed799e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Big_laboratory/scenes/Big_laboratory.unity using Guid(becf7735e43c0754dbb3026bed799e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee4dc030100f1e9370c46b4e859bb213') in 0.007071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.050772 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Scenes
+  artifactKey: Guid(cd341473404a54d4d8aaf62809798aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Scenes using Guid(cd341473404a54d4d8aaf62809798aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffbe377b844233b5e11ba18f560c49d5') in 0.005794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.725812 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Scenes/Laboratory_Demo.unity
+  artifactKey: Guid(f9612fe24897d154cad1be03f378156b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Scenes/Laboratory_Demo.unity using Guid(f9612fe24897d154cad1be03f378156b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19ad528a82bd661ef6fc9e5050e31641') in 0.006561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.530613 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials
+  artifactKey: Guid(705fe73dcc8790d4eacfe8b5d9aa2ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials using Guid(705fe73dcc8790d4eacfe8b5d9aa2ed4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578bea2dabf680b5d49982843f03cf5c') in 0.007074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.039870 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/_Default.mat
+  artifactKey: Guid(55354bfe87e05474bb1e934130320dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/_Default.mat using Guid(55354bfe87e05474bb1e934130320dea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f80d55115b9388488d605740c18a67c') in 0.065099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Bottle_Liquid_F.mat
+  artifactKey: Guid(9845bf3cd636cff4c9f8f408484f524c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Bottle_Liquid_F.mat using Guid(9845bf3cd636cff4c9f8f408484f524c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90283e8e89575cea8d0a22fa83273f4c') in 0.034985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Jar.mat
+  artifactKey: Guid(ffd0b094b4ad18c40a11728b1c749cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Jar.mat using Guid(ffd0b094b4ad18c40a11728b1c749cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19e444a21de184779fd813f87e37eac9') in 0.022013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Floor_Metal_D.mat
+  artifactKey: Guid(4100e3d5fc87e9a4f89e9e63e0241454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Floor_Metal_D.mat using Guid(4100e3d5fc87e9a4f89e9e63e0241454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89514b0a89e80b11af86d445e7521ecf') in 0.041110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_04_Fume_Extractor_Standard.mat
+  artifactKey: Guid(30f8904e3b29cdc40a6fdea15a6d74fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_04_Fume_Extractor_Standard.mat using Guid(30f8904e3b29cdc40a6fdea15a6d74fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3372e7c9010e973786e42f48e1372fab') in 0.127417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Light_Fixture_Neon_Red.mat
+  artifactKey: Guid(4e5f0a87f8785ef439b144d323d335f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Light_Fixture_Neon_Red.mat using Guid(4e5f0a87f8785ef439b144d323d335f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f24a3a3a38c3b204b86988e32938c37') in 0.017238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_01_Apparatus_03_Standard.mat
+  artifactKey: Guid(b4812872cf4a8424ca54025ce7e452f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_01_Apparatus_03_Standard.mat using Guid(b4812872cf4a8424ca54025ce7e452f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd430ba5d0b247a8ea04c18c5f4edcd2c') in 0.102675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_02_Apparatus_04.mat
+  artifactKey: Guid(0bd316693edaeab4bac522151a17bb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_02_Apparatus_04.mat using Guid(0bd316693edaeab4bac522151a17bb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c69ba4e6f8458f1117fbab68c98b9f7') in 0.108518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Light_Fixture_Neon_Blue.mat
+  artifactKey: Guid(7d317b9c53e46d843b91b3c59cd8a1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Light_Fixture_Neon_Blue.mat using Guid(7d317b9c53e46d843b91b3c59cd8a1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b428592e74d481b421d5bfd2aea28329') in 0.023780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Tube.mat
+  artifactKey: Guid(36c1dd39c00ba6b43bc4d1d34be30323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Tube.mat using Guid(36c1dd39c00ba6b43bc4d1d34be30323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e4a9b288bced03f06f198bf4aa4539b') in 0.016241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Floor_Metal_B.mat
+  artifactKey: Guid(e2b18a5283a31c04d9cc03375b20a29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Floor_Metal_B.mat using Guid(e2b18a5283a31c04d9cc03375b20a29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a257936c2e030f3113768e1a592b4082') in 0.020131 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Floor_Metal_E.mat
+  artifactKey: Guid(8f601672c84a9794db4fbef05b50f170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Floor_Metal_E.mat using Guid(8f601672c84a9794db4fbef05b50f170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5569ef1b81a30fa555a2d7679c3eed6') in 0.022968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Bottle_Liquid_C.mat
+  artifactKey: Guid(daffaaafc1d3fb84b96a9709cfddbd55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Bottle_Liquid_C.mat using Guid(daffaaafc1d3fb84b96a9709cfddbd55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c912842df85271a15789515f2d4b8711') in 0.013613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Window_Blurry.mat
+  artifactKey: Guid(7d7e9bb3712a0a74cb5d1ec1a4c1b20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Window_Blurry.mat using Guid(7d7e9bb3712a0a74cb5d1ec1a4c1b20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f746634a8f137e78b7ff287f79b0c5be') in 0.013403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Floor_Metal_A.mat
+  artifactKey: Guid(dd611926bb1e98d4eaed2c7f211d1aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Floor_Metal_A.mat using Guid(dd611926bb1e98d4eaed2c7f211d1aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0ae8c2919f57f5dcd5f03063b718e4') in 0.049456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000127 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Coffee.mat
+  artifactKey: Guid(2e855239a8352d74cabbd55a9a57e367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Coffee.mat using Guid(2e855239a8352d74cabbd55a9a57e367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eeb3b0e9f3c3e95399af29937b84171') in 0.013899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Light_Fixture_Neon_Greenish.mat
+  artifactKey: Guid(9dba93c2b55d0564888b4ef91728429c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Light_Fixture_Neon_Greenish.mat using Guid(9dba93c2b55d0564888b4ef91728429c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37c8d270b0f998f515478c730bde68de') in 0.013251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_04_Microscope_01_Standard.mat
+  artifactKey: Guid(b14f755376eaf0f41a6775f4ced3b70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_04_Microscope_01_Standard.mat using Guid(b14f755376eaf0f41a6775f4ced3b70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf66a93046b22ee42d2467d23445f37') in 0.043059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Bottle.mat
+  artifactKey: Guid(cb1e568cc16e59e4bab03a3157d42a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Bottle.mat using Guid(cb1e568cc16e59e4bab03a3157d42a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '796290eaf4a57b43d113e788cfa98d81') in 0.013484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_01_Apparatus_Glass.mat
+  artifactKey: Guid(240d9daa85010c349b0f68e0c3b68b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_01_Apparatus_Glass.mat using Guid(240d9daa85010c349b0f68e0c3b68b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4d2b2939f47d4bcb167cd40dd71ad6') in 0.014149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_02_Apparatus_04_Standard.mat
+  artifactKey: Guid(4b1d107edac740243ba5c6a7bb23948c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_02_Apparatus_04_Standard.mat using Guid(4b1d107edac740243ba5c6a7bb23948c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9da5fd355ce0a6bd0a79bc98ee6137') in 0.098284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Floor_Metal_C.mat
+  artifactKey: Guid(f3cb443db45169b41a1ae199c36b3180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Floor_Metal_C.mat using Guid(f3cb443db45169b41a1ae199c36b3180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8484b019351096fb803cc7eded36d94') in 0.050813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_01_Apparatus_01.mat
+  artifactKey: Guid(558d9720ceff3ce4ba2d14bd156bf6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_01_Apparatus_01.mat using Guid(558d9720ceff3ce4ba2d14bd156bf6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1cc29805a1d1270c3b535d548028c2d') in 0.066395 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_03_Refrigerator_Glass_Door.mat
+  artifactKey: Guid(7f6890557a720ef4699f24bc3b24c588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_03_Refrigerator_Glass_Door.mat using Guid(7f6890557a720ef4699f24bc3b24c588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65e2769617bda7ab70f6d13601aa6ab6') in 0.016917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_03_Refrigerator_Standard.mat
+  artifactKey: Guid(c6d694e0bbcc6af42b2d1b8ecf2e28e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_03_Refrigerator_Standard.mat using Guid(c6d694e0bbcc6af42b2d1b8ecf2e28e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1930ef4c641480373783fa4fd453b58e') in 0.068340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Floor_Concrete_A.mat
+  artifactKey: Guid(ddddef753ca22804b899a800f4001ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Floor_Concrete_A.mat using Guid(ddddef753ca22804b899a800f4001ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27448fd442b0087ff93f2ae7952258d9') in 0.048836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/_Default_Chrome.mat
+  artifactKey: Guid(c9c2216cbc2005b4db760e9ce2cf00b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/_Default_Chrome.mat using Guid(c9c2216cbc2005b4db760e9ce2cf00b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef3c6ed36e69d4439aa9d352606ef3c') in 0.014129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Floor_Concrete_B.mat
+  artifactKey: Guid(36b1150ce705c1446aef1322734844f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Floor_Concrete_B.mat using Guid(36b1150ce705c1446aef1322734844f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72bf2b20c4d3c969cab7822dfc5307bd') in 0.025688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Bottle_Liquid_D.mat
+  artifactKey: Guid(8082e803d74ceb6458aebf62088cf6d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Bottle_Liquid_D.mat using Guid(8082e803d74ceb6458aebf62088cf6d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51ca74c906c6be07ec0baab25c0b1fae') in 0.013541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Light_Fixture_Neon_White.mat
+  artifactKey: Guid(cb60a00d6e5b85e49b3d1e990b8327cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Light_Fixture_Neon_White.mat using Guid(cb60a00d6e5b85e49b3d1e990b8327cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee9c60e6b1b8a9c8ccde0368f1174aad') in 0.013220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_03_Refrigerator_Glass_Shelf.mat
+  artifactKey: Guid(1dac160dba5f06948b165c4dd765279b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_03_Refrigerator_Glass_Shelf.mat using Guid(1dac160dba5f06948b165c4dd765279b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51f33addf41bd6bb57af5dafdfb105ea') in 0.013896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_04_Fume_Extractor.mat
+  artifactKey: Guid(f5b6e645d76abf041ad9f905bbd91c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_04_Fume_Extractor.mat using Guid(f5b6e645d76abf041ad9f905bbd91c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abee5b0476971658798e64376db8b83d') in 0.055637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Window_Clear.mat
+  artifactKey: Guid(7458c96c88700ca4fa1c1e43486b1a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Window_Clear.mat using Guid(7458c96c88700ca4fa1c1e43486b1a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35c0fbcc4b6a11df556b2f5198825640') in 0.013444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_04_Fume_Extractor_Cap.mat
+  artifactKey: Guid(49ff76c5153554d4384a3df9c25bdc31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_04_Fume_Extractor_Cap.mat using Guid(49ff76c5153554d4384a3df9c25bdc31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc87d4f3420adfbc470f7cfafdb9dc12') in 0.013851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Bottle_Liquid_B.mat
+  artifactKey: Guid(0b645c27ecddad04ba0cfd7816db3e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Bottle_Liquid_B.mat using Guid(0b645c27ecddad04ba0cfd7816db3e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '668398b39f03993523c1579f283e9eca') in 0.013242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Bottle_Liquid_E.mat
+  artifactKey: Guid(545a1fc8e92ae5c4c8d4702d543bea88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Bottle_Liquid_E.mat using Guid(545a1fc8e92ae5c4c8d4702d543bea88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0a46b9035759778c14185fe1abb2985') in 0.014150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Apparatus_08.mat
+  artifactKey: Guid(924a3104334d5584ebca9fd69aad7694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Apparatus_08.mat using Guid(924a3104334d5584ebca9fd69aad7694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9364ee2d5f0533434745472517a80633') in 0.014255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_01_Apparatus_02_Standard.mat
+  artifactKey: Guid(c2de23ff9097b9845bfb091aae52748a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_01_Apparatus_02_Standard.mat using Guid(c2de23ff9097b9845bfb091aae52748a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b7f98cb1c08c0d89e31a2dba6aa038a') in 0.053842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Light_Fixture_Neon_Green.mat
+  artifactKey: Guid(1349592f0520c2a48aea182844a32ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Light_Fixture_Neon_Green.mat using Guid(1349592f0520c2a48aea182844a32ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2e4275cd63a18c443813a1470cba72') in 0.013972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_01_Apparatus_02.mat
+  artifactKey: Guid(90f820d135a3eba498829fe9068fbc43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_01_Apparatus_02.mat using Guid(90f820d135a3eba498829fe9068fbc43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '996f618d68e284b72188544ba755df51') in 0.056679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Bottle_Funnel.mat
+  artifactKey: Guid(223a365eaaf371c4487ed0856a150448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Bottle_Funnel.mat using Guid(223a365eaaf371c4487ed0856a150448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dfa0ce7fcf09a806d5b216de492f825') in 0.013161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_01_Apparatus_01_Standard.mat
+  artifactKey: Guid(f6fdc0dad93b6ab4eacd9e26d54683e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_01_Apparatus_01_Standard.mat using Guid(f6fdc0dad93b6ab4eacd9e26d54683e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48b416bb7b29913610a2f027b004ed14') in 0.056383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Light_Fixture_Neon_Blue.mat
+  artifactKey: Guid(c78a5e24e5e9f674d864765898327c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Light_Fixture_Neon_Blue.mat using Guid(c78a5e24e5e9f674d864765898327c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d2e53563d1dc8470dd48e7563107a8') in 0.012479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_04_Microscope_01.mat
+  artifactKey: Guid(60d8587a0394d214e91ab6373ac0da9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_04_Microscope_01.mat using Guid(60d8587a0394d214e91ab6373ac0da9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d16d50973ca60d26429c6ae1d628982') in 0.056807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Light_Fixture_Neon_Red.mat
+  artifactKey: Guid(6aee6f527e18c514a89e66a6c8b188c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Glass_Light_Fixture_Neon_Red.mat using Guid(6aee6f527e18c514a89e66a6c8b188c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d928512f63fc8176eba5c2c23ee8b94') in 0.013173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Bottle_Liquid_A.mat
+  artifactKey: Guid(4028f1a13f802b84ebf727d858c5d076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Bottle_Liquid_A.mat using Guid(4028f1a13f802b84ebf727d858c5d076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '527cf36d609af4f924283eab3c578dbd') in 0.013759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_03_Refrigerator.mat
+  artifactKey: Guid(3f05445b346d49241b0ae58e41a000e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_03_Refrigerator.mat using Guid(3f05445b346d49241b0ae58e41a000e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca955150d05340ea51def8ff018f4bd3') in 0.057443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_01_Apparatus_03.mat
+  artifactKey: Guid(deb8a443376634544b7284ed453c56d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_01_Apparatus_03.mat using Guid(deb8a443376634544b7284ed453c56d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0c20e9971c281d9cf6bbf3ccdc6b1b9') in 0.055990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/_Default_Grey.mat
+  artifactKey: Guid(6d3881b53b7c2f04ebd04af30f08db5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/_Default_Grey.mat using Guid(6d3881b53b7c2f04ebd04af30f08db5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a4326803554568f7600e84f06521422') in 0.013420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.204068 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_04_Microscope_02.mat
+  artifactKey: Guid(ad1bfdbc018ab4247ac210d705c46951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_04_Microscope_02.mat using Guid(ad1bfdbc018ab4247ac210d705c46951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf9364155b3b254713e4317993140b95') in 0.062092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer.mat
+  artifactKey: Guid(73a5121b5c1db0a4f8fee8ac24dbe25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer.mat using Guid(73a5121b5c1db0a4f8fee8ac24dbe25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d5b0e458fbe0bc2b9de69cef85f8be4') in 0.064291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_PostIt.mat
+  artifactKey: Guid(dfe9f6ef2c9fc3847b9db9be5434f0f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_PostIt.mat using Guid(dfe9f6ef2c9fc3847b9db9be5434f0f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f312337d2afa4c488d061ad257a0f71') in 0.063906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_TrashBin.mat
+  artifactKey: Guid(0a1ce6a47dfea934aa976409cd0aa151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_TrashBin.mat using Guid(0a1ce6a47dfea934aa976409cd0aa151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe9576e49d6a67374c89300a0249d56c') in 0.057293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer_Error_Screen_A.mat
+  artifactKey: Guid(1ad5900cb59bd724aa2da33b16536bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer_Error_Screen_A.mat using Guid(1ad5900cb59bd724aa2da33b16536bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf2ddfe354b2b52de109b13d27cb3a55') in 0.078609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_Papers.mat
+  artifactKey: Guid(bcd7af41c72bf984b8e1968b29a04088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_Papers.mat using Guid(bcd7af41c72bf984b8e1968b29a04088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '597a0d252072be2923aa6e5429accf88') in 0.055156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_04_Microscope_02_Standard.mat
+  artifactKey: Guid(ff7c5f2ab30ce2c4eaae2e284a7ab5ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_04_Microscope_02_Standard.mat using Guid(ff7c5f2ab30ce2c4eaae2e284a7ab5ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b716c5d557ad305b0697b04dcdc151d5') in 0.047469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Coffee_Mug.mat
+  artifactKey: Guid(91c9e643d739428468f62d68e9b7130f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Coffee_Mug.mat using Guid(91c9e643d739428468f62d68e9b7130f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08641d46d9ad87e68a1005413f088aad') in 0.057017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_10_Apparatus_06_Standard.mat
+  artifactKey: Guid(1bcffadf862b9ee41bbe478d619ed539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_10_Apparatus_06_Standard.mat using Guid(1bcffadf862b9ee41bbe478d619ed539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe720adb518226cf751c70bf40a22340') in 0.097609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_TrashBin_Standard.mat
+  artifactKey: Guid(f655db696c664964f9fa398f9486dceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_TrashBin_Standard.mat using Guid(f655db696c664964f9fa398f9486dceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1747f8c4e9dd0a25ceaf15265a676486') in 0.068653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Cactus_Standard.mat
+  artifactKey: Guid(1ce79c52cf638ad40842cddc658a3116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Cactus_Standard.mat using Guid(1ce79c52cf638ad40842cddc658a3116) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '922b2d0a27ce10956932bf25e75dc1e1') in 0.047499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Magnets.mat
+  artifactKey: Guid(c3f9055064282b84c9b3be599cdc2a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Magnets.mat using Guid(c3f9055064282b84c9b3be599cdc2a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e22a6b5a745a6e123ec3b901bfec90fd') in 0.056919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_11_Apparatus_08_Standard.mat
+  artifactKey: Guid(c3992b7076cef73489c1929d950b6054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_11_Apparatus_08_Standard.mat using Guid(c3992b7076cef73489c1929d950b6054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87d3335d13181c7a121e2af86fced99d') in 0.097536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_16_Door_Standard.mat
+  artifactKey: Guid(e6664c10b4b269949966cf1e66e00d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_16_Door_Standard.mat using Guid(e6664c10b4b269949966cf1e66e00d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8112d4701fa0734d296c756b24d92db') in 0.066978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Locker.mat
+  artifactKey: Guid(9b78aba7677f98a4c84b0ece6a216a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Locker.mat using Guid(9b78aba7677f98a4c84b0ece6a216a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3d9091d09ead1b5473943b20fbcb965') in 0.057494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Chair_Standard.mat
+  artifactKey: Guid(c0c0b46bffd729043bd2bef77127f651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Chair_Standard.mat using Guid(c0c0b46bffd729043bd2bef77127f651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ffd25c71e1140364fa9daa5c54d80b') in 0.070249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_06_Tables_Long_Round.mat
+  artifactKey: Guid(1bfb5192148d225499b41a3f70eecdd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_06_Tables_Long_Round.mat using Guid(1bfb5192148d225499b41a3f70eecdd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e14d58be9e166fc7432d0484dfe74fcc') in 0.067358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_Bottles_LightFixture.mat
+  artifactKey: Guid(0106b92d4e92ccd409a74b34139fe39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_Bottles_LightFixture.mat using Guid(0106b92d4e92ccd409a74b34139fe39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be2d9616e6268f186a99edee4d91d48') in 0.060567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_10_Apparatus_07_Standard.mat
+  artifactKey: Guid(51cf2732996bb1f4a85669c50c956a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_10_Apparatus_07_Standard.mat using Guid(51cf2732996bb1f4a85669c50c956a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a00cb72f9aecf69ba620b9fa8264783') in 0.047054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_Tube_Support.mat
+  artifactKey: Guid(56fdf2167e747cc439cf288df9f82a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_Tube_Support.mat using Guid(56fdf2167e747cc439cf288df9f82a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad94a8ac58bb1f83359b1e1f14aae802') in 0.054513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_PostIt_Standard.mat
+  artifactKey: Guid(955c121cbdc4721419cf2a8e840c3099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_PostIt_Standard.mat using Guid(955c121cbdc4721419cf2a8e840c3099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '472fd79e6b5feccf2595a180e3d991cf') in 0.046456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_10_Apparatus_07.mat
+  artifactKey: Guid(4aaee5f09d7b2a6459929e70f02fed59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_10_Apparatus_07.mat using Guid(4aaee5f09d7b2a6459929e70f02fed59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7bcf790fcd7c04cad2187d6b2ff958a') in 0.056704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer_Error_Screen_A_Standard.mat
+  artifactKey: Guid(b472419eefa8c314db83d0928b2163fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer_Error_Screen_A_Standard.mat using Guid(b472419eefa8c314db83d0928b2163fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b6bab25a6641ccab40079af97c6e5f') in 0.076517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Table_Shelves.mat
+  artifactKey: Guid(0656500869b7f61429380c78564995ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Table_Shelves.mat using Guid(0656500869b7f61429380c78564995ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df54af8433c877374640e41c69d32914') in 0.058023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Cabinets.mat
+  artifactKey: Guid(2181583c40f0b374d8bb46c2c1eb5511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Cabinets.mat using Guid(2181583c40f0b374d8bb46c2c1eb5511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed732be9a85fb33adfbb2febbfa55a65') in 0.055138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_13_Pipes_Standard.mat
+  artifactKey: Guid(8996d19fbcc21f94e88554ba62d6c2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_13_Pipes_Standard.mat using Guid(8996d19fbcc21f94e88554ba62d6c2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f66a3d7884430b237ad9578636230bef') in 0.067865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_17_Walls.mat
+  artifactKey: Guid(012602ccbc4c43546b6668465f1b32bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_17_Walls.mat using Guid(012602ccbc4c43546b6668465f1b32bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c6f67363c93092641847cea723570d') in 0.056378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_06_Tables_Long_Round_Standard.mat
+  artifactKey: Guid(3f516327fc9fb29459414aded883a4aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_06_Tables_Long_Round_Standard.mat using Guid(3f516327fc9fb29459414aded883a4aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd45de9dbbd01846365fb2694d1eb32e') in 0.068820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_10_Apparatus_06.mat
+  artifactKey: Guid(59c2ed3d6bfdd204eb1acc7a77d49fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_10_Apparatus_06.mat using Guid(59c2ed3d6bfdd204eb1acc7a77d49fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bf9cfb4bcb0a0ff691e8aa49642aead') in 0.054889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_16_Door.mat
+  artifactKey: Guid(94c7a4b62af33bc449d18921ed82e830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_16_Door.mat using Guid(94c7a4b62af33bc449d18921ed82e830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64e5179f5bdfe4fbedc2f0ab3ea6e6e7') in 0.057544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_16_Walls_Standard.mat
+  artifactKey: Guid(c9ca498150b421f48bc068c14b8169e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_16_Walls_Standard.mat using Guid(c9ca498150b421f48bc068c14b8169e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08332c997e2543aed76b01b87ed07fd5') in 0.046281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_11_Tank_Standard.mat
+  artifactKey: Guid(cd16be2d3c781074ba119ef099087f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_11_Tank_Standard.mat using Guid(cd16be2d3c781074ba119ef099087f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '927680afb6624b9463d69b81f57ec36b') in 0.047841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_15_Walls_Standard.mat
+  artifactKey: Guid(e64aa106540ba514fa2dce408ff08ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_15_Walls_Standard.mat using Guid(e64aa106540ba514fa2dce408ff08ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e0f49db25c7b6594953fdb9f440441c') in 0.069810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Cactus.mat
+  artifactKey: Guid(66fc0beff3ddcf14b907ff7e7cadb921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Cactus.mat using Guid(66fc0beff3ddcf14b907ff7e7cadb921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '593d1c99683010c5b94f6d8d3535d9d0') in 0.056466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_13_Pipes.mat
+  artifactKey: Guid(be74e017ea63b274d9e4043af549c0b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_13_Pipes.mat using Guid(be74e017ea63b274d9e4043af549c0b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7cebbfe3e961926a9424cff7a24c37f') in 0.051623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer_Screen_Off_Standard.mat
+  artifactKey: Guid(77c062b1550bee5419e4805334d86ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer_Screen_Off_Standard.mat using Guid(77c062b1550bee5419e4805334d86ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76124f00567205155aab0fed0c1c7445') in 0.047068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Magnets_Standard.mat
+  artifactKey: Guid(d2319e77b254d5f4da3c6abad54926e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Magnets_Standard.mat using Guid(d2319e77b254d5f4da3c6abad54926e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05c0f89bcd80c98929d523abaa76cf50') in 0.067765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_Papers_Standard.mat
+  artifactKey: Guid(8dc8e65ac1f50374da195257b1defc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_Papers_Standard.mat using Guid(8dc8e65ac1f50374da195257b1defc3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e8e0ba1e4b47ecfebeb4e05f52a0e7d') in 0.048299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Books_Standard.mat
+  artifactKey: Guid(b279d285483001540bd14fbd579a5dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Books_Standard.mat using Guid(b279d285483001540bd14fbd579a5dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1acc4582164604e4966081d4699d9079') in 0.048592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_Tube_Support_Standard.mat
+  artifactKey: Guid(70f723a34e6a04b4a97c987c8b1d7b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_08_Tube_Support_Standard.mat using Guid(70f723a34e6a04b4a97c987c8b1d7b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a6723a73bda7fe7ce3fe73282e157f') in 0.046996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Coffee_Mug_Standard.mat
+  artifactKey: Guid(5e601dfedb8cba0479e31bd90e604577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Coffee_Mug_Standard.mat using Guid(5e601dfedb8cba0479e31bd90e604577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f929ac918887b35c19456ee354c6c99') in 0.046250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Chair.mat
+  artifactKey: Guid(99fa537a8d89fca41ad01bc044e0540a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Chair.mat using Guid(99fa537a8d89fca41ad01bc044e0540a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a2430f183f25315d2d23cfe5a8f85e1') in 0.055573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000544 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_11_Tank.mat
+  artifactKey: Guid(710760a1712bc5d4eafbfd6d4cf311a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_11_Tank.mat using Guid(710760a1712bc5d4eafbfd6d4cf311a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '958a3891160a886bb5aa9a39c2ac0d87') in 0.057877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_11_Apparatus_08.mat
+  artifactKey: Guid(6914b6764a3e5e94d9ce5d469cdbb0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_11_Apparatus_08.mat using Guid(6914b6764a3e5e94d9ce5d469cdbb0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb8a0bfac75f6ca65f1a3bd17000c4e') in 0.058988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000564 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Table_Sink.mat
+  artifactKey: Guid(cc8c8541f6d7d2546971495697159b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Table_Sink.mat using Guid(cc8c8541f6d7d2546971495697159b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2250079a4a4c736cc9d7640d8a6b8606') in 0.060327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Table_Shelves_Standard.mat
+  artifactKey: Guid(14ab0ff0242b0624e8e8767c5c648e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Table_Shelves_Standard.mat using Guid(14ab0ff0242b0624e8e8767c5c648e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd294a45f496948a9fdf48c0e7cae61f7') in 0.051175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Board.mat
+  artifactKey: Guid(328f2f9557b009748a6b2d4746ca5eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Board.mat using Guid(328f2f9557b009748a6b2d4746ca5eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2930383aebef2c4cd04fbab2087faf46') in 0.070987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Locker_Standard.mat
+  artifactKey: Guid(4744e17477768ed48b95d36ff0a05a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Locker_Standard.mat using Guid(4744e17477768ed48b95d36ff0a05a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3142f76c8bef8afc8bafcae25bb1f59') in 0.049911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_12_Apparatus_05.mat
+  artifactKey: Guid(e0b7d71141ee7bf4c93d2d4cfd716af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_12_Apparatus_05.mat using Guid(e0b7d71141ee7bf4c93d2d4cfd716af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09523fc991b88f0f11e212d8111f7fce') in 0.057180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Board_Standard.mat
+  artifactKey: Guid(1691d7461a1f61a4a9d7e499430425de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Board_Standard.mat using Guid(1691d7461a1f61a4a9d7e499430425de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '309b8d32567e9f1cc58d1642fb5a3c50') in 0.047376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer_Screen_Off.mat
+  artifactKey: Guid(2dc9ea54638fba94a8a03038773441f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer_Screen_Off.mat using Guid(2dc9ea54638fba94a8a03038773441f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b33c1fe98a53a1e8ebb0dca3f0f55f2') in 0.052538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Cabinets_Standard.mat
+  artifactKey: Guid(2b89c04577786124c8a8b277577b8e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_09_Cabinets_Standard.mat using Guid(2b89c04577786124c8a8b277577b8e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce9ce2ac99c9f97faf8b01696f4e8eb2') in 0.046255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_14_Pipes_Standard.mat
+  artifactKey: Guid(778071c5b39d5414f966c0d3112231cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_14_Pipes_Standard.mat using Guid(778071c5b39d5414f966c0d3112231cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b6f96ff9990726ac6cb1a2d0317a893') in 0.068104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_14_Pipes.mat
+  artifactKey: Guid(16bc4e07263cb714e9557786b82025dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_14_Pipes.mat using Guid(16bc4e07263cb714e9557786b82025dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c75a503e59e01785e2ae65f420a1507f') in 0.055858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer_Standard.mat
+  artifactKey: Guid(320d24fade79c724fb959c02ba3e453d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer_Standard.mat using Guid(320d24fade79c724fb959c02ba3e453d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '489c37797a771f04f0934d0689fffc5c') in 0.059106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_17_Walls_Standard.mat
+  artifactKey: Guid(85a872a13e9994f49bd8fb162244f4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_17_Walls_Standard.mat using Guid(85a872a13e9994f49bd8fb162244f4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '399b86f2da3d081a426e8f594d8bf200') in 0.060321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_16_Walls.mat
+  artifactKey: Guid(f8712c104e18e584ebd90e5b5db307b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_16_Walls.mat using Guid(f8712c104e18e584ebd90e5b5db307b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b10d9a840ca15df0e1d058564901809') in 0.068412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Books.mat
+  artifactKey: Guid(a1fe7e4dcbb2a8d46a871645c039dcd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Books.mat using Guid(a1fe7e4dcbb2a8d46a871645c039dcd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8de51204618dbacbae151f61c980102') in 0.057483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer_Error_Screen_B.mat
+  artifactKey: Guid(0ddd78b25a6146644b83978d98103356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer_Error_Screen_B.mat using Guid(0ddd78b25a6146644b83978d98103356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72abe6500ff54d663899851a98c82b34') in 0.058581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Table_Sink_Standard.mat
+  artifactKey: Guid(30a371b974998044f930c33b1836e97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_07_Table_Sink_Standard.mat using Guid(30a371b974998044f930c33b1836e97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40dff0f66c81e387aac6addc640cf068') in 0.048312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer_Error_Screen_B_Standard.mat
+  artifactKey: Guid(96d47edd4a616e5489019f634bc45991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_05_Computer_Error_Screen_B_Standard.mat using Guid(96d47edd4a616e5489019f634bc45991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab70ec6562ef402c04b5554ff7ace194') in 0.056702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_15_Walls.mat
+  artifactKey: Guid(ff3a143f658a27a4087c839c9da79206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_15_Walls.mat using Guid(ff3a143f658a27a4087c839c9da79206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77800d38543c4caba703bbddd669a9e9') in 0.058007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_12_Apparatus_05_Standard.mat
+  artifactKey: Guid(9851e887ffe3c2f4cb88825216f21a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaboratoryMultipurposePack/Laboratory_URP/Models/Materials/Set_12_Apparatus_05_Standard.mat using Guid(9851e887ffe3c2f4cb88825216f21a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4139c5dcea492269cad353d694606b2c') in 0.069835 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
