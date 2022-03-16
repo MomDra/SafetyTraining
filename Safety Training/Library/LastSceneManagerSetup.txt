@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/LaboratoryMultipurposePack/Laboratory_URP/Scenes/Laboratory_Demo.unity
+- path: Assets/Personal Protection Equipment/Personal Protection Equipment DEMO.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
