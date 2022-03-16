@@ -1,0 +1,636 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.30f1 (1fb1bf06830e) revision 2077119'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Education' Language: 'ko' Physical Memory: 16333 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Huiyong/Desktop/GraduationProject/SafetyTraining/Safety Training
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50310
+Successfully changed project path to: C:/Users/Huiyong/Desktop/GraduationProject/SafetyTraining/Safety Training
+C:/Users/Huiyong/Desktop/GraduationProject/SafetyTraining/Safety Training
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 129.82 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 1.43 ms.
+Initialize engine version: 2020.3.30f1 (1fb1bf06830e)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Huiyong/Desktop/GraduationProject/SafetyTraining/Safety Training/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 SUPER (ID=0x2187)
+    Vendor:   
+    VRAM:     3955 MB
+    Driver:   30.0.15.1179
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.30f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007184 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 98.06 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.710 seconds
+Domain Reload Profiling:
+	ReloadAssembly (710ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (494ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (134ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (211ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (98ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (71ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.017694 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 103.34 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+[XR] OVRP version 1.69.0
+Mono: successfully reloaded assembly
+- Completed reload, in  1.491 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1492ms)
+		BeginReloadAssembly (198ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1200ms)
+			LoadAssemblies (198ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (333ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (498ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (104ms)
+				BeforeProcessingInitializeOnLoad (159ms)
+				ProcessInitializeOnLoadAttributes (186ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (25ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.25 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.18 ms.
+Unloading 3909 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 178.3 MB.
+System memory in use after: 178.5 MB.
+
+Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 4327.
+Total: 3.403900 ms (FindLiveObjects: 0.327800 ms CreateObjectMapping: 0.104900 ms MarkObjects: 2.879100 ms  DeleteObjects: 0.091400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Fire Extinguisher Pack/materials/mat_glass.mat
+  artifactKey: Guid(84a73194d15b8ad48989b39d520b1314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/materials/mat_glass.mat using Guid(84a73194d15b8ad48989b39d520b1314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce5cb867ed8df4e77bad67a5694a51d6') in 0.200641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Fire Extinguisher Pack/materials/mat_fire_blanket.mat
+  artifactKey: Guid(730517c860d9a844aac7c742c299e7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/materials/mat_fire_blanket.mat using Guid(730517c860d9a844aac7c742c299e7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '066e0b429725d55b4e4deb484dfe51cb') in 0.032829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Fire Extinguisher Pack/materials/mat_fire_box_open.mat
+  artifactKey: Guid(a8997e8e738b7b548af7dddcd6d456d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/materials/mat_fire_box_open.mat using Guid(a8997e8e738b7b548af7dddcd6d456d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51adfc70b32321fed9cdc1b37f0935ef') in 0.056292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Fire Extinguisher Pack/materials/mat_shadow_plane_circle.mat
+  artifactKey: Guid(4ce3695e0de338047985c27343b2f501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/materials/mat_shadow_plane_circle.mat using Guid(4ce3695e0de338047985c27343b2f501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54db3a4d4f3d0a08d8287927505fc686') in 0.041980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Fire Extinguisher Pack/materials
+  artifactKey: Guid(184ab4d566a8cd846afa76fb0d455d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/materials using Guid(184ab4d566a8cd846afa76fb0d455d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '931b6c163223203014f4f998bc639a93') in 0.006501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Fire Extinguisher Pack/materials/mat_extinguisher.mat
+  artifactKey: Guid(f35c9ac97cf044a46b5c2ee9244e4a35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/materials/mat_extinguisher.mat using Guid(f35c9ac97cf044a46b5c2ee9244e4a35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6bfbe5244b8be23089ad47f083c6f26') in 0.034336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Fire Extinguisher Pack/materials/mat_shadow_plane.mat
+  artifactKey: Guid(be717cf58e2db6b46a8e1ba7b24d7998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/materials/mat_shadow_plane.mat using Guid(be717cf58e2db6b46a8e1ba7b24d7998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eca324f60e8265aef59c56890f48ac5') in 0.037834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Fire Extinguisher Pack/materials/mat_fire_box.mat
+  artifactKey: Guid(da7b16331c26ad74ea098cca20ccf9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/materials/mat_fire_box.mat using Guid(da7b16331c26ad74ea098cca20ccf9e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bd7a0e194012775213903b36af36d95') in 0.031632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Fire Extinguisher Pack/materials/mat_fire_hose.mat
+  artifactKey: Guid(b49caaa32d216a74caaf1e5709fe7dfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/materials/mat_fire_hose.mat using Guid(b49caaa32d216a74caaf1e5709fe7dfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2db32469ab75a15faae5c880eb0418c') in 0.019394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Fire Extinguisher Pack/materials/mat_alarm_fire.mat
+  artifactKey: Guid(974237f837c45a6489d422e4e12828b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/materials/mat_alarm_fire.mat using Guid(974237f837c45a6489d422e4e12828b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5486002c3fc315debe6110db8b2e8b8') in 0.022618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Fire Extinguisher Pack/materials/mat_alarm_button.mat
+  artifactKey: Guid(203c32e9af9b7f948af44bb8a69d4897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/materials/mat_alarm_button.mat using Guid(203c32e9af9b7f948af44bb8a69d4897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1b1b960d5ed3afc1ecb8a2e9828f68b') in 0.015945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Fire Extinguisher Pack/materials/mat_alarm_smoke.mat
+  artifactKey: Guid(6ae8f5fb8d10abf4f84a38a870265e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/materials/mat_alarm_smoke.mat using Guid(6ae8f5fb8d10abf4f84a38a870265e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9825fe88549b774849306bfb01eb7269') in 0.015764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Fire Extinguisher Pack/materials/mat_first_aidkit.mat
+  artifactKey: Guid(fd689d46660c653498700c3b3c2bb686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/materials/mat_first_aidkit.mat using Guid(fd689d46660c653498700c3b3c2bb686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f6f3b4109d19aa8e99a668c75e9b0d6') in 0.016850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Fire Extinguisher Pack/materials/mat_exit_light.mat
+  artifactKey: Guid(41921712cb84ebe4991c82476c32049e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/materials/mat_exit_light.mat using Guid(41921712cb84ebe4991c82476c32049e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44348940f8724c440c7d739f2b90f3f0') in 0.016197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.295452 seconds.
+  path: Assets/Materials/Skybox_Mat.mat
+  artifactKey: Guid(0ffaa0b7117ba8c47a9d05ae701d4b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Skybox_Mat.mat using Guid(0ffaa0b7117ba8c47a9d05ae701d4b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d54ab3375f41efad00566dcae11def2') in 0.015145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.552597 seconds.
+  path: Assets/Fire Extinguisher Pack/maps
+  artifactKey: Guid(bef92b1b1ce008f40ae785ceea3e35f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/maps using Guid(bef92b1b1ce008f40ae785ceea3e35f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ec6e73c1916ad1dad5f9a215bab7844') in 0.006418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.547951 seconds.
+  path: Assets/Fire Extinguisher Pack/maps/example.unity
+  artifactKey: Guid(d89a172f69ee04741946e6f7bce62cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/maps/example.unity using Guid(d89a172f69ee04741946e6f7bce62cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20c436db8b47397ad95138663a1b0a15') in 0.006879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.855742 seconds.
+  path: Assets/Fire Extinguisher Pack/textures/tex_shadow_plane_circle.tga
+  artifactKey: Guid(7683dce7839f2cf439677356c3ca665d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/textures/tex_shadow_plane_circle.tga using Guid(7683dce7839f2cf439677356c3ca665d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e161c1092e65b8fd9c17c65698960a47') in 0.021527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.203404 seconds.
+  path: Assets/Fire Extinguisher Pack/textures/tex_shadow_plane.tga
+  artifactKey: Guid(ef3c28338e299824fb3c9d3b028857a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fire Extinguisher Pack/textures/tex_shadow_plane.tga using Guid(ef3c28338e299824fb3c9d3b028857a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e953f63c237bd4831e6743ddba70eee0') in 0.023504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.213112 seconds.
+  path: Assets/Personal Protection Equipment/Personal Protection Equipment DEMO.unity
+  artifactKey: Guid(ed495aeab56ad804e9dd517a5499846f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Personal Protection Equipment DEMO.unity using Guid(ed495aeab56ad804e9dd517a5499846f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0811ac8c1d4e6feacc7d370c734cc5c') in 0.006556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.656415 seconds.
+  path: Assets/Personal Protection Equipment/Materials
+  artifactKey: Guid(c68bc3f3ccc2d2344b9f033b204c2ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials using Guid(c68bc3f3ccc2d2344b9f033b204c2ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '186518f4c43a293213625c5416f8542b') in 0.006037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.290441 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Boots
+  artifactKey: Guid(10aff9995e99f24468d72581894fabc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Boots using Guid(10aff9995e99f24468d72581894fabc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d376623216d9a95993519e32a0f4488') in 0.006432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.044523 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Boots/BootsMat.mat
+  artifactKey: Guid(699e0b239d1b7274498b2e28adfaf5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Boots/BootsMat.mat using Guid(699e0b239d1b7274498b2e28adfaf5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c391484617581e95d52a18c92c6ea4') in 0.023184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Boots/BootsMat_Normal.png
+  artifactKey: Guid(61325fc1ce4d4234db31f60159ad6386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Boots/BootsMat_Normal.png using Guid(61325fc1ce4d4234db31f60159ad6386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed71e765249d1c022f902c07f2114b4b') in 0.076762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Boots/BootsMat_Albedo.png
+  artifactKey: Guid(8000ed754941a9e428a1b3727527218a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Boots/BootsMat_Albedo.png using Guid(8000ed754941a9e428a1b3727527218a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36baccc9a8c6b706c131450402d32d6d') in 0.015488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Boots/BootsMat_Occlusion.png
+  artifactKey: Guid(8179748858be7694e9e4c7231d4443d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Boots/BootsMat_Occlusion.png using Guid(8179748858be7694e9e4c7231d4443d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '916f5aa116fbde0eddac51f6ffb2f645') in 0.015003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Boots/BootsMat_Metallic.png
+  artifactKey: Guid(66d9a02f551fb9743a3a92f6f79ea856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Boots/BootsMat_Metallic.png using Guid(66d9a02f551fb9743a3a92f6f79ea856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c138a04881ace571c45d5a8d370e930') in 0.014837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.342520 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Carabiner/CarabinerMat.mat
+  artifactKey: Guid(3d2c5b0cd3daaef4b9715e521bcbbdb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Carabiner/CarabinerMat.mat using Guid(3d2c5b0cd3daaef4b9715e521bcbbdb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b505ecea9cfd1b2d3bd8e593a3d212f0') in 0.021289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Carabiner/CarabinerMat_Normal.png
+  artifactKey: Guid(d3639d20a71ee9f4ebb7d99d079e38ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Carabiner/CarabinerMat_Normal.png using Guid(d3639d20a71ee9f4ebb7d99d079e38ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac3d9c3d15f7cb8fa70b0d902461ef2') in 0.014601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Carabiner/CarabinerMat_Metallic.png
+  artifactKey: Guid(63328bee32ff49e41a764881afda6177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Carabiner/CarabinerMat_Metallic.png using Guid(63328bee32ff49e41a764881afda6177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2642584330423a47552c34e14ee7c40d') in 0.015445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Carabiner/CarabinerMat_Occlusion.png
+  artifactKey: Guid(232cf05140b77064095ee1cefa902b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Carabiner/CarabinerMat_Occlusion.png using Guid(232cf05140b77064095ee1cefa902b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7efb11dcd7e4341a0a5c093e8102f44f') in 0.013235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Carabiner/CarabinerMat_Albedo.png
+  artifactKey: Guid(4d08c60f30e5e944ca2e2eca96046fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Carabiner/CarabinerMat_Albedo.png using Guid(4d08c60f30e5e944ca2e2eca96046fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca70714f526b1de0ad486e15fb1fd7be') in 0.013998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.966620 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Environment/Floor.mat
+  artifactKey: Guid(2671e07d43e115247b99a611d052a79b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Environment/Floor.mat using Guid(2671e07d43e115247b99a611d052a79b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dddfcc540b294672278b771592b1479') in 0.021777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Environment/FloorBlack.mat
+  artifactKey: Guid(1effa8aefffba464dbc1cc056b5130f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Environment/FloorBlack.mat using Guid(1effa8aefffba464dbc1cc056b5130f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1492a57775cfdc96bd994266bb82b528') in 0.029660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Environment/SkyboxBlack.mat
+  artifactKey: Guid(5a33e8a89207bb849bba005686a1ec13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Environment/SkyboxBlack.mat using Guid(5a33e8a89207bb849bba005686a1ec13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '874dac397d3a6c8d3f0d67ec7ea634e3') in 0.016335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Environment/Floor.png
+  artifactKey: Guid(9032ea2077c76e04cb36ac4058111d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Environment/Floor.png using Guid(9032ea2077c76e04cb36ac4058111d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d0df6d905f685d4e55f35e2e1427c10') in 0.013347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Environment/SkyboxWhite.mat
+  artifactKey: Guid(04815c80c11c3914cb42583b90665baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Environment/SkyboxWhite.mat using Guid(04815c80c11c3914cb42583b90665baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59e7446ea59659201cacfb4dfee9456c') in 0.013856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.744657 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Glasses/GlasessMat.mat
+  artifactKey: Guid(c00928d8416cf3c4aa09edd1bb36a5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Glasses/GlasessMat.mat using Guid(c00928d8416cf3c4aa09edd1bb36a5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13c1be243d1a28710d17576beb6acbab') in 0.030112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Glasses/GlasessMat_Metallic.png
+  artifactKey: Guid(8f6d9235e7a8d3a4c9b0bc67eb310c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Glasses/GlasessMat_Metallic.png using Guid(8f6d9235e7a8d3a4c9b0bc67eb310c72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f128df9a396312f11ae261033b628cc1') in 0.016684 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Glasses/GlasessMat_Normal.png
+  artifactKey: Guid(ec3047b48c28058429b2057cb51e3c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Glasses/GlasessMat_Normal.png using Guid(ec3047b48c28058429b2057cb51e3c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaee88d0c932c1c00007e4e47a9a9e40') in 0.018022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Glasses/GlasessMat_Occlusion.png
+  artifactKey: Guid(7279a3236be35474fa0ef9cfad36e7a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Glasses/GlasessMat_Occlusion.png using Guid(7279a3236be35474fa0ef9cfad36e7a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba6a719996183160444bec95be6d642') in 0.013151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Glasses/GlassesTransMat.mat
+  artifactKey: Guid(90f7ea16a03a2444c9b1a3179072819f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Glasses/GlassesTransMat.mat using Guid(90f7ea16a03a2444c9b1a3179072819f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08afdfb4516409958541ae2915a665b8') in 0.014259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Glasses/GlasessMat_Albedo.png
+  artifactKey: Guid(ac91235d3825da04cb7d62b724a8cc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Glasses/GlasessMat_Albedo.png using Guid(ac91235d3825da04cb7d62b724a8cc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f98ab5e821425c98246f840032543de') in 0.015296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.589822 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Gloves/GamesaGlovesMat.mat
+  artifactKey: Guid(0ac5aa8240591574890c9b4e97f5e296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Gloves/GamesaGlovesMat.mat using Guid(0ac5aa8240591574890c9b4e97f5e296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46e4d4c06361884a71bbb68cac6bce35') in 0.023356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Gloves/GamesaGlovesMat_Occlusion.png
+  artifactKey: Guid(ae4126ada95d41343bfebed4320f6ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Gloves/GamesaGlovesMat_Occlusion.png using Guid(ae4126ada95d41343bfebed4320f6ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b54e980a91549a81df59d515534c7b5a') in 0.018304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Gloves/GamesaGlovesMat_Metallic.png
+  artifactKey: Guid(d4d006842a6d64c419446c4a33af856e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Gloves/GamesaGlovesMat_Metallic.png using Guid(d4d006842a6d64c419446c4a33af856e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f231ef0da1760a09fbb218243bd7d024') in 0.016894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Gloves/GamesaGlovesMat_Albedo.png
+  artifactKey: Guid(84de6bcddfcd12f4bb3cc4a91b3bea7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Gloves/GamesaGlovesMat_Albedo.png using Guid(84de6bcddfcd12f4bb3cc4a91b3bea7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c450948cf0b2a21c09bf291a51764e8') in 0.016315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Gloves/GamesaGlovesMat_Normal.png
+  artifactKey: Guid(70ac2d7efb1513d4bae610b66cf437a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Gloves/GamesaGlovesMat_Normal.png using Guid(70ac2d7efb1513d4bae610b66cf437a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26162f3502030fcd65c9c41f59a65905') in 0.015364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.815777 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Headphones/HeadphonesMat.mat
+  artifactKey: Guid(7e2b4f767fb4aa64ab61ce689fb7ed76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Headphones/HeadphonesMat.mat using Guid(7e2b4f767fb4aa64ab61ce689fb7ed76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e582a1933be1c9da272341502726d3fd') in 0.024384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Headphones/HeadphonesMat_Metallic.png
+  artifactKey: Guid(6d559100eacb8cb4ebc612292a63f64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Headphones/HeadphonesMat_Metallic.png using Guid(6d559100eacb8cb4ebc612292a63f64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79803ce757b3f8485074abb8a2f9056') in 0.049262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Headphones/HeadphonesMat_Occlusion.png
+  artifactKey: Guid(3cac4f4e6a6923747a2010a4396151b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Headphones/HeadphonesMat_Occlusion.png using Guid(3cac4f4e6a6923747a2010a4396151b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f140dcf924e872856957452135ced6a0') in 0.013738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Headphones/HeadphonesMat_Albedo.png
+  artifactKey: Guid(37a6fb02d72dd894b9ebff688c850d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Headphones/HeadphonesMat_Albedo.png using Guid(37a6fb02d72dd894b9ebff688c850d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eb81219c7db37dd0d1d7fd3f85e3f87') in 0.013756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Headphones/HeadphonesMat_Normal.png
+  artifactKey: Guid(cc2e618e1d35b5b4c94aecf97fb1743d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Headphones/HeadphonesMat_Normal.png using Guid(cc2e618e1d35b5b4c94aecf97fb1743d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a112def7acffb7471b78cf2edc89063f') in 0.015901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.386766 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Helmet/HelmetMat.mat
+  artifactKey: Guid(1864bc5ef4c72e247a9d483bb66217b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Helmet/HelmetMat.mat using Guid(1864bc5ef4c72e247a9d483bb66217b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ca7c4333b8e759069509af0f1cf669') in 0.026822 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Helmet/HelmetMat_Metallic.png
+  artifactKey: Guid(126313b72ca3f7f4699a9228a7186b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Helmet/HelmetMat_Metallic.png using Guid(126313b72ca3f7f4699a9228a7186b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db871c2145b092d29db753aa12921a6d') in 0.029568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Helmet/HelmetMat_Occlusion.png
+  artifactKey: Guid(de5c881175f28fa45bd8b6b193141d19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Helmet/HelmetMat_Occlusion.png using Guid(de5c881175f28fa45bd8b6b193141d19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601d80dadc0f17a0cc0e26f57fa78fc0') in 0.022929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Helmet/HelmetMat_Albedo.png
+  artifactKey: Guid(aa7646d6854c7c442aab8a9f5d4d7d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Helmet/HelmetMat_Albedo.png using Guid(aa7646d6854c7c442aab8a9f5d4d7d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4f2f44e4a0fb2de3df5406fdfe25ac') in 0.016032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Helmet/HelmetMat_Normal.png
+  artifactKey: Guid(e655ee9ea74680a4aa0941d146e9dd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Helmet/HelmetMat_Normal.png using Guid(e655ee9ea74680a4aa0941d146e9dd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af642bbddea1497bcedb8d21c21bce17') in 0.033458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.075922 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Screen/WelderScreenMat.mat
+  artifactKey: Guid(a3cdca00515642847b392f654943b3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Screen/WelderScreenMat.mat using Guid(a3cdca00515642847b392f654943b3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ffba1e638ab86fb88f5d4220995648f') in 0.022077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Screen/WelderScreenMat_Normal.png
+  artifactKey: Guid(fde2f4f512aa41b48a96d37543cbb58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Screen/WelderScreenMat_Normal.png using Guid(fde2f4f512aa41b48a96d37543cbb58e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8f9dd1996a269be97fa4f195352db69') in 0.015553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Screen/WelderScreenMat_Albedo.png
+  artifactKey: Guid(55b32b44689d674449fc5d1999d1e734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Screen/WelderScreenMat_Albedo.png using Guid(55b32b44689d674449fc5d1999d1e734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '306f5288b6ba63d80a21b270a8064176') in 0.024053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Screen/WelderScreenMat_Metallic.png
+  artifactKey: Guid(aa49df07938818b42b3f4f7c37e69c14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Screen/WelderScreenMat_Metallic.png using Guid(aa49df07938818b42b3f4f7c37e69c14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a6691645962e5cb41050bda5965c66') in 0.015680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Personal Protection Equipment/Materials/Screen/WelderScreenMat_Occlusion.png
+  artifactKey: Guid(852b0402a97f8f84ab0a5c5e0846c8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Materials/Screen/WelderScreenMat_Occlusion.png using Guid(852b0402a97f8f84ab0a5c5e0846c8b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e539689c4ff6df662e8cccaef763870') in 0.013250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.171501 seconds.
+  path: Assets/Personal Protection Equipment/Models/BootsLeft.fbx
+  artifactKey: Guid(f4bc8df89040bb94bbf71187b46e8e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Models/BootsLeft.fbx using Guid(f4bc8df89040bb94bbf71187b46e8e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '490e166554b4eda95db91a473c996253') in 0.229151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Personal Protection Equipment/Models/BootsRight.fbx
+  artifactKey: Guid(a804e4eeeab8a8c4a81db6b389d8d0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Models/BootsRight.fbx using Guid(a804e4eeeab8a8c4a81db6b389d8d0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c04cde2768babf4dc1af5b77282e91') in 0.043355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Personal Protection Equipment/Models/Carabiner.fbx
+  artifactKey: Guid(00e8592313aafa44ba91e1288c747a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Models/Carabiner.fbx using Guid(00e8592313aafa44ba91e1288c747a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25e6879d5930dfd0d70294c06eb558b8') in 0.055066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Personal Protection Equipment/Models/GlovesRight.fbx
+  artifactKey: Guid(376ac905ae724144a947da7de1a1b93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Models/GlovesRight.fbx using Guid(376ac905ae724144a947da7de1a1b93a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd211ae82db36b05744e9bb7c1f9d055f') in 0.058474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Personal Protection Equipment/Models/ProtectionGlasses.fbx
+  artifactKey: Guid(8662785e6f688254f8f4481c4fd3480f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Models/ProtectionGlasses.fbx using Guid(8662785e6f688254f8f4481c4fd3480f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3a482e00b5764c669c6ed4f4bd1ae31') in 0.044221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Personal Protection Equipment/Models/Screen.fbx
+  artifactKey: Guid(43ce494e7727f9b4ebf967f30b1fef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Models/Screen.fbx using Guid(43ce494e7727f9b4ebf967f30b1fef8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d40f020ac71145526bad3c4ea41a32') in 0.024856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Personal Protection Equipment/Models/Gloves.fbx
+  artifactKey: Guid(6338200a79bbc0841b905fc14efa4c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Models/Gloves.fbx using Guid(6338200a79bbc0841b905fc14efa4c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e38439f02a4cfbe3187ff84ec210027b') in 0.032098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Personal Protection Equipment/Models/Helmet.fbx
+  artifactKey: Guid(0e97a5a60863d7e428f52276b25e9ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Models/Helmet.fbx using Guid(0e97a5a60863d7e428f52276b25e9ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb45ddae3d32fce78eabbb29c86e09bf') in 0.019274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Personal Protection Equipment/Models/GlovesLeft.fbx
+  artifactKey: Guid(bd7ff88bf2a9fed40bbc80c0b4b3b732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Models/GlovesLeft.fbx using Guid(bd7ff88bf2a9fed40bbc80c0b4b3b732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b6e2be337c80c906357a11f3e6cda8') in 0.020723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Personal Protection Equipment/Models/Headphones.fbx
+  artifactKey: Guid(aa5a6229c9a26d24b99b69d87597679a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Models/Headphones.fbx using Guid(aa5a6229c9a26d24b99b69d87597679a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e7f7a601295b0cc987b174ce050157') in 0.019886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.309276 seconds.
+  path: Assets/Personal Protection Equipment/Prefabs/BootsLeft.prefab
+  artifactKey: Guid(727c3e7709c0e58429982a9405c649ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Prefabs/BootsLeft.prefab using Guid(727c3e7709c0e58429982a9405c649ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5a58fefca105ad8feb333c6b7e1e049') in 0.022044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Personal Protection Equipment/Prefabs/GlovesRight.prefab
+  artifactKey: Guid(a824265a8ef5a2047a1e415922e453ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Prefabs/GlovesRight.prefab using Guid(a824265a8ef5a2047a1e415922e453ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cfdf7ccbf32e855bcacc40f4b6eefc3') in 0.022715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Personal Protection Equipment/Prefabs/Carabiner.prefab
+  artifactKey: Guid(7bb6be698c7b6c04a8dbea45ac5718a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Prefabs/Carabiner.prefab using Guid(7bb6be698c7b6c04a8dbea45ac5718a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c09e27bfb99c25523ccf486d05493188') in 0.022675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Personal Protection Equipment/Prefabs/Screen.prefab
+  artifactKey: Guid(22106f9933cbd464e934f3cad93028ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Prefabs/Screen.prefab using Guid(22106f9933cbd464e934f3cad93028ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff0bb3667b21b7e939b363ee1591814b') in 0.024154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Personal Protection Equipment/Prefabs/GlovesLeft.prefab
+  artifactKey: Guid(580d4d212cfb8c64290ce0a83b209430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Prefabs/GlovesLeft.prefab using Guid(580d4d212cfb8c64290ce0a83b209430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66fc0096c743f8c645cbb1158f3a06a') in 0.024247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Personal Protection Equipment/Prefabs/BootsRight.prefab
+  artifactKey: Guid(856b77d621f8dde4db55a7648f146223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Prefabs/BootsRight.prefab using Guid(856b77d621f8dde4db55a7648f146223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa1d02bced94a30c87a47ad1ef919392') in 0.025270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Personal Protection Equipment/Prefabs/Headphones.prefab
+  artifactKey: Guid(c8f08af8b73c58849abf760d02b3941b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Prefabs/Headphones.prefab using Guid(c8f08af8b73c58849abf760d02b3941b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35c88c17c08ad28829c268787b1883a6') in 0.023335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Personal Protection Equipment/Prefabs/Helmet.prefab
+  artifactKey: Guid(7cfff026e4da1c24c89e023fa52ff107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Prefabs/Helmet.prefab using Guid(7cfff026e4da1c24c89e023fa52ff107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50112a321ca7488db2ee8ad8fd7a873c') in 0.023145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Personal Protection Equipment/Prefabs/ProtectionGlasses.prefab
+  artifactKey: Guid(b090265fbae06bf489b7a825ec8c2a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Prefabs/ProtectionGlasses.prefab using Guid(b090265fbae06bf489b7a825ec8c2a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6462007e5a6d177afe7bc2e35829a7d') in 0.040092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Personal Protection Equipment/Prefabs/Gloves.prefab
+  artifactKey: Guid(23d71f11f346c8649801d6c0d2c3b214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Personal Protection Equipment/Prefabs/Gloves.prefab using Guid(23d71f11f346c8649801d6c0d2c3b214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac9d53ed1d2b90e9cf32929c326ca91') in 0.053891 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
