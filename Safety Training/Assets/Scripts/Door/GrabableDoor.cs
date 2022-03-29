@@ -6,9 +6,18 @@ public class GrabableDoor : OVRGrabbable
 {
     [SerializeField] Transform staticHandle;
 
+    public override void GrabBegin(OVRGrabber hand, Collider grabPoint)
+    {
+        base.GrabBegin(hand, grabPoint);
+
+        staticHandle.GetComponent<FollowObject>().setFollow(true);
+    }
+
     public override void GrabEnd(Vector3 linearVelocity, Vector3 angularVelocity)
     {
         base.GrabEnd(Vector3.zero, Vector3.zero);
+
+        staticHandle.GetComponent<FollowObject>().setFollow(false);
 
         transform.position = staticHandle.transform.position;
         transform.rotation = staticHandle.transform.rotation;
