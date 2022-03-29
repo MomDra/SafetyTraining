@@ -44,6 +44,7 @@ public class LayserPointer : MonoBehaviour
                 if (OVRInput.GetDown(OVRInput.Button.One)) //오큘러스 오른손 컨트롤러 A버튼 클릭시
                 {
                     Collided_object.collider.gameObject.GetComponent<Button>().onClick.Invoke();
+                    Debug.Log("hi" +Collided_object.transform.name );
                 }
                 else
                 {
