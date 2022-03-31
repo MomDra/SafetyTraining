@@ -10,8 +10,9 @@ public class PutCorrection : MonoBehaviour
         if(other.transform.gameObject.layer == LayerMask.NameToLayer("Grabable")){
 
             // 미리보기 오브젝트의 설정
-            previewGameObject = GameManager.Instance.ResourceManager.Instantiate("PutPreview/PreviewCylinder");
-            previewGameObject.transform.position = transform.position;
+            previewGameObject = Instantiate(other.GetComponent<PutCorrectionGrabable>().getPreview(), transform.position, Quaternion.identity);
+            
+            // previewGameObject.transform.position = transform.position;
 
             grabbed = other.GetComponent<PutCorrectionGrabable>();
             grabbed.setInCollider(true, transform.position, previewGameObject.transform.rotation);

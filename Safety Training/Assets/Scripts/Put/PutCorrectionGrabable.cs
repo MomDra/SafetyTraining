@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PutCorrectionGrabable : OVRGrabbable
 {
+    [SerializeField] GameObject previewPrefab;
     bool isInCollider;
     Vector3 pos;
     Quaternion rotation;
@@ -29,5 +30,9 @@ public class PutCorrectionGrabable : OVRGrabbable
         this.isInCollider = isInCollider;
         this.pos = pos;
         this.rotation = rotation;
+    }
+
+    public GameObject getPreview(){
+        return previewPrefab;
     }
 }
