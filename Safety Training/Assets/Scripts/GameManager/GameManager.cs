@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     ResourceManager resourceManager = new ResourceManager();
     public ResourceManager ResourceManager {get => resourceManager;}
 
+    TaskManager taskManager = new TaskManager();
+    public TaskManager TaskManager {get => taskManager;}
+
     private void Awake() {
         if(singleTon != null){
             Destroy(gameObject);
