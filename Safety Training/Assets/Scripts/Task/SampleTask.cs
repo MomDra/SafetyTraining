@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class SampleTask : Task
 {
+    OVRGrabbable grabbable;
 
-    void Start(){
-        Invoke("Solve", 5f);
-        Debug.Log("Start() 호출!");
+    private void Start() {
+        grabbable = GetComponent<OVRGrabbable>();
     }
 
-    void Update(){
-        //Debug.Log("왜 그래 됑ㄹㅁ나렁미;ㄴ");
+    
+    private void OnTriggerStay(Collider other) {
+        if(!isSolved){
+            if(other.gameObject.name.Contains("Task_Put")){
+                if(!grabbable.isGrabbed){
+                    Solve();
+                }
+            }
+        }
     }
 }

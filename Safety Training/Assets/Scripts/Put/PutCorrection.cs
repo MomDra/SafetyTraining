@@ -6,8 +6,13 @@ public class PutCorrection : MonoBehaviour
 {
     GameObject previewGameObject;
     PutCorrectionGrabable grabbed;
+
+    bool objectInColider;
     private void OnTriggerEnter(Collider other) {
+        if(objectInColider) return;
+
         if(other.transform.gameObject.layer == LayerMask.NameToLayer("Grabable")){
+            objectInColider = true;
 
             // 미리보기 오브젝트의 설정
             previewGameObject = Instantiate(other.GetComponent<PutCorrectionGrabable>().getPreview(), transform.position, Quaternion.identity);
@@ -22,6 +27,9 @@ public class PutCorrection : MonoBehaviour
     }
 
     private void OnTriggerExit(Collider other) {
+        if(!objectInColider) return;
+
+        objectInColider = false;
         grabbed.setInCollider(false, Vector3.zero, Quaternion.identity);
         Destroy(previewGameObject);
         Debug.Log("놓기 보정 오브젝트 삭제!");

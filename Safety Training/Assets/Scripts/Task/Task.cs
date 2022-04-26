@@ -7,6 +7,7 @@ public abstract class Task : MonoBehaviour
     protected bool isSolved;
 
     protected void Solve(){
+        isSolved = true;
         GameManager.Instance.TaskManager.NotifySolved(this, true);
         Debug.Log("Invoke로 Solve() 호출");
     }
