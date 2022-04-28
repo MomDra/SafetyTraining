@@ -46,7 +46,7 @@ public class OVRGrabber : MonoBehaviour
     protected Transform m_gripTransform = null;
     // Child/attached Colliders to detect candidate grabbable objects.
     [SerializeField]
-    protected Collider[] m_grabVolumes = null;
+    protected Collider[]    m_grabVolumes = null;
 
     // Should be OVRInput.Controller.LTouch or OVRInput.Controller.RTouch.
     [SerializeField]
@@ -186,7 +186,10 @@ public class OVRGrabber : MonoBehaviour
         int refCount = 0;
         m_grabCandidates.TryGetValue(grabbable, out refCount);
         m_grabCandidates[grabbable] = refCount + 1;
+
+        
     }
+    
 
     void OnTriggerExit(Collider otherCollider)
     {

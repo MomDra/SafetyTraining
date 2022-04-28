@@ -13,13 +13,13 @@ TagManager:
   - UI
   - Fridge
   - Player
-  - Hand
+  - 
   - Door
   - DoorHandle
   - Grabable
   - Preview
-  - 
-  - 
+  - HandRight
+  - HandLeft
   - 
   - 
   - 
