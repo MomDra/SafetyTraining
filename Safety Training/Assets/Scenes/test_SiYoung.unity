@@ -946,39 +946,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3231977094424153404, guid: 1d4ce26320bed8a49a8114b9f8501519, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.213
+      value: 1.215
       objectReference: {fileID: 0}
     - target: {fileID: 3231977094424153404, guid: 1d4ce26320bed8a49a8114b9f8501519, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.461602
+      value: -13.248
       objectReference: {fileID: 0}
     - target: {fileID: 3231977094424153404, guid: 1d4ce26320bed8a49a8114b9f8501519, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9998537
+      value: 0.99989426
       objectReference: {fileID: 0}
     - target: {fileID: 3231977094424153404, guid: 1d4ce26320bed8a49a8114b9f8501519, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.004601654
       objectReference: {fileID: 0}
     - target: {fileID: 3231977094424153404, guid: 1d4ce26320bed8a49a8114b9f8501519, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.0001525932
       objectReference: {fileID: 0}
     - target: {fileID: 3231977094424153404, guid: 1d4ce26320bed8a49a8114b9f8501519, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.017106904
+      value: -0.013796322
       objectReference: {fileID: 0}
     - target: {fileID: 3231977094424153404, guid: 1d4ce26320bed8a49a8114b9f8501519, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -0.527
       objectReference: {fileID: 0}
     - target: {fileID: 3231977094424153404, guid: 1d4ce26320bed8a49a8114b9f8501519, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 0.025
       objectReference: {fileID: 0}
     - target: {fileID: 3231977094424153404, guid: 1d4ce26320bed8a49a8114b9f8501519, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -1.96
+      value: -1.581
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d4ce26320bed8a49a8114b9f8501519, type: 3}
@@ -1050,6 +1050,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7545425912678507785, guid: b609b73689b90f341af06175c2c9a364, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7782326006076086691, guid: b609b73689b90f341af06175c2c9a364, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 13.967405
@@ -1501,6 +1505,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7545425912678507785, guid: b609b73689b90f341af06175c2c9a364, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7783449982851833761, guid: b609b73689b90f341af06175c2c9a364, type: 3}
       propertyPath: m_Name
       value: OpenableFridge2
@@ -1639,6 +1647,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7545425912678507785, guid: b609b73689b90f341af06175c2c9a364, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7782326006076086691, guid: b609b73689b90f341af06175c2c9a364, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 13.967405
@@ -1993,6 +2005,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7545425912678507785, guid: b609b73689b90f341af06175c2c9a364, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7782326006076086691, guid: b609b73689b90f341af06175c2c9a364, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 13.967405
@@ -2062,6 +2078,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7545425912678507785, guid: b609b73689b90f341af06175c2c9a364, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7782326006076086691, guid: b609b73689b90f341af06175c2c9a364, type: 3}
       propertyPath: m_ConnectedAnchor.x
       value: 13.967405

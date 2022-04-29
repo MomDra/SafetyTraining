@@ -23,7 +23,7 @@ public class Wobble : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
     }
-    private void Update()
+    void FixedUpdate()
     {
         time += Time.deltaTime;
         // decrease wobble over time
