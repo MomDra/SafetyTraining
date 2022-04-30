@@ -78,8 +78,8 @@ Material:
     m_Floats:
     - Vector1_29f83e04a2fa415da7b0ce1afb62c2e8: 1
     - Vector1_9006b37e0c664dde8766d7faec1cc832: 1
-    - Vector1_aba566efba7d41fd9b26965e0dc1e56c: 0
-    - Vector1_f373bcc8a7e84bd1b1c01a6ad2ef9a0a: 3.5
+    - Vector1_aba566efba7d41fd9b26965e0dc1e56c: 0.01
+    - Vector1_f373bcc8a7e84bd1b1c01a6ad2ef9a0a: 3.63
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -91,6 +91,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
+    - _Fill: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0

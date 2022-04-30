@@ -19,11 +19,12 @@ public class Wobble : MonoBehaviour
     float pulse;
     float time = 0.5f;
 
+    // Use this for initialization
     void Start()
     {
         rend = GetComponent<Renderer>();
     }
-    void FixedUpdate()
+    private void Update()
     {
         time += Time.deltaTime;
         // decrease wobble over time
@@ -52,4 +53,7 @@ public class Wobble : MonoBehaviour
         lastPos = transform.position;
         lastRot = transform.rotation.eulerAngles;
     }
+
+
+
 }
