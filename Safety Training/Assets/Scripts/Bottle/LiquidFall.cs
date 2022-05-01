@@ -5,29 +5,27 @@ using UnityEngine;
 public class LiquidFall : MonoBehaviour
 {
     ParticleSystem liquidParticle;
-    public static bool activeFlag = false;
-    float timer;
-
+    
     // Start is called before the first frame update
     void Start()
     {
         liquidParticle = GetComponent<ParticleSystem>();
-        timer = 0.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        if (activeFlag)
+        if (DumpingLiquid.counter > 0) Debug.Log(DumpingLiquid.counter);
+        if(DumpingLiquid.counter > 0)
         {
+            DumpingLiquid.counter -= Time.deltaTime;
             liquidParticle.Play();
-            if (timer > 5) timer = 0;
         }
-        else
+        /*else
         {
             liquidParticle.Pause();
             liquidParticle.Clear();
-        }
+        }*/
+        
     }
 }

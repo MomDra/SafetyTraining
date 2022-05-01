@@ -6,11 +6,12 @@ public class DumpingLiquid : MonoBehaviour
 {
     public GameObject obj;
     private float fill;
-
+    public static float counter = 0.0f;
+    private float size = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
-
+        size = transform.lossyScale[0];
     }
 
     // Update is called once per frame
@@ -24,16 +25,15 @@ public class DumpingLiquid : MonoBehaviour
         if (eulerX < 0) eulerX *= -1;
         if (eulerZ < 0) eulerZ *= -1;
 
-        if ((eulerX > (90 - (fill * 90))) || (eulerZ > (90 - (fill * 90))))
+        if ((eulerX > (90 - (fill * 90 / size))) || (eulerZ > (90 - (fill * 90 / size))))
         {
-            if (fill > -1)
+            if (fill >= -1 / size)
             {
-                LiquidFall.activeFlag = true;
-                fill -= 0.01f;
+                fill -= 0.002f / size; ;
                 obj.GetComponent<Renderer>().material.SetFloat("_Fill", fill);
+                counter += 0.002f / size;
             }
         }
-        else LiquidFall.activeFlag = false;
-        Debug.Log(LiquidFall.activeFlag);
+        
     }
 }
