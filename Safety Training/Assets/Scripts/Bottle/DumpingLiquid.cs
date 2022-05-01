@@ -4,19 +4,23 @@ using UnityEngine;
 
 public class DumpingLiquid : MonoBehaviour
 {
+    public ParticleSystem liquidParticle;
     public GameObject obj;
     private float fill;
-    public static float counter = 0.0f;
+    private float counter = 0.0f;
     private float size = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
         size = transform.lossyScale[0];
+        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+
         Quaternion quaternion = transform.rotation;
         fill = obj.GetComponent<Renderer>().material.GetFloat("_Fill");
         //Debug.Log("fill : " + fill);
@@ -34,6 +38,13 @@ public class DumpingLiquid : MonoBehaviour
                 counter += 0.002f / size;
             }
         }
-        
+
+        if (counter > 0)
+        {
+            counter -= Time.deltaTime;
+            
+            liquidParticle.Play();
+        }
+
     }
 }

@@ -15,12 +15,12 @@ public class LiquidFall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (DumpingLiquid.counter > 0) Debug.Log(DumpingLiquid.counter);
-        if(DumpingLiquid.counter > 0)
+        //if (DumpingLiquid.counter > 0) Debug.Log(DumpingLiquid.counter);
+        /*if(DumpingLiquid.counter > 0)
         {
             DumpingLiquid.counter -= Time.deltaTime;
             liquidParticle.Play();
-        }
+        }*/
         /*else
         {
             liquidParticle.Pause();

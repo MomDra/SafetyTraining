@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76f6caddb41c15c4fadbff6fb40ee3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  liquidParticle: {fileID: 3089006889389267954}
   obj: {fileID: 3089006889393059410}
 --- !u!65 &2537154697891456139
 BoxCollider:
@@ -174,7 +175,6 @@ GameObject:
   - component: {fileID: 3089006889389267953}
   - component: {fileID: 3089006889389267954}
   - component: {fileID: 3089006889389267955}
-  - component: {fileID: 3089006889389267952}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -4968,18 +4968,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &3089006889389267952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3089006889389267958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df19f8784405b51488da23235c9223e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3089006889393059410
 GameObject:
   m_ObjectHideFlags: 0
