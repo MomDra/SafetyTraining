@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class PutCorrectionGrabable : OVRGrabbable
 {
@@ -9,10 +8,6 @@ public class PutCorrectionGrabable : OVRGrabbable
     bool isInCollider;
     Vector3 pos;
     Quaternion rotation;
-
-    // 그랩이 시작되면 호출할 이벤트...
-    public UnityEvent grabBeginEvent;
-    public UnityEvent grabEndEvent; 
 
     public override void GrabEnd(Vector3 linearVelocity, Vector3 angularVelocity)
     {
@@ -29,15 +24,13 @@ public class PutCorrectionGrabable : OVRGrabbable
         // {
         //     Destroy(GetComponent<Outline>());
         // }
-
-        grabEndEvent.Invoke();
     }
 
     public override void GrabBegin(OVRGrabber hand, Collider grabPoint)
     {
         base.GrabBegin(hand, grabPoint);
 
-        grabBeginEvent.Invoke();
+        
         // if (GetComponent<Outline>() == null)
         // {
         //     gameObject.AddComponent<Outline>();
@@ -58,7 +51,7 @@ public class PutCorrectionGrabable : OVRGrabbable
         return previewPrefab;
     }
 
-    private void OnTriggerEnter(Collider other) { // 진동과 아웃라인 코드를 잡는 쪽에서 구현해야 되나?..
+    private void OnTriggerEnter(Collider other) {
         if(other.gameObject.layer == LayerMask.NameToLayer("HandLeft")){
             OVRInput.SetControllerVibration(1, 0.2f, OVRInput.Controller.LTouch);
             Invoke("EndVibrationLeft", 0.2f);
