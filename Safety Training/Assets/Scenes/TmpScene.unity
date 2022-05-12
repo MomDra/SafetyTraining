@@ -319,7 +319,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followPoint: {fileID: 1006979201}
-  bottleGrabable: {fileID: 1356096576}
 --- !u!114 &307747969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,6 +714,63 @@ MonoBehaviour:
   grabEndEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &592187625
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2460221237152583563, guid: eee9157c595e1f9409fa183f7db1678f, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460221237152583563, guid: eee9157c595e1f9409fa183f7db1678f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.024816
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460221237152583563, guid: eee9157c595e1f9409fa183f7db1678f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8060114
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460221237152583563, guid: eee9157c595e1f9409fa183f7db1678f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.488637
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460221237152583563, guid: eee9157c595e1f9409fa183f7db1678f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460221237152583563, guid: eee9157c595e1f9409fa183f7db1678f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071069
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460221237152583563, guid: eee9157c595e1f9409fa183f7db1678f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460221237152583563, guid: eee9157c595e1f9409fa183f7db1678f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460221237152583563, guid: eee9157c595e1f9409fa183f7db1678f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460221237152583563, guid: eee9157c595e1f9409fa183f7db1678f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460221237152583563, guid: eee9157c595e1f9409fa183f7db1678f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460221237152813995, guid: eee9157c595e1f9409fa183f7db1678f, type: 3}
+      propertyPath: m_Name
+      value: Propane_Tank_Medium
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eee9157c595e1f9409fa183f7db1678f, type: 3}
 --- !u!1 &636175157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,17 +1303,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.62, y: 0.01, z: 0.54}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1356096576 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 101274084954043798, guid: cb60dc7b53fb25f479e25f3adeae4242, type: 3}
-  m_PrefabInstance: {fileID: 6178040486959046088}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a746b11f96e1b0d41bc5218a3b2f4188, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1505591148 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1289259700419986, guid: 9fed33745bd196041a555ca59208f997, type: 3}
