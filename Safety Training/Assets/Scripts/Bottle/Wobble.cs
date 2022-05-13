@@ -12,12 +12,15 @@ public class Wobble : MonoBehaviour
     public float MaxWobble = 0.01f;
     public float WobbleSpeed = 1f;
     public float Recovery = 1f;
+    private float fill;
     float wobbleAmountX;
     float wobbleAmountZ;
     float wobbleAmountToAddX;
     float wobbleAmountToAddZ;
     float pulse;
     float time = 0.5f;
+    float leftFillLate = 0;
+    float tmpWobble = 0.01f;
 
     // Use this for initialization
     void Start()
@@ -26,7 +29,12 @@ public class Wobble : MonoBehaviour
     }
     private void Update()
     {
+        fill = GetComponent<Renderer>().material.GetFloat("_Fill");
         time += Time.deltaTime;
+        leftFillLate = 1-fill/0.3f;
+        //상수로 제어
+        tmpWobble = MaxWobble - MaxWobble * (leftFillLate / 3);
+        
         // decrease wobble over time
         wobbleAmountToAddX = Mathf.Lerp(wobbleAmountToAddX, 0, Time.deltaTime * (Recovery));
         wobbleAmountToAddZ = Mathf.Lerp(wobbleAmountToAddZ, 0, Time.deltaTime * (Recovery));
@@ -46,8 +54,8 @@ public class Wobble : MonoBehaviour
 
 
         // add clamped velocity to wobble
-        wobbleAmountToAddX += Mathf.Clamp((velocity.x + (angularVelocity.z * 0.2f)) * MaxWobble, -MaxWobble, MaxWobble);
-        wobbleAmountToAddZ += Mathf.Clamp((velocity.z + (angularVelocity.x * 0.2f)) * MaxWobble, -MaxWobble, MaxWobble);
+        wobbleAmountToAddX += Mathf.Clamp((velocity.x + (angularVelocity.z * 0.1f)) * tmpWobble, -tmpWobble, tmpWobble);
+        wobbleAmountToAddZ += Mathf.Clamp((velocity.z + (angularVelocity.x * 0.1f)) * tmpWobble, -tmpWobble, tmpWobble);
 
         // keep last position
         lastPos = transform.position;

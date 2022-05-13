@@ -26,6 +26,8 @@ public class Destructible : MonoBehaviour
     [SerializeField]
     private float DestroyingVelocity = 3;
 
+    
+
     private Vector3 oldPosition;
     private Vector3 currentPosition;
     private double _velocity;
@@ -39,6 +41,7 @@ public class Destructible : MonoBehaviour
     void Start()
     {
         oldPosition = transform.position;
+
     }
 
     void FixedUpdate()
@@ -56,9 +59,22 @@ public class Destructible : MonoBehaviour
         Debug.Log(_velocity);
         if (_velocity > DestroyingVelocity)
         {
+            Transform[] childList = gameObject.GetComponentsInChildren<Transform>();
+            if(childList != null)
+            {
+                for(int i = 1; i<childList.Length; i++)
+                {
+                    if (childList[i] != transform)
+                    {
+                        Debug.Log(childList[i]);
+                        childList[i].GetComponent<Renderer>().enabled = false;
+                    }
+                }
+            }
             Destruct();
         }
     }
+
 
 
     public void Destruct()
@@ -66,6 +82,7 @@ public class Destructible : MonoBehaviour
         Destroy(Rigidbody);
         GetComponent<Collider>().enabled = false;
         GetComponent<Renderer>().enabled = false;
+        
 
         /*if (DestructionClip != null)
         {

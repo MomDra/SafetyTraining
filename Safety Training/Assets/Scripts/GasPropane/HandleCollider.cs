@@ -15,6 +15,6 @@ public class HandleCollider : MonoBehaviour
     void Update()
     {
         x = transform.localEulerAngles.x;
-        Debug.Log(x);
+        //Debug.Log(x);
     }
 }

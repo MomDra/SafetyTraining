@@ -12,7 +12,8 @@ public class DumpingLiquid : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        size = transform.lossyScale[0];
+        //size = transform.lossyScale[0];
+        size = 0.3f;
         
 
     }
@@ -24,6 +25,8 @@ public class DumpingLiquid : MonoBehaviour
         Quaternion quaternion = transform.rotation;
         fill = obj.GetComponent<Renderer>().material.GetFloat("_Fill");
         //Debug.Log("fill : " + fill);
+        //Debug.Log("size : " + size);
+
         float eulerX = quaternion[0] * quaternion[0] * 180;
         float eulerZ = quaternion[2] * quaternion[2] * 180;
         if (eulerX < 0) eulerX *= -1;
@@ -31,9 +34,9 @@ public class DumpingLiquid : MonoBehaviour
 
         if ((eulerX > (90 - (fill * 90 / size))) || (eulerZ > (90 - (fill * 90 / size))))
         {
-            if (fill >= -1 / size)
+            if (fill >= -size)
             {
-                fill -= 0.002f / size; ;
+                fill -= 0.002f / size;
                 obj.GetComponent<Renderer>().material.SetFloat("_Fill", fill);
                 counter += 0.002f / size;
             }
