@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     TaskManager taskManager = new TaskManager();
     public TaskManager TaskManager {get => taskManager;}
 
+    EmergencyManager emergencyManager;
+    public EmergencyManager EmergencyManager {get => emergencyManager;}
+
     private void Awake() {
         if(singleTon != null){
             Destroy(gameObject);
@@ -22,5 +25,7 @@ public class GameManager : MonoBehaviour
 
         singleTon = this;
         DontDestroyOnLoad(gameObject);
+
+        emergencyManager = GetComponent<EmergencyManager>();
     }
 }
