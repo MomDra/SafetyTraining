@@ -56,7 +56,7 @@ public class Destructible : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(_velocity);
+        //Debug.Log(_velocity);
         if (_velocity > DestroyingVelocity)
         {
             Transform[] childList = gameObject.GetComponentsInChildren<Transform>();
@@ -67,7 +67,7 @@ public class Destructible : MonoBehaviour
                     if (childList[i] != transform)
                     {
                         Debug.Log(childList[i]);
-                        childList[i].GetComponent<Renderer>().enabled = false;
+                        if (childList[i].GetComponent<Renderer>()) childList[i].GetComponent<Renderer>().enabled = false;
                     }
                 }
             }
@@ -79,10 +79,10 @@ public class Destructible : MonoBehaviour
 
     public void Destruct()
     {
-        Destroy(Rigidbody);
         GetComponent<Collider>().enabled = false;
         GetComponent<Renderer>().enabled = false;
-        
+
+        Destroy(Rigidbody);
 
         /*if (DestructionClip != null)
         {
