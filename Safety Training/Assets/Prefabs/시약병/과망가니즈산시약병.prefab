@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 440872505115932440}
   - component: {fileID: 440872505115932443}
   m_Layer: 0
-  m_Name: "\uB69C\uAED1 \uBCF4\uC815 \uBC94\uC704"
+  m_Name: "\uB69C\uAED1 \uBCF4\uC815"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440872505115932445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.330337, z: 0}
+  m_LocalPosition: {x: 0, y: 4.34, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 8288027022496559969}
@@ -58,6 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb777f87b5c5356458ce7e16bc94058c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  locked: 1
   lid: {fileID: 7292569037396968017}
 --- !u!1 &2920972971645133745
 GameObject:
@@ -176,6 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   liquidParticle: {fileID: 4044401825568638827}
+  lidCorrecttion: {fileID: 440872505115932443}
   obj: {fileID: 6017025230363320972}
 --- !u!54 &2920972971645133751
 Rigidbody:
@@ -5111,7 +5113,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6017025230363320972}
-  m_Mesh: {fileID: -6371400939188868203, guid: abcf1f6155f95fa43b92e0a5f1aacca0, type: 3}
+  m_Mesh: {fileID: -6371400939188868203, guid: ccde3a40f58282446849f6a50f90fdf4, type: 3}
 --- !u!23 &5224238108697019225
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5165,7 +5167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64c5944b86d959418a6eaa75cd2bc13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxWobble: 0.005
+  MaxWobble: 0.003
   WobbleSpeed: 1
   Recovery: 1
 --- !u!1 &7292569037396968017
@@ -5197,7 +5199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7292569037396968017}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.000034570694, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.099999994, y: 0.10000001, z: 0.099999994}
   m_Children: []
   m_Father: {fileID: 440872505115932442}

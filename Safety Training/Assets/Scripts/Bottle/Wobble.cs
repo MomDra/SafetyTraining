@@ -31,7 +31,7 @@ public class Wobble : MonoBehaviour
     {
         fill = GetComponent<Renderer>().material.GetFloat("_Fill");
         time += Time.deltaTime;
-        leftFillLate = 1-fill/0.3f;
+        leftFillLate = 1-fill/0.6f;
         //상수로 제어
         tmpWobble = MaxWobble - MaxWobble * (leftFillLate / 3);
         

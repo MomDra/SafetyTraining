@@ -67,7 +67,7 @@ public class Destructible : MonoBehaviour
                     if (childList[i] != transform)
                     {
                         Debug.Log(childList[i]);
-                        if (childList[i].GetComponent<Renderer>()) childList[i].GetComponent<Renderer>().enabled = false;
+                        Destroy(childList[i].gameObject);
                     }
                 }
             }
