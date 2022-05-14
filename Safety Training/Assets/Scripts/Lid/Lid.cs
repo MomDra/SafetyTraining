@@ -17,26 +17,36 @@ public class Lid : MonoBehaviour
         //grabable.grabBeginEvent.AddListener(setTriggerTrue);
     }
 
+    /*
     private void LateUpdate() {
         if(!grabable.isGrabbed && locked)
         {
             lid.transform.position = transform.position;
             lid.transform.rotation = transform.rotation;
         }
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Enter : "+locked);
         if (locked) return;
-        if (other.transform.gameObject.layer == LayerMask.NameToLayer("Lid"))
+        if (other.transform.gameObject.layer == LayerMask.NameToLayer("Lid") && !grabable.isGrabbed)
+        {
             locked = true;
+            other.transform.parent = transform;
+            other.transform.localPosition = new Vector3(0, 0, 0);
+            other.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(!locked) return;
-        if (other.transform.gameObject.layer == LayerMask.NameToLayer("Lid"))
+        Debug.Log("Exit : " + locked);
+        if (!locked) return;
+        if (other.transform.gameObject.layer == LayerMask.NameToLayer("Lid") && grabable.isGrabbed)
+        {
             locked = false;
+            transform.DetachChildren();
+        }
     }
-
 }
