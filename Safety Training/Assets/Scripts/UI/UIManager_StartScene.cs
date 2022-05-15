@@ -8,6 +8,7 @@ public class UIManager_StartScene : MonoBehaviour
     [SerializeField] GameObject playWindow;
     [SerializeField] GameObject exitWindow;
     [SerializeField] GameObject respondWindow;
+    [SerializeField] GameObject goalWindow;
 
 
     public void ActivatePlayWindow(){
@@ -25,10 +26,16 @@ public class UIManager_StartScene : MonoBehaviour
         respondWindow.SetActive(true);
     }
 
+    public void ActivateGoalWindow(){
+        DeActiveAllWindow();
+        goalWindow.SetActive(true);
+    }
+
     public void DeActiveAllWindow(){
         playWindow.SetActive(false);
         exitWindow.SetActive(false);
         respondWindow.SetActive(false);
+        goalWindow.SetActive(false);
     }
 
     public void StartGame(){
