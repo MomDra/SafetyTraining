@@ -5,8 +5,8 @@ using UnityEngine;
 public class DumpingLiquid : MonoBehaviour
 {
     public ParticleSystem liquidParticle;
-    public Lid lidCorrecttion;
-    public GameObject obj;
+    public GameObject liquid;
+    public Lid lid;
     private float fill;
     private float counter = 0.0f;
     private float size = 0.0f;
@@ -14,18 +14,18 @@ public class DumpingLiquid : MonoBehaviour
     void Start()
     {
         //size = transform.lossyScale[0];
-        size = 0.61f;
+        size = 0.62f;
         
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        Debug.Log("lidCorrecttion.locked : "+ lidCorrecttion.locked);
-        if (!lidCorrecttion.locked && obj)
+        //Debug.Log("   ---lid.locked : "+ lid.GetComponent<Lid>().locked);
+        if (lid && liquid && !lid.locked)
         {
             Quaternion quaternion = transform.rotation;
-            fill = obj.GetComponent<Renderer>().material.GetFloat("_Fill");
+            fill = liquid.GetComponent<Renderer>().material.GetFloat("_Fill");
             //Debug.Log("fill : " + fill);
             //Debug.Log("size : " + size);
 
@@ -39,7 +39,7 @@ public class DumpingLiquid : MonoBehaviour
                 if (fill >= -size)
                 {
                     fill -= 0.005f / size;
-                    obj.GetComponent<Renderer>().material.SetFloat("_Fill", fill);
+                    liquid.GetComponent<Renderer>().material.SetFloat("_Fill", fill);
                     counter += 0.005f / size;
                 }
             }

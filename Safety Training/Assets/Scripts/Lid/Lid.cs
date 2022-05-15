@@ -5,6 +5,71 @@ using UnityEngine.Events;
 
 public class Lid : MonoBehaviour
 {
+    PutCorrectionGrabable grabable;
+    bool lockChange = false;
+    public bool locked = true;
+
+    private void Start()
+    {
+        grabable = gameObject.GetComponent<PutCorrectionGrabable>();
+    }
+    private void Update()
+    {
+        //Debug.Log("lockChange: " + lockChange);
+        if (grabable.isGrabbed)
+        {
+            transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            locked = false;
+        }
+        else
+        {
+            //Debug.Log("    ---fixLoc");
+            if (lockChange)
+            {
+                FixLid(transform.parent);
+                locked = true;
+
+            }
+        }
+    }
+
+    private void FixLid(Transform _transform)
+    {
+        //Debug.Log("FixLid");
+        transform.localPosition = new Vector3(0, 0, 0);
+        transform.localRotation = Quaternion.Euler(0, 0, 0);
+        transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "LidCorrection" && other.transform == transform.parent.transform)
+        {
+            //Debug.Log("Exit");
+            //if (other.transform.childCount > 0) return;
+            lockChange = false;
+            locked = false;
+            //other.transform.DetachChildren();
+
+            transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (locked) return;
+        if (other.tag == "LidCorrection" && other.transform == transform.parent.transform)
+        {
+            //Debug.Log("Enter");
+            //if (transform.parent && !grabable.isGrabbed) return;
+            //transform.parent = other.transform;
+            lockChange = true;
+        }
+    }
+
+
+
+    /*
     public bool locked = true;
     public GameObject lid;
     PutCorrectionGrabable grabable;
@@ -27,8 +92,6 @@ public class Lid : MonoBehaviour
             {
                 lid.transform.GetComponent<Rigidbody>().isKinematic = false;
                 //lid.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                lid.transform.GetComponent<Rigidbody>().velocity = Vector3.zero;
-                lid.transform.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             }            
         }
     }
@@ -67,11 +130,8 @@ public class Lid : MonoBehaviour
             other.transform.parent = transform;
             other.transform.localPosition = new Vector3(0, 0, 0);
             other.transform.rotation = Quaternion.Euler(0, 0, 0);
-            other.transform.GetComponent<Rigidbody>().isKinematic = true;
             other.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
             other.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
         }
-    }
-
-    
+    }*/
 }
