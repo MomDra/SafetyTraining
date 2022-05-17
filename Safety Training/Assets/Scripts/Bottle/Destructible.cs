@@ -66,7 +66,6 @@ public class Destructible : MonoBehaviour
                 {
                     if (childList[i] != transform)
                     {
-                        Debug.Log(childList[i]);
                         Destroy(childList[i].gameObject);
                     }
                 }
@@ -79,10 +78,9 @@ public class Destructible : MonoBehaviour
 
     public void Destruct()
     {
+        Destroy(Rigidbody);
         GetComponent<Collider>().enabled = false;
         GetComponent<Renderer>().enabled = false;
-
-        Destroy(Rigidbody);
 
         /*if (DestructionClip != null)
         {

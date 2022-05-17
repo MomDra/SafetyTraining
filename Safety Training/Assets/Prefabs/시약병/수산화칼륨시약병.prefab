@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 7886539371009162793}
   m_Layer: 11
   m_Name: "\uC6A9\uC561 \uD30C\uD2F0\uD074"
-  m_TagString: Untagged
+  m_TagString: Base
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4964,7 +4964,7 @@ GameObject:
   - component: {fileID: 2003860821530237054}
   m_Layer: 16
   m_Name: "\uC218\uC0B0\uD654\uCE7C\uB968\uC2DC\uC57D\uBCD1"
-  m_TagString: Untagged
+  m_TagString: Base
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

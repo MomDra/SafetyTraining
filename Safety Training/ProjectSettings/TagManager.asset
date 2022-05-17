@@ -6,6 +6,10 @@ TagManager:
   tags:
   - LidCorrection
   - Lid
+  - Acid
+  - Base
+  - Oxinizer
+  - Flammability
   layers:
   - Default
   - TransparentFX
