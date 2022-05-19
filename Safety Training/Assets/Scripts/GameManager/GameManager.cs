@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
     EmergencyManager emergencyManager;
     public EmergencyManager EmergencyManager {get => emergencyManager;}
 
+    UIManager uiManager = new UIManager();
+    public UIManager UIManager {get => uiManager;}
+
     private void Awake() {
         if(singleTon != null){
             Destroy(gameObject);
@@ -27,5 +30,10 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         emergencyManager = GetComponent<EmergencyManager>();
+    }
+
+    public void ConncetUIManagerAndTaskManager(ref List<Task> task, ref List<bool> tasksolved){
+        task = taskManager.GetTask();
+        tasksolved = taskManager.GetTaskSolved();
     }
 }

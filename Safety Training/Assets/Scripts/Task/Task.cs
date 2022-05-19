@@ -4,17 +4,24 @@ using UnityEngine;
 
 public abstract class Task : MonoBehaviour
 {
+    public UI_Object UI_INFO;
+
     protected bool isSolved;
 
     protected void Solve(){
         isSolved = true;
         GameManager.Instance.TaskManager.NotifySolved(this, true);
-        Debug.Log("Invoke로 Solve() 호출");
+        Debug.Log($"{UI_INFO.EducationName}: Solve() 호출");
+    }
+
+    protected void NotSolve(){
+        isSolved = false;
+        GameManager.Instance.TaskManager.NotifySolved(this, false);
+        Debug.Log($"{UI_INFO.EducationName}: NotSolve() 호출");
     }
 
     protected virtual void Awake(){
         GameManager.Instance.TaskManager.RegistTask(this);
-
-        Debug.Log("Awake() 호출!");
+        Debug.Log($"{UI_INFO.EducationName}: Awake() 호출!");
     }
 }

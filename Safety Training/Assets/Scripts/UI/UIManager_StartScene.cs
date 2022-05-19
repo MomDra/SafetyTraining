@@ -10,7 +10,6 @@ public class UIManager_StartScene : MonoBehaviour
     [SerializeField] GameObject respondWindow;
     [SerializeField] GameObject goalWindow;
 
-
     public void ActivatePlayWindow(){
         DeActiveAllWindow();
         playWindow.SetActive(true);

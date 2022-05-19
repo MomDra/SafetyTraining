@@ -18,7 +18,7 @@ public class TaskManager
     public void NotifySolved(Task task, bool solved){
         for(int i = 0; i < tasks.Count; i++){
             if(task == tasks[i]){
-                taskSolved[i] = true;
+                taskSolved[i] = solved;
                 Debug.Log("문제 해결 완료!!");
             }
         }
@@ -33,5 +33,13 @@ public class TaskManager
 
         //SceneManager.LoadScene(0);
         Debug.Log("모든 문제 해결 완료!");
+    }
+
+    public List<Task> GetTask(){
+        return tasks;
+    }
+
+    public List<bool> GetTaskSolved(){
+        return taskSolved;
     }
 }
