@@ -6,10 +6,12 @@ TagManager:
   tags:
   - LidCorrection
   - Lid
-  - Acid
-  - Base
-  - Oxinizer
-  - Flammability
+  - InorganicAcid
+  - OrganicAcid
+  - InorganicBase
+  - OrganicBase
+  - FlammabilityBase
+  - FlammabilityAcid
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - UI
   - Fridge
   - Player
-  - 
+  - FridgeBoard
   - Door
   - DoorHandle
   - Grabable

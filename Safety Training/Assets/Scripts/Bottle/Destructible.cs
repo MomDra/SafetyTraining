@@ -57,12 +57,12 @@ public class Destructible : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         //Debug.Log(_velocity);
-        if (_velocity > DestroyingVelocity)
+        if (_velocity > DestroyingVelocity && !transform.GetComponent<PutCorrectionGrabable>().isGrabbed)
         {
             Transform[] childList = gameObject.GetComponentsInChildren<Transform>();
             if(childList != null)
             {
-                for(int i = 1; i<childList.Length; i++)
+                for (int i = 1; i<childList.Length; i++)
                 {
                     if (childList[i] != transform)
                     {

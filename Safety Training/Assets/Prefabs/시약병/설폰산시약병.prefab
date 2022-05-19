@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6655896913232298372}
   m_Layer: 16
   m_Name: "\uC124\uD3F0\uC0B0\uC2DC\uC57D\uBCD1"
-  m_TagString: Acid
+  m_TagString: OrganicAcid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 4020923433949525351}
   m_Layer: 11
   m_Name: "\uC6A9\uC561 \uD30C\uD2F0\uD074"
-  m_TagString: Acid
+  m_TagString: OrganicAcid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

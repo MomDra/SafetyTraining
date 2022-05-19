@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 8454336599549054526}
   m_Layer: 16
   m_Name: "\uC5FC\uC0B0\uC2DC\uC57D\uBCD1_\uB77C\uBCA8\uC5C6\uC74C"
-  m_TagString: Acid
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 5245365880598850483}
   m_Layer: 11
   m_Name: "\uC6A9\uC561 \uD30C\uD2F0\uD074"
-  m_TagString: Acid
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

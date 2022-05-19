@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 3366726186087413254}
   m_Layer: 11
   m_Name: "\uC6A9\uC561 \uD30C\uD2F0\uD074"
-  m_TagString: Oxinizer
+  m_TagString: InorganicBase
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4919,7 +4919,7 @@ GameObject:
   - component: {fileID: 8355168297129692412}
   m_Layer: 16
   m_Name: "\uB2E4\uC774\uD06C\uB85C\uBBB4\uC0B0\uCE7C\uB968\uC2DC\uC57D\uBCD1"
-  m_TagString: Oxinizer
+  m_TagString: InorganicBase
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
