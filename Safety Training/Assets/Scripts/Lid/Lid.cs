@@ -12,6 +12,7 @@ public class Lid : MonoBehaviour
     private void Start()
     {
         grabable = gameObject.GetComponent<PutCorrectionGrabable>();
+        FixLid(transform.parent);
     }
     private void Update()
     {

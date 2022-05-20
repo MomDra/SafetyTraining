@@ -12,11 +12,12 @@ TagManager:
   - OrganicBase
   - FlammabilityBase
   - FlammabilityAcid
+  - CheckParticle
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - CheckParticle
   - Water
   - UI
   - Fridge
@@ -30,7 +31,7 @@ TagManager:
   - HandLeft
   - Lid
   - Bottle
-  - 
+  - Liquid
   - 
   - 
   - 

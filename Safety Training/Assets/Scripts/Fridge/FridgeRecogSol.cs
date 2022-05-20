@@ -8,7 +8,7 @@ public class FridgeRecogSol : MonoBehaviour
     public int abnormalObjCount = 0;
 
     //해당 스크립트를 포함한 오브젝트의 태그와 비교
-    private void OnCollisionExit(Collision collision)
+    void OnCollisionExit(Collision collision)
     {
         if (!collision.gameObject.CompareTag(transform.tag))
         {
@@ -19,7 +19,7 @@ public class FridgeRecogSol : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         if (!collision.gameObject.CompareTag(transform.tag))
         {

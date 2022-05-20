@@ -483,7 +483,8 @@ GameObject:
   - component: {fileID: 5986621739733896176}
   - component: {fileID: 7479230992557323686}
   - component: {fileID: 3975177155549270032}
-  m_Layer: 11
+  - component: {fileID: 6329613452088512570}
+  m_Layer: 17
   m_Name: "\uC6A9\uC561 \uD30C\uD2F0\uD074"
   m_TagString: OrganicAcid
   m_Icon: {fileID: 0}
@@ -4255,11 +4256,11 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 32439
+      m_Bits: 360119
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -5276,3 +5277,15 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &6329613452088512570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8594120252006676455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0606034be762d84bb62c074faa5431b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
