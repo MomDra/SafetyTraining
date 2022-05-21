@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f49e66d83124e43b9f525cbd16287d, type: 3}
+  m_Name: WasteFluid
+  m_EditorClassIdentifier: 
+  educationType: "\uD3D0\uC561\uCC98\uB9AC"
+  educationName: "\uD3D0\uC561\uCC98\uB9AC"
+  ox: O
+  reasonImg: {fileID: 21300000, guid: f7217e20f80e3d04080081b84354587b, type: 3}
+  reasonText: "\uAC1C\uBD09 \uD6C4 3\uB144 \uC774\uC0C1 \uACBD\uACFC\uD55C \uC2DC\uC57D\uC758
+    \uACBD\uC6B0 \uD3D0\uC561\uC73C\uB85C \uBD84\uB958\uD558\uC5EC \uCC98\uB9AC\uAC00
+    \uD544\uC694\uD568"
+  accidentImg: {fileID: 21300000, guid: d9b59938138695543bbd5cb153d01d1f, type: 3}
+  accidentDescription: "\uC0AC\uACE0 \uAC1C\uC694\n\t\uD3D0\uC561\uD1B5 \uC218\uAC70
+    \uC911 \uD3D0\uC561\uD1B5\uC774 \uD3ED\uBC1C\uD558\uC5EC \uD3D0\uC561\uC774 \uC791\uC5C5\uC790\uC758
+    \uC5BC\uAD74, \uD314 \uB4F1\uC5D0 \uC811\uCD09\uD568"
+  accidentScale: "\uD53C\uD574 \uC815\uB3C4\n\t\uC591\uC548\uC758 \uC0C1\uD558 \uC548\uAC74\uACFC
+    \uAC01/\uACB0\uB9C9\uBD80 \uBC0F \uD314 \uB4F1\uC5D0 \uD654\uD559\uC801 \uD654\uC0C1"
+  accidentConutermeasure: "\uB300\uCC45\n\t\uD3D0\uC561 \uBD84\uB958\uCCB4\uACC4
+    \uD655\uB9BD, \uD3D0\uC561 \uBC18\uCD9C \uADDC\uC815 \uAC15\uD654, \uD2B9\uC218
+    \uD3D0\uC561\uC758 \uCCA0\uC800\uD55C \uBD84\uB9AC \uC2DC\uD589, \uAC1C\uC778\uBCF4\uD638\uC7A5\uBE44
+    \uCC29\uC6A9 \uC758\uBB34\uD654"

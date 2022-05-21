@@ -13,9 +13,21 @@ public class UIManager
 
     List<UI_Object> addedByPlayerList = new List<UI_Object>();
 
-    public void Init(GameObject content, GameObject resultButtonPrefab){
+    Image reasonImg;
+    Text reasonText;
+    Image accidentImg;
+    Text accidentDescription;
+    Text accidentScale;
+    Text accidentConutermeasure;
+
+    public void Init(GameObject content, GameObject resultButtonPrefab, Image reasonImg, Text reasonText, Image accidentImg, Text accidentDescription, Text accidentScale, Text accidentConutermeasure){
         this.content = content;
         this.resultButtonPrefab = resultButtonPrefab;
+        this.reasonImg = reasonImg;
+        this.reasonText = reasonText;
+        this.accidentImg = accidentImg;
+        this.accidentDescription = accidentDescription;
+        this.accidentConutermeasure = accidentConutermeasure;
 
         GameManager.Instance.ConncetUIManagerAndTaskManager(ref tasks, ref taskSolved);
 
@@ -39,6 +51,8 @@ public class UIManager
                 texts[2].text = "X";
                 texts[2].color = Color.red;
             }
+
+            // newButton.GetComponent<Button>().onClick.AddListener(MakeReasonAndAccident, tasks[i].UI_INFO);
         }
     }
 
@@ -64,5 +78,9 @@ public class UIManager
     public void AddUI(ref UI_Object UI_INFO){
         addedByPlayerList.Add(UI_INFO);
         
+    }
+
+    void MakeReasonAndAccident(UI_Object UI_INFO){
+
     }
 }
