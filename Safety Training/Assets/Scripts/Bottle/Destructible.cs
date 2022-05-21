@@ -41,7 +41,6 @@ public class Destructible : MonoBehaviour
     void Start()
     {
         oldPosition = transform.position;
-
     }
 
     void FixedUpdate()
@@ -51,7 +50,6 @@ public class Destructible : MonoBehaviour
         var distance = Math.Sqrt(Math.Pow(dis.x, 2) + Math.Pow(dis.y, 2) + Math.Pow(dis.z, 2));
         _velocity = distance / Time.deltaTime;
         oldPosition = currentPosition;
-        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -59,6 +57,7 @@ public class Destructible : MonoBehaviour
         //Debug.Log(_velocity);
         if (_velocity > DestroyingVelocity && !transform.GetComponent<PutCorrectionGrabable>().isGrabbed)
         {
+            Destroy(Rigidbody);
             Transform[] childList = gameObject.GetComponentsInChildren<Transform>();
             if(childList != null)
             {
@@ -74,11 +73,8 @@ public class Destructible : MonoBehaviour
         }
     }
 
-
-
     public void Destruct()
     {
-        Destroy(Rigidbody);
         GetComponent<Collider>().enabled = false;
         GetComponent<Renderer>().enabled = false;
 
@@ -133,6 +129,7 @@ public class Destructible : MonoBehaviour
             Destroy(body);
         }
 
+        //깨진 조각들이 서서히 가라앉으며 사라지는 모션
         while (time < 1)
         {
             float step = Time.deltaTime * PieceFadeSpeed;
