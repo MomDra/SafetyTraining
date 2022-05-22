@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f49e66d83124e43b9f525cbd16287d, type: 3}
+  m_Name: MUSanYeomgi
+  m_EditorClassIdentifier: 
+  educationType: "\uC2DC\uC57D\uBD84\uB9AC"
+  educationName: "\uC0B0 / \uC5FC\uAE30 \uC2DC\uC57D\uBD84\uB9AC"
+  ox: O
+  reasonImg: {fileID: 21300000, guid: fcedad065ba700a4b8f895aefd806ed8, type: 3}
+  reasonText: "\uD63C\uC7AC \uAC00\uB2A5\uD55C \uC2DC\uC57D\uC778\uC9C0 \uC5EC\uBD80\uB97C
+    \uD655\uC778\uD55C \uD6C4 \uC2DC\uC57D\uC7A5 \uB0B4 \uBCF4\uAD00"
+  accidentImg: {fileID: 0}
+  accidentDescription: 
+  accidentScale: 
+  accidentConutermeasure: 

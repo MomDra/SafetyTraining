@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WasteFluid
   m_EditorClassIdentifier: 
   educationType: "\uD3D0\uC561\uCC98\uB9AC"
-  educationName: "\uD3D0\uC561\uCC98\uB9AC"
+  educationName: "\uC720\uD6A8\uAE30\uAC04\uC774 \uC9C0\uB09C \uD3D0\uC561 \uCC98\uB9AC"
   ox: O
   reasonImg: {fileID: 21300000, guid: f7217e20f80e3d04080081b84354587b, type: 3}
   reasonText: "\uAC1C\uBD09 \uD6C4 3\uB144 \uC774\uC0C1 \uACBD\uACFC\uD55C \uC2DC\uC57D\uC758
