@@ -8,13 +8,13 @@ public abstract class Task : MonoBehaviour
 
     protected bool isSolved;
 
-    protected void Solve(){
+    public void Solve(){
         isSolved = true;
         GameManager.Instance.TaskManager.NotifySolved(this, true);
         Debug.Log($"{UI_INFO.EducationName}: Solve() 호출");
     }
 
-    protected void NotSolve(){
+    public void NotSolve(){
         isSolved = false;
         GameManager.Instance.TaskManager.NotifySolved(this, false);
         Debug.Log($"{UI_INFO.EducationName}: NotSolve() 호출");
