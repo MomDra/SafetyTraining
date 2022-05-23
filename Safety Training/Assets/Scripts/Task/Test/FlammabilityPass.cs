@@ -10,6 +10,7 @@ public class FlammabilityPass : Task
         base.Awake();
     }
 
+
     /*
     private void Update()
     {

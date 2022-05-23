@@ -19,7 +19,7 @@ public class ParticleCollision : MonoBehaviour
 
     private void Update()
     {
-        if (particleCnt > 100 && transform.parent.gameObject.GetComponent<Renderer>().material.GetFloat("_Fill") < -0.55)
+        if (particleCnt > 300)
         {
             wasteFluidPass = true;
         }

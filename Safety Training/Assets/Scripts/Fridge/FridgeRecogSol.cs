@@ -39,11 +39,11 @@ public class FridgeRecogSol : MonoBehaviour
         }
     }
 
-    void OnCollisionStay(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("FridgeBoard"))
         {
-            //Debug.Log("collision Layer : " + collision.gameObject.layer);
+            Debug.Log("OnCollisionEnter  : " + transform.name);
             if (collision.gameObject.CompareTag(transform.tag))
             {
                 correctPosPass = true;

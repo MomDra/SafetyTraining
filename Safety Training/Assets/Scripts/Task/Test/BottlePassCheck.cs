@@ -75,11 +75,12 @@ public class BottlePassCheck : MonoBehaviour
 
         if (wrongWasteFluidPassCheck) transform.GetComponent<WrongWasteFluidPass>().Solve();
         else transform.GetComponent<WrongWasteFluidPass>().NotSolve();
-
+        /*
         Debug.Log("benzenPassCheck : " + benzenPassCheck);
         Debug.Log("correctPosPassCheck : " + correctPosPassCheck);
         Debug.Log("flammabilityPassCheck : " + flammabilityPassCheck);
         Debug.Log("wasteFluidPassCheck : " + wasteFluidPassCheck);
         Debug.Log("wrongWasteFluidPassCheck : " + wrongWasteFluidPassCheck);
+        */
     }
 }
