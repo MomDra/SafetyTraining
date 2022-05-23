@@ -8,6 +8,7 @@ public class BenzenPass : Task
     protected override void Awake()
     {
         base.Awake();
+        GameManager.Instance.BottleManager.benzenPass = this;
     }
 
     /*

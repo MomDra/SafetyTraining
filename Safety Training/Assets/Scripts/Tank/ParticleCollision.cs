@@ -12,6 +12,10 @@ public class ParticleCollision : MonoBehaviour
     public bool spillPass = true;
     public bool allPass = false;
 
+    private void Awake() {
+        GameManager.Instance.BottleManager.registParticleCollision(this);
+    }
+
     private void Start()
     {
         if (!ExpirationDate)
@@ -55,6 +59,9 @@ public class ParticleCollision : MonoBehaviour
                     {
                         GameManager.Instance.BottleManager.WasteFluidPassCheck();
                     }
+
+                    GetComponentInParent<FridgeRecogSol>().allPass = true;
+                    GameManager.Instance.BottleManager.PositionAllCheck();
                 }
             }
         }

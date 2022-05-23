@@ -8,6 +8,7 @@ public class CorrectPosPass : Task
     protected override void Awake()
     {
         base.Awake();
+        GameManager.Instance.BottleManager.correctPosPass = this;
     }
 
     /*

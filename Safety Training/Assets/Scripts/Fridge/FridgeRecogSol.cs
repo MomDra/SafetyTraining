@@ -5,9 +5,11 @@ using UnityEngine;
 public class FridgeRecogSol : MonoBehaviour
 {
     public bool correctPosPass = true;
+    public bool _CorrectPosPass {get => allPass? true : correctPosPass;}
     private string locTag;
     public bool benzenPass = true;
     public bool flammabilityPass = true;
+    public bool allPass = false;
 
     private void Awake() {
         GameManager.Instance.BottleManager.registFridgeRecogSolList(this);

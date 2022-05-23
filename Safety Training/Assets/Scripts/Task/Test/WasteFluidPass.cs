@@ -8,6 +8,7 @@ public class WasteFluidPass : Task
     protected override void Awake()
     {
         base.Awake();
+        GameManager.Instance.BottleManager.wasteFluidPass = this;
     }
 
     /*

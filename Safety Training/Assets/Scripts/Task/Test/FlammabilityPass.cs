@@ -8,6 +8,7 @@ public class FlammabilityPass : Task
     protected override void Awake()
     {
         base.Awake();
+        GameManager.Instance.BottleManager.flammabilityPass = this;
     }
 
 
