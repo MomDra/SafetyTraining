@@ -8,20 +8,21 @@ public class ParticleCollision : MonoBehaviour
     public bool ExpirationDate = true;
     public bool wasteFluidPass = true;
     private int particleCnt = 0;
+    private int spillParticleCnt = 0;
+    public bool spillPass = true;
+    public bool allPass = false;
 
     private void Start()
     {
         if (!ExpirationDate)
         {
+            bool tmp1 = wasteFluidPass;
             wasteFluidPass = false;
-        }
-    }
 
-    private void Update()
-    {
-        if (particleCnt > 300)
-        {
-            wasteFluidPass = true;
+            if (tmp1 != wasteFluidPass)
+            {
+                GameManager.Instance.BottleManager.WasteFluidPassCheck();
+            }
         }
     }
 
@@ -32,13 +33,45 @@ public class ParticleCollision : MonoBehaviour
             //Debug.Log("+++++++ name : " + other.name + " tag : " + other.tag);
             if (!other.transform.parent.CompareTag(transform.tag))
             {
+                bool tmp1 = wrongWasteFluidPass;
                 wrongWasteFluidPass = false;
+
+                if (tmp1 != wrongWasteFluidPass)
+                {
+                    GameManager.Instance.BottleManager.WrongWasteFluidPassCheck();
+                }
             }
-            else if(!ExpirationDate)
+            else if(!ExpirationDate && wasteFluidPass != false)
             {
                 particleCnt++;
                 Debug.Log("particleCnt: " + particleCnt);
+
+                if (particleCnt > 300)
+                {
+                    bool tmp1 = wasteFluidPass;
+                    wasteFluidPass = true;
+
+                    if (tmp1 != wasteFluidPass)
+                    {
+                        GameManager.Instance.BottleManager.WasteFluidPassCheck();
+                    }
+                }
             }
         }
+        else if(spillPass)
+        {
+            spillParticleCnt++;
+            if(spillParticleCnt > 25)
+            {
+                bool tmp1 = spillPass;
+                spillPass = false;
+
+                if (tmp1 != spillPass)
+                {
+                    GameManager.Instance.BottleManager.SpillPassCheck();
+                }
+            }
+        }
+
     }
 }
