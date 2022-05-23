@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
     UIManager uiManager = new UIManager();
     public UIManager UIManager {get => uiManager;}
 
+    BottleManager bottleManager = new BottleManager();
+    public BottleManager BottleManager {get => bottleManager;}
+
+
     private void Awake() {
         if(singleTon != null){
             Destroy(gameObject);
