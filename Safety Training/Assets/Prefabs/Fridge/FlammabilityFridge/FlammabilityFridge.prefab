@@ -513,7 +513,7 @@ MeshCollider:
   m_GameObject: {fileID: 1938265439628590030}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -559,7 +559,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 13.762604, y: 3.5074997, z: -12.379}
+  m_ConnectedAnchor: {x: 10.447706, y: 1.7074999, z: 0.3649556}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -625,7 +625,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8566081063478845680}
   - component: {fileID: 8566081063478845646}
-  - component: {fileID: 8566081063478845681}
   m_Layer: 8
   m_Name: FlammabilityBase2
   m_TagString: FlammabilityBase
@@ -660,19 +659,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.737718, y: 0.8759952, z: 0.009415145}
   m_Center: {x: -0.0015933914, y: 0.01892176, z: 0}
---- !u!114 &8566081063478845681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8566081063478845683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7eb325478c474648ac7c23655dea6fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abnormalObjCount: 0
 --- !u!1 &8566081063499007412
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,7 +669,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8566081063499007413}
   - component: {fileID: 8566081063499007411}
-  - component: {fileID: 8566081063499007410}
   m_Layer: 8
   m_Name: FlammabilityAcid2
   m_TagString: FlammabilityAcid
@@ -718,19 +703,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.737718, y: 0.8759952, z: 0.009415145}
   m_Center: {x: -0.0015933701, y: 0.018921757, z: 0}
---- !u!114 &8566081063499007410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8566081063499007412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7eb325478c474648ac7c23655dea6fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abnormalObjCount: 0
 --- !u!1 &8566081063833401405
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,7 +745,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8566081063898503197}
   - component: {fileID: 8566081063898503195}
-  - component: {fileID: 8566081063898503194}
   m_Layer: 8
   m_Name: FlammabilityBase1
   m_TagString: FlammabilityBase
@@ -808,19 +779,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.737718, y: 0.8759952, z: 0.009415145}
   m_Center: {x: -0.0015933914, y: 0.01892176, z: 0}
---- !u!114 &8566081063898503194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8566081063898503196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7eb325478c474648ac7c23655dea6fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abnormalObjCount: 0
 --- !u!1 &8566081063940555631
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,7 +789,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8566081063940555628}
   - component: {fileID: 8566081063940555626}
-  - component: {fileID: 8566081063940555629}
   m_Layer: 8
   m_Name: FlammabilityAcid1
   m_TagString: FlammabilityAcid
@@ -866,16 +823,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.737718, y: 0.8759952, z: 0.009415145}
   m_Center: {x: -0.0015933914, y: 0.01892176, z: 0}
---- !u!114 &8566081063940555629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8566081063940555631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7eb325478c474648ac7c23655dea6fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abnormalObjCount: 0

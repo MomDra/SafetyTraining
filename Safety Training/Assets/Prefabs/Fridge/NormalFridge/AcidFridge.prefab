@@ -990,7 +990,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7721399693386076806}
   - component: {fileID: 7721399693386076807}
-  - component: {fileID: 7721399693386076804}
   m_Layer: 8
   m_Name: FrigdeBoard (1)
   m_TagString: OrganicAcid
@@ -1025,19 +1024,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.009415144}
   m_Center: {x: -0.0000000030763325, y: 0.0000000038878696, z: 0.018469194}
---- !u!114 &7721399693386076804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7721399693386076809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7eb325478c474648ac7c23655dea6fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abnormalObjCount: 0
 --- !u!1 &7721399693429685613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,7 +1034,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7721399693429685610}
   - component: {fileID: 7721399693429685611}
-  - component: {fileID: 7721399693429685608}
   m_Layer: 8
   m_Name: FrigdeBoard (5)
   m_TagString: InorganicAcid
@@ -1083,19 +1068,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.009415144}
   m_Center: {x: -0.0000000030763325, y: 0.0000000038878696, z: 0.018469194}
---- !u!114 &7721399693429685608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7721399693429685613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7eb325478c474648ac7c23655dea6fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abnormalObjCount: 0
 --- !u!1 &7721399693512154697
 GameObject:
   m_ObjectHideFlags: 0
@@ -1174,7 +1146,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7721399694155797432}
   - component: {fileID: 7721399694155797433}
-  - component: {fileID: 7721399694155797430}
   m_Layer: 8
   m_Name: FrigdeBoard (6)
   m_TagString: InorganicAcid
@@ -1209,19 +1180,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.009415144}
   m_Center: {x: -0.0000000030763325, y: 0.0000000038878696, z: 0.018469194}
---- !u!114 &7721399694155797430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7721399694155797435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7eb325478c474648ac7c23655dea6fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abnormalObjCount: 0
 --- !u!1 &7721399694329792373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,7 +1190,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7721399694329792370}
   - component: {fileID: 7721399694329792371}
-  - component: {fileID: 7721399694329792368}
   m_Layer: 8
   m_Name: FrigdeBoard (2)
   m_TagString: OrganicAcid
@@ -1267,19 +1224,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.009415144}
   m_Center: {x: -0.0000000030763325, y: 0.0000000038878696, z: 0.018469194}
---- !u!114 &7721399694329792368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7721399694329792373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7eb325478c474648ac7c23655dea6fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abnormalObjCount: 0
 --- !u!1 &7721399694572660243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,7 +1234,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7721399694572660240}
   - component: {fileID: 7721399694572660241}
-  - component: {fileID: 7721399694572660238}
   m_Layer: 8
   m_Name: FrigdeBoard (4)
   m_TagString: InorganicAcid
@@ -1325,19 +1268,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.009415144}
   m_Center: {x: -0.0000000030763325, y: 0.0000000038878696, z: 0.018469194}
---- !u!114 &7721399694572660238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7721399694572660243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7eb325478c474648ac7c23655dea6fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abnormalObjCount: 0
 --- !u!1 &7721399694833339150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,7 +1278,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7721399694833339151}
   - component: {fileID: 7721399694833339148}
-  - component: {fileID: 7721399694833339149}
   m_Layer: 8
   m_Name: FrigdeBoard (7)
   m_TagString: InorganicAcid
@@ -1383,19 +1312,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.009415144}
   m_Center: {x: -0.0000000030763325, y: 0.0000000038878696, z: 0.018469194}
---- !u!114 &7721399694833339149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7721399694833339150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7eb325478c474648ac7c23655dea6fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abnormalObjCount: 0
 --- !u!1 &7721399695426904257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,7 +1322,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7721399695426904254}
   - component: {fileID: 7721399695426904255}
-  - component: {fileID: 7721399695426904252}
   m_Layer: 8
   m_Name: FrigdeBoard (3)
   m_TagString: OrganicAcid
@@ -1441,19 +1356,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.009415144}
   m_Center: {x: -0.0000000030763325, y: 0.0000000038878696, z: 0.018469194}
---- !u!114 &7721399695426904252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7721399695426904257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7eb325478c474648ac7c23655dea6fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abnormalObjCount: 0
 --- !u!1 &7721399695426950003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,7 +1366,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7721399695426950000}
   - component: {fileID: 7721399695426950001}
-  - component: {fileID: 7721399695426949998}
   m_Layer: 8
   m_Name: FrigdeBoard
   m_TagString: OrganicAcid
@@ -1499,16 +1400,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.009415144}
   m_Center: {x: -0.0000000030763325, y: 0.0000000038878696, z: 0.018469194}
---- !u!114 &7721399695426949998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7721399695426950003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7eb325478c474648ac7c23655dea6fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abnormalObjCount: 0

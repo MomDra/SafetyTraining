@@ -19,7 +19,7 @@ public class TaskManager
         for(int i = 0; i < tasks.Count; i++){
             if(task == tasks[i]){
                 taskSolved[i] = solved;
-                Debug.Log("문제 해결 완료!!");
+                Debug.Log(taskSolved[i] + " : 문제 해결 완료!!");
             }
         }
 

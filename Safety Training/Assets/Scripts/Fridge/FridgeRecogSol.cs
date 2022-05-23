@@ -4,34 +4,72 @@ using UnityEngine;
 
 public class FridgeRecogSol : MonoBehaviour
 {
-    public bool wrongPosition = false;
-    public string abnormalTag;
-    // wrongPosition가 true일 때 tag를 반환하게 해서 잘못 놓인 것을 확인
-    // wrongPosition이 true이더라도 잘못 놓인 시약병 중 하나를 제거할 때 일시적으로 false로 전환?
+    public bool correctPosPass = true;
+    private string locTag;
+    public bool benzenPass = true;
+    public bool flammabilityPass = true;
 
-    //해당 스크립트를 포함한 오브젝트의 태그와 비교
-    
+
+    // 떨어질 때도 처리를 해야 하는지 고민 중
     void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Bottle"))
+        Debug.Log("OnCollisionExit");
+        if (collision.gameObject.layer == LayerMask.NameToLayer("FridgeBoard"))
         {
-            if (!collision.gameObject.CompareTag(transform.tag))
+            if (collision.gameObject.CompareTag(transform.tag))
             {
-                abnormalTag = collision.gameObject.tag;
-                wrongPosition = false;
-                Debug.Log("+++OnCollisionExit -- abnormalTag : " + abnormalTag + ", wrongPosition : " + wrongPosition);
+                correctPosPass = false;
+            }
+            else
+            {
+                locTag = collision.gameObject.tag;
+
+                //바닥에서 떨어져도 false 처리 == 들고 있을 때도
+                //벤젠/산화제 
+                if (transform.CompareTag("FlammabilityAcid"))
+                {
+                    benzenPass = false;
+                }
+                //인화성
+                if (transform.CompareTag("FlammabilityAcid") || transform.CompareTag("FlammabilityBase"))
+                {
+                    flammabilityPass = false;
+                }
             }
         }
     }
+
     void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Bottle"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("FridgeBoard"))
         {
-            if (!collision.gameObject.CompareTag(transform.tag))
+            //Debug.Log("collision Layer : " + collision.gameObject.layer);
+            if (collision.gameObject.CompareTag(transform.tag))
             {
-                abnormalTag = collision.gameObject.tag;
-                wrongPosition = true;
-                Debug.Log("+++OnCollisionEnter -- abnormalTag : " + abnormalTag + ", wrongPosition : " + wrongPosition);
+                correctPosPass = true;
+            }
+            else
+            {
+                correctPosPass = false;
+                locTag = collision.gameObject.tag;
+                //벤젠/산화제
+                if ((locTag == "FlammabilityAcid" && transform.CompareTag("InorganicBase")) || (locTag == "InorganicBase" && transform.CompareTag("FlammabilityAcid")))
+                {
+                    benzenPass = false;
+                }
+                else
+                {
+                    benzenPass = true;
+                }
+                //인화성
+                if ((locTag == "InorganicBase" || locTag == "InorganicAcid") && (transform.CompareTag("FlammabilityAcid") || transform.CompareTag("FlammabilityBase")))
+                {
+                    flammabilityPass = false;
+                }
+                else
+                {
+                    flammabilityPass = true;
+                }
             }
         }
     }

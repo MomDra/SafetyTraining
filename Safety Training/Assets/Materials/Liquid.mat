@@ -92,7 +92,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _Fill: 0.61
+    - _Fill: 0.45
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -112,9 +112,9 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_0644a1d6ba67423d9875f591471ea97c: {r: 0.9056604, g: 0.09825563, b: 0.09825563, a: 0.427451}
-    - Color_332ff67f70764c28a53aca33729caed1: {r: 0.8962264, g: 0.10568706, b: 0.21862158, a: 0.8352941}
-    - Color_34c5681093c24a6b82113c66e0313355: {r: 0.8113208, g: 0.6513601, b: 0.34060165, a: 0}
+    - Color_0644a1d6ba67423d9875f591471ea97c: {r: 0, g: 0.88240355, b: 0.9528302, a: 0.5372549}
+    - Color_332ff67f70764c28a53aca33729caed1: {r: 0.51370597, g: 0.9811321, b: 0.96024156, a: 0.3882353}
+    - Color_34c5681093c24a6b82113c66e0313355: {r: 0, g: 0.21511793, b: 1, a: 0.6745098}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

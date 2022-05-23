@@ -14,7 +14,7 @@ public class DumpingLiquid : MonoBehaviour
     void Start()
     {
         //size = transform.lossyScale[0];
-        size = 0.62f;
+        size = 0.63f;
         
     }
 
