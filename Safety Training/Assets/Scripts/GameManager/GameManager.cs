@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -34,6 +35,15 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         emergencyManager = GetComponent<EmergencyManager>();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            BottleManager.ShowUI();
+            SceneManager.LoadScene("EndScene");
+        }
     }
 
     public void ConncetUIManagerAndTaskManager(ref List<Task> task, ref List<bool> tasksolved){

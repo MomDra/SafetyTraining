@@ -26,9 +26,16 @@ public class ParticleCollision : MonoBehaviour
             if (tmp1 != wasteFluidPass)
             {
                 GameManager.Instance.BottleManager.WasteFluidPassCheck();
+                Debug.Log("WasteFluidPassCheck  : " + wasteFluidPass);
             }
         }
     }
+
+    /*private void Update()
+    {
+        Debug.Log("particleCnt : " + particleCnt);
+        Debug.Log("spillParticleCnt : " + spillParticleCnt);
+    }*/
 
     void OnParticleCollision(GameObject other)
     {
@@ -43,9 +50,10 @@ public class ParticleCollision : MonoBehaviour
                 if (tmp1 != wrongWasteFluidPass)
                 {
                     GameManager.Instance.BottleManager.WrongWasteFluidPassCheck();
+                    Debug.Log("WrongWasteFluidPassCheck  : " + wrongWasteFluidPass);
                 }
             }
-            else if(!ExpirationDate && wasteFluidPass != false)
+            else if(!ExpirationDate && !wasteFluidPass)
             {
                 particleCnt++;
                 Debug.Log("particleCnt: " + particleCnt);
@@ -58,6 +66,7 @@ public class ParticleCollision : MonoBehaviour
                     if (tmp1 != wasteFluidPass)
                     {
                         GameManager.Instance.BottleManager.WasteFluidPassCheck();
+                        Debug.Log("WrongWasteFluidPassCheck  : " + wrongWasteFluidPass);
                     }
 
                     GetComponentInParent<FridgeRecogSol>().allPass = true;
@@ -67,8 +76,11 @@ public class ParticleCollision : MonoBehaviour
         }
         else if(spillPass)
         {
-            spillParticleCnt++;
-            if(spillParticleCnt > 25)
+            if(other.layer != LayerMask.NameToLayer("Bottle"))
+            {
+                spillParticleCnt++;
+            }
+            if(spillParticleCnt > 70)
             {
                 bool tmp1 = spillPass;
                 spillPass = false;
@@ -76,9 +88,11 @@ public class ParticleCollision : MonoBehaviour
                 if (tmp1 != spillPass)
                 {
                     GameManager.Instance.BottleManager.SpillPassCheck();
+                    Debug.Log("SpillPassCheck  : " + spillPass);
                 }
             }
         }
-
+        //Debug.Log("particleCnt : " + particleCnt +  ", other : " + other.name);
+        //Debug.Log("spillParticleCnt : " + spillParticleCnt);
     }
 }

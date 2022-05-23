@@ -27,6 +27,7 @@ public class FridgeRecogSol : MonoBehaviour
             
             if(tmp1 != correctPosPass){
                 GameManager.Instance.BottleManager.CorrectPosPassCheck();
+                Debug.Log("CorrectPosPassCheck  : " + correctPosPass);
             }
             
         
@@ -41,6 +42,7 @@ public class FridgeRecogSol : MonoBehaviour
 
                 if(tmp != benzenPass){
                     GameManager.Instance.BottleManager.BenzenPassCheck();
+                    Debug.Log("BenzenPassCheck  : " + benzenPass);
                 }
             }
                     
@@ -51,6 +53,7 @@ public class FridgeRecogSol : MonoBehaviour
 
                 if(tmp != flammabilityPass){
                     GameManager.Instance.BottleManager.FlammabilityPassCheck();
+                    Debug.Log("FlammabilityPassCheck  : " + flammabilityPass);
                 }
             }
         }
@@ -60,14 +63,15 @@ public class FridgeRecogSol : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("FridgeBoard"))
         {
-            Debug.Log("OnCollisionEnter  : " + transform.name);
             if (collision.gameObject.CompareTag(transform.tag))
             {
                 bool tmp = correctPosPass;
                 correctPosPass = true;
                 
-                if(tmp != correctPosPass){
+                if(tmp != correctPosPass)
+                {
                     GameManager.Instance.BottleManager.CorrectPosPassCheck();
+                    Debug.Log("CorrectPosPassCheck  : " + correctPosPass);
                 }
             }
             else
@@ -76,6 +80,7 @@ public class FridgeRecogSol : MonoBehaviour
                 correctPosPass = false;
                 if(tmp1 != correctPosPass){
                     GameManager.Instance.BottleManager.CorrectPosPassCheck();
+                    Debug.Log("CorrectPosPassCheck  : " + correctPosPass);
                 }
 
                 locTag = collision.gameObject.tag;
@@ -87,6 +92,7 @@ public class FridgeRecogSol : MonoBehaviour
 
                     if(tmp != benzenPass){
                         GameManager.Instance.BottleManager.BenzenPassCheck();
+                        Debug.Log("BenzenPassCheck  : " + benzenPass);
                     }
                 }
                 else
@@ -96,6 +102,7 @@ public class FridgeRecogSol : MonoBehaviour
 
                     if(tmp != benzenPass){
                         GameManager.Instance.BottleManager.BenzenPassCheck();
+                        Debug.Log("BenzenPassCheck  : " + benzenPass);
                     }
                 }
                 //¿Œ»≠º∫
@@ -106,6 +113,7 @@ public class FridgeRecogSol : MonoBehaviour
 
                     if(tmp != flammabilityPass){
                         GameManager.Instance.BottleManager.FlammabilityPassCheck();
+                        Debug.Log("FlammabilityPassCheck  : " + flammabilityPass);
                     }
                 }
                 else
@@ -115,6 +123,7 @@ public class FridgeRecogSol : MonoBehaviour
 
                     if(tmp != flammabilityPass){
                         GameManager.Instance.BottleManager.FlammabilityPassCheck();
+                        Debug.Log("FlammabilityPassCheck  : " + flammabilityPass);
                     }
                 }
             }

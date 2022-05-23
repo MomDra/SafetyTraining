@@ -102,8 +102,8 @@ public class BottleManager
                 return;
             }
         }
-
         benzenPassCheck = true;
+        Debug.Log("BenzenPassCheck : " + benzenPassCheck);
     }
 
     public void CorrectPosPassCheck(){
@@ -116,6 +116,7 @@ public class BottleManager
         }
 
         correctPosPassCheck = true;
+        Debug.Log("CorrectPosPassCheck : " + correctPosPassCheck);
     }
 
     public void FlammabilityPassCheck(){
@@ -129,6 +130,7 @@ public class BottleManager
         }
 
         flammabilityPassCheck = true;
+        Debug.Log("FlammabilityPassCheck : " + flammabilityPassCheck);
     }
 
     public void WasteFluidPassCheck()
@@ -144,6 +146,7 @@ public class BottleManager
         }
 
         wasteFluidPassCheck = true;
+        Debug.Log("WasteFluidPassCheck : " + wasteFluidPassCheck);
     }
     public void WrongWasteFluidPassCheck()
     {
@@ -158,6 +161,7 @@ public class BottleManager
         }
 
         wrongWasteFluidPassCheck = true;
+        Debug.Log("WrongWasteFluidPassCheck : " + wrongWasteFluidPassCheck);
     }
 
     public void SpillPassCheck()
@@ -173,6 +177,7 @@ public class BottleManager
         }
 
         spillPassCheck = true;
+        Debug.Log("SpillPassCheck : " + spillPassCheck);
     }
 
     // 마지막 UI에는 딱 한번만 체크해서 띄어주면되는데
