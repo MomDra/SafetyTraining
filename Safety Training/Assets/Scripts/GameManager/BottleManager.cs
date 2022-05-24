@@ -15,6 +15,8 @@ public class BottleManager
     private bool spillPassCheck;
     private bool destructionPassCheck;
 
+    public bool destructiblePass;
+
     public Task benzenPass;
     public Task correctPosPass;
     public Task flammabilityPass;
@@ -23,7 +25,6 @@ public class BottleManager
 
     List<FridgeRecogSol> fridgeRecogSolList = new List<FridgeRecogSol>();
     List<ParticleCollision> particleCollisionList = new List<ParticleCollision>();
-    List<Destructible> destructibleList = new List<Destructible>();
 
     UI_Manager_Hint hint;
 
@@ -33,10 +34,6 @@ public class BottleManager
     public void registParticleCollision(ParticleCollision particleCollision)
     {
         particleCollisionList.Add(particleCollision);
-    }
-    public void registDestructible(Destructible destructible)
-    {
-        destructibleList.Add(destructible);
     }
 
     public void RegistHint(UI_Manager_Hint hint){
@@ -110,7 +107,6 @@ public class BottleManager
         WasteFluidPassCheck();
         WrongWasteFluidPassCheck();
         SpillPassCheck();
-        DestructionPassCheck();
     }
 
     public void AllCheck(){
@@ -207,20 +203,22 @@ public class BottleManager
         spillPassCheck = true;
         Debug.Log("SpillPassCheck : " + spillPassCheck);
     }
-    public void DestructionPassCheck()
+    public void DestroyList(FridgeRecogSol fridgeRecogSol, ParticleCollision particleCollision)
     {
-        foreach (Destructible item in destructibleList)
+        foreach (FridgeRecogSol item in fridgeRecogSolList)
         {
-            if (!item.destructiblePass)
-            {
-                //폐액처리 통과 못함
-                destructionPassCheck = false;
-                return;
+            if(item == fridgeRecogSol){
+                fridgeRecogSolList.Remove(item);
+                Debug.Log("FridgeRecogSol 삭제됨!!!");
             }
         }
 
-        destructionPassCheck = true;
-        Debug.Log("DestructionPassCheck : " + destructionPassCheck);
+        foreach(ParticleCollision item in particleCollisionList){
+            if(item == particleCollision){
+                particleCollisionList.Remove(item);
+                Debug.Log("ParticleCollision 삭제됨!!!");
+            }
+        }
     }
 
     // 마지막 UI에는 딱 한번만 체크해서 띄어주면되는데

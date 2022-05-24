@@ -35,7 +35,6 @@ public class Destructible : MonoBehaviour
     private void Awake()
     {
         Rigidbody = GetComponent<Rigidbody>();
-        GameManager.Instance.BottleManager.registDestructible(this);
         //AudioSource = GetComponent<AudioSource>();
     }
 
@@ -58,14 +57,8 @@ public class Destructible : MonoBehaviour
         //Debug.Log(_velocity);
         if (_velocity > DestroyingVelocity && !transform.GetComponent<PutCorrectionGrabable>().isGrabbed)
         {
-            bool tmp1 = destructiblePass;
-            destructiblePass = false;
-
-            if (tmp1 != destructiblePass)
-            {
-                GameManager.Instance.BottleManager.DestructionPassCheck();
-                Debug.Log("DestructionPassCheck  : " + destructiblePass);
-            }
+            GameManager.Instance.BottleManager.destructiblePass = false;
+            GameManager.Instance.BottleManager.DestroyList(GetComponent<FridgeRecogSol>(), GetComponentInChildren<ParticleCollision>());
 
             Destroy(Rigidbody);
             Transform[] childList = gameObject.GetComponentsInChildren<Transform>();
@@ -139,7 +132,7 @@ public class Destructible : MonoBehaviour
             Destroy(body);
         }
 
-        //±úÁø Á¶°¢µéÀÌ ¼­¼­È÷ °¡¶ó¾ÉÀ¸¸ç »ç¶óÁö´Â ¸ð¼Ç
+        //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
         while (time < 1)
         {
             float step = Time.deltaTime * PieceFadeSpeed;
