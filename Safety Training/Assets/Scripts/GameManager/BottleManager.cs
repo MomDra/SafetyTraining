@@ -5,12 +5,14 @@ using UnityEngine;
 
 public class BottleManager
 {
-    public bool benzenPassCheck;
-    public bool correctPosPassCheck;
-    public bool flammabilityPassCheck;
-    public bool wasteFluidPassCheck;
-    public bool wrongWasteFluidPassCheck;
-    public bool spillPassCheck;
+    private bool benzenPassCheck;
+    private bool correctPosPassCheck;
+    public bool _CorrectPosPassCheck {get => correctPosPassCheck;}
+    private bool flammabilityPassCheck;
+    private bool wasteFluidPassCheck;
+    public bool _WasteFluidPassCheck {get => wasteFluidPassCheck;}
+    private bool wrongWasteFluidPassCheck;
+    private bool spillPassCheck;
 
     public Task benzenPass;
     public Task correctPosPass;
@@ -21,12 +23,18 @@ public class BottleManager
     List<FridgeRecogSol> fridgeRecogSolList = new List<FridgeRecogSol>();
     List<ParticleCollision> particleCollisionList = new List<ParticleCollision>();
 
+    UI_Manager_Hint hint;
+
     public void registFridgeRecogSolList(FridgeRecogSol fridgeRecogSol){
         fridgeRecogSolList.Add(fridgeRecogSol);
     }
     public void registParticleCollision(ParticleCollision particleCollision)
     {
         particleCollisionList.Add(particleCollision);
+    }
+
+    public void RegistHint(UI_Manager_Hint hint){
+        this.hint = hint;
     }
 
     public void ShowUI(){
@@ -111,12 +119,14 @@ public class BottleManager
             if (!item._CorrectPosPass){
                 //시약 구분 못함
                 correctPosPassCheck = false;
+                hint.UpdateText1UI(false);
                 return;
             }
         }
 
         correctPosPassCheck = true;
         Debug.Log("CorrectPosPassCheck : " + correctPosPassCheck);
+        hint.UpdateText1UI(true);
     }
 
     public void FlammabilityPassCheck(){
@@ -141,12 +151,14 @@ public class BottleManager
             {
                 //폐액처리 통과 못함
                 wasteFluidPassCheck = false;
+                hint.UpdateText2UI(false);
                 return;
             }
         }
 
         wasteFluidPassCheck = true;
         Debug.Log("WasteFluidPassCheck : " + wasteFluidPassCheck);
+        hint.UpdateText2UI(true);
     }
     public void WrongWasteFluidPassCheck()
     {

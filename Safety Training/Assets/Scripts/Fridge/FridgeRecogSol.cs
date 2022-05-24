@@ -16,7 +16,7 @@ public class FridgeRecogSol : MonoBehaviour
     }
 
 
-    // ¶³¾îÁú ¶§µµ Ã³¸®¸¦ ÇØ¾ß ÇÏ´ÂÁö °í¹Î Áß
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½Ø¾ï¿½ ï¿½Ï´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
     void OnCollisionExit(Collision collision)
     {
         Debug.Log("OnCollisionExit");
@@ -33,8 +33,8 @@ public class FridgeRecogSol : MonoBehaviour
         
             locTag = collision.gameObject.tag;
 
-            //¹Ù´Ú¿¡¼­ ¶³¾îÁ®µµ false Ã³¸® == µé°í ÀÖÀ» ¶§µµ
-            //º¥Á¨/»êÈ­Á¦ 
+            //ï¿½Ù´Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ false Ã³ï¿½ï¿½ == ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            //ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½È­ï¿½ï¿½ 
             if (transform.CompareTag("FlammabilityAcid"))
             {
                 bool tmp = benzenPass;
@@ -68,10 +68,8 @@ public class FridgeRecogSol : MonoBehaviour
                 bool tmp = correctPosPass;
                 correctPosPass = true;
                 
-                if(tmp != correctPosPass)
-                {
-                    GameManager.Instance.BottleManager.CorrectPosPassCheck();
-                    Debug.Log("CorrectPosPassCheck  : " + correctPosPass);
+                if(tmp != correctPosPass){
+                    GameManager.Instance.BottleManager.PositionAllCheck();
                 }
             }
             else
@@ -84,7 +82,7 @@ public class FridgeRecogSol : MonoBehaviour
                 }
 
                 locTag = collision.gameObject.tag;
-                //º¥Á¨/»êÈ­Á¦
+                //ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½È­ï¿½ï¿½
                 if ((locTag == "FlammabilityAcid" && transform.CompareTag("InorganicBase")) || (locTag == "InorganicBase" && transform.CompareTag("FlammabilityAcid")))
                 {
                     bool tmp = benzenPass;
@@ -105,7 +103,7 @@ public class FridgeRecogSol : MonoBehaviour
                         Debug.Log("BenzenPassCheck  : " + benzenPass);
                     }
                 }
-                //ÀÎÈ­¼º
+                //ï¿½ï¿½È­ï¿½ï¿½
                 if ((locTag == "InorganicBase" || locTag == "InorganicAcid") && (transform.CompareTag("FlammabilityAcid") || transform.CompareTag("FlammabilityBase")))
                 {
                     bool tmp = flammabilityPass;
