@@ -38,7 +38,7 @@ public class UIManager_StartScene : MonoBehaviour
     }
 
     public void StartGame(){
-        SceneManager.LoadScene("test_SiYoung");
+        SceneManager.LoadScene("Prevent");
     }
 
     public void EndGame(){
