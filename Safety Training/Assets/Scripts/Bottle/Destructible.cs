@@ -35,6 +35,7 @@ public class Destructible : MonoBehaviour
     private void Awake()
     {
         Rigidbody = GetComponent<Rigidbody>();
+        GameManager.Instance.BottleManager.registDestructible(this);
         //AudioSource = GetComponent<AudioSource>();
     }
 

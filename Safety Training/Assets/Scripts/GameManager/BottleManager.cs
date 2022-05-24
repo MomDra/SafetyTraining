@@ -110,6 +110,7 @@ public class BottleManager
         WasteFluidPassCheck();
         WrongWasteFluidPassCheck();
         SpillPassCheck();
+        DestructionPassCheck();
     }
 
     public void AllCheck(){
