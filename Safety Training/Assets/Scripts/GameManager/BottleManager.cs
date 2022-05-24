@@ -13,9 +13,8 @@ public class BottleManager
     public bool _WasteFluidPassCheck {get => wasteFluidPassCheck;}
     private bool wrongWasteFluidPassCheck;
     private bool spillPassCheck;
-    private bool destructionPassCheck;
 
-    public bool destructiblePass;
+    public bool destructionPassCheck;
 
     public Task benzenPass;
     public Task correctPosPass;
@@ -210,6 +209,7 @@ public class BottleManager
             if(item == fridgeRecogSol){
                 fridgeRecogSolList.Remove(item);
                 Debug.Log("FridgeRecogSol 삭제됨!!!");
+                break;
             }
         }
 
@@ -217,6 +217,7 @@ public class BottleManager
             if(item == particleCollision){
                 particleCollisionList.Remove(item);
                 Debug.Log("ParticleCollision 삭제됨!!!");
+                break;
             }
         }
         AllCheck();

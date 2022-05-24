@@ -26,7 +26,7 @@ public class Destructible : MonoBehaviour
     [SerializeField]
     private float DestroyingVelocity = 3;
 
-    public bool destructiblePass = true;
+    //public bool destructiblePass = true;
 
     private Vector3 oldPosition;
     private Vector3 currentPosition;
@@ -57,7 +57,8 @@ public class Destructible : MonoBehaviour
         //Debug.Log(_velocity);
         if (_velocity > DestroyingVelocity && !transform.GetComponent<PutCorrectionGrabable>().isGrabbed)
         {
-            GameManager.Instance.BottleManager.destructiblePass = false;
+            Debug.Log("des 충돌 : "+ collision.gameObject.name);
+            GameManager.Instance.BottleManager.destructionPassCheck = false;
             GameManager.Instance.BottleManager.DestroyList(GetComponent<FridgeRecogSol>(), GetComponentInChildren<ParticleCollision>());
 
             Destroy(Rigidbody);
