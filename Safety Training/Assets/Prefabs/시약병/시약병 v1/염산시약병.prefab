@@ -5128,7 +5128,7 @@ GameObject:
   - component: {fileID: 8193281598705911928}
   - component: {fileID: 4028516789254271325}
   m_Layer: 16
-  m_Name: "\uC5FC\uC0B0\uC2DC\uC57D\uBCD1_\uB77C\uBCA8\uC5C6\uC74C"
+  m_Name: "\uC5FC\uC0B0\uC2DC\uC57D\uBCD1"
   m_TagString: InorganicAcid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5179,7 +5179,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 5422d4d67dad8544aaa2ba39a5cb810e, type: 2}
-  - {fileID: 7479284964180901045, guid: e5f53c451a38419498becea9efe65992, type: 3}
+  - {fileID: 390423634207928920, guid: 3b05848aa54c15a479190364cc6a4ff8, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
