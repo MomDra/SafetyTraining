@@ -4817,7 +4817,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0606034be762d84bb62c074faa5431b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wrongWasteFluidPass: 1
   ExpirationDate: 1
+  wasteFluidPass: 1
+  spillPass: 1
+  allPass: 0
 --- !u!1 &1700224680290811008
 GameObject:
   m_ObjectHideFlags: 0
@@ -4977,7 +4981,6 @@ GameObject:
   - component: {fileID: 1700224681321631090}
   - component: {fileID: 1700224681321631091}
   - component: {fileID: 6864896698405618020}
-  - component: {fileID: 4927554304605483229}
   m_Layer: 16
   m_Name: "\uC9C8\uC0B0\uC2DC\uC57D\uBCD1_\uC644\uC131"
   m_TagString: InorganicAcid
@@ -4992,7 +4995,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700224681321631088}
-  m_LocalRotation: {x: -0.0062994002, y: 0.93070257, z: -0.0064174086, w: 0.3656665}
+  m_LocalRotation: {x: 0, y: 0.9307307, z: 0, w: 0.36570543}
   m_LocalPosition: {x: -0.656116, y: -0.3527416, z: 1.8803194}
   m_LocalScale: {x: 0.02, y: 0.020000001, z: 0.02}
   m_Children:
@@ -5001,7 +5004,7 @@ Transform:
   - {fileID: 1700224680290811011}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.42, y: 137.098, z: -0.941}
+  m_LocalEulerAnglesHint: {x: 0, y: 137.098, z: 0}
 --- !u!33 &1700224681321631097
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5140,6 +5143,7 @@ MonoBehaviour:
   PieceDestroyDelay: 5
   PieceSleepCheckDelay: 0.1
   DestroyingVelocity: 4
+  destructiblePass: 1
 --- !u!114 &6864896698405618020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5155,19 +5159,7 @@ MonoBehaviour:
   correctPosPass: 1
   benzenPass: 1
   flammabilityPass: 1
---- !u!65 &4927554304605483229
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700224681321631088}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3, y: 1, z: 3}
-  m_Center: {x: 0, y: -2.4, z: 0}
+  allPass: 0
 --- !u!1 &1700224681390505225
 GameObject:
   m_ObjectHideFlags: 0

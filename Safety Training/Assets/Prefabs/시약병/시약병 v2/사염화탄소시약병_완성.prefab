@@ -214,7 +214,6 @@ GameObject:
   - component: {fileID: 4786939674927738105}
   - component: {fileID: 4786939674927738104}
   - component: {fileID: 3897217250918574472}
-  - component: {fileID: 2404226722552171009}
   m_Layer: 16
   m_Name: "\uC0AC\uC5FC\uD654\uD0C4\uC18C\uC2DC\uC57D\uBCD1_\uC644\uC131"
   m_TagString: OrganicBase
@@ -229,7 +228,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4786939674927738107}
-  m_LocalRotation: {x: -0.0062994002, y: 0.93070257, z: -0.0064174086, w: 0.3656665}
+  m_LocalRotation: {x: 0, y: 0.9307307, z: 0, w: 0.36570543}
   m_LocalPosition: {x: 0.59838367, y: -0.35274148, z: -4.4180765}
   m_LocalScale: {x: 0.02, y: 0.020000001, z: 0.02}
   m_Children:
@@ -238,7 +237,7 @@ Transform:
   - {fileID: 4786939674733080843}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.42, y: 137.098, z: -0.941}
+  m_LocalEulerAnglesHint: {x: 0, y: 137.098, z: 0}
 --- !u!33 &4786939674927738098
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -302,7 +301,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: -6371400939188868203, guid: 41f3e838d96cd6c419b4f87a79fe5c44, type: 3}
+  m_Mesh: {fileID: -6371400939188868203, guid: 30e5867fb67301f40b482f7f6cad7cfe, type: 3}
 --- !u!114 &4786939674927738111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,6 +376,7 @@ MonoBehaviour:
   PieceDestroyDelay: 5
   PieceSleepCheckDelay: 0.1
   DestroyingVelocity: 4
+  destructiblePass: 1
 --- !u!114 &3897217250918574472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,19 +392,7 @@ MonoBehaviour:
   correctPosPass: 1
   benzenPass: 1
   flammabilityPass: 1
---- !u!65 &2404226722552171009
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4786939674927738107}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3, y: 1, z: 3}
-  m_Center: {x: 0, y: -2.4, z: 0}
+  allPass: 0
 --- !u!1 &4786939675003502129
 GameObject:
   m_ObjectHideFlags: 0
@@ -5222,7 +5210,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0606034be762d84bb62c074faa5431b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wrongWasteFluidPass: 1
   ExpirationDate: 1
+  wasteFluidPass: 1
+  spillPass: 1
+  allPass: 0
 --- !u!1 &4786939675264229048
 GameObject:
   m_ObjectHideFlags: 0

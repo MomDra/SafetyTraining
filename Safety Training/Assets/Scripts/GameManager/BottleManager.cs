@@ -219,6 +219,7 @@ public class BottleManager
                 Debug.Log("ParticleCollision 삭제됨!!!");
             }
         }
+        AllCheck();
     }
 
     // 마지막 UI에는 딱 한번만 체크해서 띄어주면되는데

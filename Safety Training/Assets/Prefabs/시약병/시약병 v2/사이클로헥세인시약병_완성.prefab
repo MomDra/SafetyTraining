@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 5333419152064585807}
   - component: {fileID: 5333419152064585792}
   - component: {fileID: 572467178348339812}
-  - component: {fileID: 5070164245474031229}
   m_Layer: 16
   m_Name: "\uC0AC\uC774\uD074\uB85C\uD5E5\uC138\uC778\uC2DC\uC57D\uBCD1_\uC644\uC131"
   m_TagString: FlammabilityBase
@@ -32,7 +31,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5333419152064585793}
-  m_LocalRotation: {x: -0.0062994002, y: 0.93070257, z: -0.0064174086, w: 0.3656665}
+  m_LocalRotation: {x: 0, y: 0.9307307, z: 0, w: 0.36570543}
   m_LocalPosition: {x: -5.5110106, y: -0.35274112, z: -3.1898122}
   m_LocalScale: {x: 0.02, y: 0.020000001, z: 0.02}
   m_Children:
@@ -41,7 +40,7 @@ Transform:
   - {fileID: 5333419153444565553}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.42, y: 137.098, z: -0.941}
+  m_LocalEulerAnglesHint: {x: 0, y: 137.098, z: 0}
 --- !u!33 &5333419152064585802
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -105,7 +104,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: -6371400939188868203, guid: 41f3e838d96cd6c419b4f87a79fe5c44, type: 3}
+  m_Mesh: {fileID: -6371400939188868203, guid: 30e5867fb67301f40b482f7f6cad7cfe, type: 3}
 --- !u!114 &5333419152064585805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +179,7 @@ MonoBehaviour:
   PieceDestroyDelay: 5
   PieceSleepCheckDelay: 0.1
   DestroyingVelocity: 4
+  destructiblePass: 1
 --- !u!114 &572467178348339812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,19 +195,7 @@ MonoBehaviour:
   correctPosPass: 1
   benzenPass: 1
   flammabilityPass: 1
---- !u!65 &5070164245474031229
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5333419152064585793}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3, y: 1, z: 3}
-  m_Center: {x: 0, y: -2.4, z: 0}
+  allPass: 0
 --- !u!1 &5333419152082157760
 GameObject:
   m_ObjectHideFlags: 0
@@ -5177,7 +5165,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0606034be762d84bb62c074faa5431b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wrongWasteFluidPass: 1
   ExpirationDate: 1
+  wasteFluidPass: 1
+  spillPass: 1
+  allPass: 0
 --- !u!1 &5333419153444565554
 GameObject:
   m_ObjectHideFlags: 0

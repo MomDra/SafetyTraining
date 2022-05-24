@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 4679312458974477643}
   - component: {fileID: 5561989430688492952}
   - component: {fileID: 7462602655859693980}
-  - component: {fileID: 6463443838724274076}
   m_Layer: 16
   m_Name: "\uC124\uD3F0\uC0B0\uC2DC\uC57D\uBCD1"
   m_TagString: OrganicAcid
@@ -105,7 +104,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: -6371400939188868203, guid: 41f3e838d96cd6c419b4f87a79fe5c44, type: 3}
+  m_Mesh: {fileID: -6371400939188868203, guid: 30e5867fb67301f40b482f7f6cad7cfe, type: 3}
 --- !u!114 &811133576437780975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +179,7 @@ MonoBehaviour:
   PieceDestroyDelay: 5
   PieceSleepCheckDelay: 0.1
   DestroyingVelocity: 4
+  destructiblePass: 1
 --- !u!114 &7462602655859693980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,19 +195,7 @@ MonoBehaviour:
   correctPosPass: 1
   benzenPass: 1
   flammabilityPass: 1
---- !u!65 &6463443838724274076
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796490228063059931}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3, y: 1, z: 3}
-  m_Center: {x: 0, y: -2.4, z: 0}
+  allPass: 0
 --- !u!1 &1033480283739580786
 GameObject:
   m_ObjectHideFlags: 0
@@ -5319,4 +5307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0606034be762d84bb62c074faa5431b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wrongWasteFluidPass: 1
   ExpirationDate: 1
+  wasteFluidPass: 1
+  spillPass: 1
+  allPass: 0

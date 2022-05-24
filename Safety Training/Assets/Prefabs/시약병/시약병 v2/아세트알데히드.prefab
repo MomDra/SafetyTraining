@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 1613520361991929863}
   - component: {fileID: 5780414794470095138}
   - component: {fileID: 2829591837377337225}
-  - component: {fileID: 4322202465522735843}
   m_Layer: 16
   m_Name: "\uC544\uC138\uD2B8\uC54C\uB370\uD788\uB4DC"
   m_TagString: FlammabilityBase
@@ -105,7 +104,7 @@ MeshCollider:
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: -6371400939188868203, guid: 41f3e838d96cd6c419b4f87a79fe5c44, type: 3}
+  m_Mesh: {fileID: -6371400939188868203, guid: 30e5867fb67301f40b482f7f6cad7cfe, type: 3}
 --- !u!114 &1074814667977446669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,19 +196,6 @@ MonoBehaviour:
   benzenPass: 1
   flammabilityPass: 1
   allPass: 0
---- !u!65 &4322202465522735843
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338104560131381261}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3, y: 1, z: 3}
-  m_Center: {x: 0, y: -2.4, z: 0}
 --- !u!1 &4754670235694320382
 GameObject:
   m_ObjectHideFlags: 0
