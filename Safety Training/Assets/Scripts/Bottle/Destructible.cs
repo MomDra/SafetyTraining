@@ -26,7 +26,7 @@ public class Destructible : MonoBehaviour
     [SerializeField]
     private float DestroyingVelocity = 3;
 
-    
+    public bool destructiblePass = true;
 
     private Vector3 oldPosition;
     private Vector3 currentPosition;
@@ -57,6 +57,15 @@ public class Destructible : MonoBehaviour
         //Debug.Log(_velocity);
         if (_velocity > DestroyingVelocity && !transform.GetComponent<PutCorrectionGrabable>().isGrabbed)
         {
+            bool tmp1 = destructiblePass;
+            destructiblePass = false;
+
+            if (tmp1 != destructiblePass)
+            {
+                GameManager.Instance.BottleManager.DestructionPassCheck();
+                Debug.Log("DestructionPassCheck  : " + destructiblePass);
+            }
+
             Destroy(Rigidbody);
             Transform[] childList = gameObject.GetComponentsInChildren<Transform>();
             if(childList != null)

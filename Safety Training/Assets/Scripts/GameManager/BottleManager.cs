@@ -13,6 +13,7 @@ public class BottleManager
     public bool _WasteFluidPassCheck {get => wasteFluidPassCheck;}
     private bool wrongWasteFluidPassCheck;
     private bool spillPassCheck;
+    private bool destructionPassCheck;
 
     public Task benzenPass;
     public Task correctPosPass;
@@ -22,6 +23,7 @@ public class BottleManager
 
     List<FridgeRecogSol> fridgeRecogSolList = new List<FridgeRecogSol>();
     List<ParticleCollision> particleCollisionList = new List<ParticleCollision>();
+    List<Destructible> destructibleList = new List<Destructible>();
 
     UI_Manager_Hint hint;
 
@@ -31,6 +33,10 @@ public class BottleManager
     public void registParticleCollision(ParticleCollision particleCollision)
     {
         particleCollisionList.Add(particleCollision);
+    }
+    public void registDestructible(Destructible destructible)
+    {
+        destructibleList.Add(destructible);
     }
 
     public void RegistHint(UI_Manager_Hint hint){
@@ -81,6 +87,15 @@ public class BottleManager
             spillUIObject.EducationName = "바닥에 시약 흘림";
             spillUIObject.OX = "X";
             GameManager.Instance.UIManager.AddUI(ref spillUIObject);
+        }
+
+        if (!destructionPassCheck)
+        {
+            UI_Object destructionUIObject = new UI_Object();
+            destructionUIObject.EducationType = "시약관리";
+            destructionUIObject.EducationName = "시약병 깨짐";
+            destructionUIObject.OX = "X";
+            GameManager.Instance.UIManager.AddUI(ref destructionUIObject);
         }
 
     }
@@ -190,6 +205,21 @@ public class BottleManager
 
         spillPassCheck = true;
         Debug.Log("SpillPassCheck : " + spillPassCheck);
+    }
+    public void DestructionPassCheck()
+    {
+        foreach (Destructible item in destructibleList)
+        {
+            if (!item.destructiblePass)
+            {
+                //폐액처리 통과 못함
+                destructionPassCheck = false;
+                return;
+            }
+        }
+
+        destructionPassCheck = true;
+        Debug.Log("DestructionPassCheck : " + destructionPassCheck);
     }
 
     // 마지막 UI에는 딱 한번만 체크해서 띄어주면되는데
