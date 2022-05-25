@@ -118,7 +118,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3895948868528183814}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -258,7 +258,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.33508343, y: 0.10996563, z: -0.7325572}
+  m_ConnectedAnchor: {x: 13.924917, y: 0.20996529, z: -10.260557}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -410,7 +410,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.33508354, y: 0.10996563, z: 0.732641}
+  m_ConnectedAnchor: {x: 13.924916, y: 0.20996529, z: -8.795359}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -575,7 +575,6 @@ GameObject:
   - component: {fileID: 3897112824027628507}
   - component: {fileID: 3897112824027628506}
   - component: {fileID: 3897112824027627557}
-  - component: {fileID: 3897112824027627556}
   - component: {fileID: 3897112824027627559}
   m_Layer: 10
   m_Name: GrabableHandle1
@@ -676,19 +675,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3897112824027627556
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3897112824027627553}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
-  m_Center: {x: 0, y: 0, z: 0.000030517578}
 --- !u!114 &3897112824027627559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,6 +693,7 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
   staticHandle: {fileID: 3897112823778192619}
+  outLineObject: {fileID: 3896252752818416584}
 --- !u!1 &3897112824617408762
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,7 +835,6 @@ GameObject:
   - component: {fileID: 3897112824895884011}
   - component: {fileID: 3897112824895884010}
   - component: {fileID: 3897112824895884021}
-  - component: {fileID: 3897112824895884020}
   - component: {fileID: 3897112824895884023}
   m_Layer: 10
   m_Name: GrabableHandle2
@@ -949,19 +935,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3897112824895884020
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3897112824895884017}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
-  m_Center: {x: 0, y: 0, z: 0.000030517578}
 --- !u!114 &3897112824895884023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -980,6 +953,7 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
   staticHandle: {fileID: 3897112824617408763}
+  outLineObject: {fileID: 3896012308611432648}
 --- !u!1 &7721399693386076809
 GameObject:
   m_ObjectHideFlags: 0

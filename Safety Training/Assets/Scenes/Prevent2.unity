@@ -3115,7 +3115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8345231252972679931, guid: 3d7d4efc88d8e2d4cb309968f98e3ef1, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 10.835
+      value: 11.886
       objectReference: {fileID: 0}
     - target: {fileID: 8345231252972679931, guid: 3d7d4efc88d8e2d4cb309968f98e3ef1, type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -5300,6 +5300,7 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
   staticHandle: {fileID: 664085407}
+  outLineObject: {fileID: 1225981822}
 --- !u!65 &542671350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7351,7 +7352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8345231252972679931, guid: 3d7d4efc88d8e2d4cb309968f98e3ef1, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 3.456
+      value: 4.586
       objectReference: {fileID: 0}
     - target: {fileID: 8345231252972679931, guid: 3d7d4efc88d8e2d4cb309968f98e3ef1, type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -9622,6 +9623,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179761712}
   m_Mesh: {fileID: 4300000, guid: 787ff0f71fa634547b4ec58cd557faeb, type: 3}
+--- !u!1 &1225981822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1289756729245116037, guid: 28165be3f2698e04ca8fb81f0d074f36, type: 3}
+  m_PrefabInstance: {fileID: 8850664097161888859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1235139116
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16086,7 +16092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8345231252972679931, guid: 3d7d4efc88d8e2d4cb309968f98e3ef1, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 4.586
+      value: 10.835
       objectReference: {fileID: 0}
     - target: {fileID: 8345231252972679931, guid: 3d7d4efc88d8e2d4cb309968f98e3ef1, type: 3}
       propertyPath: m_ConnectedAnchor.y

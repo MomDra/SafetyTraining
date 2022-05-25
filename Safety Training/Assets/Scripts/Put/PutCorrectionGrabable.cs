@@ -27,10 +27,11 @@ public class PutCorrectionGrabable : OVRGrabbable
             transform.rotation = rotation;
         }
 
-        // if (GetComponent<Outline>() != null && !isGrabbed)
-        // {
-        //     Destroy(GetComponent<Outline>());
-        // }
+        /*
+        if (GetComponent<Outline>() != null && !isGrabbed)
+        {
+            Destroy(GetComponent<Outline>());
+        }*/
 
         grabEndEvent.Invoke();
     }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class GrabableDoor : OVRGrabbable
 {
     [SerializeField] Transform staticHandle;
+    [SerializeField] GameObject outLineObject;
 
     public override void GrabBegin(OVRGrabber hand, Collider grabPoint)
     {
@@ -25,11 +26,40 @@ public class GrabableDoor : OVRGrabbable
         Rigidbody rbHandler = staticHandle.GetComponent<Rigidbody>();
         rbHandler.velocity = Vector3.zero;
         rbHandler.angularVelocity = Vector3.zero;
+
+        if (outLineObject.GetComponent<Outline>() != null)
+        {
+            Destroy(outLineObject.GetComponent<Outline>());
+        }
     }
 
     private void FixedUpdate() {
         if(Vector2.Distance(staticHandle.GetComponent<Rigidbody>().position, GetComponent<Rigidbody>().position) > 0.5f){
             grabbedBy.ForceRelease(this);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("HandLeft") || other.gameObject.layer == LayerMask.NameToLayer("HandRight"))
+        {
+            if(outLineObject.GetComponent<Outline>() == null)
+            {
+                Outline outline = outLineObject.AddComponent<Outline>();
+                outline.OutlineColor = Color.green;
+                outline.OutlineMode = Outline.Mode.OutlineAll;
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("HandLeft") || other.gameObject.layer == LayerMask.NameToLayer("HandRight"))
+        {
+            if (outLineObject.GetComponent<Outline>() != null)
+            {
+                Destroy(outLineObject.GetComponent<Outline>());
+            }
         }
     }
 }

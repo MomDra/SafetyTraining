@@ -155,7 +155,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3834873518896166915}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: -1.746}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -674,7 +674,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.33508354, y: 0.10996563, z: -1.0133591}
+  m_ConnectedAnchor: {x: 13.904916, y: 0.20996593, z: -10.423359}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -711,7 +711,6 @@ GameObject:
   - component: {fileID: 3834873519723540822}
   - component: {fileID: 3834873519723540821}
   - component: {fileID: 3834873519723540820}
-  - component: {fileID: 3834873519723540827}
   - component: {fileID: 3834873519723540826}
   m_Layer: 10
   m_Name: GrabableHandle1
@@ -812,19 +811,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3834873519723540827
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3834873519723540824}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
-  m_Center: {x: 0, y: 0, z: 0.000030517578}
 --- !u!114 &3834873519723540826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,6 +829,7 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
   staticHandle: {fileID: 3834873519065910293}
+  outLineObject: {fileID: 3834873519684182460}
 --- !u!1 &3834873519745997241
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,7 +971,6 @@ GameObject:
   - component: {fileID: 3834873519813648364}
   - component: {fileID: 3834873519813647891}
   - component: {fileID: 3834873519813647890}
-  - component: {fileID: 3834873519813647889}
   - component: {fileID: 3834873519813647888}
   m_Layer: 10
   m_Name: GrabableHandle2
@@ -1085,19 +1071,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3834873519813647889
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3834873519813647894}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
-  m_Center: {x: 0, y: 0, z: 0.000030517578}
 --- !u!114 &3834873519813647888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1116,6 +1089,7 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
   staticHandle: {fileID: 3834873519745997242}
+  outLineObject: {fileID: 3834873519849406195}
 --- !u!1 &3834873519814626686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,7 +1262,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.33508343, y: 0.10996563, z: -2.478557}
+  m_ConnectedAnchor: {x: 13.904917, y: 0.20996593, z: -11.888557}
   m_UseSpring: 0
   m_Spring:
     spring: 0
