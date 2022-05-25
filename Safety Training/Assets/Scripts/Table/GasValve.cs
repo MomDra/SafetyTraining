@@ -7,10 +7,7 @@ public class GasValve : MonoBehaviour
     public bool gasLocked = true;
     public float x;
 
-    public float activationThreshold = 0.1f;
-
-    private float timer = 0f;
-    // Start is called before the first frame update
+    //private float timer = 0f;
     
     // Update is called once per frame
     void Update()

@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class WindowCheck : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool windowOpend = false;
+    public float y;
+
+    //private float timer = 0f;
 
     // Update is called once per frame
     void Update()
     {
-        
+        y = transform.localEulerAngles.y;
+        if(y > 0)
+        {
+            y -= 360;
+        }
+        if (y < -20)// Ã¢¹® ¿­¸²
+        {
+            windowOpend = true;
+            Debug.Log("window : "+ windowOpend);
+        }
+        else if (y < 0 && y >= -20) // Ã¢¹® ´ÝÈû
+        {
+            windowOpend = false;
+            Debug.Log("window : " + windowOpend);
+        }
     }
 }
