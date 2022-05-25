@@ -23,22 +23,22 @@ public class BlurredVision : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
             StartCoroutine("Fade1");
-            Debug.Log("fade1 0~0.2");
+            //Debug.Log("fade1 0~0.2");
         }
         if (Input.GetKeyDown(KeyCode.H))
         {
             StartCoroutine("Fade2");
-            Debug.Log("fade2 0.2~0.4");
+            //Debug.Log("fade2 0.2~0.4");
         }
         if (Input.GetKeyDown(KeyCode.J))
         {
             StartCoroutine("Fade3");
-            Debug.Log("fade3 0.4~0.2");
+            //Debug.Log("fade3 0.4~0.2");
         }
         if (Input.GetKeyDown(KeyCode.K))
         {
             StartCoroutine("Fade4");
-            Debug.Log("fade4 0.2~0");
+            //Debug.Log("fade4 0.2~0");
         }
     }
 

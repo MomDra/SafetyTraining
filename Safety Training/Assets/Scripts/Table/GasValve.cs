@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class GasValve : MonoBehaviour
 {
-    //public float x;
     public bool gasLocked = true;
     public float x;
 
-
-    //public InputHelpers.Button activationButton;
     public float activationThreshold = 0.1f;
 
     private float timer = 0f;
@@ -19,8 +16,6 @@ public class GasValve : MonoBehaviour
     void Update()
     {
         x = transform.localEulerAngles.x;
-        //y = transform.localEulerAngles.y;
-        //z = transform.localEulerAngles.z;
 
         if (x > 20)// 가스 벨브 열림
         {

@@ -5143,7 +5143,6 @@ MonoBehaviour:
   PieceDestroyDelay: 5
   PieceSleepCheckDelay: 0.1
   DestroyingVelocity: 4
-  destructiblePass: 1
 --- !u!114 &6864896698405618020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5223,7 +5222,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 7479284964180901045, guid: 27c3f32e8d227fa4a899d3a8f87dfc78, type: 3}
+  - {fileID: 2100000, guid: 7be3687ef24b2944eb6d13ceb97e9c88, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
