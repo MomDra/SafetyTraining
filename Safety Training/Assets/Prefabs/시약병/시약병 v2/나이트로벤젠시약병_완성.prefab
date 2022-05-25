@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 3861596839173649358}
   m_Layer: 16
   m_Name: "\uB098\uC774\uD2B8\uB85C\uBCA4\uC820\uC2DC\uC57D\uBCD1_\uC644\uC131"
-  m_TagString: OrganicAcid
+  m_TagString: FlammabilityAcid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,7 +179,6 @@ MonoBehaviour:
   PieceDestroyDelay: 5
   PieceSleepCheckDelay: 0.1
   DestroyingVelocity: 4
-  destructiblePass: 1
 --- !u!114 &3861596839173649358
 MonoBehaviour:
   m_ObjectHideFlags: 0

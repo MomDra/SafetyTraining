@@ -80,7 +80,6 @@ public class FridgeRecogSol : MonoBehaviour
                     GameManager.Instance.BottleManager.CorrectPosPassCheck();
                     Debug.Log("CorrectPosPassCheck  : " + correctPosPass);
                 }
-
                 locTag = collision.gameObject.tag;
                 //����/��ȭ��
                 if ((locTag == "FlammabilityAcid" && transform.CompareTag("InorganicBase")) || (locTag == "InorganicBase" && transform.CompareTag("FlammabilityAcid")))
