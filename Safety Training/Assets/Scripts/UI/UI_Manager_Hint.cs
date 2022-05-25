@@ -20,23 +20,23 @@ public class UI_Manager_Hint : MonoBehaviour
 
     public void UpdateText1UI(bool pass){
         if(pass){
-            text1.text = "O";
-            text1.color = Color.green;
+            ox1.text = "O";
+            ox1.color = Color.green;
         }
         else{
-            text1.text = "X";
-            text1.color = Color.red;
+            ox1.text = "X";
+            ox1.color = Color.red;
         }
     }
 
     public void UpdateText2UI(bool pass){
         if(pass){
-            text2.text = "O";
-            text2.color = Color.green;
+            ox2.text = "O";
+            ox2.color = Color.green;
         }
         else{
-            text2.text = "X";
-            text2.color = Color.red;
+            ox2.text = "X";
+            ox2.color = Color.red;
         }
     }
 }
