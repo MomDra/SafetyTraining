@@ -40,6 +40,11 @@ public class PutCorrectionGrabable : OVRGrabbable
     {
         base.GrabBegin(hand, grabPoint);
 
+        if(GetComponent<Outline>() != null)
+        {
+            Destroy(GetComponent<Outline>());
+        }
+
         grabBeginEvent.Invoke();
         // if (GetComponent<Outline>() == null)
         // {

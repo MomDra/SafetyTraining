@@ -259,6 +259,7 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
   staticHandle: {fileID: 3285867384095231328}
+  outLineObject: {fileID: 8345231252972679812}
 --- !u!1 &3285867386054855380
 GameObject:
   m_ObjectHideFlags: 0
@@ -5306,7 +5307,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 6.09, y: 0.8930949, z: -0.16130188}
+  m_ConnectedAnchor: {x: 11.886, y: 0.98394215, z: -8.594301}
   serializedVersion: 2
   m_SecondaryAxis: {x: 1, y: 0, z: 0}
   m_XMotion: 0
