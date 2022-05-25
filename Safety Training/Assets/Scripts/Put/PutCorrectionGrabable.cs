@@ -27,10 +27,11 @@ public class PutCorrectionGrabable : OVRGrabbable
             transform.rotation = rotation;
         }
 
-        // if (GetComponent<Outline>() != null && !isGrabbed)
-        // {
-        //     Destroy(GetComponent<Outline>());
-        // }
+        /*
+        if (GetComponent<Outline>() != null && !isGrabbed)
+        {
+            Destroy(GetComponent<Outline>());
+        }*/
 
         grabEndEvent.Invoke();
     }
@@ -38,6 +39,11 @@ public class PutCorrectionGrabable : OVRGrabbable
     public override void GrabBegin(OVRGrabber hand, Collider grabPoint)
     {
         base.GrabBegin(hand, grabPoint);
+
+        if(GetComponent<Outline>() != null)
+        {
+            Destroy(GetComponent<Outline>());
+        }
 
         grabBeginEvent.Invoke();
         // if (GetComponent<Outline>() == null)
