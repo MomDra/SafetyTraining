@@ -176,22 +176,20 @@ public class OVRGrabber : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider otherCollider)
+    protected virtual void OnTriggerEnter(Collider otherCollider)
     {
         // Get the grab trigger
 		OVRGrabbable grabbable = otherCollider.GetComponent<OVRGrabbable>() ?? otherCollider.GetComponentInParent<OVRGrabbable>();
         if (grabbable == null) return;
-
+        
         // Add the grabbable
         int refCount = 0;
         m_grabCandidates.TryGetValue(grabbable, out refCount);
         m_grabCandidates[grabbable] = refCount + 1;
-
-        
     }
-    
 
-    void OnTriggerExit(Collider otherCollider)
+
+    protected virtual void OnTriggerExit(Collider otherCollider)
     {
 		OVRGrabbable grabbable = otherCollider.GetComponent<OVRGrabbable>() ?? otherCollider.GetComponentInParent<OVRGrabbable>();
         if (grabbable == null) return;

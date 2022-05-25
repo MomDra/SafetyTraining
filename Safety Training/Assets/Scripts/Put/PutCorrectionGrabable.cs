@@ -12,14 +12,16 @@ public class PutCorrectionGrabable : OVRGrabbable
 
     // 그랩이 시작되면 호출할 이벤트...
     public UnityEvent grabBeginEvent;
-    public UnityEvent grabEndEvent; 
+    public UnityEvent grabEndEvent;
 
     public override void GrabEnd(Vector3 linearVelocity, Vector3 angularVelocity)
     {
-        if(!isInCollider){ // 정상적인 GrabEnd
+        if (!isInCollider)
+        { // 정상적인 GrabEnd
             base.GrabEnd(linearVelocity, angularVelocity);
         }
-        else{ // 놓기 보정 GrabEnd
+        else
+        { // 놓기 보정 GrabEnd
             base.GrabEnd(Vector3.zero, Vector3.zero);
             transform.position = pos;
             transform.rotation = rotation;
@@ -47,17 +49,21 @@ public class PutCorrectionGrabable : OVRGrabbable
     }
 
     // 보정 콜라이더에 들어가면 거기서 호출해줌
-    public void setInCollider(bool isInCollider, Vector3 pos, Quaternion rotation){
+    public void setInCollider(bool isInCollider, Vector3 pos, Quaternion rotation)
+    {
         this.isInCollider = isInCollider;
         this.pos = pos;
         this.rotation = rotation;
     }
 
     // 보정 콜라이더 쪽에서 호출할거임
-    public GameObject getPreview(){
+    public GameObject getPreview()
+    {
         return previewPrefab;
     }
 
+
+    /*
     private void OnTriggerEnter(Collider other) { // 진동과 아웃라인 코드를 잡는 쪽에서 구현해야 되나?..
         if(other.gameObject.layer == LayerMask.NameToLayer("HandLeft")){
             OVRInput.SetControllerVibration(1, 0.2f, OVRInput.Controller.LTouch);
@@ -69,6 +75,8 @@ public class PutCorrectionGrabable : OVRGrabbable
                 GetComponent<Outline>().OutlineColor = Color.green;
                 GetComponent<Outline>().OutlineMode = Outline.Mode.OutlineAll;
             }
+
+            Debug.Log(other.name);
         }
         else if(other.gameObject.layer == LayerMask.NameToLayer("HandRight")){
             OVRInput.SetControllerVibration(1, 0.2f, OVRInput.Controller.RTouch);
@@ -80,6 +88,7 @@ public class PutCorrectionGrabable : OVRGrabbable
                 GetComponent<Outline>().OutlineColor = Color.green;
                 GetComponent<Outline>().OutlineMode = Outline.Mode.OutlineAll;
             }
+            Debug.Log(other.name);
         }
 
     }
@@ -107,5 +116,5 @@ public class PutCorrectionGrabable : OVRGrabbable
     public void EndVibrationRight()
     {
         OVRInput.SetControllerVibration(0, 0, OVRInput.Controller.RTouch);
-    }
+    }*/
 }

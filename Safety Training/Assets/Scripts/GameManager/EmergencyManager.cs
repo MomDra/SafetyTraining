@@ -6,7 +6,6 @@ public class EmergencyManager : MonoBehaviour
 {
     [SerializeField] Light[] lights;
     AudioSource audioSource;
-    int n;
 
     private void Awake() {
         audioSource = GetComponent<AudioSource>();
@@ -19,7 +18,7 @@ public class EmergencyManager : MonoBehaviour
     }
 
     IEnumerator ColorCoroutine(){
-        n = 0;
+        int n = 0;
 
         while(true){
 
