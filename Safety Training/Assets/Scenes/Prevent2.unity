@@ -584,7 +584,7 @@ RectTransform:
   m_Children:
   - {fileID: 129286871}
   m_Father: {fileID: 8850664097161888860}
-  m_RootOrder: 42
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 90, y: -180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -800,7 +800,7 @@ SpriteRenderer:
   m_Size: {x: 4.12, y: 1.91}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &60775810
@@ -815,7 +815,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0}
   m_Children: []
   m_Father: {fileID: 8850664097161888860}
-  m_RootOrder: 41
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &66329569
 GameObject:
@@ -9443,41 +9443,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2765733573124028256, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_Name
-      value: FlammabilityAcid3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765733573124028256, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_TagString
-      value: FlammabilityAcid
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765733573214579731, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_Name
-      value: FlammabilityAcid1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765733573214579731, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_TagString
-      value: FlammabilityAcid
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765733573869049084, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_Name
-      value: FlammabilityAcid2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765733573869049084, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_TagString
-      value: FlammabilityAcid
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765733573888733627, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_Name
-      value: FlammabilityAcid4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765733573888733627, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_TagString
-      value: FlammabilityAcid
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765733574077643838, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_Name
-      value: FlammabilityAcid
+    - target: {fileID: 5359772072154930659, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -13.545
       objectReference: {fileID: 0}
     - target: {fileID: 5360834474115259361, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
       propertyPath: m_Name
@@ -10967,7 +10935,7 @@ Transform:
   - {fileID: 1486417920}
   - {fileID: 327017501}
   m_Father: {fileID: 8850664097161888860}
-  m_RootOrder: 40
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1462881902
 GameObject:

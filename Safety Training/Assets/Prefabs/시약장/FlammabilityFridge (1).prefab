@@ -497,7 +497,7 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
   staticHandle: {fileID: 5359772070608795293}
-  outLineObject: {fileID: 0}
+  outLineObject: {fileID: 5361275297548668865}
 --- !u!1 &5360834474115259361
 GameObject:
   m_ObjectHideFlags: 0
