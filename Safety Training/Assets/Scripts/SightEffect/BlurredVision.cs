@@ -14,7 +14,7 @@ public class BlurredVision : MonoBehaviour
     private void Awake()
     {
         brurredEffect = gameObject.GetComponent<Renderer>();
-        effectColor.a = 0;
+        effectColor.a = 0f;
     }
 
     // Update is called once per frame
@@ -22,33 +22,64 @@ public class BlurredVision : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.G))
         {
-            Step1();
+            StartCoroutine("Fade1");
+            Debug.Log("fade1 0~0.2");
         }
         if (Input.GetKeyDown(KeyCode.H))
         {
-            Step2();
+            StartCoroutine("Fade2");
+            Debug.Log("fade2 0.2~0.4");
         }
         if (Input.GetKeyDown(KeyCode.J))
         {
-            Step3();
+            StartCoroutine("Fade3");
+            Debug.Log("fade3 0.4~0.2");
+        }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            StartCoroutine("Fade4");
+            Debug.Log("fade4 0.2~0");
         }
     }
 
-    private void Step1()
+    IEnumerator Fade1()
     {
-        effectColor.a = 0;
-        brurredEffect.material.color = effectColor;
+        for (float f = 0f; f <= 0.2f; f += 0.01f)
+        {
+            effectColor.a = f;
+            brurredEffect.material.color = effectColor;
+            yield return null;
+        }
     }
 
-    private void Step2()
+    IEnumerator Fade2()
     {
-        effectColor.a = 0.15f;
-        brurredEffect.material.color = effectColor;
+        for (float f = 0.2f; f <= 0.4f; f += 0.01f)
+        {
+            effectColor.a = f;
+            brurredEffect.material.color = effectColor;
+            yield return null;
+        }
     }
 
-    private void Step3()
+    IEnumerator Fade3()
     {
-        effectColor.a = 0.3f;
-        brurredEffect.material.color = effectColor;
+        for (float f = 0.4f; f >= 0.2f; f -= 0.01f)
+        {
+            effectColor.a = f;
+            brurredEffect.material.color = effectColor;
+            yield return null;
+        }
     }
+
+    IEnumerator Fade4()
+    {
+        for (float f = 0.2f; f >= 0; f -= 0.01f)
+        {
+            effectColor.a = f;
+            brurredEffect.material.color = effectColor;
+            yield return null;
+        }
+    }
+
 }
