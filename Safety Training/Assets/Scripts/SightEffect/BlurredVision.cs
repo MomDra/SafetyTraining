@@ -5,7 +5,7 @@ using UnityEngine;
 public class BlurredVision : MonoBehaviour
 {
     Renderer brurredEffect;
-    Color effectColor;
+    Color effectColor = Color.white;
     public bool blurredStart = false;
 
     private float blurredTime = 0f;
@@ -20,22 +20,22 @@ public class BlurredVision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.H))
         {
             StartCoroutine("Fade1");
             //Debug.Log("fade1 0~0.2");
         }
-        if (Input.GetKeyDown(KeyCode.H))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             StartCoroutine("Fade2");
             //Debug.Log("fade2 0.2~0.4");
         }
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.K))
         {
             StartCoroutine("Fade3");
             //Debug.Log("fade3 0.4~0.2");
         }
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             StartCoroutine("Fade4");
             //Debug.Log("fade4 0.2~0");
