@@ -5082,6 +5082,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6462039016964562013, guid: c6deaf50b9a8d2643a4188aae17319b3, type: 3}
+      propertyPath: time
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8901839727771148222, guid: c6deaf50b9a8d2643a4188aae17319b3, type: 3}
       propertyPath: m_Name
       value: Propane_Tank_Medium
@@ -15376,7 +15380,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2028535688}
-  - component: {fileID: 2028535689}
   m_Layer: 0
   m_Name: Leak
   m_TagString: Untagged
@@ -15404,26 +15407,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2028535689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028535687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fa2ba451cd0af946804a0596d2e5dc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text1: {fileID: 0}
-  text2: {fileID: 0}
-  ox1: {fileID: 0}
-  ox2: {fileID: 0}
-  timeText: {fileID: 1741176992}
-  hint: {fileID: 0}
-  leak: {fileID: 0}
-  time: 300
 --- !u!1001 &2067814710
 PrefabInstance:
   m_ObjectHideFlags: 0

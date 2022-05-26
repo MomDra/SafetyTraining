@@ -34,6 +34,8 @@ public class UI_Manager_Hint : MonoBehaviour
     {
         coroutine = CountDown(time);
         StartCoroutine(coroutine);
+
+        Debug.Log("гоюл");
     }
 
     public void UpdateText1UI(bool pass){
