@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class GameManager : MonoBehaviour
     BottleManager bottleManager = new BottleManager();
     public BottleManager BottleManager {get => bottleManager;}
 
+    int time;
+    public int Time { get => time; set => time = value; }
 
     private void Awake() {
         if(singleTon != null){
@@ -41,13 +44,18 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.B))
         {
-            BottleManager.ShowUI();
-            SceneManager.LoadScene("EndScene");
+            EndGame();
         }
     }
 
     public void ConncetUIManagerAndTaskManager(ref List<Task> task, ref List<bool> tasksolved){
         task = taskManager.GetTask();
         tasksolved = taskManager.GetTaskSolved();
+    }
+
+    public void EndGame()
+    {
+        BottleManager.ShowUI();
+        SceneManager.LoadScene("EndScene");
     }
 }

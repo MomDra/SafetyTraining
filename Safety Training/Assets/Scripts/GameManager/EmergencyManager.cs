@@ -2,19 +2,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum EmergencyType
+{
+    Leak,
+    Fire
+}
+
+
 public class EmergencyManager : MonoBehaviour
 {
     [SerializeField] Light[] lights;
     AudioSource audioSource;
 
+    [SerializeField]
+    UI_Manager_Hint uiManager;
+
     private void Awake() {
         audioSource = GetComponent<AudioSource>();
     }
 
-
-    public void EmergencyStart(){
+    public void EmergencyStart(EmergencyType type)
+    {
         StartCoroutine(ColorCoroutine());
         audioSource.Play();
+
+        switch (type)
+        {
+            case EmergencyType.Leak:
+                uiManager.StopTimer();
+                uiManager.StartTimer(120);
+                uiManager.HideAllWindow();
+                uiManager.ShowLeakWindow();
+                break;
+            case EmergencyType.Fire:
+
+                break;
+        }
     }
 
     IEnumerator ColorCoroutine(){
@@ -45,7 +68,7 @@ public class EmergencyManager : MonoBehaviour
 
     private void Update() {
         if(Input.GetKeyDown(KeyCode.K)){
-            EmergencyStart();
+            EmergencyStart(EmergencyType.Leak);
         }
     }
 }
