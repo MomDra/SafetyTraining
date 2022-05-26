@@ -23,6 +23,8 @@ public class EmergencyManager : MonoBehaviour
     [SerializeField]
     UI_Object leakUIObject;
 
+    bool isWearMask;
+
     private void Awake() {
         audioSource = GetComponent<AudioSource>();
     }
@@ -36,7 +38,8 @@ public class EmergencyManager : MonoBehaviour
         {
             case EmergencyType.Leak:
                 uiManager.StopTimer();
-                uiManager.StartTimer(120);
+                if (isWearMask) uiManager.StartTimer(120);
+                else uiManager.StartTimer(30);
                 uiManager.HideAllWindow();
                 uiManager.ShowLeakWindow();
                 blurredVision.StartSightEffect();
@@ -81,5 +84,21 @@ public class EmergencyManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.K)){
             EmergencyStart(EmergencyType.Leak);
         }
+    }
+
+    public void SolveAccident()
+    {
+        uiManager.HideAllWindow();
+        uiManager.ShowSolveWindow();
+    }
+
+    public void WearMask()
+    {
+        isWearMask = true;
+    }
+
+    public void FadeOut()
+    {
+        blurredVision.FadeOut();
     }
 }

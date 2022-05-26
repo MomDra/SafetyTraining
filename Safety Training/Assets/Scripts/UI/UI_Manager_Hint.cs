@@ -20,6 +20,8 @@ public class UI_Manager_Hint : MonoBehaviour
     GameObject hint;
     [SerializeField]
     GameObject leak;
+    [SerializeField]
+    GameObject solve;
 
     [SerializeField]
     int time;
@@ -59,19 +61,13 @@ public class UI_Manager_Hint : MonoBehaviour
     }
     public IEnumerator CountDown(int time)
     {
-        Debug.Log("코루틴 시작: " + time);
-
         while (time >= 0)
         {
-            Debug.Log("while 시작: " + time);
-
             UPdateTimeUI(time);
             time--;
             GameManager.Instance.Time = time;
 
             yield return new WaitForSeconds(1f);
-
-            Debug.Log("while 끝: " + time);
         }
 
         GameManager.Instance.EndGame();
@@ -99,10 +95,16 @@ public class UI_Manager_Hint : MonoBehaviour
     {
         hint.SetActive(false);
         leak.SetActive(false);
+        solve.SetActive(false);
     }
 
     public void ShowLeakWindow()
     {
         leak.SetActive(true);
+    }
+
+    public void ShowSolveWindow()
+    {
+        solve.SetActive(true);
     }
 }

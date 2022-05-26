@@ -42,6 +42,11 @@ public class BlurredVision : MonoBehaviour
             StartCoroutine("Fade4");
             //Debug.Log("fade4 0.2~0");
         }
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            StartCoroutine(FadeOutCoroutine());
+        }
     }
 
     IEnumerator Fade1()
@@ -84,12 +89,32 @@ public class BlurredVision : MonoBehaviour
         }
     }
 
+    IEnumerator FadeOutCoroutine()
+    {
+        Color color = brurredEffect.material.color;
+
+        for (int i = 0; i < 1000; i++)
+        {
+            color.a += 0.001f;
+            color.r -= 0.001f;
+            color.g -= 0.001f;
+            color.b -= 0.001f;
+
+            brurredEffect.material.color = color;
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        GameManager.Instance.LoadEndScene();
+    }
+
     IEnumerator Time()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(15f);
         StartCoroutine("Fade1");
 
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(15f);
         StartCoroutine("Fade2");
     }
 
@@ -97,5 +122,11 @@ public class BlurredVision : MonoBehaviour
     {
         timeCoroutine = Time();
         StartCoroutine(timeCoroutine);
+    }
+
+    public void FadeOut()
+    {
+        StopAllCoroutines();
+        StartCoroutine("FadeOutCoroutine");
     }
 }

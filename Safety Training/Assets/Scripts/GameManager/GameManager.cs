@@ -55,7 +55,12 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
+        emergencyManager.FadeOut();
         BottleManager.ShowUI();
+    }
+
+    public void LoadEndScene()
+    {
         SceneManager.LoadScene("EndScene");
     }
 }
