@@ -17,75 +17,15 @@ public class BlurredVision : MonoBehaviour
     {
         brurredEffect = gameObject.GetComponent<Renderer>();
         effectColor.a = 0f;
+        brurredEffect.material.color = effectColor;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            
-            //Debug.Log("fade1 0~0.2");
-        }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            StartCoroutine("Fade2");
-            //Debug.Log("fade2 0.2~0.4");
-        }
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            StartCoroutine("Fade3");
-            //Debug.Log("fade3 0.4~0.2");
-        }
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            StartCoroutine("Fade4");
-            //Debug.Log("fade4 0.2~0");
-        }
-
         if (Input.GetKeyDown(KeyCode.N))
         {
             StartCoroutine(FadeOutCoroutine());
-        }
-    }
-
-    IEnumerator Fade1()
-    {
-        for (float f = 0f; f <= 0.2f; f += 0.01f)
-        {
-            effectColor.a = f;
-            brurredEffect.material.color = effectColor;
-            yield return null;
-        }
-    }
-
-    IEnumerator Fade2()
-    {
-        for (float f = 0.2f; f <= 0.4f; f += 0.01f)
-        {
-            effectColor.a = f;
-            brurredEffect.material.color = effectColor;
-            yield return null;
-        }
-    }
-
-    IEnumerator Fade3()
-    {
-        for (float f = 0.4f; f >= 0.2f; f -= 0.01f)
-        {
-            effectColor.a = f;
-            brurredEffect.material.color = effectColor;
-            yield return null;
-        }
-    }
-
-    IEnumerator Fade4()
-    {
-        for (float f = 0.2f; f >= 0; f -= 0.01f)
-        {
-            effectColor.a = f;
-            brurredEffect.material.color = effectColor;
-            yield return null;
         }
     }
 
