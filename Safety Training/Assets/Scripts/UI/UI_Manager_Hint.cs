@@ -34,8 +34,6 @@ public class UI_Manager_Hint : MonoBehaviour
     {
         coroutine = CountDown(time);
         StartCoroutine(coroutine);
-
-        Debug.Log("하이");
     }
 
     public void UpdateText1UI(bool pass){
@@ -63,12 +61,17 @@ public class UI_Manager_Hint : MonoBehaviour
     {
         Debug.Log("코루틴 시작: " + time);
 
-        while (time >= 1)
+        while (time >= 0)
         {
-            time--;
+            Debug.Log("while 시작: " + time);
+
             UPdateTimeUI(time);
+            time--;
             GameManager.Instance.Time = time;
+
             yield return new WaitForSeconds(1f);
+
+            Debug.Log("while 끝: " + time);
         }
 
         GameManager.Instance.EndGame();

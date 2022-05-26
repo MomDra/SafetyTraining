@@ -17,6 +17,12 @@ public class EmergencyManager : MonoBehaviour
     [SerializeField]
     UI_Manager_Hint uiManager;
 
+    [SerializeField]
+    BlurredVision blurredVision;
+
+    [SerializeField]
+    UI_Object leakUIObject;
+
     private void Awake() {
         audioSource = GetComponent<AudioSource>();
     }
@@ -33,6 +39,11 @@ public class EmergencyManager : MonoBehaviour
                 uiManager.StartTimer(120);
                 uiManager.HideAllWindow();
                 uiManager.ShowLeakWindow();
+                blurredVision.StartSightEffect();
+
+                //leakUIObject ¼³Á¤
+
+                GameManager.Instance.UIManager.AddUI(ref leakUIObject);
                 break;
             case EmergencyType.Fire:
 

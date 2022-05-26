@@ -58,7 +58,7 @@ public class UIManager
         }
     }
 
-    public void MakeAddedUI(){
+    private void MakeAddedUI(){
         for(int i = 0; i < addedByPlayerList.Count; i++){
             GameObject newButton = GameObject.Instantiate(resultButtonPrefab, content.transform);
 

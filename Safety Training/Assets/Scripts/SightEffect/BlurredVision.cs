@@ -10,6 +10,8 @@ public class BlurredVision : MonoBehaviour
 
     private float blurredTime = 0f;
 
+    IEnumerator timeCoroutine;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -22,7 +24,7 @@ public class BlurredVision : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.H))
         {
-            StartCoroutine("Fade1");
+            
             //Debug.Log("fade1 0~0.2");
         }
         if (Input.GetKeyDown(KeyCode.J))
@@ -82,4 +84,18 @@ public class BlurredVision : MonoBehaviour
         }
     }
 
+    IEnumerator Time()
+    {
+        yield return new WaitForSeconds(10f);
+        StartCoroutine("Fade1");
+
+        yield return new WaitForSeconds(10f);
+        StartCoroutine("Fade2");
+    }
+
+    public void StartSightEffect()
+    {
+        timeCoroutine = Time();
+        StartCoroutine(timeCoroutine);
+    }
 }

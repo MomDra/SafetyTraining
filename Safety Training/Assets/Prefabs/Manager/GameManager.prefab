@@ -45,8 +45,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afed213957ccef3438992026466d56da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 0}
-  time: 300
 --- !u!114 &5319217876363961223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +70,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  uiManager: {fileID: 0}
+  blurredVision: {fileID: 0}
+  leakUIObject: {fileID: 11400000, guid: 15b4e9826d5a62844ac0840983f25e09, type: 2}
 --- !u!82 &5319217876363961218
 AudioSource:
   m_ObjectHideFlags: 0

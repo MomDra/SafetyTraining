@@ -965,7 +965,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: CustomHandLeft
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7687371472686744100, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472685818270, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472686769164, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472685806288, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472685799862, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472686788114, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472686804556, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472685819120, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472685800684, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472685793952, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472686744794, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472685808864, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472685810900, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472686752622, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472686799294, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472686781592, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472686758898, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472685795022, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472685821560, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472686755104, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472686756574, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472685811066, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472685824932, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472686781844, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472686792364, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
+    - {fileID: 7687371472678167606, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b02cb3c7b475212408f6c84509f56731, type: 3}
 --- !u!4 &8788443038986420877 stripped
 Transform:
@@ -1035,7 +1061,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: CustomHandRight
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8511065840748320522, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749916610, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749962570, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840748303226, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749911692, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749942242, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840748325208, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749927204, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749972792, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749967798, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749961490, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840748303934, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840748330252, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749947598, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749961362, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749915116, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749935976, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840748314152, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749950286, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749927752, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749951040, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749962352, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840748320412, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749934292, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840749914990, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
+    - {fileID: 8511065840741705004, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d2b76bc3bfdba314d90d4db10f3a53c0, type: 3}
 --- !u!4 &4137231640987657417 stripped
 Transform:
