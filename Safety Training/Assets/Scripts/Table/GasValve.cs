@@ -12,7 +12,11 @@ public class GasValve : MonoBehaviour
     [SerializeField]
     float time;
 
+    [SerializeField]
+    bool isEmergency = false;
+
     IEnumerator coroutine;
+
 
     private void Awake()
     {
@@ -41,10 +45,14 @@ public class GasValve : MonoBehaviour
         {
             gasLocked = true;
 
-            if (isCoroutineStarted == true)
+            if (isCoroutineStarted == true && !isEmergency)
             {
                 isCoroutineStarted = false;
                 StopCoroutine(coroutine);
+            }
+            else
+            {
+
             }
         }
     }
@@ -54,5 +62,6 @@ public class GasValve : MonoBehaviour
         yield return new WaitForSeconds(time);
         Debug.Log("경보 시작");
         GameManager.Instance.EmergencyManager.EmergencyStart(EmergencyType.Leak);
+        isEmergency = true;
     }
 }
