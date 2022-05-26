@@ -5,7 +5,7 @@ using UnityEngine;
 public class BlurredVision : MonoBehaviour
 {
     Renderer brurredEffect;
-    Color effectColor = Color.white;
+    Color effectColor = Color.black;
     public bool blurredStart = false;
 
     private float blurredTime = 0f;
@@ -96,9 +96,6 @@ public class BlurredVision : MonoBehaviour
         for (int i = 0; i < 1000; i++)
         {
             color.a += 0.001f;
-            color.r -= 0.001f;
-            color.g -= 0.001f;
-            color.b -= 0.001f;
 
             brurredEffect.material.color = color;
             yield return null;
