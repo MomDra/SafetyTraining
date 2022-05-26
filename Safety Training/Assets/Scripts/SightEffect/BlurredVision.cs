@@ -4,34 +4,52 @@ using UnityEngine;
 
 public class BlurredVision : MonoBehaviour
 {
-    Renderer brurredEffect;
+
+    [SerializeField] Material brurredEffect;
+    [SerializeField] Material fadeOutEffect;
     Color effectColor = Color.black;
+    Renderer renderer;
+    private float value;
+    
     public bool blurredStart = false;
 
     private float blurredTime = 0f;
 
     IEnumerator timeCoroutine;
-
+    
     // Start is called before the first frame update
     private void Awake()
     {
-        brurredEffect = gameObject.GetComponent<Renderer>();
-        effectColor.a = 0f;
-        brurredEffect.material.color = effectColor;
+        renderer = GetComponent<Renderer>();
+       // brurredEffect.enabled = false;
+        //fadeOutEffect.enabled = false; 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.N))
+        if (Input.GetKeyDown(KeyCode.H))//Å×½ºÆ®
         {
-            StartCoroutine(FadeOutCoroutine());
+            renderer.material = brurredEffect;
+            StartCoroutine(BlurCoroutine());
+        }
+    }
+    IEnumerator BlurCoroutine()
+    {
+        value = 0f;
+
+        for (int i = 0; i < 1000; i++)
+        {
+            value += 0.004f/1000f;
+            
+            yield return null;
+            brurredEffect.SetFloat("_Value", value);
         }
     }
 
     IEnumerator FadeOutCoroutine()
     {
-        Color color = brurredEffect.material.color;
+        /*Color color = brurredEffect.material.color;
 
         for (int i = 0; i < 1000; i++)
         {
@@ -39,7 +57,7 @@ public class BlurredVision : MonoBehaviour
 
             brurredEffect.material.color = color;
             yield return null;
-        }
+        }*/
 
         yield return new WaitForSeconds(0.5f);
 
@@ -49,10 +67,8 @@ public class BlurredVision : MonoBehaviour
     IEnumerator Time()
     {
         yield return new WaitForSeconds(15f);
-        StartCoroutine("Fade1");
-
-        yield return new WaitForSeconds(15f);
-        StartCoroutine("Fade2");
+        renderer.material = brurredEffect;
+        StartCoroutine(BlurCoroutine());
     }
 
     public void StartSightEffect()
