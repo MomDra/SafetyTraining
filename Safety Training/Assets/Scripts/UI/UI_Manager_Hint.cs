@@ -91,6 +91,11 @@ public class UI_Manager_Hint : MonoBehaviour
         StartCoroutine(coroutine);
     }
 
+    public void AddTime(int time)
+    {
+        this.time += time;
+    }
+
     public void HideAllWindow()
     {
         hint.SetActive(false);

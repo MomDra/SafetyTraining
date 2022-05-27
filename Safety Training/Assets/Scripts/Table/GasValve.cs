@@ -38,6 +38,7 @@ public class GasValve : MonoBehaviour
             {
                 isCoroutineStarted = true;
                 StartCoroutine(coroutine);
+                GameManager.Instance.EmergencyManager.IsClosedValve = false;
             }
                 
         }
@@ -52,7 +53,7 @@ public class GasValve : MonoBehaviour
             }
             else
             {
-
+                GameManager.Instance.EmergencyManager.IsClosedValve = true;
             }
         }
     }

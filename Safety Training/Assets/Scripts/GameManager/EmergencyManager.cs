@@ -28,13 +28,40 @@ public class EmergencyManager : MonoBehaviour
     bool isWearMask;
     public bool IsWearMask { get => IsWearMask;
         set {
-            isWearMask = true;
+            isWearMask = value;
 
-            if (isEmergencyStarted)
+            if (isEmergencyStarted && isWearMask)
             {
-
+                uiManager.AddTime(90);
             }
         } 
+    }
+
+    bool isClosedValve;
+    public bool IsClosedValve { get => isClosedValve;
+        set
+        {
+            isClosedValve = value;
+            if (isEmergencyStarted && isClosedValve)
+            {
+                if (isOpenedWindow) CanSolve();
+            }
+        }
+    }
+
+    bool isOpenedWindow;
+
+    public bool IsOpenedDoor
+    {
+        get => isOpenedWindow;
+        set
+        {
+            isOpenedWindow = value;
+            if (isEmergencyStarted && isOpenedWindow)
+            {
+                if (isClosedValve) CanSolve();
+            }
+        }
     }
 
     private void Awake() {
@@ -107,6 +134,11 @@ public class EmergencyManager : MonoBehaviour
     {
         uiManager.HideAllWindow();
         uiManager.ShowSolveWindow();
+    }
+
+    void CanSolve()
+    {
+
     }
 
     public void WearMask()
