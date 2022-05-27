@@ -101,7 +101,11 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
+<<<<<<< Updated upstream
     - _Value: 0.0028800112
+=======
+    - _Value: 0.004
+>>>>>>> Stashed changes
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
