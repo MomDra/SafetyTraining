@@ -5,7 +5,7 @@ using UnityEngine;
 public class GasValve : MonoBehaviour
 {
     public bool gasLocked = true;
-    public float x;
+    public float z;
 
     bool isCoroutineStarted;
 
@@ -26,12 +26,12 @@ public class GasValve : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        x = transform.localEulerAngles.x;
-
+        z = transform.localEulerAngles.z;
         
 
-        if (x > 20f && x <= 90f)// 가스 벨브 열림
+        if (z > 120f && z <= 180f)// 가스 벨브 열림
         {
+            //Debug.Log("Valve opened : "+z);
             gasLocked = false;
 
             if (isCoroutineStarted == false)
@@ -42,8 +42,9 @@ public class GasValve : MonoBehaviour
             }
                 
         }
-        else if (x > 0f && x <= 20f) // 가스 벨브 닫힘
+        else if (z >= 90f && z <= 120f) // 가스 벨브 닫힘
         {
+            //Debug.Log("Valve closed : " + z);
             gasLocked = true;
 
             if (isCoroutineStarted == true && !isEmergency)
