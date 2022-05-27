@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class UI_Manager_Hint : MonoBehaviour
 {
     [SerializeField]
-    Text text1;
+    TextMeshProUGUI text1;
     [SerializeField]
-    Text text2;
+    TextMeshProUGUI text2;
     [SerializeField]
-    Text ox1;
+    TextMeshProUGUI ox1;
     [SerializeField]
-    Text ox2;
+    TextMeshProUGUI ox2;
     [SerializeField]
-    Text timeText;
+    TextMeshProUGUI timeText;
 
     [SerializeField]
     GameObject hint;
