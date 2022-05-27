@@ -108,16 +108,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2994108491100107144, guid: 9d105707ab0b8f0448e5e1e5b8f7f65b, type: 3}
+      propertyPath: m_UseLimits
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2994108491100107144, guid: 9d105707ab0b8f0448e5e1e5b8f7f65b, type: 3}
+      propertyPath: m_Limits.max
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2994108491100107144, guid: 9d105707ab0b8f0448e5e1e5b8f7f65b, type: 3}
+      propertyPath: m_Limits.min
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2994108491100107144, guid: 9d105707ab0b8f0448e5e1e5b8f7f65b, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 4.923
+      value: 4.7322
       objectReference: {fileID: 0}
     - target: {fileID: 2994108491100107144, guid: 9d105707ab0b8f0448e5e1e5b8f7f65b, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.8330001
+      value: 0.973
       objectReference: {fileID: 0}
     - target: {fileID: 2994108491100107144, guid: 9d105707ab0b8f0448e5e1e5b8f7f65b, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -1.2162004
+      value: -8.918
       objectReference: {fileID: 0}
     - target: {fileID: 6462039016480314444, guid: 9d105707ab0b8f0448e5e1e5b8f7f65b, type: 3}
       propertyPath: outLineObject
