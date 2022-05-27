@@ -24,6 +24,8 @@ public class EmergencyManager : MonoBehaviour
     UI_Object leakUIObject;
 
     bool isEmergencyStarted;
+    public bool IsEmergencyStarted { get => isEmergencyStarted; }
+
 
     bool isWearMask;
     public bool IsWearMask { get => IsWearMask;
@@ -51,7 +53,7 @@ public class EmergencyManager : MonoBehaviour
 
     bool isOpenedWindow;
 
-    public bool IsOpenedDoor
+    public bool IsOpenedWindow
     {
         get => isOpenedWindow;
         set
@@ -85,6 +87,8 @@ public class EmergencyManager : MonoBehaviour
 
     public void EmergencyStart(EmergencyType type)
     {
+        if (isEmergencyStarted) return;
+
         isEmergencyStarted = true;
 
         audioSource.Play();

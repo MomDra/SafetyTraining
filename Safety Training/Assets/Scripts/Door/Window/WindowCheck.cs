@@ -7,6 +7,8 @@ public class WindowCheck : MonoBehaviour
     public bool windowOpend = false;
     public float y;
 
+    bool isTrigger;
+
     //private float timer = 0f;
 
     // Update is called once per frame
@@ -17,13 +19,28 @@ public class WindowCheck : MonoBehaviour
         {
             y -= 360;
         }
-        if (y < -20)// Ã¢¹® ¿­¸²
-        {
-            windowOpend = true;
-        }
-        else if (y < 0 && y >= -20) // Ã¢¹® ´ÝÈû
-        {
+
+         if (y < 0 && y >= -20) // Ã¢¹® ´ÝÈû
+         {
             windowOpend = false;
-        }
+
+            if (!isTrigger)
+            {
+                isTrigger = true;
+                GameManager.Instance.EmergencyManager.IsOpenedWindow = false;
+            }
+            
+         }
+         else if (y < -20)// Ã¢¹® ¿­¸²
+         {
+            windowOpend = true;
+
+            if (isTrigger)
+            {
+                isTrigger = false;
+                GameManager.Instance.EmergencyManager.IsOpenedWindow = true;
+            }
+         }
+        
     }
 }

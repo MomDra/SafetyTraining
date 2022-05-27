@@ -15,6 +15,8 @@ public class GasValve : MonoBehaviour
     [SerializeField]
     bool isEmergency = false;
 
+    bool isTrigger;
+
     IEnumerator coroutine;
 
 
@@ -38,6 +40,11 @@ public class GasValve : MonoBehaviour
             {
                 isCoroutineStarted = true;
                 StartCoroutine(coroutine);
+            }
+
+            if (!isTrigger)
+            {
+                isTrigger = true;
                 GameManager.Instance.EmergencyManager.IsClosedValve = false;
             }
                 
@@ -52,8 +59,10 @@ public class GasValve : MonoBehaviour
                 isCoroutineStarted = false;
                 StopCoroutine(coroutine);
             }
-            else
+
+            if (isTrigger)
             {
+                isTrigger = false;
                 GameManager.Instance.EmergencyManager.IsClosedValve = true;
             }
         }
