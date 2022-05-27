@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public TaskManager TaskManager {get => taskManager;}
 
     EmergencyManager emergencyManager;
-    public EmergencyManager EmergencyManager {get => emergencyManager;}
+    public EmergencyManager EmergencyManager { get => emergencyManager; set => emergencyManager = value; }
 
     UIManager uiManager = new UIManager();
     public UIManager UIManager {get => uiManager;}
@@ -33,11 +33,11 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             Debug.LogError("You Make 2 GameManagers");
         }
-
-        singleTon = this;
-        DontDestroyOnLoad(gameObject);
-
-        emergencyManager = GetComponent<EmergencyManager>();
+        else
+        {
+            singleTon = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     private void Update()

@@ -34,7 +34,7 @@ public class UI_Manager_Hint : MonoBehaviour
 
     private void Start()
     {
-        coroutine = CountDown(time);
+        coroutine = CountDown();
         StartCoroutine(coroutine);
     }
 
@@ -59,7 +59,7 @@ public class UI_Manager_Hint : MonoBehaviour
             ox2.color = Color.red;
         }
     }
-    public IEnumerator CountDown(int time)
+    public IEnumerator CountDown()
     {
         while (time >= 0)
         {
@@ -87,7 +87,7 @@ public class UI_Manager_Hint : MonoBehaviour
     public void StartTimer(int time)
     {
         this.time = time;
-        coroutine = CountDown(time);
+        coroutine = CountDown();
         StartCoroutine(coroutine);
     }
 

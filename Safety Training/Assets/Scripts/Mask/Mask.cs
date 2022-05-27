@@ -14,6 +14,9 @@ public class Mask : MonoBehaviour
             Debug.Log("¹æµ¶¸é ¾¸");
 
             isWearMask = true;
+
+            GameManager.Instance.EmergencyManager.IsWearMask = true;
+
             Destroy(other.gameObject);
         }
     }

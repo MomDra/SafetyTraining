@@ -23,16 +23,33 @@ public class EmergencyManager : MonoBehaviour
     [SerializeField]
     UI_Object leakUIObject;
 
+    bool isEmergencyStarted;
+
     bool isWearMask;
+    public bool IsWearMask { get => IsWearMask;
+        set {
+            isWearMask = true;
+
+            if (isEmergencyStarted)
+            {
+
+            }
+        } 
+    }
 
     private void Awake() {
+        GameManager.Instance.EmergencyManager = this;
+
         audioSource = GetComponent<AudioSource>();
     }
 
     public void EmergencyStart(EmergencyType type)
     {
-        StartCoroutine(ColorCoroutine());
+        isEmergencyStarted = true;
+
         audioSource.Play();
+        StartCoroutine(ColorCoroutine());
+        
 
         switch (type)
         {
