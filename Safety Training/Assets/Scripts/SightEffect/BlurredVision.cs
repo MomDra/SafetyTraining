@@ -47,23 +47,6 @@ public class BlurredVision : MonoBehaviour
         }
     }
 
-    IEnumerator FadeOutCoroutine()
-    {
-        /*Color color = brurredEffect.material.color;
-
-        for (int i = 0; i < 1000; i++)
-        {
-            color.a += 0.001f;
-
-            brurredEffect.material.color = color;
-            yield return null;
-        }*/
-
-        yield return new WaitForSeconds(0.5f);
-
-        GameManager.Instance.LoadEndScene();
-    }
-
     IEnumerator Time()
     {
         yield return new WaitForSeconds(15f);
@@ -75,11 +58,5 @@ public class BlurredVision : MonoBehaviour
     {
         timeCoroutine = Time();
         StartCoroutine(timeCoroutine);
-    }
-
-    public void FadeOut()
-    {
-        StopAllCoroutines();
-        StartCoroutine("FadeOutCoroutine");
     }
 }

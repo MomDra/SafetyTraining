@@ -21,7 +21,7 @@ public class OVRScreenFade : MonoBehaviour
 	public static OVRScreenFade instance { get; private set; }
 
 	[Tooltip("Fade duration")]
-	public float fadeTime = 2.0f;
+	public float fadeTime = 4f;
 
 	[Tooltip("Screen color at maximum fade")]
 	public Color fadeColor = new Color(0.01f, 0.01f, 0.01f, 1.0f);

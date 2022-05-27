@@ -42,9 +42,9 @@ public class EmergencyManager : MonoBehaviour
         set
         {
             isClosedValve = value;
-            if (isEmergencyStarted && isClosedValve)
+            if (isEmergencyStarted && isClosedValve && isOpenedWindow)
             {
-                if (isOpenedWindow) CanSolve();
+                SolveAccident();
             }
         }
     }
@@ -57,9 +57,9 @@ public class EmergencyManager : MonoBehaviour
         set
         {
             isOpenedWindow = value;
-            if (isEmergencyStarted && isOpenedWindow)
+            if (isEmergencyStarted && isOpenedWindow && isClosedValve)
             {
-                if (isClosedValve) CanSolve();
+                SolveAccident();
             }
         }
     }
@@ -68,6 +68,19 @@ public class EmergencyManager : MonoBehaviour
         GameManager.Instance.EmergencyManager = this;
 
         audioSource = GetComponent<AudioSource>();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            EmergencyStart(EmergencyType.Leak);
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            SolveAccident();
+        }
     }
 
     public void EmergencyStart(EmergencyType type)
@@ -89,6 +102,7 @@ public class EmergencyManager : MonoBehaviour
                 blurredVision.StartSightEffect();
 
                 //leakUIObject 설정
+                leakUIObject.OX = "X";
 
                 GameManager.Instance.UIManager.AddUI(ref leakUIObject);
                 break;
@@ -124,30 +138,29 @@ public class EmergencyManager : MonoBehaviour
         
     }
 
-    private void Update() {
-        if(Input.GetKeyDown(KeyCode.K)){
-            EmergencyStart(EmergencyType.Leak);
-        }
-    }
-
     public void SolveAccident()
     {
+        leakUIObject.OX = "O";
+
+        // 타이머 멈추기
+        uiManager.StopTimer();
+        
+        // ui 변경
         uiManager.HideAllWindow();
         uiManager.ShowSolveWindow();
+
+        // 일정 시간 후 Fadout Scene변경
+        StartCoroutine(EndGameCoroutine());
     }
 
-    void CanSolve()
+    IEnumerator EndGameCoroutine()
     {
-
+        yield return new WaitForSeconds(4f);
+        GameManager.Instance.EndGame();
     }
 
     public void WearMask()
     {
         isWearMask = true;
-    }
-
-    public void FadeOut()
-    {
-        blurredVision.FadeOut();
     }
 }

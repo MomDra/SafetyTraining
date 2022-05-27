@@ -55,8 +55,10 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        emergencyManager.FadeOut();
+        OVRScreenFade.instance.FadeOut();
         BottleManager.ShowUI();
+
+        Invoke("LoadEndScene", 4f);
     }
 
     public void LoadEndScene()
