@@ -35,6 +35,7 @@ public class EmergencyManager : MonoBehaviour
             if (isEmergencyStarted && isWearMask)
             {
                 uiManager.AddTime(90);
+                StopCoroutine(sightCoroutine);
             }
         } 
     }
@@ -66,10 +67,14 @@ public class EmergencyManager : MonoBehaviour
         }
     }
 
+    IEnumerator sightCoroutine;
+
     private void Awake() {
         GameManager.Instance.EmergencyManager = this;
 
         audioSource = GetComponent<AudioSource>();
+
+        sightCoroutine = SightEffectCoroutine();
     }
 
     private void Update()
@@ -103,7 +108,8 @@ public class EmergencyManager : MonoBehaviour
                 else uiManager.StartTimer(30);
                 uiManager.HideAllWindow();
                 uiManager.ShowLeakWindow();
-                blurredVision.StartSightEffect();
+                if (!isWearMask)
+                    StartCoroutine(sightCoroutine);
 
                 //leakUIObject ¼³Á¤
                 leakUIObject.OX = "X";
@@ -140,6 +146,12 @@ public class EmergencyManager : MonoBehaviour
             if(n >= 11) break;
         }
         
+    }
+
+    IEnumerator SightEffectCoroutine()
+    {
+        yield return new WaitForSeconds(15f);
+        blurredVision.StartSightEffect();
     }
 
     public void SolveAccident()

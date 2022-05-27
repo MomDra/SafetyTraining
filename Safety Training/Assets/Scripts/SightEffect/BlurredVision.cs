@@ -6,23 +6,15 @@ public class BlurredVision : MonoBehaviour
 {
 
     [SerializeField] Material brurredEffect;
-    [SerializeField] Material fadeOutEffect;
-    Color effectColor = Color.black;
     Renderer meshRenderer;
     private float value;
     
     public bool blurredStart = false;
 
-    private float blurredTime = 0f;
-
-    IEnumerator timeCoroutine;
-    
     // Start is called before the first frame update
     private void Awake()
     {
         meshRenderer = GetComponent<Renderer>();
-       // brurredEffect.enabled = false;
-        //fadeOutEffect.enabled = false; 
     }
 
     // Update is called once per frame
@@ -47,16 +39,17 @@ public class BlurredVision : MonoBehaviour
         }
     }
 
+    /*
     IEnumerator Time()
     {
         yield return new WaitForSeconds(15f);
         meshRenderer.material = brurredEffect;
         StartCoroutine(BlurCoroutine());
-    }
+    }*/
 
     public void StartSightEffect()
     {
-        timeCoroutine = Time();
-        StartCoroutine(timeCoroutine);
+        meshRenderer.material = brurredEffect;
+        StartCoroutine(BlurCoroutine());
     }
 }
