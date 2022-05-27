@@ -13,9 +13,11 @@ public class WindowCheck : MonoBehaviour
     void Update()
     {
         y = transform.localEulerAngles.y;
+        Debug.Log("y : " + y);
         if(y > 0)
         {
             y -= 360;
+            Debug.Log("-y : " + y);
         }
         if (y < -20)// 창문 열림
         {
