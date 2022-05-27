@@ -8,7 +8,7 @@ public class BlurredVision : MonoBehaviour
     [SerializeField] Material brurredEffect;
     [SerializeField] Material fadeOutEffect;
     Color effectColor = Color.black;
-    Renderer renderer;
+    Renderer meshRenderer;
     private float value;
     
     public bool blurredStart = false;
@@ -20,7 +20,7 @@ public class BlurredVision : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        renderer = GetComponent<Renderer>();
+        meshRenderer = GetComponent<Renderer>();
        // brurredEffect.enabled = false;
         //fadeOutEffect.enabled = false; 
     }
@@ -30,7 +30,7 @@ public class BlurredVision : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.H))//Å×½ºÆ®
         {
-            renderer.material = brurredEffect;
+            meshRenderer.material = brurredEffect;
             StartCoroutine(BlurCoroutine());
         }
     }
@@ -67,7 +67,7 @@ public class BlurredVision : MonoBehaviour
     IEnumerator Time()
     {
         yield return new WaitForSeconds(15f);
-        renderer.material = brurredEffect;
+        meshRenderer.material = brurredEffect;
         StartCoroutine(BlurCoroutine());
     }
 

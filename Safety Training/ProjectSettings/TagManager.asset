@@ -13,6 +13,7 @@ TagManager:
   - FlammabilityBase
   - FlammabilityAcid
   - CheckParticle
+  - Mask
   layers:
   - Default
   - TransparentFX
