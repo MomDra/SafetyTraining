@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIManager
 {
@@ -14,13 +15,13 @@ public class UIManager
     List<UI_Object> addedByPlayerList = new List<UI_Object>();
 
     Image reasonImg;
-    Text reasonText;
+    TextMeshProUGUI reasonText;
     Image accidentImg;
-    Text accidentDescription;
-    Text accidentScale;
-    Text accidentConutermeasure;
+    TextMeshProUGUI accidentDescription;
+    TextMeshProUGUI accidentScale;
+    TextMeshProUGUI accidentConutermeasure;
 
-    public void Init(GameObject content, GameObject resultButtonPrefab, Image reasonImg, Text reasonText, Image accidentImg, Text accidentDescription, Text accidentScale, Text accidentConutermeasure){
+    public void Init(GameObject content, GameObject resultButtonPrefab, Image reasonImg, TextMeshProUGUI reasonText, Image accidentImg, TextMeshProUGUI accidentDescription, TextMeshProUGUI accidentScale, TextMeshProUGUI accidentConutermeasure){
         this.content = content;
         this.resultButtonPrefab = resultButtonPrefab;
         this.reasonImg = reasonImg;
@@ -40,7 +41,7 @@ public class UIManager
         for(int i = 0; i < tasks.Count; i++){
             GameObject newButton = GameObject.Instantiate(resultButtonPrefab, content.transform);
 
-            Text[] texts = newButton.GetComponentsInChildren<Text>();
+            TextMeshProUGUI[] texts = newButton.GetComponentsInChildren<TextMeshProUGUI>();
             
             texts[0].text = tasks[i].UI_INFO.EducationType;
             texts[1].text = tasks[i].UI_INFO.EducationName;
@@ -62,7 +63,7 @@ public class UIManager
         for(int i = 0; i < addedByPlayerList.Count; i++){
             GameObject newButton = GameObject.Instantiate(resultButtonPrefab, content.transform);
 
-            Text[] texts = newButton.GetComponentsInChildren<Text>();
+            TextMeshProUGUI[] texts = newButton.GetComponentsInChildren<TextMeshProUGUI>();
             
             texts[0].text = addedByPlayerList[i].EducationType;
             texts[1].text = addedByPlayerList[i].EducationName;

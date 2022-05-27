@@ -1415,11 +1415,11 @@ MonoBehaviour:
   content: {fileID: 1504837938}
   ResultButtonPrefab: {fileID: 8556188550786124062, guid: bd81ed669022c8f40a29f5518c665ad5, type: 3}
   reasonImg: {fileID: 1303048378}
-  reasonText: {fileID: 0}
+  reasonText: {fileID: 552049135}
   accidentImg: {fileID: 179454667}
-  accidentDescription: {fileID: 0}
-  accidentScale: {fileID: 0}
-  accidentCountermeasure: {fileID: 0}
+  accidentDescription: {fileID: 784818888}
+  accidentScale: {fileID: 257836483}
+  accidentCountermeasure: {fileID: 355961627}
 --- !u!1001 &412671727
 PrefabInstance:
   m_ObjectHideFlags: 0

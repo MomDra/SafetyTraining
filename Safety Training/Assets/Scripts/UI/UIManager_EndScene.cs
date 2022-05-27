@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIManager_EndScene : MonoBehaviour
 {
@@ -11,11 +12,11 @@ public class UIManager_EndScene : MonoBehaviour
     [SerializeField] GameObject content;
     [SerializeField] GameObject ResultButtonPrefab;
     [SerializeField] Image reasonImg;
-    [SerializeField] Text reasonText;
+    [SerializeField] TextMeshProUGUI reasonText;
     [SerializeField] Image accidentImg;
-    [SerializeField] Text accidentDescription;
-    [SerializeField] Text accidentScale;
-    [SerializeField] Text accidentCountermeasure;
+    [SerializeField] TextMeshProUGUI accidentDescription;
+    [SerializeField] TextMeshProUGUI accidentScale;
+    [SerializeField] TextMeshProUGUI accidentCountermeasure;
 
     private void Awake() {
         GameManager.Instance.UIManager.Init(content, ResultButtonPrefab, reasonImg, reasonText, accidentImg, accidentDescription, accidentScale, accidentCountermeasure);

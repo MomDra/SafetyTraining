@@ -239,7 +239,7 @@ FixedJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6462039017252787397}
-  m_ConnectedBody: {fileID: 0}
+  m_ConnectedBody: {fileID: 7668420037777129644}
   m_ConnectedArticulationBody: {fileID: 0}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -373,7 +373,7 @@ HingeJoint:
   m_Anchor: {x: -0.72, y: 1.0000002, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 4.903, y: 0.8330001, z: -1.2162004}
+  m_ConnectedAnchor: {x: -0.0648, y: -0.019999968, z: 0.000038765098}
   m_UseSpring: 0
   m_Spring:
     spring: 0

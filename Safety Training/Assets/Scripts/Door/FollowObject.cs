@@ -20,8 +20,10 @@ public class FollowObject : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(canFollow)
+        if (canFollow)
+        {
             rb.MovePosition(rbTarget.position);
+        }
         else{
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
