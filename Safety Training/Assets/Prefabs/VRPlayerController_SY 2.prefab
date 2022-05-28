@@ -901,8 +901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f8433babb957542a1e099e427b58f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brurredEffect: {fileID: 2100000, guid: df82bd44de488654f9d6b82c2bbeea67, type: 2}
-  fadeOutEffect: {fileID: 2100000, guid: 077ce31c224691242a31a5f185fa5bd4, type: 2}
+  brurredEffect: {fileID: 2100000, guid: 5439eca7da9560549b9b4785b0395fc1, type: 2}
   blurredStart: 0
 --- !u!1001 &1394380848805653795
 PrefabInstance:
