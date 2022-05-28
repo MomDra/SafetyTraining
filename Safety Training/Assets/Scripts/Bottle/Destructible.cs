@@ -14,7 +14,7 @@ public class Destructible : MonoBehaviour
     //[SerializeField]
     //private AudioClip DestructionClip;
     [SerializeField]
-    private float ExplosiveForce = 100;
+    private float ExplosiveForce = 50;
     [SerializeField]
     private float ExplosiveRadius = 2;
     [SerializeField]
@@ -55,7 +55,7 @@ public class Destructible : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         //Debug.Log(_velocity);
-        if (_velocity > DestroyingVelocity && !transform.GetComponent<PutCorrectionGrabable>().isGrabbed)
+        if (!collision.gameObject.CompareTag("Bottle") && !transform.GetComponent<PutCorrectionGrabable>().isGrabbed && _velocity > DestroyingVelocity)
         {
             Debug.Log("des 충돌 : "+ collision.gameObject.name);
             GameManager.Instance.BottleManager.destructionPassCheck = false;

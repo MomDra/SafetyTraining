@@ -5137,7 +5137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BrokenPrefab: {fileID: 3781747796224469599, guid: c1eba1c7f14d2154e9a6d04f9f20fe25, type: 3}
-  ExplosiveForce: 100
+  ExplosiveForce: 50
   ExplosiveRadius: 3
   PieceFadeSpeed: 0.25
   PieceDestroyDelay: 5

@@ -76,7 +76,7 @@ public class ParticleCollision : MonoBehaviour
         }
         else if(spillPass)
         {
-            if(other.layer != LayerMask.NameToLayer("Bottle"))
+            if(other.layer != LayerMask.NameToLayer("Default"))
             {
                 spillParticleCnt++;
             }

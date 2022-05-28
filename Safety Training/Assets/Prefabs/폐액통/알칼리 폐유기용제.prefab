@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 2570308507582820032}
   - component: {fileID: 7013779547881755851}
   - component: {fileID: 7727952586204288295}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: TankLid
   m_TagString: Lid
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 2055808606290118174}
   - component: {fileID: 4064912650002414525}
   - component: {fileID: 1431099062908719248}
-  m_Layer: 16
+  m_Layer: 0
   m_Name: "\uC54C\uCE7C\uB9AC \uD3D0\uC720\uAE30\uC6A9\uC81C"
   m_TagString: OrganicBase
   m_Icon: {fileID: 0}
