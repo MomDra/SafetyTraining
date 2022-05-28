@@ -56,7 +56,7 @@ public class ParticleCollision : MonoBehaviour
             else if(!ExpirationDate && !wasteFluidPass)
             {
                 particleCnt++;
-                Debug.Log("particleCnt: " + particleCnt);
+                //Debug.Log("particleCnt: " + particleCnt);
 
                 if (particleCnt > 300)
                 {

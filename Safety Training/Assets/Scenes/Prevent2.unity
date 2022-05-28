@@ -6348,67 +6348,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32674c0ad82641247b0658f7e02b4bf2, type: 3}
---- !u!1001 &1145711533
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5359772072154930659, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: -13.545
-      objectReference: {fileID: 0}
-    - target: {fileID: 5360834474115259361, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_Name
-      value: FlammabilityFridge2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364030441762508153, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364030441762508153, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 14.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364030441762508153, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.1000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364030441762508153, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -13.265
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364030441762508153, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364030441762508153, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364030441762508153, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364030441762508153, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364030441762508153, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364030441762508153, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5364030441762508153, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
 --- !u!1 &1179761712
 GameObject:
   m_ObjectHideFlags: 0
@@ -11854,6 +11793,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5206976096407788121, guid: 20ae7a2488d073f4db654a86ece1257c, type: 3}
   m_PrefabInstance: {fileID: 7534135352848782121}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7701662019151806876
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2343083744982577616, guid: 4905ac239b4b21f4dbdb543b3d21763a, type: 3}
+      propertyPath: m_Name
+      value: FlammabilityAcidFridge
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346676161184114504, guid: 4905ac239b4b21f4dbdb543b3d21763a, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346676161184114504, guid: 4905ac239b4b21f4dbdb543b3d21763a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346676161184114504, guid: 4905ac239b4b21f4dbdb543b3d21763a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346676161184114504, guid: 4905ac239b4b21f4dbdb543b3d21763a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.265
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346676161184114504, guid: 4905ac239b4b21f4dbdb543b3d21763a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346676161184114504, guid: 4905ac239b4b21f4dbdb543b3d21763a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346676161184114504, guid: 4905ac239b4b21f4dbdb543b3d21763a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346676161184114504, guid: 4905ac239b4b21f4dbdb543b3d21763a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346676161184114504, guid: 4905ac239b4b21f4dbdb543b3d21763a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346676161184114504, guid: 4905ac239b4b21f4dbdb543b3d21763a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346676161184114504, guid: 4905ac239b4b21f4dbdb543b3d21763a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4905ac239b4b21f4dbdb543b3d21763a, type: 3}
 --- !u!1001 &7721673376610949564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11861,25 +11857,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2765733573124028256, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_Name
-      value: FlammabilityBase3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765733573214579731, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_Name
-      value: FlammabilityBase1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765733573869049084, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_Name
-      value: FlammabilityBase2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2765733574077643838, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
-      propertyPath: m_Name
-      value: FlammabilityBase
-      objectReference: {fileID: 0}
     - target: {fileID: 5360834474115259361, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
       propertyPath: m_Name
-      value: FlammabilityFridge
+      value: FlammabilityBaseFridge
       objectReference: {fileID: 0}
     - target: {fileID: 5364030441762508153, guid: 772ecd18c9fea8d49acade6b322fe469, type: 3}
       propertyPath: m_RootOrder
