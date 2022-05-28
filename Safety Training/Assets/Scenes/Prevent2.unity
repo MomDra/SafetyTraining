@@ -1188,6 +1188,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3834873519684182463, guid: d60275df280f3f449bae8ea955a2da54, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 13.904916
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834873519849406158, guid: d60275df280f3f449bae8ea955a2da54, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 13.904917
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d60275df280f3f449bae8ea955a2da54, type: 3}
 --- !u!1 &170556167
@@ -5283,65 +5291,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-      propertyPath: uiManager
-      value: 
-      objectReference: {fileID: 49191613}
-    - target: {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-      propertyPath: blurredVision
-      value: 
-      objectReference: {fileID: 1955604564}
-    - target: {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-      propertyPath: lights.Array.data[0]
-      value: 
-      objectReference: {fileID: 32000382}
-    - target: {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-      propertyPath: lights.Array.data[1]
-      value: 
-      objectReference: {fileID: 1054262494}
-    - target: {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-      propertyPath: lights.Array.data[2]
-      value: 
-      objectReference: {fileID: 2101510500}
-    - target: {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-      propertyPath: lights.Array.data[3]
-      value: 
-      objectReference: {fileID: 40554469}
-    - target: {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-      propertyPath: lights.Array.data[4]
-      value: 
-      objectReference: {fileID: 1378432632}
-    - target: {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-      propertyPath: lights.Array.data[5]
-      value: 
-      objectReference: {fileID: 953496224}
-    - target: {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-      propertyPath: lights.Array.data[6]
-      value: 
-      objectReference: {fileID: 158433717}
-    - target: {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-      propertyPath: lights.Array.data[7]
-      value: 
-      objectReference: {fileID: 539538020}
-    - target: {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-      propertyPath: lights.Array.data[8]
-      value: 
-      objectReference: {fileID: 104692597}
-    - target: {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-      propertyPath: lights.Array.data[9]
-      value: 
-      objectReference: {fileID: 1288757635}
-    - target: {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-      propertyPath: lights.Array.data[10]
-      value: 
-      objectReference: {fileID: 1874964779}
-    - target: {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-      propertyPath: lights.Array.data[11]
-      value: 
-      objectReference: {fileID: 969705262}
-    m_RemovedComponents:
-    - {fileID: 5319217876363961223, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
-    - {fileID: 5319217876363961218, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fdac2f793615794c89b87f827cb3034, type: 3}
 --- !u!108 &953496224 stripped
 Light:
@@ -7658,6 +7608,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8830368098706953586, guid: c6deaf50b9a8d2643a4188aae17319b3, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 4.7322
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830368098706953586, guid: c6deaf50b9a8d2643a4188aae17319b3, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 0.973
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830368098706953586, guid: c6deaf50b9a8d2643a4188aae17319b3, type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -8.918
+      objectReference: {fileID: 0}
     - target: {fileID: 8901839727771148222, guid: c6deaf50b9a8d2643a4188aae17319b3, type: 3}
       propertyPath: m_Name
       value: Propane_Tank_Medium (2)
