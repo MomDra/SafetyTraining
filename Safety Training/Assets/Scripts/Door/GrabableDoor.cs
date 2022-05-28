@@ -27,9 +27,9 @@ public class GrabableDoor : OVRGrabbable
         rbHandler.velocity = Vector3.zero;
         rbHandler.angularVelocity = Vector3.zero;
 
-        if (outLineObject.GetComponent<Outline>() != null)
+        if (outLineObject.GetComponent<OutlineOnly>() != null)
         {
-            Destroy(outLineObject.GetComponent<Outline>());
+            Destroy(outLineObject.GetComponent<OutlineOnly>());
         }
     }
 
@@ -43,11 +43,11 @@ public class GrabableDoor : OVRGrabbable
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("HandLeft") || other.gameObject.layer == LayerMask.NameToLayer("HandRight"))
         {
-            if(outLineObject.GetComponent<Outline>() == null)
+            if(outLineObject.GetComponent<OutlineOnly>() == null)
             {
-                Outline outline = outLineObject.AddComponent<Outline>();
+                OutlineOnly outline = outLineObject.AddComponent<OutlineOnly>();
                 outline.OutlineColor = Color.green;
-                outline.OutlineMode = Outline.Mode.OutlineAll;
+                outline.OutlineMode = OutlineOnly.Mode.OutlineAll;
             }
         }
     }
@@ -56,9 +56,9 @@ public class GrabableDoor : OVRGrabbable
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("HandLeft") || other.gameObject.layer == LayerMask.NameToLayer("HandRight"))
         {
-            if (outLineObject.GetComponent<Outline>() != null)
+            if (outLineObject.GetComponent<OutlineOnly>() != null)
             {
-                Destroy(outLineObject.GetComponent<Outline>());
+                Destroy(outLineObject.GetComponent<OutlineOnly>());
             }
         }
     }

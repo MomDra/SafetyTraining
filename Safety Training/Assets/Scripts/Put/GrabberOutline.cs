@@ -13,11 +13,11 @@ public class GrabberOutline : OVRGrabber
         OVRInput.SetControllerVibration(1, 0.2f, m_controller);
         Invoke("EndVibration", 0.2f);
 
-        if (grabbable.GetComponent<Outline>() == null)
+        if (grabbable.GetComponent<OutlineOnly>() == null)
         {
-            Outline outline = grabbable.gameObject.AddComponent<Outline>();
+            OutlineOnly outline = grabbable.gameObject.AddComponent<OutlineOnly>();
             outline.OutlineColor = Color.green;
-            outline.OutlineMode = Outline.Mode.OutlineAll;
+            outline.OutlineMode = OutlineOnly.Mode.OutlineAll;
         }
     }
 
@@ -28,9 +28,9 @@ public class GrabberOutline : OVRGrabber
         base.OnTriggerExit(other);
 
 
-        if (grabbable.GetComponent<Outline>() != null)
+        if (grabbable.GetComponent<OutlineOnly>() != null)
         {
-            Destroy(grabbable.GetComponent<Outline>());
+            Destroy(grabbable.GetComponent<OutlineOnly>());
         }
     }
 

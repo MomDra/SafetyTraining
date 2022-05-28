@@ -33,7 +33,7 @@ public class PutCorrectionGrabable : OVRGrabbable
             Destroy(GetComponent<Outline>());
         }*/
 
-        grabEndEvent.Invoke();
+        //grabEndEvent.Invoke();
     }
 
     public override void GrabBegin(OVRGrabber hand, Collider grabPoint)
@@ -45,7 +45,7 @@ public class PutCorrectionGrabable : OVRGrabbable
             Destroy(GetComponent<Outline>());
         }
 
-        grabBeginEvent.Invoke();
+        //grabBeginEvent.Invoke();
         // if (GetComponent<Outline>() == null)
         // {
         //     gameObject.AddComponent<Outline>();
