@@ -70,6 +70,7 @@ public class FridgeRecogSol : MonoBehaviour
                 
                 if(tmp != correctPosPass){
                     GameManager.Instance.BottleManager.PositionAllCheck();
+                    Debug.Log("PositionAllCheck  : " + correctPosPass);
                 }
             }
             else

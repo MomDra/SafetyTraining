@@ -55,7 +55,7 @@ public class Destructible : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         //Debug.Log(_velocity);
-        if (!collision.gameObject.CompareTag("Bottle") && !transform.GetComponent<PutCorrectionGrabable>().isGrabbed && _velocity > DestroyingVelocity)
+        if (collision.gameObject.layer != LayerMask.NameToLayer("Bottle") && !transform.GetComponent<PutCorrectionGrabable>().isGrabbed && _velocity > DestroyingVelocity)
         {
             Debug.Log("des 충돌 : "+ collision.gameObject.name);
             GameManager.Instance.BottleManager.destructionPassCheck = false;
