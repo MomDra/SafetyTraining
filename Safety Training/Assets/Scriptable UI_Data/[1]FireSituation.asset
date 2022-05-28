@@ -15,9 +15,9 @@ MonoBehaviour:
   educationType: "\uC548\uC804\uC0AC\uACE0"
   educationName: "\uD654\uC7AC\uC0AC\uACE0"
   ox: O
-  reasonImg: {fileID: 0}
+  reasonImg: {fileID: 21300000, guid: 46a265702aab03c4ba59beafb4f01a0f, type: 3}
   reasonText: 
-  accidentImg: {fileID: 0}
+  accidentImg: {fileID: 21300000, guid: bc51166e5c1cdfa40aa61e270049c573, type: 3}
   accidentDescription: 
   accidentScale: 
   accidentConutermeasure: 
