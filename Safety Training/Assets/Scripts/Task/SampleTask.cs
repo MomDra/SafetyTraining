@@ -5,14 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SampleTask : Task
 {
-    protected override void Awake() {
-        base.Awake();
-    }
-
     private void Update() {
-        if(Input.GetKeyDown(KeyCode.A)){
-            Solve();
-        }
+        
 
         if(Input.GetKeyDown(KeyCode.B)){
             SceneManager.LoadScene("EndScene");

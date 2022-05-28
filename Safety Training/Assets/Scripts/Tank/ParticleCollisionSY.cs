@@ -20,14 +20,8 @@ public class ParticleCollisionSY : MonoBehaviour
     {
         if (!ExpirationDate)
         {
-            bool tmp1 = wasteFluidPass;
             wasteFluidPass = false;
-
-            if (tmp1 != wasteFluidPass)
-            {
-                GameManager.Instance.BottleManager.WasteFluidPassCheck();
-                Debug.Log("WasteFluidPassCheck  : " + wasteFluidPass);
-            }
+            GameManager.Instance.BottleManager.WasteFluidPassCheck();
         }
     }
 
@@ -44,14 +38,8 @@ public class ParticleCollisionSY : MonoBehaviour
             //Debug.Log("+++++++ name : " + other.name + " tag : " + other.tag);
             if (!other.transform.parent.CompareTag(transform.tag))
             {
-                bool tmp1 = wrongWasteFluidPass;
                 wrongWasteFluidPass = false;
-
-                if (tmp1 != wrongWasteFluidPass)
-                {
-                    GameManager.Instance.BottleManager.WrongWasteFluidPassCheck();
-                    Debug.Log("WrongWasteFluidPassCheck  : " + wrongWasteFluidPass);
-                }
+                GameManager.Instance.BottleManager.WrongWasteFluidPassCheck = false;
             }
             else if(!ExpirationDate && !wasteFluidPass)
             {
@@ -60,15 +48,9 @@ public class ParticleCollisionSY : MonoBehaviour
 
                 if (particleCnt > 300)
                 {
-                    bool tmp1 = wasteFluidPass;
                     wasteFluidPass = true;
 
-                    if (tmp1 != wasteFluidPass)
-                    {
-                        GameManager.Instance.BottleManager.WasteFluidPassCheck();
-                        Debug.Log("WrongWasteFluidPassCheck  : " + wrongWasteFluidPass);
-                    }
-
+                    GameManager.Instance.BottleManager.WasteFluidPassCheck();
                     GetComponentInParent<FridgeRecogSol>().allPass = true;
                     GameManager.Instance.BottleManager.PositionAllCheck();
                 }
@@ -76,20 +58,15 @@ public class ParticleCollisionSY : MonoBehaviour
         }
         else if(spillPass)
         {
-            if(other.layer != LayerMask.NameToLayer("Default"))
+            if(other.layer != LayerMask.NameToLayer("Waste"))
             {
                 spillParticleCnt++;
             }
+            
             if(spillParticleCnt > 70)
             {
-                bool tmp1 = spillPass;
                 spillPass = false;
-
-                if (tmp1 != spillPass)
-                {
-                    GameManager.Instance.BottleManager.SpillPassCheck();
-                    Debug.Log("SpillPassCheck  : " + spillPass);
-                }
+                GameManager.Instance.BottleManager.SpillPassCheck = false;
             }
         }
         //Debug.Log("particleCnt : " + particleCnt +  ", other : " + other.name);

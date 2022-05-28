@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DirectSunlight
   m_EditorClassIdentifier: 
   educationType: "\uC2DC\uC57D\uAD00\uB9AC"
-  educationName: "\uC2DC\uC57D \uBCF4\uAD00\uBC29\uBC95"
+  educationName: "\uC9C1\uC0AC \uAD11\uC120 \uC2DC\uC57D \uCC98\uB9AC"
   ox: O
   reasonImg: {fileID: 21300000, guid: 08ba41a07ec3e4f4586c9f5d5adc7539, type: 3}
   reasonText: "\uD587\uBE5B\uC5D0 \uC758\uD574 \uC2DC\uC57D\uC758 \uBCC0\uC9C8, \uC778\uD654\uC131\uAC00\uC2A4

@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class FlammabilityPass : Task
 {
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
         GameManager.Instance.BottleManager.flammabilityPass = this;
     }
 

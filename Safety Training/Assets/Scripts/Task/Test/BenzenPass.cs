@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class BenzenPass : Task
 {
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
         GameManager.Instance.BottleManager.benzenPass = this;
     }
 

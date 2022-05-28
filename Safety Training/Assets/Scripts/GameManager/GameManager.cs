@@ -13,8 +13,9 @@ public class GameManager : MonoBehaviour
     ResourceManager resourceManager = new ResourceManager();
     public ResourceManager ResourceManager {get => resourceManager;}
 
+    /*
     TaskManager taskManager = new TaskManager();
-    public TaskManager TaskManager {get => taskManager;}
+    public TaskManager TaskManager {get => taskManager;}*/
 
     EmergencyManager emergencyManager;
     public EmergencyManager EmergencyManager { get => emergencyManager; set => emergencyManager = value; }
@@ -36,12 +37,14 @@ public class GameManager : MonoBehaviour
 
     private void Awake() {
         if(singleTon != null){
+            singleTon.Init();
             Destroy(gameObject);
             Debug.LogError("You Make 2 GameManagers");
         }
         else
         {
             singleTon = this;
+            singleTon.Init();
             DontDestroyOnLoad(gameObject);
         }
     }
@@ -54,15 +57,20 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void Init()
+    {
+        bottleManager.Init();
+        uiManager.InitList();
+    }
+
+    /*
     public void ConncetUIManagerAndTaskManager(ref List<Task> task, ref List<bool> tasksolved){
         task = taskManager.GetTask();
         tasksolved = taskManager.GetTaskSolved();
-    }
+    }*/
 
     public void EndGame()
     {
-
-
         OVRScreenFade.instance.FadeOut();
         BottleManager.ShowUI();
 

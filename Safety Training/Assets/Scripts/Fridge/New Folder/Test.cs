@@ -5,17 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Test : Task
 {
-    protected override void Awake()
-    {
-        base.Awake();
-    }
-
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            Solve();
-        }
 
         if (Input.GetKeyDown(KeyCode.B))
         {

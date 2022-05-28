@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 3167630684529994648}
   - component: {fileID: 47825894163597533}
   - component: {fileID: 4478380871390154395}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: "\uC54C\uCE7C\uB9AC \uD3D0\uBB34\uAE30\uC6A9\uC81C"
   m_TagString: InorganicBase
   m_Icon: {fileID: 0}

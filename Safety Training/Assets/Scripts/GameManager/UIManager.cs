@@ -9,10 +9,7 @@ public class UIManager
     GameObject content;
     GameObject resultButtonPrefab;
 
-    List<Task> tasks;
-    List<bool> taskSolved;
-
-    List<UI_Object> addedByPlayerList = new List<UI_Object>();
+    List<UI_Object> addedByPlayerList;
 
     Image reasonImg;
     TextMeshProUGUI reasonText;
@@ -31,12 +28,17 @@ public class UIManager
         this.accidentScale = accidentScale;
         this.accidentConutermeasure = accidentConutermeasure;
 
-        GameManager.Instance.ConncetUIManagerAndTaskManager(ref tasks, ref taskSolved);
 
-        InitUI();
+        //InitUI();
         MakeAddedUI();
     }
 
+    public void InitList()
+    {
+        addedByPlayerList = new List<UI_Object>();
+    }
+
+    /*
     void InitUI(){
         for(int i = 0; i < tasks.Count; i++){
             GameObject newButton = GameObject.Instantiate(resultButtonPrefab, content.transform);
@@ -57,7 +59,7 @@ public class UIManager
             UI_Object info = tasks[i].UI_INFO;
             newButton.GetComponent<Button>().onClick.AddListener(() => MakeReasonAndAccident(info));
         }
-    }
+    }*/
 
     private void MakeAddedUI(){
         for(int i = 0; i < addedByPlayerList.Count; i++){

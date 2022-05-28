@@ -7,25 +7,59 @@ public class BottleManager
 {
     private bool benzenPassCheck;
     private bool correctPosPassCheck;
-    public bool _CorrectPosPassCheck {get => correctPosPassCheck;}
+    //public bool _CorrectPosPassCheck {get => correctPosPassCheck;}
     private bool flammabilityPassCheck;
     private bool wasteFluidPassCheck;
-    public bool _WasteFluidPassCheck {get => wasteFluidPassCheck;}
-    private bool wrongWasteFluidPassCheck;
-    private bool spillPassCheck;
+    //public bool _WasteFluidPassCheck {get => wasteFluidPassCheck;}
 
-    public bool destructionPassCheck;
+
+
+    // 단발성
+    bool wrongWasteFluidPassCheckTrigger;
+    private bool wrongWasteFluidPassCheck;
+    public bool WrongWasteFluidPassCheck { get => wrongWasteFluidPassCheck; 
+        set
+        {
+            wrongWasteFluidPassCheck = value;
+            wrongWasteFluidPassCheckTrigger = true;
+        }
+    }
+
+    private bool spillPassCheck;
+    public bool SpillPassCheck { get => spillPassCheck; set => spillPassCheck = value; }
+
+    private bool destructionPassCheck;
+    public bool DestructionPassCheck { get => destructionPassCheck; set => destructionPassCheck = value; }
+
+    private bool directSunlightPassCheck;
+    public bool DirectSunlightPassCheck { get => directSunlightPassCheck; set => directSunlightPassCheck = value; }
 
     public Task benzenPass;
     public Task correctPosPass;
     public Task flammabilityPass;
     public Task wasteFluidPass;
     public Task wrongWasteFluidPass;
+    public Task directSunlightPass;
 
-    List<FridgeRecogSol> fridgeRecogSolList = new List<FridgeRecogSol>();
-    List<ParticleCollisionSY> particleCollisionList = new List<ParticleCollisionSY>();
+    // 재시작시 초기화
+    List<FridgeRecogSol> fridgeRecogSolList;
+    List<ParticleCollisionSY> particleCollisionList;
 
     UI_Manager_Hint hint;
+
+    public void Init()
+    {
+        benzenPassCheck = false;
+        correctPosPassCheck = false;
+        flammabilityPassCheck = false;
+        wasteFluidPassCheck = false;
+        wrongWasteFluidPassCheck = true;
+        spillPassCheck = true;
+        destructionPassCheck = true;
+        directSunlightPassCheck = false;
+        fridgeRecogSolList = new List<FridgeRecogSol>();
+        particleCollisionList = new List<ParticleCollisionSY>();
+    }
 
     public void registFridgeRecogSolList(FridgeRecogSol fridgeRecogSol){
         fridgeRecogSolList.Add(fridgeRecogSol);
@@ -42,42 +76,21 @@ public class BottleManager
     public void ShowUI(){
         AllCheck();
 
-        if(benzenPassCheck){
-            benzenPass.Solve();
-        }
-        else{
-            benzenPass.NotSolve();
-        }
+        benzenPass.UI_INFO.OX = benzenPassCheck ? "O" : "X";
+        correctPosPass.UI_INFO.OX = correctPosPassCheck ? "O" : "X";
+        flammabilityPass.UI_INFO.OX = flammabilityPassCheck ? "O" : "X";
+        wasteFluidPass.UI_INFO.OX = wasteFluidPassCheck ? "O" : "X";
+        wrongWasteFluidPass.UI_INFO.OX = wrongWasteFluidPassCheck ? "O" : "X";
+        directSunlightPass.UI_INFO.OX = directSunlightPassCheck ? "O" : "X";
 
-        if(correctPosPassCheck){
-            correctPosPass.Solve();
-        }
-        else{
-            correctPosPass.NotSolve();
-        }
+        GameManager.Instance.UIManager.AddUI(ref benzenPass.UI_INFO);
+        GameManager.Instance.UIManager.AddUI(ref correctPosPass.UI_INFO);
+        GameManager.Instance.UIManager.AddUI(ref flammabilityPass.UI_INFO);
+        GameManager.Instance.UIManager.AddUI(ref wasteFluidPass.UI_INFO);
+        if(wrongWasteFluidPassCheckTrigger) GameManager.Instance.UIManager.AddUI(ref wrongWasteFluidPass.UI_INFO);
+        GameManager.Instance.UIManager.AddUI(ref directSunlightPass.UI_INFO);
 
-        if(flammabilityPassCheck){
-            flammabilityPass.Solve();
-        }
-        else{
-            flammabilityPass.NotSolve();
-        }
-
-        if(wasteFluidPassCheck){
-            wasteFluidPass.Solve();
-        }
-        else{
-            wasteFluidPass.NotSolve();
-        }
-
-        if(wrongWasteFluidPassCheck){
-            wrongWasteFluidPass.Solve();
-        }
-        else{
-            wrongWasteFluidPass.NotSolve();
-        }
-
-        if(!spillPassCheck){
+        if (!spillPassCheck){
             UI_Object spillUIObject = ScriptableObject.CreateInstance<UI_Object>();
             spillUIObject.EducationType = "폐액처리";
             spillUIObject.EducationName = "바닥에 시약 흘림";
@@ -104,8 +117,6 @@ public class BottleManager
 
     public void WasteAllCheck(){
         WasteFluidPassCheck();
-        WrongWasteFluidPassCheck();
-        SpillPassCheck();
     }
 
     public void AllCheck(){
@@ -171,37 +182,7 @@ public class BottleManager
         Debug.Log("WasteFluidPassCheck : " + wasteFluidPassCheck);
         hint.UpdateText2UI(true);
     }
-    public void WrongWasteFluidPassCheck()
-    {
-        foreach (ParticleCollisionSY item in particleCollisionList)
-        {
-            if (!item.wrongWasteFluidPass)
-            {
-                //폐액처리 통과 못함
-                wrongWasteFluidPassCheck = false;
-                return;
-            }
-        }
 
-        wrongWasteFluidPassCheck = true;
-        Debug.Log("WrongWasteFluidPassCheck : " + wrongWasteFluidPassCheck);
-    }
-
-    public void SpillPassCheck()
-    {
-        foreach (ParticleCollisionSY item in particleCollisionList)
-        {
-            if (!item.spillPass)
-            {
-                //폐액처리 통과 못함
-                spillPassCheck = false;
-                return;
-            }
-        }
-
-        spillPassCheck = true;
-        Debug.Log("SpillPassCheck : " + spillPassCheck);
-    }
     public void DestroyList(FridgeRecogSol fridgeRecogSol, ParticleCollisionSY particleCollision)
     {
         foreach (FridgeRecogSol item in fridgeRecogSolList)

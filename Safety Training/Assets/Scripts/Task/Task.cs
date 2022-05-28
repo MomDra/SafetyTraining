@@ -6,8 +6,9 @@ public abstract class Task : MonoBehaviour
 {
     public UI_Object UI_INFO;
 
-    protected bool isSolved;
+    public bool isSolved;
 
+    /*
     public void Solve(){
         isSolved = true;
         GameManager.Instance.TaskManager.NotifySolved(this, true);
@@ -23,5 +24,5 @@ public abstract class Task : MonoBehaviour
     protected virtual void Awake(){
         GameManager.Instance.TaskManager.RegistTask(this);
         //Debug.Log($"{UI_INFO.EducationName}: Awake() 호출!");
-    }
+    }*/
 }
