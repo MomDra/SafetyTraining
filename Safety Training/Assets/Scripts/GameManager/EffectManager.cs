@@ -15,6 +15,8 @@ public class EffectManager : MonoBehaviour
 
     public void MakeFireEffect(Vector3 pos)
     {
-        Instantiate(fireEffect, pos, Quaternion.identity);
+        Quaternion rot = Quaternion.AngleAxis(Random.Range(0, 360), Vector3.up);
+
+        Instantiate(fireEffect, pos, rot);
     }
 }

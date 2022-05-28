@@ -23,6 +23,9 @@ public class EmergencyManager : MonoBehaviour
     [SerializeField]
     UI_Object leakUIObject;
 
+    [SerializeField]
+    UI_Object fireUIObject;
+
     bool isEmergencyStarted;
     public bool IsEmergencyStarted { get => isEmergencyStarted; }
 
@@ -47,7 +50,7 @@ public class EmergencyManager : MonoBehaviour
             isClosedValve = value;
             if (isEmergencyStarted && isClosedValve && isOpenedWindow)
             {
-                SolveAccident();
+                SolveAccident(EmergencyType.Leak);
             }
         }
     }
@@ -62,12 +65,32 @@ public class EmergencyManager : MonoBehaviour
             isOpenedWindow = value;
             if (isEmergencyStarted && isOpenedWindow && isClosedValve)
             {
-                SolveAccident();
+                SolveAccident(EmergencyType.Leak);
             }
         }
     }
 
     IEnumerator sightCoroutine;
+
+    int numFire;
+    public int NumFire { get => numFire;
+        set
+        {
+            numFire = value;
+            if(numFire >= 10)
+            {
+                Debug.Log("불이 10개가 넘었음");
+                StartCoroutine(EndGameCoroutine());
+            }
+
+            if(numFire <= 0)
+            {
+                SolveAccident(EmergencyType.Fire);
+            }
+
+            Debug.Log("numFire: " + numFire);
+        }
+    }
 
     private void Awake() {
         GameManager.Instance.EmergencyManager = this;
@@ -86,7 +109,7 @@ public class EmergencyManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.M))
         {
-            SolveAccident();
+            SolveAccident(EmergencyType.Leak);
         }
     }
 
@@ -118,11 +141,13 @@ public class EmergencyManager : MonoBehaviour
                 break;
             case EmergencyType.Fire:
                 uiManager.StopTimer();
-                if (isWearMask) uiManager.StartTimer(120);
-                else uiManager.StartTimer(120);
+                if (isWearMask) uiManager.StartTimer(150);
+                else uiManager.StartTimer(300);
                 uiManager.HideAllWindow();
                 uiManager.ShowEmergencyWindow(type);
                 // 포그 처리..
+
+                fireUIObject.OX = "X";
                 break;
         }
     }
@@ -159,9 +184,18 @@ public class EmergencyManager : MonoBehaviour
         blurredVision.StartSightEffect();
     }
 
-    public void SolveAccident()
+    public void SolveAccident(EmergencyType type)
     {
-        leakUIObject.OX = "O";
+        switch (type)
+        {
+            case EmergencyType.Leak:
+                leakUIObject.OX = "O";
+                break;
+            case EmergencyType.Fire:
+                fireUIObject.OX = "O";
+                break;
+        }
+        
 
         // 타이머 멈추기
         uiManager.StopTimer();

@@ -11,9 +11,15 @@ public class FireExpand : MonoBehaviour
 
     bool isBig;
 
+    bool isTrigger;
+
+    int makeCount;
+
     private void Start()
     {
-        isBig = transform.position.y > -8f ? false : true;
+        isBig = transform.position.z > -8f ? false : true;
+
+        GameManager.Instance.EmergencyManager.NumFire++;
 
         coroutine = ExpandFireCoroutine();
         StartCoroutine(coroutine);
@@ -21,7 +27,7 @@ public class FireExpand : MonoBehaviour
 
     IEnumerator ExpandFireCoroutine()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(20f);
 
         Vector3 pos = transform.position;
 
@@ -29,41 +35,39 @@ public class FireExpand : MonoBehaviour
         {
             int i = 0;
 
-            while (i < 10)
+            for (i = 0; i < 100; i++)
             {
                 Vector2 dir = Random.insideUnitCircle;
                 Vector3 dir3 = new Vector3(dir.x, 0f, dir.y);
 
                 pos = transform.position + dir3.normalized * 3;
 
-
-
-                if ((pos.x < 13f && pos.x > -1.6f) && (pos.z > -15.6f && pos.z < -8f))
+                if ((pos.x < 13.84f && pos.x > 0.65f) && (pos.z > -14.93f && pos.z < -9.29f))
                 {
-                    Debug.Log(i + ": break");
+
+                    isTrigger = true;
                     break;
                 }
 
                 i++;
-
-                Debug.Log("i : " + i);
             }
-            
         }
         else
         {
+
             int i = 0;
 
-            while (i < 10)
+            for(i = 0; i < 100; i++)
             {
                 Vector2 dir = Random.insideUnitCircle;
                 Vector3 dir3 = new Vector3(dir.x, 0f, dir.y);
 
                 pos = transform.position + dir3.normalized * 3;
 
-                if (pos.x < 3.6f && pos.x > -1.6f && pos.z > -8f && pos.z < -0.55f)
+                if (pos.x < 4.35f && pos.x > 0.46f && pos.z > -7.25f && pos.z < -0.8f)
                 {
-                    Debug.Log(i + ": small break");
+
+                    isTrigger = true;
                     break;
                 }
 
@@ -71,9 +75,28 @@ public class FireExpand : MonoBehaviour
             }
         }
 
-        GameManager.Instance.EffectManager.MakeFireEffect(pos);
-        Debug.Log("ºÒ ¹øÁü ÁÂÇ¥ : " + pos);
 
+        if(isTrigger)
+            GameManager.Instance.EffectManager.MakeFireEffect(pos);
+        isTrigger = false;
         StartCoroutine(ExpandFireCoroutine());
+
+        /*
+        if (isBig)
+        {
+            if (makeCount < 2)
+            {
+                StartCoroutine(ExpandFireCoroutine());
+                makeCount++;
+            }
+        }
+        else
+        {
+            if (makeCount < 1)
+            {
+                StartCoroutine(ExpandFireCoroutine());
+                makeCount++;
+            }
+        }*/
     }
 }
