@@ -23,14 +23,14 @@ public class BottleManager
     public Task wrongWasteFluidPass;
 
     List<FridgeRecogSol> fridgeRecogSolList = new List<FridgeRecogSol>();
-    List<ParticleCollision> particleCollisionList = new List<ParticleCollision>();
+    List<ParticleCollisionSY> particleCollisionList = new List<ParticleCollisionSY>();
 
     UI_Manager_Hint hint;
 
     public void registFridgeRecogSolList(FridgeRecogSol fridgeRecogSol){
         fridgeRecogSolList.Add(fridgeRecogSol);
     }
-    public void registParticleCollision(ParticleCollision particleCollision)
+    public void registParticleCollision(ParticleCollisionSY particleCollision)
     {
         particleCollisionList.Add(particleCollision);
     }
@@ -156,7 +156,7 @@ public class BottleManager
 
     public void WasteFluidPassCheck()
     {
-        foreach (ParticleCollision item in particleCollisionList)
+        foreach (ParticleCollisionSY item in particleCollisionList)
         {
             if (!item.ExpirationDate && !item.wasteFluidPass)
             {
@@ -173,7 +173,7 @@ public class BottleManager
     }
     public void WrongWasteFluidPassCheck()
     {
-        foreach (ParticleCollision item in particleCollisionList)
+        foreach (ParticleCollisionSY item in particleCollisionList)
         {
             if (!item.wrongWasteFluidPass)
             {
@@ -189,7 +189,7 @@ public class BottleManager
 
     public void SpillPassCheck()
     {
-        foreach (ParticleCollision item in particleCollisionList)
+        foreach (ParticleCollisionSY item in particleCollisionList)
         {
             if (!item.spillPass)
             {
@@ -202,7 +202,7 @@ public class BottleManager
         spillPassCheck = true;
         Debug.Log("SpillPassCheck : " + spillPassCheck);
     }
-    public void DestroyList(FridgeRecogSol fridgeRecogSol, ParticleCollision particleCollision)
+    public void DestroyList(FridgeRecogSol fridgeRecogSol, ParticleCollisionSY particleCollision)
     {
         foreach (FridgeRecogSol item in fridgeRecogSolList)
         {
@@ -213,7 +213,7 @@ public class BottleManager
             }
         }
 
-        foreach(ParticleCollision item in particleCollisionList){
+        foreach(ParticleCollisionSY item in particleCollisionList){
             if(item == particleCollision){
                 particleCollisionList.Remove(item);
                 Debug.Log("ParticleCollision 삭제됨!!!");

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ParticleCollision : MonoBehaviour
+public class ParticleCollisionSY : MonoBehaviour
 {
     public bool wrongWasteFluidPass = true;
     public bool ExpirationDate = true;

@@ -48,11 +48,11 @@ public class BottlePassCheck : MonoBehaviour
                 if(childChild.name == "용액 파티클")
                 {
                     //잘못된 폐액 처리
-                    if (!childChild.GetComponent<ParticleCollision>().wasteFluidPass)
+                    if (!childChild.GetComponent<ParticleCollisionSY>().wasteFluidPass)
                     {
                         wasteFluidPassCheck = false;
                     }
-                    if (!childChild.GetComponent<ParticleCollision>().ExpirationDate && !childChild.GetComponent<ParticleCollision>().wrongWasteFluidPass)
+                    if (!childChild.GetComponent<ParticleCollisionSY>().ExpirationDate && !childChild.GetComponent<ParticleCollisionSY>().wrongWasteFluidPass)
                     {
                         wrongWasteFluidPassCheck = false;
                     }

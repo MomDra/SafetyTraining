@@ -59,7 +59,7 @@ public class Destructible : MonoBehaviour
         {
             Debug.Log("des 충돌 : "+ collision.gameObject.name);
             GameManager.Instance.BottleManager.destructionPassCheck = false;
-            GameManager.Instance.BottleManager.DestroyList(GetComponent<FridgeRecogSol>(), GetComponentInChildren<ParticleCollision>());
+            GameManager.Instance.BottleManager.DestroyList(GetComponent<FridgeRecogSol>(), GetComponentInChildren<ParticleCollisionSY>());
 
             Destroy(Rigidbody);
             Transform[] childList = gameObject.GetComponentsInChildren<Transform>();
