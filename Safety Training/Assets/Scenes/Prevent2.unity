@@ -10749,6 +10749,7 @@ GameObject:
   - component: {fileID: 2053731246}
   - component: {fileID: 2053731245}
   - component: {fileID: 2053731244}
+  - component: {fileID: 2053731247}
   m_Layer: 0
   m_Name: EmergencyManager
   m_TagString: Untagged
@@ -10894,6 +10895,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2053731247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053731243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e7e2735f5eeb64b9f2ff8480101ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireEffect: {fileID: 1000010823978654, guid: b61941d61de3e8641b57cd40503cc2c6, type: 3}
 --- !u!1001 &2067814710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12027,6 +12041,10 @@ PrefabInstance:
       propertyPath: timeText
       value: 
       objectReference: {fileID: 8850664097161888871}
+    - target: {fileID: 49191613, guid: 28165be3f2698e04ca8fb81f0d074f36, type: 3}
+      propertyPath: emergency
+      value: 
+      objectReference: {fileID: 8850664097161888876}
     - target: {fileID: 270007177, guid: 28165be3f2698e04ca8fb81f0d074f36, type: 3}
       propertyPath: m_LocalPosition.z
       value: 4.144
@@ -12094,6 +12112,14 @@ PrefabInstance:
     - target: {fileID: 1877379753, guid: 28165be3f2698e04ca8fb81f0d074f36, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.2346
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028535687, guid: 28165be3f2698e04ca8fb81f0d074f36, type: 3}
+      propertyPath: m_Name
+      value: Emergency
+      objectReference: {fileID: 0}
+    - target: {fileID: 2028535687, guid: 28165be3f2698e04ca8fb81f0d074f36, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 149718344105280486, guid: 28165be3f2698e04ca8fb81f0d074f36, type: 3}
       propertyPath: m_Name
@@ -12228,13 +12254,13 @@ MonoBehaviour:
   m_text: "\uAC00\uC2A4\uAC00 \uB204\uCD9C\uB418\uC5C8\uC2B5\uB2C8\uB2E4."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 29d0a25082a319349bee23376b1c7b15, type: 2}
-  m_sharedMaterial: {fileID: 0}
+  m_sharedMaterial: {fileID: -6624116246039127616, guid: 29d0a25082a319349bee23376b1c7b15, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190335
   m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -12247,7 +12273,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -12278,7 +12304,7 @@ MonoBehaviour:
   checkPaddingRequired: 0
   m_isRichText: 1
   m_parseCtrlCharacters: 1
-  m_isOrthographic: 0
+  m_isOrthographic: 1
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -12291,7 +12317,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &8850664097161888869
@@ -12917,3 +12943,8 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &8850664097161888876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2028535687, guid: 28165be3f2698e04ca8fb81f0d074f36, type: 3}
+  m_PrefabInstance: {fileID: 8850664097161888859}
+  m_PrefabAsset: {fileID: 0}

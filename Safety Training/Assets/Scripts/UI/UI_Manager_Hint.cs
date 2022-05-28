@@ -19,7 +19,7 @@ public class UI_Manager_Hint : MonoBehaviour
     [SerializeField]
     GameObject hint;
     [SerializeField]
-    GameObject leak;
+    GameObject emergency;
     [SerializeField]
     GameObject solve;
 
@@ -99,13 +99,23 @@ public class UI_Manager_Hint : MonoBehaviour
     public void HideAllWindow()
     {
         hint.SetActive(false);
-        leak.SetActive(false);
+        emergency.SetActive(false);
         solve.SetActive(false);
     }
 
-    public void ShowLeakWindow()
+    public void ShowEmergencyWindow(EmergencyType type)
     {
-        leak.SetActive(true);
+        switch (type)
+        {
+            case EmergencyType.Leak:
+                emergency.GetComponentInChildren<TextMeshProUGUI>().text = "가스가 누출되었습니다.";
+                break;
+            case EmergencyType.Fire:
+                emergency.GetComponentInChildren<TextMeshProUGUI>().text = "화재가 발생하였습니다.";
+                break;
+        }
+
+        emergency.SetActive(true);
     }
 
     public void ShowSolveWindow()

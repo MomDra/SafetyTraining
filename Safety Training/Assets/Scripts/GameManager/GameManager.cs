@@ -25,6 +25,9 @@ public class GameManager : MonoBehaviour
     BottleManager bottleManager = new BottleManager();
     public BottleManager BottleManager {get => bottleManager;}
 
+    EffectManager effectManager;
+    public EffectManager EffectManager { get => effectManager; set => effectManager = value; }
+
     int time;
     public int Time { get => time; set => time = value; }
 

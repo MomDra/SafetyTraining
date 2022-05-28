@@ -60,8 +60,18 @@ public class Destructible : MonoBehaviour
             Debug.Log("des 충돌 : "+ collision.gameObject.name);
             GameManager.Instance.BottleManager.destructionPassCheck = false;
             GameManager.Instance.BottleManager.DestroyList(GetComponent<FridgeRecogSol>(), GetComponentInChildren<ParticleCollisionSY>());
-
+            
             Destroy(Rigidbody);
+
+
+            // Effect
+            if(transform.CompareTag("FlammabilityBase") || transform.CompareTag("FlammabilityAcid"))
+            {
+                GameManager.Instance.EffectManager.MakeFireEffect(transform.position);
+                GameManager.Instance.EmergencyManager.EmergencyStart(EmergencyType.Fire);
+            }
+
+
             Transform[] childList = gameObject.GetComponentsInChildren<Transform>();
             if(childList != null)
             {

@@ -107,7 +107,7 @@ public class EmergencyManager : MonoBehaviour
                 if (isWearMask) uiManager.StartTimer(120);
                 else uiManager.StartTimer(30);
                 uiManager.HideAllWindow();
-                uiManager.ShowLeakWindow();
+                uiManager.ShowEmergencyWindow(type);
                 if (!isWearMask)
                     StartCoroutine(sightCoroutine);
 
@@ -117,7 +117,12 @@ public class EmergencyManager : MonoBehaviour
                 GameManager.Instance.UIManager.AddUI(ref leakUIObject);
                 break;
             case EmergencyType.Fire:
-
+                uiManager.StopTimer();
+                if (isWearMask) uiManager.StartTimer(120);
+                else uiManager.StartTimer(30);
+                uiManager.HideAllWindow();
+                uiManager.ShowEmergencyWindow(type);
+                // 포그 처리..
                 break;
         }
     }
