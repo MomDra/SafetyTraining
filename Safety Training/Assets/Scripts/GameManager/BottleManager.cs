@@ -78,7 +78,7 @@ public class BottleManager
         }
 
         if(!spillPassCheck){
-            UI_Object spillUIObject = new UI_Object();
+            UI_Object spillUIObject = ScriptableObject.CreateInstance<UI_Object>();
             spillUIObject.EducationType = "폐액처리";
             spillUIObject.EducationName = "바닥에 시약 흘림";
             spillUIObject.OX = "X";
@@ -87,7 +87,7 @@ public class BottleManager
 
         if (!destructionPassCheck)
         {
-            UI_Object destructionUIObject = new UI_Object();
+            UI_Object destructionUIObject = ScriptableObject.CreateInstance<UI_Object>();
             destructionUIObject.EducationType = "시약관리";
             destructionUIObject.EducationName = "시약병 깨짐";
             destructionUIObject.OX = "X";

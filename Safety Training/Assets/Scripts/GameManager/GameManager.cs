@@ -31,6 +31,9 @@ public class GameManager : MonoBehaviour
     int time;
     public int Time { get => time; set => time = value; }
 
+    bool isEnded;
+    public bool IsEnded { get => isEnded; set => isEnded = value; }
+
     private void Awake() {
         if(singleTon != null){
             Destroy(gameObject);
@@ -58,6 +61,8 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
+
+
         OVRScreenFade.instance.FadeOut();
         BottleManager.ShowUI();
 

@@ -29,6 +29,8 @@ public class EmergencyManager : MonoBehaviour
     bool isEmergencyStarted;
     public bool IsEmergencyStarted { get => isEmergencyStarted; }
 
+    bool isGameEnded;
+
 
     bool isWearMask;
     public bool IsWearMask { get => IsWearMask;
@@ -48,8 +50,9 @@ public class EmergencyManager : MonoBehaviour
         set
         {
             isClosedValve = value;
-            if (isEmergencyStarted && isClosedValve && isOpenedWindow)
+            if (isEmergencyStarted && isClosedValve && isOpenedWindow && !isGameEnded)
             {
+                isGameEnded = true;
                 SolveAccident(EmergencyType.Leak);
             }
         }
@@ -63,8 +66,9 @@ public class EmergencyManager : MonoBehaviour
         set
         {
             isOpenedWindow = value;
-            if (isEmergencyStarted && isOpenedWindow && isClosedValve)
+            if (isEmergencyStarted && isOpenedWindow && isClosedValve && !isGameEnded)
             {
+                isGameEnded = true;
                 SolveAccident(EmergencyType.Leak);
             }
         }
@@ -77,16 +81,18 @@ public class EmergencyManager : MonoBehaviour
         set
         {
             numFire = value;
-            if(numFire >= 10)
+            if(numFire >= 10 && !isGameEnded)
             {
-                Debug.Log("불이 10개가 넘었음");
+                isGameEnded = true;
                 StartCoroutine(EndGameCoroutine());
+                Debug.Log("불이 10개가 넘었음");
             }
 
+            /*
             if(numFire <= 0)
             {
                 SolveAccident(EmergencyType.Fire);
-            }
+            }*/
 
             Debug.Log("numFire: " + numFire);
         }
