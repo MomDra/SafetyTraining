@@ -16,10 +16,14 @@ MonoBehaviour:
   educationName: "\uC778\uD654\uC131 "
   ox: O
   reasonImg: {fileID: 21300000, guid: 137ae04c5b764364089a93ea92074b8f, type: 3}
-  reasonText: 
+  reasonText: "\uC778\uD654\uC131 \uC99D\uAE30\uC758 \uB204\uC801\uC73C\uB85C \uC778\uD55C
+    \uD654\uC7AC\uAC00 \uBC1C\uC0DD"
   accidentImg: {fileID: 21300000, guid: c41f19ce819b9834ebc6fb92eecb344f, type: 3}
   accidentDescription: "\uC0AC\uACE0 \uAC1C\uC694\n\t\uBC29\uC548\uC5D0 \uC778\uD654\uC131
     \uC561\uCCB4\uD1B5\uC5D0 \uC758\uD55C \uD3ED\uBC1C \uBC0F \uD654\uC7AC \uC0AC\uACE0"
-  accidentScale: "\uD53C\uD574 \uC815\uB3C4\n\t4\uBA85\uC758 \uC0AC\uC0C1\uC790 \uBC1C\uC0DD
+  accidentScale: "\uD53C\uD574 \uADDC\uBAA8\n\t4\uBA85\uC758 \uC0AC\uC0C1\uC790 \uBC1C\uC0DD
     \uBC0F \uCC28\uB7C9 1\uB300 \uD30C\uC190"
-  accidentConutermeasure: 
+  accidentConutermeasure: "\uB300\uCC45\n\t\uC18C\uC9C0\uD558\uACE0 \uC788\uB294
+    \uC57D\uD488 \uBCC4 MSDS \uC219\uC9C0\n\t\uC778\uD654\uC131, \uAC00\uC5F0\uC131
+    \uD654\uD559\uC57D\uD488\uC758 \uACBD\uC6B0 \uC804\uC6A9 \uC2DC\uC57D\uC7A5\uC5D0
+    \uBC30\uCE58"

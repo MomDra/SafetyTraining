@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: MUSanYeomgi
   m_EditorClassIdentifier: 
   educationType: "\uC2DC\uC57D\uBD84\uB9AC"
-  educationName: "\uC0B0 / \uC5FC\uAE30 \uC2DC\uC57D\uBD84\uB9AC"
+  educationName: "\uBB34\uAE30 / \uC720\uAE30 / \uC0B0 / \uC5FC\uAE30 \uC2DC\uC57D\uBD84\uB9AC"
   ox: O
   reasonImg: {fileID: 21300000, guid: fcedad065ba700a4b8f895aefd806ed8, type: 3}
-  reasonText: "\uD63C\uC7AC \uAC00\uB2A5\uD55C \uC2DC\uC57D\uC778\uC9C0 \uC5EC\uBD80\uB97C
-    \uD655\uC778\uD55C \uD6C4 \uC2DC\uC57D\uC7A5 \uB0B4 \uBCF4\uAD00"
+  reasonText: "\uC720\uAE30 \uC0B0, \uC720\uAE30 \uC5FC\uAE30, \uBB34\uAE30 \uC0B0,
+    \uBB34\uAE30 \uC5FC\uAE30 \uCD1D 4\uAC00\uC9C0\uB85C \uB098\uB204\uC5B4 \uC2DC\uC57D\uC744
+    \uBD84\uB9AC"
   accidentImg: {fileID: 0}
   accidentDescription: 
   accidentScale: 

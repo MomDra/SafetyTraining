@@ -15,10 +15,12 @@ MonoBehaviour:
   educationType: "\uC2DC\uC57D\uBD84\uB9AC"
   educationName: "\uBCA4\uC820 / \uC0B0\uD654\uC81C \uC2DC\uC57D\uBD84\uB9AC"
   ox: O
-  reasonImg: {fileID: 21300000, guid: fcedad065ba700a4b8f895aefd806ed8, type: 3}
-  reasonText: "\uD63C\uC7AC \uAC00\uB2A5\uD55C \uC2DC\uC57D\uC778\uC9C0 \uC5EC\uBD80\uB97C
-    \uD655\uC778\uD55C \uD6C4 \uC2DC\uC57D\uC7A5 \uB0B4 \uBCF4\uAD00 \uBC0F \uC57D\uD488\uBCC4
-    MSDS \uC219\uC9C0"
+  reasonImg: {fileID: 21300000, guid: 7e831d926a79635439a066deda2e1aa2, type: 3}
+  reasonText: "\uC9C0\uC9C4, \uC790\uC5F0\uC7AC\uD574\uB85C\uC778\uD55C \uC2DC\uC57D\uC7A5
+    \uB0B4 \uD63C\uD569\uC744 \uD1B5\uD574 \uD3ED\uBC1C, \uD654\uC7AC, \uAC00\uC2A4
+    \uBC1C\uC0DD\uD55C\uB2E4. \uB530\uB77C\uC11C \uC57D\uD488\uBCC4 MSDS \uC219\uC9C0\uD558\uC5EC
+    \uD63C\uC7AC \uAC00\uB2A5\uD55C \uC2DC\uC57D\uC778\uC9C0 \uC5EC\uBD80\uB97C \uD655\uC778\uD55C
+    \uD6C4 \uC2DC\uC57D\uC7A5 \uB0B4 \uBCF4\uAD00\uD55C\uB2E4."
   accidentImg: {fileID: 0}
   accidentDescription: 
   accidentScale: 

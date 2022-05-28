@@ -13,11 +13,21 @@ MonoBehaviour:
   m_Name: WrongWasteFluid
   m_EditorClassIdentifier: 
   educationType: "\uD3D0\uC561\uCC98\uB9AC"
-  educationName: "\uC798\uBABB\uB41C \uD3D0\uC561\uCC98\uB9AC"
+  educationName: "\uD3D0\uC561 \uBD84\uB958 \uCC98\uB9AC"
   ox: O
-  reasonImg: {fileID: 0}
-  reasonText: 
-  accidentImg: {fileID: 0}
-  accidentDescription: 
-  accidentScale: 
-  accidentConutermeasure: 
+  reasonImg: {fileID: 21300000, guid: 8fb11aac3d26f1240a21a6ba3a7ec609, type: 3}
+  reasonText: "\uAC01\uAE30 \uB2E4\uB978 2\uAC1C\uC758 \uD654\uD559\uBB3C\uC9C8 \uC2DC\uC57D\uC758
+    \uD654\uD559\uBC18\uC751\uC73C\uB85C \uD3ED\uBC1C \uBC0F \uD654\uC7AC \uC0AC\uACE0
+    \uBC1C\uC0DD"
+  accidentImg: {fileID: 21300000, guid: cb8bb2ecf749b444a9659e16e9192521, type: 3}
+  accidentDescription: "\uC0AC\uACE0 \uAC1C\uC694\n\t\uC2E4\uD5D8\uC2E4\uC5D0\uC11C
+    \uD654\uD559\uBB3C\uC9C8 \uC2DC\uC57D\uC744 \uD3D0\uAE30\uD558\uB358 \uC911 \uB2E4\uB978
+    \uD654\uD559\uBB3C\uC9C8 \uC2DC\uC57D\uC774 \uD63C\uD569\uB418\uC5B4 \uD654\uD559\uBC18\uC751\uC744
+    \uC77C\uC73C\uCF1C \uD3ED\uBC1C"
+  accidentScale: "\uD53C\uD574 \uADDC\uBAA8\n\t\uB300\uD559\uC6D0\uC0DD(3\uBA85),
+    \uD559\uBD80\uC0DD(1\uBA85) \uC5F0\uAE30 \uD761\uC785 \uBC0F \uC5BC\uAD74 \uB4F1
+    2\uB3C4\uD654\uC0C1"
+  accidentConutermeasure: "\uB300\uCC45\n\t\uD3D0\uC561 \uBD84\uB958\uCCB4\uACC4
+    \uD655\uB9BD, \uD3D0\uC561 \uBC18\uCD9C \uADDC\uC815 \uAC15\uD654, \uD2B9\uC218
+    \uD3D0\uC561\uC758 \uCCA0\uC800\uD55C \uBD84\uB9AC \uC2DC\uD589, \uAC1C\uC778\uBCF4\uD638\uC7A5\uBE44
+    \uCC29\uC6A9 \uC758\uBB34\uD654"
