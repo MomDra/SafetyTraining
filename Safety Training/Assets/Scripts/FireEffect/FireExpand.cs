@@ -13,37 +13,48 @@ public class FireExpand : MonoBehaviour
 
     private void Start()
     {
+        isBig = transform.position.y > -8f ? false : true;
+
         coroutine = ExpandFireCoroutine();
         StartCoroutine(coroutine);
-
-        isBig = transform.position.y > -8f ? false : true;
     }
 
     IEnumerator ExpandFireCoroutine()
     {
         yield return new WaitForSeconds(10f);
 
-        Vector3 pos;
+        Vector3 pos = transform.position;
 
         if (isBig)
         {
-            while (true)
+            int i = 0;
+
+            while (i < 10)
             {
                 Vector2 dir = Random.insideUnitCircle;
                 Vector3 dir3 = new Vector3(dir.x, 0f, dir.y);
 
                 pos = transform.position + dir3.normalized * 3;
 
-                if (pos.x < 13f && pos.x > -1.6f && pos.z > -15.6f && pos.z < -8f)
+
+
+                if ((pos.x < 13f && pos.x > -1.6f) && (pos.z > -15.6f && pos.z < -8f))
                 {
+                    Debug.Log(i + ": break");
                     break;
                 }
+
+                i++;
+
+                Debug.Log("i : " + i);
             }
             
         }
         else
         {
-            while (true)
+            int i = 0;
+
+            while (i < 10)
             {
                 Vector2 dir = Random.insideUnitCircle;
                 Vector3 dir3 = new Vector3(dir.x, 0f, dir.y);
@@ -52,13 +63,16 @@ public class FireExpand : MonoBehaviour
 
                 if (pos.x < 3.6f && pos.x > -1.6f && pos.z > -8f && pos.z < -0.55f)
                 {
+                    Debug.Log(i + ": small break");
                     break;
                 }
+
+                i++;
             }
         }
 
         GameManager.Instance.EffectManager.MakeFireEffect(pos);
-        Debug.Log("ºÒ ¹øÁü");
+        Debug.Log("ºÒ ¹øÁü ÁÂÇ¥ : " + pos);
 
         StartCoroutine(ExpandFireCoroutine());
     }
