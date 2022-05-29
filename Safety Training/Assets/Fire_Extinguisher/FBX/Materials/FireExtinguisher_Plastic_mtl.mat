@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: FireExtinguisher_Plastic_mtl
   m_Shader: {fileID: 4800000, guid: 8d2bb70cbf9db8d4da26e15b26e74248, type: 3}
-  m_ShaderKeywords: _GLOSSINESS_FROM_BASE_ALPHA _SPECULAR_COLOR
+  m_ShaderKeywords: _SPECULAR_COLOR
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -87,7 +87,7 @@ Material:
     - _BaseColor: {r: 0.16176465, g: 0.16176465, b: 0.16176465, a: 1}
     - _Color: {r: 0.16176468, g: 0.16176468, b: 0.16176468, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SpecColor: {r: 0.09558821, g: 0.09558821, b: 0.09558821, a: 1}
+    - _SpecColor: {r: 0.095588125, g: 0.095588125, b: 0.095588125, a: 0.078125}
   m_BuildTextureStacks: []
 --- !u!114 &5433611587108828762
 MonoBehaviour:
