@@ -7279,7 +7279,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 185679c1fd46f5444a239736e7bb5c2a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4ab5fed0876a33247a34f538927877fd, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -16751,7 +16751,7 @@ MonoBehaviour:
   - {fileID: 1874964779}
   - {fileID: 969705262}
   leakWarningSound: {fileID: 917153023}
-  fireWarningSound: {fileID: 0}
+  fireWarningSound: {fileID: 1851068070}
   uiManager: {fileID: 49191613}
   blurredVision: {fileID: 1955604564}
   leakUIObject: {fileID: 11400000, guid: 72f2de5be2c14f743917c15fb4276f54, type: 2}
