@@ -12,7 +12,6 @@ public enum EmergencyType
 public class EmergencyManager : MonoBehaviour
 {
     [SerializeField] Light[] lights;
-    AudioSource audioSource;
 
     [SerializeField]
     AudioSource leakWarningSound;
@@ -108,8 +107,6 @@ public class EmergencyManager : MonoBehaviour
     private void Awake() {
         GameManager.Instance.EmergencyManager = this;
 
-        audioSource = GetComponent<AudioSource>();
-
         sightCoroutine = SightEffectCoroutine();
 
         colorCoroutine = ColorCoroutine();
@@ -172,8 +169,6 @@ public class EmergencyManager : MonoBehaviour
                 fireWarningSound.Play();
                 break;
         }
-
-        audioSource.Play();
     }
 
     IEnumerator ColorCoroutine(){
