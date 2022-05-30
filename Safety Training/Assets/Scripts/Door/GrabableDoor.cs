@@ -35,7 +35,7 @@ public class GrabableDoor : OVRGrabbable
 
     private void FixedUpdate() {
         if(Vector2.Distance(staticHandle.GetComponent<Rigidbody>().position, GetComponent<Rigidbody>().position) > 0.7f){
-            grabbedBy.ForceRelease(this);
+            if (grabbedBy != null) grabbedBy.ForceRelease(this);
         }
     }
 
