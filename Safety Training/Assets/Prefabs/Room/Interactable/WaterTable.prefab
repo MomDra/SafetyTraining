@@ -5406,9 +5406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sinkWater: {fileID: 3285867386054855369}
   x: 0
-  waterStart: {fileID: 8300000, guid: 793819bbd2fa5c64fa1123a8c1c63c46, type: 3}
   waterIng: {fileID: 8300000, guid: feb0d0f0c943e574abdf2a1c70acdf5f, type: 3}
-  waterEnd: {fileID: 8300000, guid: 69e1599b658f68c4e979a2b8e2dc8f01, type: 3}
   activationThreshold: 0.1
 --- !u!82 &2918084732594576881
 AudioSource:
@@ -5420,18 +5418,18 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 793819bbd2fa5c64fa1123a8c1c63c46, type: 3}
+  m_audioClip: {fileID: 8300000, guid: feb0d0f0c943e574abdf2a1c70acdf5f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 5
+  MaxDistance: 10
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0

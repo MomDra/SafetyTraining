@@ -8,12 +8,10 @@ public class SinkWater : MonoBehaviour
     public float x;
     AudioSource audioSource;
 
-    [SerializeField]
-    AudioClip waterStart;
+
     [SerializeField]
     AudioClip waterIng;
-    [SerializeField]
-    AudioClip waterEnd;
+
     //public float y;
     //public float z;
 
@@ -33,7 +31,7 @@ public class SinkWater : MonoBehaviour
         //sinkWater = GetComponent<ParticleSystem>();
         audioSource = GetComponent<AudioSource>();
 
-        coroutine = WaterStartCoroutine();
+        //coroutine = WaterStartCoroutine();
     }
 
     // Update is called once per frame
@@ -49,33 +47,41 @@ public class SinkWater : MonoBehaviour
 
         if (x > 1.5)
         {
-            sinkWater.Play();
-            StartCoroutine(coroutine);
+            if (!isOpened)
+            {
+                isOpened = true;
+                sinkWater.Play();
+
+
+                audioSource.Play();
+            }
         }
         else if (x < 2 && x > 0 || x > 21 && x <= 180)
         {
-            sinkWater.Pause();
-            sinkWater.Clear();
+            if (isOpened)
+            {
+                isOpened = false;
 
-            StopCoroutine(coroutine);
-            audioSource.clip = waterEnd;
-            audioSource.loop = false;
+                sinkWater.Pause();
+                sinkWater.Clear();
 
-            Debug.Log("끝 재생중");
+                audioSource.Stop();
+
+                Debug.Log("끝 재생중");
+            }
         }
     }
 
+    /*
     IEnumerator WaterStartCoroutine()
     {
-        audioSource.clip = waterStart;
-        audioSource.Play();
-
         while (true)
         {
             if (!audioSource.isPlaying)
             {
                 audioSource.clip = waterIng;
                 audioSource.loop = true;
+                audioSource.Play();
 
                 Debug.Log("떨어지는 중 재생중");
 
@@ -86,5 +92,5 @@ public class SinkWater : MonoBehaviour
 
             yield return null;
         }
-    }
+    }*/
 }
