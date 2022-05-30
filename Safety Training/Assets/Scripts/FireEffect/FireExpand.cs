@@ -74,9 +74,9 @@ public class FireExpand : MonoBehaviour
                 i++;
             }
         }
-
-
-        if(isTrigger)
+        //Debug.Log("expand y : " + pos.y);
+        pos.y = 0.1598936f;
+        if (isTrigger)
             GameManager.Instance.EffectManager.MakeFireEffect(pos);
         isTrigger = false;
         StartCoroutine(ExpandFireCoroutine());
