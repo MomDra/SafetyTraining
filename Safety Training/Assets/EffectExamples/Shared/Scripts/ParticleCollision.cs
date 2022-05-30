@@ -12,6 +12,8 @@ public class ParticleCollision : MonoBehaviour
     private List<ParticleCollisionEvent> m_CollisionEvents = new List<ParticleCollisionEvent>();
     private ParticleSystem m_ParticleSystem;
 
+    int cnt;
+
 
     private void Start()
     {
@@ -28,7 +30,17 @@ public class ParticleCollision : MonoBehaviour
 
             var fire = col.GetComponent<ExtinguishableFire>();
             if (fire != null)
-                fire.Extinguish();
+            {
+                cnt++;
+                Debug.Log("cnt" + cnt);
+
+                if (cnt > 400)
+                {
+                    fire.Extinguish();
+                    cnt = 0;
+                }
+                    
+            }
         }
     }
 }

@@ -31,6 +31,9 @@ public class ExtinguishableFire : MonoBehaviour
             return;
 
         m_isExtinguished = true;
+
+        GetComponent<FireExpand>().StopAllCoroutines();
+
         StartCoroutine(Extinguishing());
     }
 
@@ -59,7 +62,7 @@ public class ExtinguishableFire : MonoBehaviour
 
         yield return new WaitForSeconds(4.0f);
 
-        StartCoroutine(StartingFire());
+        Destroy(gameObject);
     }
 
     IEnumerator StartingFire()

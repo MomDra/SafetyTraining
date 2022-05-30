@@ -11,12 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartScene.unity
     guid: 33fc76258b1698c47bb114f4c653d2ca
-  - enabled: 0
-    path: Assets/Scenes/test_SiYoung.unity
-    guid: 5dd18ce21b5294d42b3e19eb76ca90f7
   - enabled: 1
-    path: Assets/Scenes/Prevent.unity
-    guid: 359fc8f8bb4c2fa498441d365ef71d9a
+    path: Assets/Scenes/Prevent2.unity
+    guid: cc492fc43be0d6b4c91c94570e041a70
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: 7b6c8ddf7aed04444b21a9411d6f80f8

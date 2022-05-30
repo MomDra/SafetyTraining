@@ -38,7 +38,7 @@ public class UIManager_StartScene : MonoBehaviour
     }
 
     public void StartGame(){
-        SceneManager.LoadScene("Prevent");
+        SceneManager.LoadScene("Prevent2");
     }
 
     public void EndGame(){

@@ -1007,10 +1007,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.16
       objectReference: {fileID: 0}
+    - target: {fileID: 19891198, guid: c524a9c885e36134eb1b15cecce83306, type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c524a9c885e36134eb1b15cecce83306, type: 3}
+--- !u!1 &5948292041971023816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 191198, guid: c524a9c885e36134eb1b15cecce83306, type: 3}
+  m_PrefabInstance: {fileID: 5948292041970930966}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5948292041970723752 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 491198, guid: c524a9c885e36134eb1b15cecce83306, type: 3}
   m_PrefabInstance: {fileID: 5948292041970930966}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7733843566742693473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5948292041971023816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c111b630ead2a349b4c4cbf7a810085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

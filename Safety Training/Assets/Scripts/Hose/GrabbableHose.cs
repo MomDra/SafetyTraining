@@ -35,8 +35,10 @@ public class GrabbableHose : OVRGrabbable
 
     private void FixedUpdate()
     {
-        if (Vector2.Distance(staticHandle.GetComponent<Rigidbody>().position, GetComponent<Rigidbody>().position) > 0.5f)
+        if (Vector2.Distance(staticHandle.GetComponent<Rigidbody>().position, GetComponent<Rigidbody>().position) > 0.7f)
         {
+            if (grabbedBy == null) Debug.Log("dfklawjfkldasjfklas");
+
             grabbedBy.ForceRelease(this);
         }
     }
