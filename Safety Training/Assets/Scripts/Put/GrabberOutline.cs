@@ -6,7 +6,8 @@ public class GrabberOutline : OVRGrabber
 {
     protected override void OnTriggerEnter(Collider other)
     {
-        OVRGrabbable grabbable = other.GetComponent<OVRGrabbable>() ?? other.GetComponentInParent<OVRGrabbable>();
+        OVRGrabbable grabbable = other.GetComponent<OVRGrabbable>();
+            //?? other.GetComponentInParent<OVRGrabbable>();
         if (grabbable == null) return;
         base.OnTriggerEnter(other);
 
@@ -23,7 +24,8 @@ public class GrabberOutline : OVRGrabber
 
     protected override void OnTriggerExit(Collider other)
     {
-        OVRGrabbable grabbable = other.GetComponent<OVRGrabbable>() ?? other.GetComponentInParent<OVRGrabbable>();
+        OVRGrabbable grabbable = other.GetComponent<OVRGrabbable>();
+        //?? other.GetComponentInParent<OVRGrabbable>();
         if (grabbable == null) return;
         base.OnTriggerExit(other);
 

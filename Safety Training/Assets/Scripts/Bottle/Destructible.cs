@@ -32,6 +32,11 @@ public class Destructible : MonoBehaviour
     private Vector3 currentPosition;
     private double _velocity;
 
+
+    // sound
+    [SerializeField]
+    AudioClip brokenSound;
+
     private void Awake()
     {
         Rigidbody = GetComponent<Rigidbody>();
@@ -62,6 +67,10 @@ public class Destructible : MonoBehaviour
             GameManager.Instance.BottleManager.DestroyList(GetComponent<FridgeRecogSol>(), GetComponentInChildren<ParticleCollisionSY>());
             
             Destroy(Rigidbody);
+
+
+            // 깨지는 소리
+            GetComponent<AudioSource>().PlayOneShot(brokenSound);
 
 
             // Effect

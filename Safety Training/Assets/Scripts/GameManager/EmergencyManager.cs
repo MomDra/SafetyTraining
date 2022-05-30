@@ -15,6 +15,11 @@ public class EmergencyManager : MonoBehaviour
     AudioSource audioSource;
 
     [SerializeField]
+    AudioSource leakWarningSound;
+    [SerializeField]
+    AudioSource fireWarningSound;
+
+    [SerializeField]
     UI_Manager_Hint uiManager;
 
     [SerializeField]
@@ -25,6 +30,8 @@ public class EmergencyManager : MonoBehaviour
 
     [SerializeField]
     UI_Object fireUIObject;
+
+    IEnumerator colorCoroutine;
 
     bool isEmergencyStarted;
     public bool IsEmergencyStarted { get => isEmergencyStarted; }
@@ -104,6 +111,8 @@ public class EmergencyManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
         sightCoroutine = SightEffectCoroutine();
+
+        colorCoroutine = ColorCoroutine();
     }
 
     private void Update()
@@ -125,8 +134,8 @@ public class EmergencyManager : MonoBehaviour
 
         isEmergencyStarted = true;
 
-        audioSource.Play();
-        StartCoroutine(ColorCoroutine());
+        
+        StartCoroutine(colorCoroutine);
         
 
         switch (type)
@@ -144,6 +153,10 @@ public class EmergencyManager : MonoBehaviour
                 leakUIObject.OX = "X";
 
                 GameManager.Instance.UIManager.AddUI(ref leakUIObject);
+
+                // 사운드
+                leakWarningSound.Play();
+             
                 break;
             case EmergencyType.Fire:
                 uiManager.StopTimer();
@@ -155,13 +168,15 @@ public class EmergencyManager : MonoBehaviour
 
                 fireUIObject.OX = "X";
                 GameManager.Instance.UIManager.AddUI(ref fireUIObject);
+
+                fireWarningSound.Play();
                 break;
         }
+
+        audioSource.Play();
     }
 
     IEnumerator ColorCoroutine(){
-        int n = 0;
-
         while(true){
 
             for(int i = 0; i < lights.Length; i++){
@@ -177,12 +192,7 @@ public class EmergencyManager : MonoBehaviour
             }
 
             yield return new WaitForSeconds(0.5f);
-
-            n++;
-
-            if(n >= 11) break;
         }
-        
     }
 
     IEnumerator SightEffectCoroutine()
@@ -197,12 +207,17 @@ public class EmergencyManager : MonoBehaviour
         {
             case EmergencyType.Leak:
                 leakUIObject.OX = "O";
+                leakWarningSound.Stop();
                 break;
             case EmergencyType.Fire:
                 fireUIObject.OX = "O";
+                fireWarningSound.Stop();
                 break;
         }
-        
+
+        // 컬러 코루틴 멈추기
+        StopCoroutine(colorCoroutine);
+
 
         // 타이머 멈추기
         uiManager.StopTimer();
