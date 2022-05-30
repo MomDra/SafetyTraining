@@ -6,13 +6,23 @@ using UnityEngine.Events;
 public class Lid : MonoBehaviour
 {
     PutCorrectionGrabable grabable;
-    bool lockChange = false;
+    bool inLidRange = true;
     public bool locked = true;
+
+    AudioSource audioSource;
+
+    private Transform lidPos;
+
+    [SerializeField]
+    AudioClip LidOpenSound;
+    [SerializeField]
+    AudioClip LidCloseSound;
 
     private void Start()
     {
         grabable = gameObject.GetComponent<PutCorrectionGrabable>();
-        FixLid(transform.parent);
+        lidPos = transform;
+        audioSource = GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -25,40 +35,34 @@ public class Lid : MonoBehaviour
         else
         {
             //Debug.Log("    ---fixLoc");
-            if (lockChange)
+            if (inLidRange)
             {
-                FixLid(transform.parent);
-                locked = true;
-
+                if (!locked)
+                {
+                    if (!audioSource.isPlaying) audioSource.PlayOneShot(LidCloseSound);
+                    transform.localPosition = new Vector3(0, 0, 0); 
+                    transform.localRotation = Quaternion.Euler(0, 0, 0);
+                    transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                    locked = true;
+                }
             }
         }
     }
 
-    private void FixLid(Transform _transform)
-    {
-        //Debug.Log("FixLid");
-        transform.localPosition = new Vector3(0, 0, 0);
-        transform.localRotation = Quaternion.Euler(0, 0, 0);
-        transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-    }
-
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other) // ¿­±â
     {
         if (other.CompareTag("LidCorrection") && other.transform == transform.parent.transform)
         {
-            lockChange = false;
-            locked = false;
-
-            transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            inLidRange = false;
+            if (!audioSource.isPlaying) audioSource.PlayOneShot(LidOpenSound);            
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) // ´Ý±â
     {
-        if (locked) return;
         if (other.CompareTag("LidCorrection") && other.transform == transform.parent.transform)
         {
-            lockChange = true;
+            inLidRange = true;
         }
     }
 }
