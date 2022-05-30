@@ -15,10 +15,16 @@ public class Extinguisher : MonoBehaviour
     ParticleSystem particle;
     OVRGrabbable grabbable;
 
+    AudioSource audioSource;
+
+    [SerializeField]
+    AudioClip fireExtingusherSound;
+
     private void Awake()
     {
         particle = GetComponentInChildren<ParticleSystem>();
         grabbable = GetComponentInChildren<OVRGrabbable>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -47,12 +53,18 @@ public class Extinguisher : MonoBehaviour
 
     protected void FireBegin()
     {
-        if(grabbable.isGrabbed)
+        if (grabbable.isGrabbed)
+        {
             particle.Play();
+
+            audioSource.Play();
+        }
     }
 
     protected void FireEnd()
     {
         particle.Stop();
+
+        audioSource.Stop();
     }
 }
