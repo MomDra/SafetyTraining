@@ -88,11 +88,11 @@ public class EmergencyManager : MonoBehaviour
                 Debug.Log("불이 10개가 넘었음");
             }
 
-            /*
+            
             if(numFire <= 0)
             {
                 SolveAccident(EmergencyType.Fire);
-            }*/
+            }
 
             Debug.Log("numFire: " + numFire);
         }
@@ -154,6 +154,7 @@ public class EmergencyManager : MonoBehaviour
                 // 포그 처리..
 
                 fireUIObject.OX = "X";
+                GameManager.Instance.UIManager.AddUI(ref fireUIObject);
                 break;
         }
     }

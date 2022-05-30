@@ -62,6 +62,9 @@ public class ExtinguishableFire : MonoBehaviour
 
         yield return new WaitForSeconds(4.0f);
 
+
+        GameManager.Instance.EmergencyManager.NumFire--;
+        
         Destroy(gameObject);
     }
 
