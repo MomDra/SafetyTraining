@@ -17,6 +17,8 @@ public class Mask : MonoBehaviour
 
             GameManager.Instance.EmergencyManager.IsWearMask = true;
 
+            GetComponent<AudioSource>().Play();
+
             Destroy(other.gameObject);
         }
     }
