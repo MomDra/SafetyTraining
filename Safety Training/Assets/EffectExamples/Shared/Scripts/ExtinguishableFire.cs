@@ -33,7 +33,7 @@ public class ExtinguishableFire : MonoBehaviour
         m_isExtinguished = true;
 
         GetComponent<FireExpand>().StopAllCoroutines();
-
+        GetComponent<AudioSource>().Stop();
         StartCoroutine(Extinguishing());
     }
 
