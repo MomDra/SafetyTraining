@@ -17909,6 +17909,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 150519351}
     m_Modifications:
+    - target: {fileID: 2570308507582820032, guid: 20ae7a2488d073f4db654a86ece1257c, type: 3}
+      propertyPath: LidOpenSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5b91c14b405fe1645864ce0c6c3526ff, type: 3}
+    - target: {fileID: 2570308507582820032, guid: 20ae7a2488d073f4db654a86ece1257c, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e6b59b71a00f42e4ab747bdd30ac08a6, type: 3}
     - target: {fileID: 5206976096407788121, guid: 20ae7a2488d073f4db654a86ece1257c, type: 3}
       propertyPath: m_RootOrder
       value: 14
