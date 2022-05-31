@@ -11,6 +11,11 @@ public class FridgeRecogSol : MonoBehaviour
     public bool flammabilityPass = true;
     public bool allPass = false;
 
+
+    AudioSource audioSource;
+    [SerializeField]
+    AudioClip LidOpenSound;
+
     private void Awake() {
         GameManager.Instance.BottleManager.registFridgeRecogSolList(this);
     }
