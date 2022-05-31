@@ -383,7 +383,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &29281988
 AudioSource:
   m_ObjectHideFlags: 0
@@ -583,7 +584,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &35604841
 AudioSource:
   m_ObjectHideFlags: 0
@@ -875,7 +877,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &101255777
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1115,6 +1118,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4532626971804942018, guid: 8145352fbf692824abe66881fe3eae6a, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 5646698296733721861, guid: 8145352fbf692824abe66881fe3eae6a, type: 3}
       propertyPath: brokenSound
       value: 
@@ -1181,6 +1188,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 4786939674849095069, guid: dfde5a826d9f22640b94a1f36539073a, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 4786939674927738099, guid: dfde5a826d9f22640b94a1f36539073a, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1273,7 +1284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &125892970
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1778,6 +1790,10 @@ PrefabInstance:
       propertyPath: brokenSound
       value: 
       objectReference: {fileID: 8300000, guid: 1e506862c9e84ab4395f271c9a8f2909, type: 3}
+    - target: {fileID: 6576662487865457428, guid: 417734f638a3b7f46b0dc75eede4f4f1, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 8684124692568911999, guid: 417734f638a3b7f46b0dc75eede4f4f1, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -2008,7 +2024,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &220313757
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2193,6 +2210,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 732948886812874858, guid: 5b87a960d7fec374a9e5352a82a99e15, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 732948887280291808, guid: 5b87a960d7fec374a9e5352a82a99e15, type: 3}
       propertyPath: m_Mass
       value: 1.5
@@ -2285,7 +2306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &232741936
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2454,6 +2476,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5703407786609320662, guid: 2af299108615c4947a914936b8a43677, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 8198945586358261382, guid: 2af299108615c4947a914936b8a43677, type: 3}
       propertyPath: m_Mass
       value: 1.5
@@ -2524,6 +2550,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6382304761479283352, guid: 602aa0fdf2b024c40b9478b101d579d5, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 8656653142763587639, guid: 602aa0fdf2b024c40b9478b101d579d5, type: 3}
       propertyPath: m_Mass
       value: 1.5
@@ -2537,6 +2567,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 2762088378965023906, guid: a30b306b5b25c0a4ca3c9bafe356de91, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 3252198589497213664, guid: a30b306b5b25c0a4ca3c9bafe356de91, type: 3}
       propertyPath: brokenSound
       value: 
@@ -2663,6 +2697,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8189000837688175343, guid: eb2e330c9b47e93479b7915b86b35128, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb2e330c9b47e93479b7915b86b35128, type: 3}
 --- !u!4 &246903492 stripped
@@ -2682,6 +2720,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 4786939674849095069, guid: dfde5a826d9f22640b94a1f36539073a, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 4786939674927738099, guid: dfde5a826d9f22640b94a1f36539073a, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2901,6 +2943,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8189000837688175343, guid: eb2e330c9b47e93479b7915b86b35128, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb2e330c9b47e93479b7915b86b35128, type: 3}
 --- !u!4 &290022666 stripped
@@ -3069,6 +3115,10 @@ PrefabInstance:
       propertyPath: brokenSound
       value: 
       objectReference: {fileID: 8300000, guid: 1e506862c9e84ab4395f271c9a8f2909, type: 3}
+    - target: {fileID: 6576662487865457428, guid: 417734f638a3b7f46b0dc75eede4f4f1, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 8684124692568911999, guid: 417734f638a3b7f46b0dc75eede4f4f1, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3139,6 +3189,10 @@ PrefabInstance:
       propertyPath: brokenSound
       value: 
       objectReference: {fileID: 8300000, guid: 1e506862c9e84ab4395f271c9a8f2909, type: 3}
+    - target: {fileID: 6576662487865457428, guid: 417734f638a3b7f46b0dc75eede4f4f1, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 8684124692568911999, guid: 417734f638a3b7f46b0dc75eede4f4f1, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3207,7 +3261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &344266807
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3321,7 +3376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &351595586
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3435,7 +3491,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &369896117
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3692,6 +3749,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7002716830944092334, guid: 9f13c2b164706a747bcdc24d2739ba41, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f13c2b164706a747bcdc24d2739ba41, type: 3}
 --- !u!4 &377909306 stripped
@@ -3841,7 +3902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &414612111
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4405,6 +4467,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5333419152082157775, guid: 65bffd2b9606b3545b9b76f01bf45693, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65bffd2b9606b3545b9b76f01bf45693, type: 3}
 --- !u!4 &476944004 stripped
@@ -4500,6 +4566,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 4786939674849095069, guid: dfde5a826d9f22640b94a1f36539073a, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 4786939674927738099, guid: dfde5a826d9f22640b94a1f36539073a, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -4586,6 +4656,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4532626971804942018, guid: 8145352fbf692824abe66881fe3eae6a, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 5646698296733721861, guid: 8145352fbf692824abe66881fe3eae6a, type: 3}
       propertyPath: brokenSound
       value: 
@@ -4652,6 +4726,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 619526080126033870, guid: bfa2971c58ab67743a0ac38e9bedd413, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 619526080128581124, guid: bfa2971c58ab67743a0ac38e9bedd413, type: 3}
       propertyPath: m_Mass
       value: 1.5
@@ -4896,7 +4974,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &547565785
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5010,7 +5089,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &560421506
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5241,6 +5321,10 @@ PrefabInstance:
       propertyPath: ExpirationDate
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5733897538973928934, guid: bfcf0a056b9a8a047a8c8469db085f16, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 5733897539988005764, guid: bfcf0a056b9a8a047a8c8469db085f16, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -5391,6 +5475,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1700224681390505224, guid: a02fbe10cf7ee984783d964182f589b5, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a02fbe10cf7ee984783d964182f589b5, type: 3}
 --- !u!4 &589907118 stripped
@@ -5415,7 +5503,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &594091396
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5610,7 +5699,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &649800199
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5929,7 +6019,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &695236724
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6124,7 +6215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &707823256
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6309,6 +6401,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 2762088378965023906, guid: a30b306b5b25c0a4ca3c9bafe356de91, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 3252198589497213664, guid: a30b306b5b25c0a4ca3c9bafe356de91, type: 3}
       propertyPath: brokenSound
       value: 
@@ -6532,6 +6628,10 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5333419152082157775, guid: 65bffd2b9606b3545b9b76f01bf45693, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65bffd2b9606b3545b9b76f01bf45693, type: 3}
 --- !u!4 &770074378 stripped
@@ -6627,6 +6727,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 3638538043000649826, guid: b45913132b04875479b462131f3b4f30, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 3638538043817470756, guid: b45913132b04875479b462131f3b4f30, type: 3}
       propertyPath: m_Name
       value: "\uBA54\uD0C4\uC62C\uC2DC\uC57D\uBCD1_\uC644\uC131"
@@ -6790,6 +6894,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 732948886812874858, guid: 5b87a960d7fec374a9e5352a82a99e15, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 732948887280291808, guid: 5b87a960d7fec374a9e5352a82a99e15, type: 3}
       propertyPath: m_Mass
       value: 1.5
@@ -6944,7 +7052,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &851023059
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7144,7 +7253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &895515651
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7378,7 +7488,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &918868800
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7628,7 +7739,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &938570913
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7956,7 +8068,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &973106046
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8070,7 +8183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &973851495
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8393,6 +8507,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8189000837688175343, guid: eb2e330c9b47e93479b7915b86b35128, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb2e330c9b47e93479b7915b86b35128, type: 3}
 --- !u!4 &1058899941 stripped
@@ -8412,6 +8530,10 @@ PrefabInstance:
       value: "\uB2E4\uC774\uD06C\uB85C\uBBB4\uC0B0\uCE7C\uB968\uC2DC\uC57D\uBCD1
         (2)"
       objectReference: {fileID: 0}
+    - target: {fileID: 2208840525563266312, guid: a2321c01c18ad6c49b957f0df1f9fede, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 2989119627052216400, guid: a2321c01c18ad6c49b957f0df1f9fede, type: 3}
       propertyPath: brokenSound
       value: 
@@ -8482,6 +8604,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 3638538043000649826, guid: b45913132b04875479b462131f3b4f30, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 3638538043817470756, guid: b45913132b04875479b462131f3b4f30, type: 3}
       propertyPath: m_Name
       value: "\uBA54\uD0C4\uC62C\uC2DC\uC57D\uBCD1_\uC644\uC131 (3)"
@@ -8812,6 +8938,10 @@ PrefabInstance:
       value: "\uB2E4\uC774\uD06C\uB85C\uBBB4\uC0B0\uCE7C\uB968\uC2DC\uC57D\uBCD1
         (1)"
       objectReference: {fileID: 0}
+    - target: {fileID: 2208840525563266312, guid: a2321c01c18ad6c49b957f0df1f9fede, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 2989119627052216400, guid: a2321c01c18ad6c49b957f0df1f9fede, type: 3}
       propertyPath: brokenSound
       value: 
@@ -8946,6 +9076,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1700224681390505224, guid: a02fbe10cf7ee984783d964182f589b5, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a02fbe10cf7ee984783d964182f589b5, type: 3}
 --- !u!4 &1099971811 stripped
@@ -8960,6 +9094,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 3638538043000649826, guid: b45913132b04875479b462131f3b4f30, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 3638538043817470756, guid: b45913132b04875479b462131f3b4f30, type: 3}
       propertyPath: m_Name
       value: "\uBA54\uD0C4\uC62C\uC2DC\uC57D\uBCD1_\uC644\uC131 (2)"
@@ -9109,7 +9247,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1155162869
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9306,6 +9445,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5290421899011751003, guid: 69efd12ac017e854d8fb4c4bb4d18d76, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 5577516498394619682, guid: 69efd12ac017e854d8fb4c4bb4d18d76, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -9363,6 +9506,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 3638538043000649826, guid: b45913132b04875479b462131f3b4f30, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 3638538043817470756, guid: b45913132b04875479b462131f3b4f30, type: 3}
       propertyPath: m_Name
       value: "\uBA54\uD0C4\uC62C\uC2DC\uC57D\uBCD1_\uC644\uC131 (1)"
@@ -9455,7 +9602,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1250374816
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9731,7 +9879,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1261307015
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9896,6 +10045,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 619526080126033870, guid: bfa2971c58ab67743a0ac38e9bedd413, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 619526080128581124, guid: bfa2971c58ab67743a0ac38e9bedd413, type: 3}
       propertyPath: m_Mass
       value: 1.5
@@ -10054,7 +10207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1321290601
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10214,6 +10368,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8189000837688175343, guid: eb2e330c9b47e93479b7915b86b35128, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb2e330c9b47e93479b7915b86b35128, type: 3}
 --- !u!4 &1366415062 stripped
@@ -10238,7 +10396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1368374557
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10352,7 +10511,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1373708836
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10461,6 +10621,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 619526080126033870, guid: bfa2971c58ab67743a0ac38e9bedd413, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 619526080128581124, guid: bfa2971c58ab67743a0ac38e9bedd413, type: 3}
       propertyPath: m_Mass
       value: 1.5
@@ -10823,7 +10987,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1419679208
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10927,6 +11092,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 4786939674849095069, guid: dfde5a826d9f22640b94a1f36539073a, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 4786939674927738099, guid: dfde5a826d9f22640b94a1f36539073a, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -11019,7 +11188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1429242830
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11123,6 +11293,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 2762088378965023906, guid: a30b306b5b25c0a4ca3c9bafe356de91, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 3252198589497213664, guid: a30b306b5b25c0a4ca3c9bafe356de91, type: 3}
       propertyPath: brokenSound
       value: 
@@ -11203,7 +11377,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1452228595
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11317,7 +11492,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1460019451
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11431,7 +11607,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1460851043
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11865,6 +12042,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5703407786609320662, guid: 2af299108615c4947a914936b8a43677, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 8198945586358261382, guid: 2af299108615c4947a914936b8a43677, type: 3}
       propertyPath: m_Mass
       value: 1.5
@@ -11974,7 +12155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1484438687
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12088,7 +12270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1492498339
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12202,7 +12385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1493517101
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12374,6 +12558,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1700224681390505224, guid: a02fbe10cf7ee984783d964182f589b5, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a02fbe10cf7ee984783d964182f589b5, type: 3}
 --- !u!4 &1495077588 stripped
@@ -12398,7 +12586,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1508876741
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12809,7 +12998,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1601295461
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13066,7 +13256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1616831299
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13261,7 +13452,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1631363553
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13527,6 +13719,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 732948886812874858, guid: 5b87a960d7fec374a9e5352a82a99e15, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 732948887280291808, guid: 5b87a960d7fec374a9e5352a82a99e15, type: 3}
       propertyPath: m_Mass
       value: 1.5
@@ -13619,7 +13815,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1682579061
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14033,7 +14230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1719849598
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14210,6 +14408,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7002716830944092334, guid: 9f13c2b164706a747bcdc24d2739ba41, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f13c2b164706a747bcdc24d2739ba41, type: 3}
 --- !u!4 &1720105433 stripped
@@ -14353,6 +14555,10 @@ PrefabInstance:
       propertyPath: brokenSound
       value: 
       objectReference: {fileID: 8300000, guid: 1e506862c9e84ab4395f271c9a8f2909, type: 3}
+    - target: {fileID: 821793100027495891, guid: 5940f0e0ada91c04c931a91b7474688a, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 2517944973023307519, guid: 5940f0e0ada91c04c931a91b7474688a, type: 3}
       propertyPath: ExpirationDate
       value: 0
@@ -14470,7 +14676,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1749789753
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15177,6 +15384,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8189000837688175343, guid: eb2e330c9b47e93479b7915b86b35128, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb2e330c9b47e93479b7915b86b35128, type: 3}
 --- !u!4 &1792108846 stripped
@@ -15324,6 +15535,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6382304761479283352, guid: 602aa0fdf2b024c40b9478b101d579d5, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 8656653142763587639, guid: 602aa0fdf2b024c40b9478b101d579d5, type: 3}
       propertyPath: m_Mass
       value: 1.5
@@ -15347,7 +15562,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1815532353
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15818,6 +16034,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8189000837688175343, guid: eb2e330c9b47e93479b7915b86b35128, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb2e330c9b47e93479b7915b86b35128, type: 3}
 --- !u!4 &1888892330 stripped
@@ -15842,7 +16062,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1919869865
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16011,6 +16232,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5703407786609320662, guid: 2af299108615c4947a914936b8a43677, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 8198945586358261382, guid: 2af299108615c4947a914936b8a43677, type: 3}
       propertyPath: m_Mass
       value: 1.5
@@ -16131,7 +16356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1964585336
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16239,6 +16465,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\uB2E4\uC774\uD06C\uB85C\uBBB4\uC0B0\uCE7C\uB968\uC2DC\uC57D\uBCD1"
       objectReference: {fileID: 0}
+    - target: {fileID: 2208840525563266312, guid: a2321c01c18ad6c49b957f0df1f9fede, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 2989119627052216400, guid: a2321c01c18ad6c49b957f0df1f9fede, type: 3}
       propertyPath: brokenSound
       value: 
@@ -16315,7 +16545,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &1995991516
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16429,7 +16660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &2017203337
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16593,6 +16825,10 @@ PrefabInstance:
       propertyPath: ExplosiveForce
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 821793100027495891, guid: 5940f0e0ada91c04c931a91b7474688a, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 2517944973023307519, guid: 5940f0e0ada91c04c931a91b7474688a, type: 3}
       propertyPath: ExpirationDate
       value: 0
@@ -16686,6 +16922,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924967402}
     m_Modifications:
+    - target: {fileID: 619526080126033870, guid: bfa2971c58ab67743a0ac38e9bedd413, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 619526080128581124, guid: bfa2971c58ab67743a0ac38e9bedd413, type: 3}
       propertyPath: m_Mass
       value: 1.5
@@ -16778,7 +17018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!82 &2068358461
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17335,6 +17576,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4532626971804942018, guid: 8145352fbf692824abe66881fe3eae6a, type: 3}
+      propertyPath: LidCloseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
     - target: {fileID: 5646698296733721861, guid: 8145352fbf692824abe66881fe3eae6a, type: 3}
       propertyPath: brokenSound
       value: 
