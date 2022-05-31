@@ -287,6 +287,7 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
   staticHandle: {fileID: 1936746931866763922}
+  outLineObject: {fileID: 1938265439628590030}
 --- !u!1 &1937827476239790062
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,6 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1941566130588989814}
+  - component: {fileID: 1976781365}
   m_Layer: 6
   m_Name: FlammabilityFridge
   m_TagString: Untagged
@@ -321,6 +323,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1976781365
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937827476239790062}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1937846642254777268
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,10 +525,10 @@ GameObject:
   - component: {fileID: 1941326200755414076}
   - component: {fileID: 1915690740548051284}
   - component: {fileID: 1924291877720655662}
-  - component: {fileID: 2186050891681764678}
   - component: {fileID: 1936746932203940333}
   - component: {fileID: 1936746932203940335}
   - component: {fileID: 1936746932203940332}
+  - component: {fileID: 823615671}
   m_Layer: 9
   m_Name: door
   m_TagString: Untagged
@@ -504,20 +602,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2186050891681764678
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938265439628590030}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: 530c0af495db0344d967e8d6510ecbd3, type: 3}
 --- !u!54 &1936746932203940333
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -545,8 +629,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.048698775, y: 1.3999999, z: 0.6000003}
-  m_Center: {x: -0.011754662, y: -0.7075, z: 0.2799997}
+  m_Size: {x: 0.02, y: 1.3999999, z: 0.6000003}
+  m_Center: {x: 0, y: -0.7075, z: 0.2799997}
 --- !u!59 &1936746932203940332
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -559,7 +643,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 10.447706, y: 1.7074999, z: 0.3649556}
+  m_ConnectedAnchor: {x: 10.967405, y: 1.7074999, z: 0.9100003}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -583,6 +667,23 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &823615671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938265439628590030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb24396cf2f562d4abde76f87a1c39bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1976781365}
+  openClip: {fileID: 8300000, guid: a20ba5b73fcbe6d45bfdcf91b7e1c642, type: 3}
+  closeClip: {fileID: 8300000, guid: 171622f15083ebb478556cb0354674b6, type: 3}
+  isLeft: 0
+  isFlammabilityFridge: 1
 --- !u!1 &8566081063284738097
 GameObject:
   m_ObjectHideFlags: 0
