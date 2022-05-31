@@ -21,8 +21,6 @@ public class FridgeSound : MonoBehaviour
     {
         if (isFlammabilityFridge)
         {
-            Debug.Log(transform.eulerAngles.y);
-
             if(transform.localEulerAngles.y < 0f || transform.localEulerAngles.y > 357f) // ¥›«Ù ¿÷¿Ω
             {
                 if (isOpended)

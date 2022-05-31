@@ -7,40 +7,45 @@ public class WindowCheck : MonoBehaviour
     public bool windowOpend = false;
     public float y;
 
-    bool isTrigger;
+    AudioSource audioSource;
+    [SerializeField]
+    AudioClip openClip;
+    [SerializeField]
+    AudioClip closeClip;
 
-    //private float timer = 0f;
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();    
+    }
 
-    // Update is called once per frame
     void Update()
     {
         y = transform.localEulerAngles.y;
-        if(y > 0)
-        {
-            y -= 360;
-        }
 
-         if (y < 0 && y >= -20) // Ã¢¹® ´ÝÈû
+        if (y < 0f || y > 357f) // Ã¢¹® ´ÝÈû
          {
-            windowOpend = false;
-
-            if (!isTrigger)
+            if (windowOpend)
             {
-                isTrigger = true;
                 GameManager.Instance.EmergencyManager.IsOpenedWindow = false;
+                windowOpend = false;
+
+                audioSource.PlayOneShot(closeClip);
+
+                Debug.Log("Ã¢¹® ´ÝÈû!");
             }
             
-         }
-         else if (y < -20)// Ã¢¹® ¿­¸²
-         {
-            windowOpend = true;
-
-            if (isTrigger)
+        }
+        else
+        {
+            if (!windowOpend)
             {
-                isTrigger = false;
                 GameManager.Instance.EmergencyManager.IsOpenedWindow = true;
+                windowOpend = true;
+
+                audioSource.PlayOneShot(openClip);
+
+                Debug.Log("Ã¢¹® ¿­¸²!");
             }
-         }
-        
+        }
     }
 }
