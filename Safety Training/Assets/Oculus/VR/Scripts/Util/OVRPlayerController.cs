@@ -143,12 +143,12 @@ public class OVRPlayerController : MonoBehaviour
 	protected CharacterController Controller = null;
 	protected OVRCameraRig CameraRig = null;
 
-	private float MoveScale = 1.0f;
+	private float MoveScale = 1.0f; //0.1f로 바꾸니 오른쪽 키패드 시점 이동 부드러워짐
 	private Vector3 MoveThrottle = Vector3.zero;
 	private float FallSpeed = 0.0f;
 	private OVRPose? InitialPose;
 	public float InitialYRotation { get; private set; }
-	private float MoveScaleMultiplier = 1.0f;
+	private float MoveScaleMultiplier = 1.0f; //0.1f로 바꾸니 왼쪽 키패드 이동속도 느려짐
 	private float RotationScaleMultiplier = 1.0f;
 	private bool SkipMouseRotation = true; // It is rare to want to use mouse movement in VR, so ignore the mouse by default.
 	private bool HaltUpdateMovement = false;
