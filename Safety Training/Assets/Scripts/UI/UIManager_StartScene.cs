@@ -41,6 +41,16 @@ public class UIManager_StartScene : MonoBehaviour
         SceneManager.LoadScene("Prevent2");
     }
 
+    public void StartLeak()
+    {
+        SceneManager.LoadScene("Leaks");
+    }
+
+    public void StartFire()
+    {
+        SceneManager.LoadScene("FireScene");
+    }
+
     public void EndGame(){
         Application.Quit();
     }

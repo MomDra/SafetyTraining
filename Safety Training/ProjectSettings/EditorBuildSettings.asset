@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: 7b6c8ddf7aed04444b21a9411d6f80f8
+  - enabled: 1
+    path: Assets/Scenes/FireScene.unity
+    guid: ef8e095ad9d00fd4c81f4467ecfea5f7
+  - enabled: 1
+    path: Assets/Scenes/Leaks.unity
+    guid: 2bb40e290270f0d46b273c90e6b3657f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 83ba117958b67a54387a46b13e8c4554, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e76c9602092b2144e80e0be583cd7ecf, type: 2}
