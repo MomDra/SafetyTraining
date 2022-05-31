@@ -29,9 +29,6 @@ public class GameManager : MonoBehaviour
     EffectManager effectManager;
     public EffectManager EffectManager { get => effectManager; set => effectManager = value; }
 
-    UIButtonSoundManager uIButtonSoundManager;
-    public UIButtonSoundManager UIButtonSoundManager { get => uIButtonSoundManager; set => uIButtonSoundManager = value; }
-
     int time;
     public int Time { get => time; set => time = value; }
 

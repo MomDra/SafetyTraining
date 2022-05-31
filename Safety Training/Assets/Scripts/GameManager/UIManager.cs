@@ -80,6 +80,7 @@ public class UIManager
 
             UI_Object info = addedByPlayerList[i];
             newButton.GetComponent<Button>().onClick.AddListener(() => MakeReasonAndAccident(info));
+            newButton.AddComponent<CustomButtonEvent>().IsForward = true;
         }
     }
 

@@ -9,6 +9,8 @@ public class CustomButtonEvent : MonoBehaviour, IPointerEnterHandler, IPointerCl
     [SerializeField]
     bool isForward;
 
+    public bool IsForward { get => isForward; set => isForward = value; }
+
     private void Start()
     {
         sound = FindObjectOfType<UIButtonSoundManager>();
