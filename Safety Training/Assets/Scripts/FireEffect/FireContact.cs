@@ -17,6 +17,9 @@ public class FireContact : MonoBehaviour
         {
             if(!audioSource.isPlaying)
                 audioSource.Play();
+
+            OVRInput.SetControllerVibration(1, 0.2f, OVRInput.Controller.RTouch);
+            OVRInput.SetControllerVibration(1, 0.2f, OVRInput.Controller.LTouch);
         }
     }
 }
