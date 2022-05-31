@@ -97,7 +97,7 @@ public class UIManager
             reasonImg.color = Color.white;
         }
 
-        if(UI_INFO.ResasonText.Equals("")){
+        if(UI_INFO.ResasonText.Equals("") || UI_INFO.ResasonText == null){
             reasonText.text = "";
         }
         else{
@@ -113,21 +113,21 @@ public class UIManager
             accidentImg.color = Color.white;
         }
 
-        if(UI_INFO.AccidentDescription.Equals("")){
+        if(UI_INFO.AccidentDescription.Equals("") || UI_INFO.AccidentDescription == null){
             accidentDescription.text = "";
         }
         else{
             accidentDescription.text = UI_INFO.AccidentDescription;
         }
 
-        if(UI_INFO.AccidentScale.Equals("")){
+        if(UI_INFO.AccidentScale.Equals("") || UI_INFO.AccidentScale == null){
             accidentScale.text = "";
         }
         else{
             accidentScale.text = UI_INFO.AccidentScale;
         }
 
-        if(UI_INFO.AccidentCountermeasure.Equals("")){
+        if(UI_INFO.AccidentCountermeasure.Equals("") || UI_INFO.AccidentCountermeasure == null){
             accidentConutermeasure.text = "";
         }
         else{
