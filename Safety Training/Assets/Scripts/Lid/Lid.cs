@@ -10,7 +10,6 @@ public class Lid : MonoBehaviour
     bool inRange = true;
     public bool locked = true;
 
-
     AudioSource audioSource;
     [SerializeField]
     AudioClip LidOpenSound;
@@ -57,17 +56,6 @@ public class Lid : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        /*
-        if (locked)
-        {
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
-            transform.localPosition = Vector3.zero;
-        }*/
-            
-    }
-
 
     private void FixLid(Transform _transform)
     {
@@ -82,29 +70,10 @@ public class Lid : MonoBehaviour
         {
             inRange = false;
         }
-
-
-
-        /*
-        if (other.CompareTag("LidCorrection") && other.transform == transform.parent.transform)
-        {
-            Debug.Log("curr : " + transform.name + ", coll : " + other.name);
-            locked = false;
-            closeHasPlayed = false;
-            transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-        }*/
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        /*
-        if (locked) return;
-        if (other.CompareTag("LidCorrection") && other.transform == transform.parent.transform)
-        {
-            inRange = true;
-        }
-        */
-
         if (other.CompareTag("LidCorrection") && other.transform == transform.parent.transform)
         {
             inRange = true;
