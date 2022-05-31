@@ -114,6 +114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 1
+  LidOpenSound: {fileID: 8300000, guid: 4a52c7785b1ec9746834113e78d3d429, type: 3}
+  LidCloseSound: {fileID: 8300000, guid: 8a2eede0edc116041bb9d6e063b1cf08, type: 3}
 --- !u!114 &910513223459224003
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,7 +6,9 @@ public class BottleCollisionSound : MonoBehaviour
 {
     AudioSource source;
     [SerializeField]
-    AudioClip clip;
+    AudioClip bottleCollision;
+    [SerializeField]
+    AudioClip bottleLanding;
 
     private void Awake()
     {
@@ -18,7 +20,12 @@ public class BottleCollisionSound : MonoBehaviour
         if(collision.gameObject.layer == LayerMask.NameToLayer("Bottle"))
         {
             if(!source.isPlaying)
-                source.PlayOneShot(clip);
+                source.PlayOneShot(bottleCollision);
+        }
+        else
+        {
+            if (!source.isPlaying)
+                source.PlayOneShot(bottleLanding);
         }
     }
 }
