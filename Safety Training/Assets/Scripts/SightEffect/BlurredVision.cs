@@ -8,6 +8,7 @@ public class BlurredVision : MonoBehaviour
     [SerializeField] Material brurredEffect;
     Renderer meshRenderer;
     private float value;
+
     
     public bool blurredStart = false;
 
@@ -51,5 +52,6 @@ public class BlurredVision : MonoBehaviour
     {
         meshRenderer.material = brurredEffect;
         StartCoroutine(BlurCoroutine());
+        GetComponent<AudioSource>().Play();
     }
 }
