@@ -14,6 +14,7 @@ TagManager:
   - FlammabilityAcid
   - CheckParticle
   - Mask
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -35,7 +36,7 @@ TagManager:
   - Liquid
   - Waste
   - Fire
-  - 
+  - Foot
   - 
   - 
   - 
