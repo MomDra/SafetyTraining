@@ -12,8 +12,11 @@ public class ParticleCollisionSY : MonoBehaviour
     public bool spillPass = true;
     public bool allPass = false;
 
+    AudioSource source;
+
     private void Awake() {
         GameManager.Instance.BottleManager.registParticleCollision(this);
+        source = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -69,6 +72,9 @@ public class ParticleCollisionSY : MonoBehaviour
                 GameManager.Instance.BottleManager.SpillPassCheck = false;
             }
         }
+
+        if (!source.isPlaying) source.Play();
+
         //Debug.Log("particleCnt : " + particleCnt +  ", other : " + other.name);
         //Debug.Log("spillParticleCnt : " + spillParticleCnt);
     }
