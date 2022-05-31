@@ -38,6 +38,6 @@ public class GrabberOutline : OVRGrabber
 
     void EndVibration()
     {
-        OVRInput.SetControllerVibration(0, 0, m_controller);
+        OVRInput.SetControllerVibration(0f, 0f, m_controller);
     }
 }

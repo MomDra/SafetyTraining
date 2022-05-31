@@ -13,30 +13,37 @@ public class Extinguisher : MonoBehaviour
     float grabEnd = 0.35f;
 
     ParticleSystem particle;
-    OVRGrabbable grabbable;
+    PutCorrectionGrabable grabbable;
 
     AudioSource audioSource;
 
     [SerializeField]
     AudioClip fireExtingusherSound;
 
+    IEnumerator coroutine;
+
     private void Awake()
     {
         particle = GetComponentInChildren<ParticleSystem>();
-        grabbable = GetComponentInChildren<OVRGrabbable>();
+        grabbable = GetComponentInChildren<PutCorrectionGrabable>();
         audioSource = GetComponent<AudioSource>();
+
+        coroutine = VibrationCoroutine();
+
+        grabbable.grabEndEvent.AddListener(FireEnd);
     }
 
     // Update is called once per frame
     void Update()
     {
-        float prevFlex = m_prevFlex;
-        // Update values from inputs
-        m_prevFlex = OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, m_controller);
+        if (grabbable.isGrabbed)
+        {
+            float prevFlex = m_prevFlex;
+            // Update values from inputs
+            m_prevFlex = OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, m_controller);
 
-        //Debug.Log(prevFlex);
-
-        FireCheck(prevFlex);
+            FireCheck(prevFlex);
+        }
     }
 
     public void FireCheck(float prevFlex)
@@ -53,18 +60,31 @@ public class Extinguisher : MonoBehaviour
 
     protected void FireBegin()
     {
-        if (grabbable.isGrabbed)
-        {
-            particle.Play();
+        particle.Play();
+        audioSource.Play();
 
-            audioSource.Play();
-        }
+        StartCoroutine(coroutine);
     }
 
     protected void FireEnd()
     {
         particle.Stop();
-
         audioSource.Stop();
+
+        StopCoroutine(coroutine);
+
+        OVRInput.SetControllerVibration(0f, 0f, OVRInput.Controller.LTouch);
+        OVRInput.SetControllerVibration(0f, 0f, OVRInput.Controller.RTouch);
+    }
+
+    IEnumerator VibrationCoroutine()
+    {
+        while (true)
+        {
+            OVRInput.SetControllerVibration(1f, 0.2f, OVRInput.Controller.LTouch);
+            OVRInput.SetControllerVibration(1f, 0.2f, OVRInput.Controller.RTouch);
+
+            yield return new WaitForSeconds(2f);
+        }
     }
 }
