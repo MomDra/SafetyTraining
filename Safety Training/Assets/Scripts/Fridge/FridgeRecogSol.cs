@@ -9,7 +9,8 @@ public class FridgeRecogSol : MonoBehaviour
     private string locTag;
     public bool benzenPass = true;
     public bool flammabilityPass = true;
-    public bool allPass = false;
+    bool allPass = false;
+    public bool AllPass { get => allPass; set => allPass = value; }
 
 
     AudioSource audioSource;
