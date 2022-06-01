@@ -4403,6 +4403,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c232b594b5a22041bdb65e2c446c3b0, type: 3}
+--- !u!1 &469096853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5030805349355419222, guid: 7c232b594b5a22041bdb65e2c446c3b0, type: 3}
+  m_PrefabInstance: {fileID: 469096852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &469096854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469096853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dfd7d00193372248a513043ea237e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  coughSound: {fileID: 8300000, guid: 15349f6bb728685449bd23de6f93e0f5, type: 3}
+  shortBreathSound: {fileID: 8300000, guid: 5012b4c98ccdc7940b686f3b7c17d94b, type: 3}
+  maskedBreathSound: {fileID: 8300000, guid: 2c426e04608753846969bc5189ffb097, type: 3}
 --- !u!1001 &476944003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16434,7 +16455,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5030805349355419225, guid: 7c232b594b5a22041bdb65e2c446c3b0, type: 3}
   m_PrefabInstance: {fileID: 469096852}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 469096853}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3f8433babb957542a1e099e427b58f0, type: 3}

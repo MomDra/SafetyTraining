@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LeakSounds : MonoBehaviour
+public class BreathSounds : MonoBehaviour
 {
     AudioSource audioSource;
     [SerializeField]
