@@ -158,7 +158,7 @@ public class EmergencyManager : MonoBehaviour
             case EmergencyType.Fire:
                 uiManager.StopTimer();
                 if (isWearMask) uiManager.StartTimer(150);
-                else uiManager.StartTimer(300);
+                else uiManager.StartTimer(60);
                 uiManager.HideAllWindow();
                 uiManager.ShowEmergencyWindow(type);
                 // 포그 처리..
