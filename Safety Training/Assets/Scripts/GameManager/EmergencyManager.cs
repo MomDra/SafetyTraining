@@ -261,4 +261,9 @@ public class EmergencyManager : MonoBehaviour
         if(type == EmergencyType.Leak)
             breathSound.ShortBreathSoundPlay();
     }
+
+    public void HearBeatSoundPlay()
+    {
+        breathSound.HeartBeatSoundPlay();
+    }
 }

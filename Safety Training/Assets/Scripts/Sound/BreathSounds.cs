@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BreathSounds : MonoBehaviour
 {
-    AudioSource audioSource;
+    AudioSource[] audioSource;
     [SerializeField]
     AudioClip coughSound;
     [SerializeField]
@@ -15,52 +15,57 @@ public class BreathSounds : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
+        audioSource = GetComponents<AudioSource>();
     }
     // Update is called once per frame
     
     public void CoughSoundPlay()
     {
-        if (audioSource.isPlaying)
+        if (audioSource[0].isPlaying)
         {
-            audioSource.Stop();
-            audioSource.clip = coughSound;
-            audioSource.Play();
+            audioSource[0].Stop();
+            audioSource[0].clip = coughSound;
+            audioSource[0].Play();
         }
         else
         {
-            audioSource.clip = coughSound;
-            audioSource.Play();
+            audioSource[0].clip = coughSound;
+            audioSource[0].Play();
         }
     }
 
     public void ShortBreathSoundPlay()
     {
-        if (audioSource.isPlaying)
+        if (audioSource[0].isPlaying)
         {
-            audioSource.Stop();
-            audioSource.clip = shortBreathSound;
-            audioSource.Play();
+            audioSource[0].Stop();
+            audioSource[0].clip = shortBreathSound;
+            audioSource[0].Play();
         }
         else
         {
-            audioSource.clip = shortBreathSound;
-            audioSource.Play();
+            audioSource[0].clip = shortBreathSound;
+            audioSource[0].Play();
         }
     }
 
     public void MaskedBreathSoundPlay()
     {
-        if (audioSource.isPlaying)
+        if (audioSource[0].isPlaying)
         {
-            audioSource.Stop();
-            audioSource.clip = maskedBreathSound;
-            audioSource.Play();
+            audioSource[0].Stop();
+            audioSource[0].clip = maskedBreathSound;
+            audioSource[0].Play();
         }
         else
         {
-            audioSource.clip = maskedBreathSound;
-            audioSource.Play();
+            audioSource[0].clip = maskedBreathSound;
+            audioSource[0].Play();
         }
+    }
+
+    public void HeartBeatSoundPlay()
+    {
+        audioSource[1].Play();
     }
 }

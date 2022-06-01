@@ -67,6 +67,8 @@ public class UI_Manager_Hint : MonoBehaviour
             time--;
             GameManager.Instance.Time = time;
 
+            if (time == 5) GameManager.Instance.EmergencyManager.HearBeatSoundPlay();
+
             yield return new WaitForSeconds(1f);
         }
 
