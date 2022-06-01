@@ -3125,6 +3125,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c232b594b5a22041bdb65e2c446c3b0, type: 3}
+--- !u!114 &469096853 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5567626625069163657, guid: 7c232b594b5a22041bdb65e2c446c3b0, type: 3}
+  m_PrefabInstance: {fileID: 469096852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dfd7d00193372248a513043ea237e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &476944003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5104,6 +5115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   windowOpend: 0
   y: 0
+  openClip: {fileID: 0}
+  closeClip: {fileID: 0}
 --- !u!1 &924967401
 GameObject:
   m_ObjectHideFlags: 0
@@ -10990,10 +11003,13 @@ MonoBehaviour:
   - {fileID: 1288757635}
   - {fileID: 1874964779}
   - {fileID: 969705262}
+  leakWarningSound: {fileID: 0}
+  fireWarningSound: {fileID: 0}
   uiManager: {fileID: 49191613}
   blurredVision: {fileID: 1955604564}
   leakUIObject: {fileID: 11400000, guid: 72f2de5be2c14f743917c15fb4276f54, type: 2}
   fireUIObject: {fileID: 11400000, guid: ea0e0f747bb4e334682adb4009e34c69, type: 2}
+  breathSound: {fileID: 469096853}
 --- !u!4 &2053731246
 Transform:
   m_ObjectHideFlags: 0
