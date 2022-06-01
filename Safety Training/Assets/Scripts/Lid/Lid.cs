@@ -34,7 +34,8 @@ public class Lid : MonoBehaviour
         rigid.constraints = RigidbodyConstraints.None;
         rigid.useGravity = true;
 
-        audioSource.PlayOneShot(LidOpenSound);
+        if(inRange)
+            audioSource.PlayOneShot(LidOpenSound);
     }
 
     void GrabEnd()
