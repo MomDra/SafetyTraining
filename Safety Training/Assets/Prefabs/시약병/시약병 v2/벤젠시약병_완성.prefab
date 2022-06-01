@@ -5215,7 +5215,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locked: 1
   LidOpenSound: {fileID: 8300000, guid: 70da924900abd3a49bdff1a16291c899, type: 3}
-  LidCloseSound: {fileID: 8300000, guid: 66753c25613a34f49b59a33bf8ead735, type: 3}
+  LidCloseSound: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
+  collisionSound: {fileID: 8300000, guid: 4b7c2cbfcbd778047b99d93c744d8320, type: 3}
 --- !u!82 &4330145990468721335
 AudioSource:
   m_ObjectHideFlags: 0

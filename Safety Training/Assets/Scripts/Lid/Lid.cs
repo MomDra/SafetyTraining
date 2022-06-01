@@ -16,6 +16,9 @@ public class Lid : MonoBehaviour
     [SerializeField]
     AudioClip LidCloseSound;
 
+    [SerializeField]
+    AudioClip collisionSound;
+
     private void Awake()
     {
         rigid = GetComponent<Rigidbody>();
@@ -79,5 +82,11 @@ public class Lid : MonoBehaviour
         {
             inRange = true;
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (!audioSource.isPlaying)
+            audioSource.PlayOneShot(collisionSound);
     }
 }

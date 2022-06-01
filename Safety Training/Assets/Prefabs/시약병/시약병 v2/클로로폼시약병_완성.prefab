@@ -154,7 +154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locked: 1
   LidOpenSound: {fileID: 8300000, guid: 70da924900abd3a49bdff1a16291c899, type: 3}
-  LidCloseSound: {fileID: 8300000, guid: 66753c25613a34f49b59a33bf8ead735, type: 3}
+  LidCloseSound: {fileID: 8300000, guid: d59e029c2b8375e4bbb53c57aa72a3e8, type: 3}
+  collisionSound: {fileID: 8300000, guid: 4b7c2cbfcbd778047b99d93c744d8320, type: 3}
 --- !u!82 &667244437956577348
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5234,6 +5235,8 @@ GameObject:
   - component: {fileID: 5662802257022378313}
   - component: {fileID: 1368374557}
   - component: {fileID: 1368374556}
+  - component: {fileID: 649800199}
+  - component: {fileID: 649800198}
   m_Layer: 16
   m_Name: "\uD074\uB85C\uB85C\uD3FC\uC2DC\uC57D\uBCD1_\uC644\uC131"
   m_TagString: OrganicAcid
@@ -5524,6 +5527,116 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bottleCollision: {fileID: 8300000, guid: c9d18e9a1adbe8e438dd6a2b1081dea4, type: 3}
   bottleLanding: {fileID: 8300000, guid: 4b7c2cbfcbd778047b99d93c744d8320, type: 3}
+--- !u!82 &649800199
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732948887280291811}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &649800198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732948887280291811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ece384f5cf45a2944b3d897136262bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottleCollision: {fileID: 0}
+  bottleLanding: {fileID: 0}
 --- !u!1 &732948887512486482
 GameObject:
   m_ObjectHideFlags: 0
