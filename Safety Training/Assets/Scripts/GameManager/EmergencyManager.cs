@@ -8,7 +8,6 @@ public enum EmergencyType
     Fire
 }
 
-
 public class EmergencyManager : MonoBehaviour
 {
     [SerializeField] Light[] lights;
@@ -30,7 +29,12 @@ public class EmergencyManager : MonoBehaviour
     [SerializeField]
     UI_Object fireUIObject;
 
+    [SerializeField]
+    BreathSounds breathSound;
+
     IEnumerator colorCoroutine;
+    IEnumerator sightCoroutine;
+    IEnumerator coughCoroutine;
 
     bool isEmergencyStarted;
     public bool IsEmergencyStarted { get => isEmergencyStarted; }
@@ -47,7 +51,10 @@ public class EmergencyManager : MonoBehaviour
             {
                 uiManager.AddTime(90);
                 StopCoroutine(sightCoroutine);
+                StopCoroutine(coughCoroutine); 
             }
+
+            if(isWearMask) breathSound.MaskedBreathSoundPlay();
         } 
     }
 
@@ -80,7 +87,7 @@ public class EmergencyManager : MonoBehaviour
         }
     }
 
-    IEnumerator sightCoroutine;
+    
 
     int numFire;
     public int NumFire { get => numFire;
@@ -133,6 +140,7 @@ public class EmergencyManager : MonoBehaviour
 
         
         StartCoroutine(colorCoroutine);
+        StartCoroutine(coughCoroutine);
         
 
         switch (type)
@@ -144,8 +152,13 @@ public class EmergencyManager : MonoBehaviour
                 uiManager.HideAllWindow();
                 uiManager.ShowEmergencyWindow(type);
                 if (!isWearMask)
+                {
                     StartCoroutine(sightCoroutine);
-
+                    coughCoroutine = CoughCoroutine(EmergencyType.Leak);
+                    StartCoroutine(coughCoroutine);
+                }
+                    
+                
                 //leakUIObject 설정
                 leakUIObject.OX = "X";
 
@@ -161,7 +174,15 @@ public class EmergencyManager : MonoBehaviour
                 else uiManager.StartTimer(60);
                 uiManager.HideAllWindow();
                 uiManager.ShowEmergencyWindow(type);
+
+                if (!isWearMask)
+                {
+                    coughCoroutine = CoughCoroutine(EmergencyType.Fire);
+                    StartCoroutine(coughCoroutine);
+                }
+
                 // 포그 처리..
+               
 
                 fireUIObject.OX = "X";
                 GameManager.Instance.UIManager.AddUI(ref fireUIObject);
@@ -231,8 +252,15 @@ public class EmergencyManager : MonoBehaviour
         GameManager.Instance.EndGame();
     }
 
-    public void WearMask()
+    IEnumerator CoughCoroutine(EmergencyType type)
     {
-        isWearMask = true;
+        if (isWearMask) StopCoroutine(coughCoroutine);
+
+        yield return new WaitForSeconds(5f);
+        breathSound.CoughSoundPlay();
+
+        yield return new WaitForSeconds(10f);
+        if(type == EmergencyType.Leak)
+            breathSound.ShortBreathSoundPlay();
     }
 }

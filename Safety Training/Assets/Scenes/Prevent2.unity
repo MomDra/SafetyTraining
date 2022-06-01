@@ -4318,6 +4318,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 469096854, guid: 7c232b594b5a22041bdb65e2c446c3b0, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 469096854, guid: 7c232b594b5a22041bdb65e2c446c3b0, type: 3}
       propertyPath: MaxDistance
       value: 10
       objectReference: {fileID: 0}
@@ -4328,6 +4332,10 @@ PrefabInstance:
     - target: {fileID: 469096854, guid: 7c232b594b5a22041bdb65e2c446c3b0, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2124593609, guid: 7c232b594b5a22041bdb65e2c446c3b0, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 183927954024211845, guid: 7c232b594b5a22041bdb65e2c446c3b0, type: 3}
       propertyPath: m_Name
@@ -16754,6 +16762,7 @@ MonoBehaviour:
   blurredVision: {fileID: 1955604564}
   leakUIObject: {fileID: 11400000, guid: 72f2de5be2c14f743917c15fb4276f54, type: 2}
   fireUIObject: {fileID: 11400000, guid: ea0e0f747bb4e334682adb4009e34c69, type: 2}
+  breathSound: {fileID: 0}
 --- !u!4 &2053731246
 Transform:
   m_ObjectHideFlags: 0
