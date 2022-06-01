@@ -21,9 +21,14 @@ public class BreathSounds : MonoBehaviour
     
     public void CoughSoundPlay()
     {
-        if (audioSource.isPlaying && audioSource.clip != coughSound)
+        if (audioSource.isPlaying)
         {
             audioSource.Stop();
+            audioSource.clip = coughSound;
+            audioSource.Play();
+        }
+        else
+        {
             audioSource.clip = coughSound;
             audioSource.Play();
         }
@@ -31,9 +36,14 @@ public class BreathSounds : MonoBehaviour
 
     public void ShortBreathSoundPlay()
     {
-        if (audioSource.isPlaying && audioSource.clip != shortBreathSound)
+        if (audioSource.isPlaying)
         {
             audioSource.Stop();
+            audioSource.clip = shortBreathSound;
+            audioSource.Play();
+        }
+        else
+        {
             audioSource.clip = shortBreathSound;
             audioSource.Play();
         }
@@ -41,9 +51,14 @@ public class BreathSounds : MonoBehaviour
 
     public void MaskedBreathSoundPlay()
     {
-        if (audioSource.isPlaying && audioSource.clip != maskedBreathSound)
+        if (audioSource.isPlaying)
         {
             audioSource.Stop();
+            audioSource.clip = maskedBreathSound;
+            audioSource.Play();
+        }
+        else
+        {
             audioSource.clip = maskedBreathSound;
             audioSource.Play();
         }
