@@ -52,6 +52,5 @@ public class BlurredVision : MonoBehaviour
     {
         meshRenderer.material = brurredEffect;
         StartCoroutine(BlurCoroutine());
-        GetComponent<AudioSource>().Play();
     }
 }
