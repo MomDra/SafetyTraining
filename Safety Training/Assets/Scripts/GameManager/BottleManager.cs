@@ -142,6 +142,8 @@ public class BottleManager
                 //시약 구분 못함
                 correctPosPassCheck = false;
                 hint.UpdateText1UI(false);
+
+                Debug.Log("누구냐 너는!: " + item.name);
                 return;
             }
         }
