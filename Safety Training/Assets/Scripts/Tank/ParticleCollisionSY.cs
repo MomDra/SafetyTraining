@@ -80,11 +80,12 @@ public class ParticleCollisionSY : MonoBehaviour
 
         if (!source.isPlaying) source.Play();
 
-        //Debug.Log("particleCnt : " + particleCnt +  ", other : " + other.name);
+        //Debug.Log("particleCnt : " + particleCnt + "spillParticleCnt : " + spillParticleCnt + "wrongParticleCnt : " + wrongParticleCnt + ", other : " + other.name);
         //Debug.Log("spillParticleCnt : " + spillParticleCnt);
 
         CNT++;
-        if(CNT > 300 && !isLeak)
+        //Debug.Log("cnt : " + CNT);
+        if (CNT > 300 && !isLeak)
         {
             isLeak = true;
             GetComponentInParent<FridgeRecogSol>().AllPass = true;
