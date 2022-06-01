@@ -10,8 +10,9 @@ public class ParticleCollisionSY : MonoBehaviour
     private int particleCnt = 0;
     private int spillParticleCnt = 0;
     private int wrongParticleCnt = 0;
+    private int CNT;
     public bool spillPass = true;
-    bool allPass = false;
+    bool isLeak = false;
 
     AudioSource source;
 
@@ -42,8 +43,6 @@ public class ParticleCollisionSY : MonoBehaviour
             //Debug.Log("+++++++ name : " + other.name + " tag : " + other.tag);
             if (!other.transform.parent.CompareTag(transform.tag))
             {
-                wrongParticleCnt++;
-
                 if (wrongWasteFluidPass)
                 {
                     wrongWasteFluidPass = false;
@@ -84,9 +83,10 @@ public class ParticleCollisionSY : MonoBehaviour
         //Debug.Log("particleCnt : " + particleCnt +  ", other : " + other.name);
         //Debug.Log("spillParticleCnt : " + spillParticleCnt);
 
-        if(spillParticleCnt + particleCnt + wrongParticleCnt > 300 && !allPass)
+        CNT++;
+        if(CNT > 300 && !isLeak)
         {
-            allPass = true;
+            isLeak = true;
             GetComponentInParent<FridgeRecogSol>().AllPass = true;
             GameManager.Instance.BottleManager.PositionAllCheck();
         }
