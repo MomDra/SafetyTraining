@@ -40,7 +40,7 @@ public class FireExpand : MonoBehaviour
                 Vector2 dir = Random.insideUnitCircle;
                 Vector3 dir3 = new Vector3(dir.x, 0f, dir.y);
 
-                pos = transform.position + dir3.normalized * 3;
+                pos = transform.position + dir3.normalized * 2;
 
                 if ((pos.x < 13.84f && pos.x > 0.65f) && (pos.z > -14.93f && pos.z < -9.29f))
                 {
@@ -62,7 +62,7 @@ public class FireExpand : MonoBehaviour
                 Vector2 dir = Random.insideUnitCircle;
                 Vector3 dir3 = new Vector3(dir.x, 0f, dir.y);
 
-                pos = transform.position + dir3.normalized * 3;
+                pos = transform.position + dir3.normalized * 2;
 
                 if (pos.x < 4.35f && pos.x > 0.46f && pos.z > -7.25f && pos.z < -0.8f)
                 {
