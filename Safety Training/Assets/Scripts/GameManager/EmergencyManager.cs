@@ -140,8 +140,6 @@ public class EmergencyManager : MonoBehaviour
 
         
         StartCoroutine(colorCoroutine);
-        StartCoroutine(coughCoroutine);
-        
 
         switch (type)
         {
