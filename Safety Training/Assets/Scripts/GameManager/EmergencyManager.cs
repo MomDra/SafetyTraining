@@ -51,7 +51,9 @@ public class EmergencyManager : MonoBehaviour
             {
                 uiManager.AddTime(90);
                 StopCoroutine(sightCoroutine);
-                StopCoroutine(coughCoroutine); 
+                StopCoroutine(coughCoroutine);
+
+                breathSound.HeartBeatSoundStop();
             }
 
             if(isWearMask) breathSound.MaskedBreathSoundPlay();

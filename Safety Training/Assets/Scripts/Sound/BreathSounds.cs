@@ -68,4 +68,9 @@ public class BreathSounds : MonoBehaviour
     {
         audioSource[1].Play();
     }
+
+    public void HeartBeatSoundStop()
+    {
+        audioSource[1].Stop();
+    }
 }
