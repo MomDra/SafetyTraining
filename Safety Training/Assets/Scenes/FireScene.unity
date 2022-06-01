@@ -4167,6 +4167,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442775205}
   m_Mesh: {fileID: 4300024, guid: d7c66c1e1ac40c145b475e028228fa7e, type: 3}
+--- !u!114 &457574228 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5567626625069163657, guid: 7c232b594b5a22041bdb65e2c446c3b0, type: 3}
+  m_PrefabInstance: {fileID: 469096852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dfd7d00193372248a513043ea237e12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &458637540
 GameObject:
   m_ObjectHideFlags: 0
@@ -17030,6 +17041,7 @@ MonoBehaviour:
   blurredVision: {fileID: 1955604564}
   leakUIObject: {fileID: 11400000, guid: 72f2de5be2c14f743917c15fb4276f54, type: 2}
   fireUIObject: {fileID: 11400000, guid: ea0e0f747bb4e334682adb4009e34c69, type: 2}
+  breathSound: {fileID: 457574228}
 --- !u!4 &2053731246
 Transform:
   m_ObjectHideFlags: 0
