@@ -784,7 +784,7 @@ GameObject:
   - component: {fileID: 7733843567734759247}
   - component: {fileID: 7733843568114141626}
   - component: {fileID: 7733843568114141573}
-  - component: {fileID: 7733843568114141627}
+  - component: {fileID: 1408676357}
   m_Layer: 11
   m_Name: Handle
   m_TagString: Untagged
@@ -889,7 +889,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3461914, y: 0.21520996, z: 0.119384766}
   m_Center: {x: -21.928766, y: 7.1153035, z: -22.210457}
---- !u!114 &7733843568114141627
+--- !u!114 &1408676357
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -898,7 +898,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7733843567736753807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: a746b11f96e1b0d41bc5218a3b2f4188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_allowOffhandGrab: 1
@@ -906,6 +906,13 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+  previewPrefab: {fileID: 0}
+  grabBeginEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  grabEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7733843568100008667
 GameObject:
   m_ObjectHideFlags: 0

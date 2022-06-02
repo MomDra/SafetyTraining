@@ -5108,35 +5108,6 @@ Transform:
   m_Father: {fileID: 150519351}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1408676355 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7733843567736753807, guid: 17475a6d51c806d4d8434972ad61941b, type: 3}
-  m_PrefabInstance: {fileID: 1572919427}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1408676357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408676355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a746b11f96e1b0d41bc5218a3b2f4188, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allowOffhandGrab: 1
-  m_snapPosition: 0
-  m_snapOrientation: 0
-  m_snapOffset: {fileID: 0}
-  m_grabPoints: []
-  previewPrefab: {fileID: 0}
-  grabBeginEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  grabEndEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &1410669923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5794,10 +5765,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire_Extinguisher_Hose
       objectReference: {fileID: 0}
-    - target: {fileID: 7733843567736753805, guid: 17475a6d51c806d4d8434972ad61941b, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 7733843567736918691, guid: 17475a6d51c806d4d8434972ad61941b, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5842,8 +5809,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7733843568114141627, guid: 17475a6d51c806d4d8434972ad61941b, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17475a6d51c806d4d8434972ad61941b, type: 3}
 --- !u!1 &1603311510
 GameObject:
@@ -9585,8 +9551,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
