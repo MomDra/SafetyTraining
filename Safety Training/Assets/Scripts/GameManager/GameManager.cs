@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
     bool isEnded;
     public bool IsEnded { get => isEnded; set => isEnded = value; }
 
+    bool isGameEnded;
+
     private void Awake() {
         if(singleTon != null){
             singleTon.Init();
@@ -61,6 +63,7 @@ public class GameManager : MonoBehaviour
     {
         bottleManager.Init();
         uiManager.InitList();
+        singleTon.isGameEnded = false;
     }
 
     /*
@@ -71,10 +74,14 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        OVRScreenFade.instance.FadeOut();
-        BottleManager.ShowUI();
+        if(!isGameEnded){
+            isGameEnded = true;
+            OVRScreenFade.instance.FadeOut();
+            BottleManager.ShowUI();
 
-        Invoke("LoadEndScene", 4f);
+            Invoke("LoadEndScene", 4f);
+        }
+        
     }
 
     public void LoadEndScene()
