@@ -21,47 +21,23 @@ public class BreathSounds : MonoBehaviour
     
     public void CoughSoundPlay()
     {
-        if (audioSource[0].isPlaying)
-        {
-            audioSource[0].Stop();
-            audioSource[0].clip = coughSound;
-            audioSource[0].Play();
-        }
-        else
-        {
-            audioSource[0].clip = coughSound;
-            audioSource[0].Play();
-        }
+        audioSource[0].clip = coughSound;
+        audioSource[0].loop = true;
+        audioSource[0].Play();
     }
 
     public void ShortBreathSoundPlay()
     {
-        if (audioSource[0].isPlaying)
-        {
-            audioSource[0].Stop();
-            audioSource[0].clip = shortBreathSound;
-            audioSource[0].Play();
-        }
-        else
-        {
-            audioSource[0].clip = shortBreathSound;
-            audioSource[0].Play();
-        }
+        audioSource[0].clip = shortBreathSound;
+        audioSource[0].loop = true;
+        audioSource[0].Play();
     }
 
     public void MaskedBreathSoundPlay()
     {
-        if (audioSource[0].isPlaying)
-        {
-            audioSource[0].Stop();
-            audioSource[0].clip = maskedBreathSound;
-            audioSource[0].Play();
-        }
-        else
-        {
-            audioSource[0].clip = maskedBreathSound;
-            audioSource[0].Play();
-        }
+        audioSource[0].clip = maskedBreathSound;
+        audioSource[0].loop = true;
+        audioSource[0].Play();
     }
 
     public void HeartBeatSoundPlay()

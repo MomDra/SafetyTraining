@@ -9,6 +9,7 @@ public class UIManagerPlayScene : MonoBehaviour
     GameObject menu;
 
     public void LoadEndScene(){
+        menu.SetActive(false);
         GameManager.Instance.EndGame();
     }
 

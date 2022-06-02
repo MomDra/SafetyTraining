@@ -871,6 +871,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 203126763, guid: 7c232b594b5a22041bdb65e2c446c3b0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 183927954024211845, guid: 7c232b594b5a22041bdb65e2c446c3b0, type: 3}
       propertyPath: m_Name
       value: VRPlayerController_SY 2
