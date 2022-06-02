@@ -15623,10 +15623,62 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1486433502, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486433502, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486433502, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486433502, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486433502, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486433502, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486433502, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486433502, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486433502, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486433502, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1486433503, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
       propertyPath: pointer
       value: 
       objectReference: {fileID: 1530979669}
+    - target: {fileID: 1486433504, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486433505, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1486433505, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 1324404887109014062, guid: 4ae58134d10d7af44a6560afa565a537, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
