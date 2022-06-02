@@ -55,7 +55,7 @@ public class ParticleCollisionSY : MonoBehaviour
                 particleCnt++;
                 //Debug.Log("particleCnt: " + particleCnt);
 
-                if (particleCnt > 300)
+                if (particleCnt > 180)
                 {
                     wasteFluidPass = true;
 
@@ -80,12 +80,12 @@ public class ParticleCollisionSY : MonoBehaviour
 
         if (!source.isPlaying) source.Play();
 
-        //Debug.Log("particleCnt : " + particleCnt + "spillParticleCnt : " + spillParticleCnt + "wrongParticleCnt : " + wrongParticleCnt + ", other : " + other.name);
+        Debug.Log("particleCnt : " + particleCnt + "spillParticleCnt : " + spillParticleCnt + ", other : " + other.name);
         //Debug.Log("spillParticleCnt : " + spillParticleCnt);
 
         CNT++;
-        //Debug.Log("cnt : " + CNT);
-        if (CNT > 300 && !isLeak)
+        Debug.Log("cnt : " + CNT);
+        if (CNT > 330 && !isLeak)
         {
             isLeak = true;
             GetComponentInParent<FridgeRecogSol>().AllPass = true;
