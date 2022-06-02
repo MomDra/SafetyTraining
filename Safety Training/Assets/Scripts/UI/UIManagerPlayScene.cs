@@ -17,7 +17,7 @@ public class UIManagerPlayScene : MonoBehaviour
     }
 
     private void Update() {
-        if(OVRInput.Get(OVRInput.Button.Start, OVRInput.Controller.LTouch)){
+        if(OVRInput.GetDown(OVRInput.Button.Start)){
             menu.SetActive(!menu.activeSelf);
         }
     }
