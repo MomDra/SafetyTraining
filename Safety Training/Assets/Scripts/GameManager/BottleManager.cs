@@ -151,6 +151,7 @@ public class BottleManager
         correctPosPassCheck = true;
         Debug.Log("CorrectPosPassCheck : " + correctPosPassCheck);
         hint.UpdateText1UI(true);
+        if (wasteFluidPassCheck) GameManager.Instance.EndGame();
     }
 
     public void FlammabilityPassCheck(){
@@ -183,6 +184,7 @@ public class BottleManager
         wasteFluidPassCheck = true;
         Debug.Log("WasteFluidPassCheck : " + wasteFluidPassCheck);
         hint.UpdateText2UI(true);
+        if (correctPosPassCheck) GameManager.Instance.EndGame();
     }
 
     public void DestroyList(FridgeRecogSol fridgeRecogSol, ParticleCollisionSY particleCollision)
