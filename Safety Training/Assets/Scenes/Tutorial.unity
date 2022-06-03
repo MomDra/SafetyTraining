@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0.54901963, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1597,6 +1597,14 @@ PrefabInstance:
     - target: {fileID: 100002, guid: a93c012dd9ef6454fa7d140e976926f7, type: 3}
       propertyPath: m_Name
       value: SF Title
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a93c012dd9ef6454fa7d140e976926f7, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: a93c012dd9ef6454fa7d140e976926f7, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: a93c012dd9ef6454fa7d140e976926f7, type: 3}
       propertyPath: m_Text
@@ -4441,7 +4449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0.54901963, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4772,6 +4780,7 @@ GameObject:
   - component: {fileID: 1071117137}
   - component: {fileID: 1071117133}
   - component: {fileID: 1071117136}
+  - component: {fileID: 1071117134}
   m_Layer: 17
   m_Name: "\uC6A9\uC561 \uD30C\uD2F0\uD074"
   m_TagString: InorganicAcid
@@ -9485,6 +9494,19 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1071117134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071117132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 016823a48acd25e448404d67bb3f893a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  table: {fileID: 2043061899}
 --- !u!199 &1071117136
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -9694,7 +9716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -9889,7 +9911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1732808951507650, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4897607310870066, guid: a9d2de84afb308a4796cc671d3432b4d, type: 3}
       propertyPath: m_RootOrder
@@ -10794,6 +10816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b044ae3d1c656944b79c493d5f89c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wasteLid: {fileID: 1736114169}
 --- !u!1001 &1382651819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12124,6 +12147,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isForward: 1
+--- !u!1 &1736114169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6567588103422130995, guid: 82e2afb428ec0e34ca01147a15d07a0c, type: 3}
+  m_PrefabInstance: {fileID: 1845651616}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1781097441 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 05a81c3d5091440058129444d28322f3, type: 3}
@@ -13015,6 +13043,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isForward: 1
+--- !u!1 &2043061899 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1766642863500272, guid: 80ac85e8fba58ba4290665b0408845d2, type: 3}
+  m_PrefabInstance: {fileID: 1683743406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2053347565
 GameObject:
   m_ObjectHideFlags: 0
