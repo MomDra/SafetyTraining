@@ -91,6 +91,8 @@ public class TutorialManager : MonoBehaviour
         startButton.SetActive(false);
 
         leftSettingKey1 = true;
+
+        uiHelper.SetActive(false);
     }
 
     public void PlayAudioAndText(int i){
