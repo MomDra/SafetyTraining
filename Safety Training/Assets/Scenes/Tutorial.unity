@@ -4620,6 +4620,7 @@ MonoBehaviour:
   uI_Tutorial_Objects: []
   pauseWindow: {fileID: 2125447347}
   uiHelper: {fileID: 1786635449}
+  raycaster: {fileID: 137427382}
   bottle: {fileID: 1358071811}
 --- !u!4 &1050411497
 Transform:

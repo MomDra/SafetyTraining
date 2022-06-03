@@ -25,6 +25,8 @@ public class TutorialManager : MonoBehaviour
 
     [SerializeField]
     GameObject uiHelper;
+    [SerializeField]
+    OVRRaycaster raycaster;
 
     [SerializeField]
     GameObject bottle;
@@ -92,6 +94,7 @@ public class TutorialManager : MonoBehaviour
 
         leftSettingKey1 = true;
 
+        Destroy(raycaster);
         uiHelper.SetActive(false);
     }
 
