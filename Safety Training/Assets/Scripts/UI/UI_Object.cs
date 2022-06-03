@@ -36,7 +36,7 @@ public class UI_Object : ScriptableObject {
 
     [SerializeField] [TextArea]
     string accidentScale;
-    public string AccidentScale {get => accidentDescription; set => accidentScale = value;}
+    public string AccidentScale {get => accidentScale; set => accidentScale = value;}
 
     [SerializeField] [TextArea]
     string accidentConutermeasure;
