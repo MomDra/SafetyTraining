@@ -23,6 +23,10 @@ public class HoseGrabEvent : MonoBehaviour
             manager.PlayAudioAndText(11);
 
             fire.SetActive(true);
+
+            if(GetComponent<OutlineOnly>() != null){
+                Destroy(GetComponent<OutlineOnly>());
+            }
         }
     }
 }

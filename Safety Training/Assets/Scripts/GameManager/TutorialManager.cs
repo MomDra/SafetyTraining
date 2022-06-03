@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TutorialManager : MonoBehaviour
 {
@@ -104,5 +105,25 @@ public class TutorialManager : MonoBehaviour
 
         //desText.text = uI_Tutorial_Objects[i].DesText;
         //keyText.text = uI_Tutorial_Objects[i].KeyText;
+    }
+
+    public void EndTutorial(){
+        StartCoroutine(EndTutorialCoroutine());
+    }
+
+    public IEnumerator EndTutorialCoroutine(){
+        while(audioSource.isPlaying){
+            yield return null;
+        }
+
+        PlayAudioAndText(13);
+
+        OVRScreenFade.instance.FadeOut();
+        
+        Invoke("LoadStartScene", 4f);
+    }
+
+    public void LoadStartScene(){
+        SceneManager.LoadScene("StartScene");
     }
 }
