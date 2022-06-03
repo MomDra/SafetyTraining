@@ -3927,6 +3927,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire_Extinguisher_Hose
       objectReference: {fileID: 0}
+    - target: {fileID: 7733843567736753795, guid: 17475a6d51c806d4d8434972ad61941b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7733843567736918691, guid: 17475a6d51c806d4d8434972ad61941b, type: 3}
       propertyPath: m_RootOrder
       value: 1
