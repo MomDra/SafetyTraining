@@ -17,7 +17,19 @@ public class ExtinguiserHandleGrabEvent : MonoBehaviour
         hoseHandle = transform.Find("HozeHandle");
     }
 
+    private void Update() {
+        if(grabable.isGrabbed){
+            Debug.Log("제발");
+        }
+        else{
+            //Debug.Log("abc");
+        }
+    }
+
     void GrabBegin(){
+        Debug.LogError("dfjaklsfjdklasf");
+
+        /*
         if(manager.Index == 10){
             manager.PlayAudioAndText(10);
             
@@ -32,6 +44,8 @@ public class ExtinguiserHandleGrabEvent : MonoBehaviour
             if(GetComponent<OutlineOnly>() != null){
                 Destroy(GetComponent<OutlineOnly>());
             }
+            
         }
+        */
     }
 }
