@@ -7,6 +7,8 @@ public class GrabbableHose : OVRGrabbable
     [SerializeField] Transform staticHandle;
     [SerializeField] GameObject outLineObject;
 
+    [SerializeField] Transform originPos;
+
     public override void GrabBegin(OVRGrabber hand, Collider grabPoint)
     {
         base.GrabBegin(hand, grabPoint);
@@ -35,7 +37,7 @@ public class GrabbableHose : OVRGrabbable
 
     private void FixedUpdate()
     {
-        if (Vector2.Distance(staticHandle.GetComponent<Rigidbody>().position, GetComponent<Rigidbody>().position) > 0.7f)
+        if (Vector2.Distance(originPos.position, GetComponent<Rigidbody>().position) > 0.7f)
         {
             if (grabbedBy != null) grabbedBy.ForceRelease(this);
         }
