@@ -24,6 +24,9 @@ public class TutorialManager : MonoBehaviour
     GameObject pauseWindow;
 
     [SerializeField]
+    GameObject uiHelper;
+
+    [SerializeField]
     GameObject bottle;
 
     bool leftSettingKey1;
@@ -78,6 +81,8 @@ public class TutorialManager : MonoBehaviour
                 yield return null;
             }
         }
+
+        uiHelper.SetActive(true);
     }
 
     public void StartButton(){
@@ -86,6 +91,7 @@ public class TutorialManager : MonoBehaviour
         index = 4;
 
         startButton.SetActive(false);
+        uiHelper.SetActive(false);
 
         leftSettingKey1 = true;
     }
