@@ -20,8 +20,8 @@ public class GrabbableHose : OVRGrabbable
     {
         base.GrabEnd(Vector3.zero, Vector3.zero);
 
-        transform.position = originPos.transform.position;
-        transform.rotation = originPos.transform.rotation;
+        //transform.position = staticHandle.transform.position;
+        //transform.rotation = staticHandle.transform.rotation;
 
         staticHandle.GetComponent<FollowHose>().setFollow(false);
 
