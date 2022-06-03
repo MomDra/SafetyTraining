@@ -21,12 +21,15 @@ public class ParticleEvent : MonoBehaviour
 
             if(cnt > 100 && !trigger){
                 trigger = true;
-                manager.PlayAudioAndText(8);
+            
+                if(manager.Index == 8){
+                    manager.PlayAudioAndText(8);
 
-                if(table.GetComponent<OutlineOnly>() == null){
-                    OutlineOnly outline = table.gameObject.AddComponent<OutlineOnly>();
-                    outline.OutlineColor = Color.magenta;
-                    outline.OutlineMode = OutlineOnly.Mode.OutlineAll;
+                    if(table.GetComponent<OutlineOnly>() == null){
+                        OutlineOnly outline = table.gameObject.AddComponent<OutlineOnly>();
+                        outline.OutlineColor = Color.magenta;
+                        outline.OutlineMode = OutlineOnly.Mode.OutlineAll;
+                    }
                 }
             }
         }
