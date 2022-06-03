@@ -15,7 +15,7 @@ public class TableCollision : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision other) {
-        if(other.gameObject.layer == LayerMask.NameToLayer("Bottle") && !trigger){
+        if(other.gameObject.layer == LayerMask.NameToLayer("Bottle") && !trigger && manager.Index == 9){
             trigger = true;
 
             manager.PlayAudioAndText(9);

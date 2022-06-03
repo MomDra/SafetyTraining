@@ -36,6 +36,7 @@ public class TutorialManager : MonoBehaviour
 
 
     int index;
+    public int Index {get => index;}
 
     IEnumerator StartAudioCoroutine;
 
@@ -54,7 +55,6 @@ public class TutorialManager : MonoBehaviour
             pauseWindow.SetActive(true);
 
             PlayAudioAndText(4);
-            index = 5;
 
             leftSettingKey1 = false;
             leftSettingKey2 = true;
@@ -62,7 +62,7 @@ public class TutorialManager : MonoBehaviour
         else if(leftSettingKey2 && OVRInput.GetDown(OVRInput.Button.Start)){
             pauseWindow.SetActive(false);
             PlayAudioAndText(5);
-            index = 6;
+
             leftSettingKey2 = false;
 
             if(bottle.GetComponent<OutlineOnly>() == null){
@@ -88,7 +88,6 @@ public class TutorialManager : MonoBehaviour
     public void StartButton(){
         StopCoroutine(StartAudioCoroutine);
         PlayAudioAndText(3);
-        index = 4;
 
         startButton.SetActive(false);
 
