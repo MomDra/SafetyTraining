@@ -20,10 +20,10 @@ public class GrabbableHose : OVRGrabbable
     {
         base.GrabEnd(Vector3.zero, Vector3.zero);
 
-        staticHandle.GetComponent<FollowHose>().setFollow(false);
+        transform.position = originPos.transform.position;
+        transform.rotation = originPos.transform.rotation;
 
-        transform.position = staticHandle.transform.position;
-        transform.rotation = staticHandle.transform.rotation;
+        staticHandle.GetComponent<FollowHose>().setFollow(false);
 
         Rigidbody rbHandler = staticHandle.GetComponent<Rigidbody>();
         rbHandler.velocity = Vector3.zero;
@@ -37,7 +37,7 @@ public class GrabbableHose : OVRGrabbable
 
     private void FixedUpdate()
     {
-        if (Vector2.Distance(originPos.position, GetComponent<Rigidbody>().position) > 0.7f)
+        if (Vector3.Distance(originPos.position, GetComponent<Rigidbody>().position) > 1f)
         {
             if (grabbedBy != null) grabbedBy.ForceRelease(this);
         }
