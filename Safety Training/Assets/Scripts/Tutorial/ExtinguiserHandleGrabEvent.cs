@@ -10,6 +10,8 @@ public class ExtinguiserHandleGrabEvent : MonoBehaviour
     Transform hoseHandle;
 
     private void Awake() {
+        manager = FindObjectOfType<TutorialManager>();
+
         grabable = GetComponent<PutCorrectionGrabable>();
 
         grabable.grabBeginEvent.AddListener(GrabBegin);
