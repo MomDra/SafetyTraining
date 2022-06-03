@@ -20,6 +20,15 @@ public class TutorialManager : MonoBehaviour
     [SerializeField]
     UI_Tutorial_Object[] uI_Tutorial_Objects;
 
+    [SerializeField]
+    GameObject pauseWindow;
+
+    [SerializeField]
+    GameObject bottle;
+
+    bool leftSettingKey1;
+    bool leftSettingKey2;
+
 
     int index;
 
@@ -31,37 +40,60 @@ public class TutorialManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         StartAudioCoroutine = StartAudio();
         StartCoroutine(StartAudioCoroutine);
+
+        index = 3;
+    }
+
+    private void Update() {
+        if(leftSettingKey1 && OVRInput.GetDown(OVRInput.Button.Start)){
+            pauseWindow.SetActive(true);
+
+            PlayAudioAndText(4);
+            index = 5;
+
+            leftSettingKey1 = false;
+            leftSettingKey2 = true;
+        }
+        else if(leftSettingKey2 && OVRInput.GetDown(OVRInput.Button.Start)){
+            pauseWindow.SetActive(false);
+            PlayAudioAndText(5);
+            index = 6;
+            leftSettingKey2 = false;
+
+            if(bottle.GetComponent<OutlineOnly>() == null){
+                bottle.AddComponent<OutlineOnly>();
+            }
+        }
     }
 
     IEnumerator StartAudio(){
         yield return new WaitForSeconds(3f);
 
         for(int i = 0; i < 3; i++){
-            audioSource.clip = clips[i];
-            audioSource.Play();
+            PlayAudioAndText(i);
 
             while(audioSource.isPlaying){
                 yield return null;
             }
-
-            index++;
         }
     }
 
     public void StartButton(){
         StopCoroutine(StartAudioCoroutine);
-        audioSource.clip = clips[++index];
-        audioSource.Play();
+        PlayAudioAndText(3);
+        index = 4;
 
         startButton.SetActive(false);
-        desText.gameObject.SetActive(true);
+
+        leftSettingKey1 = true;
     }
 
     public void PlayAudioAndText(int i){
+        index = i + 1;
         audioSource.clip = clips[i];
         audioSource.Play();
 
-        desText.text = uI_Tutorial_Objects[i].DesText;
-        keyText.text = uI_Tutorial_Objects[i].KeyText;
+        //desText.text = uI_Tutorial_Objects[i].DesText;
+        //keyText.text = uI_Tutorial_Objects[i].KeyText;
     }
 }
