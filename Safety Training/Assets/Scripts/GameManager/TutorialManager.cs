@@ -61,7 +61,9 @@ public class TutorialManager : MonoBehaviour
             leftSettingKey2 = false;
 
             if(bottle.GetComponent<OutlineOnly>() == null){
-                bottle.AddComponent<OutlineOnly>();
+                OutlineOnly outline = bottle.AddComponent<OutlineOnly>();
+                outline.OutlineColor = Color.magenta;
+                outline.OutlineMode = OutlineOnly.Mode.OutlineAll;
             }
         }
     }

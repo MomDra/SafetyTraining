@@ -20,7 +20,9 @@ public class BottleGrabEvent : MonoBehaviour
         manager.PlayAudioAndText(6);
         
         if(lid.GetComponent<OutlineOnly>() == null){
-            lid.gameObject.AddComponent<OutlineOnly>();
+            OutlineOnly outline =  lid.gameObject.AddComponent<OutlineOnly>();
+            outline.OutlineColor = Color.magenta;
+            outline.OutlineMode = OutlineOnly.Mode.OutlineAll;
         }
     }
 }

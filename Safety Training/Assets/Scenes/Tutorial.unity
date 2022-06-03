@@ -4611,7 +4611,7 @@ MonoBehaviour:
   keyText: {fileID: 231841045}
   uI_Tutorial_Objects: []
   pauseWindow: {fileID: 2125447347}
-  bottle: {fileID: 0}
+  bottle: {fileID: 1358071811}
 --- !u!4 &1050411497
 Transform:
   m_ObjectHideFlags: 0
