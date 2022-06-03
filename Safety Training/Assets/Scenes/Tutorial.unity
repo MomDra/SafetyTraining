@@ -214,11 +214,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010823978654, guid: b61941d61de3e8641b57cd40503cc2c6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000010409153280, guid: b61941d61de3e8641b57cd40503cc2c6, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4000010409153280, guid: b61941d61de3e8641b57cd40503cc2c6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -262,12 +262,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -3136426519517938303, guid: b61941d61de3e8641b57cd40503cc2c6, type: 3}
+    - {fileID: 1304387426, guid: b61941d61de3e8641b57cd40503cc2c6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b61941d61de3e8641b57cd40503cc2c6, type: 3}
 --- !u!1 &11481936 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000010823978654, guid: b61941d61de3e8641b57cd40503cc2c6, type: 3}
   m_PrefabInstance: {fileID: 11481935}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &11481937 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198000013227194214, guid: b61941d61de3e8641b57cd40503cc2c6, type: 3}
+  m_PrefabInstance: {fileID: 11481935}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &11481938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11481936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07bc46aebd9851642a1d51c6a63449c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireParticleSystem: {fileID: 11481937}
+  smokeParticleSystem: {fileID: 198897649759126038, guid: 136fdf7f13a36624bb18f70df4254736, type: 3}
 --- !u!1 &15025974
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +382,7 @@ Transform:
   m_LocalScale: {x: 12, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &19887809
 PrefabInstance:
@@ -11776,7 +11796,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1691523056
 MonoBehaviour:
