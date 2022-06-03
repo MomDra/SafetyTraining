@@ -11081,6 +11081,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isForward: 1
+--- !u!1 &1546690559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7733843567736753807, guid: 17475a6d51c806d4d8434972ad61941b, type: 3}
+  m_PrefabInstance: {fileID: 803964066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1588635146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13049,6 +13054,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1766642863500272, guid: 80ac85e8fba58ba4290665b0408845d2, type: 3}
   m_PrefabInstance: {fileID: 1683743406}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2043061900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043061899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aada5b1543457654b888f467aeaa1c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extinguisherHandle: {fileID: 1546690559}
 --- !u!1 &2053347565
 GameObject:
   m_ObjectHideFlags: 0
