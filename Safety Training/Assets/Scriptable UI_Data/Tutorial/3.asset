@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c64e480238dafd4391fe6db354173a1, type: 3}
   m_Name: 3
   m_EditorClassIdentifier: 
-  desText: 
-  keyText: 
+  desText: "\uD654\uBA74\uC5D0 \uC788\uB294 \uC2DC\uC791\uBC84\uD2BC\uC744 \uB20C\uB7EC\uC8FC\uC138\uC694"
+  keyText: "\uC0C1\uD638\uC791\uC6A9 \uD0A4 : B"

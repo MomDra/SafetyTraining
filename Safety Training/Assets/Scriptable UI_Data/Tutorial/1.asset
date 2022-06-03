@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c64e480238dafd4391fe6db354173a1, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
-  desText: 
+  desText: "VR \uC5F0\uAD6C\uC2E4 \uC548\uC804\uAD50\uC721\uC5D0 \uC624\uC2E0 \uAC83\uC744
+    \uD658\uC601\uD569\uB2C8\uB2E4"
   keyText: 

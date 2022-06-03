@@ -12,11 +12,6 @@ public class FridgeRecogSol : MonoBehaviour
     bool allPass = false;
     public bool AllPass { get => allPass; set => allPass = value; }
 
-
-    AudioSource audioSource;
-    [SerializeField]
-    AudioClip LidOpenSound;
-
     private void Awake() {
         GameManager.Instance.BottleManager.registFridgeRecogSolList(this);
     }
