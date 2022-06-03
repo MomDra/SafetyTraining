@@ -382,7 +382,7 @@ Transform:
   m_LocalScale: {x: 12, y: 12, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &19887809
 PrefabInstance:
@@ -735,7 +735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 05a81c3d5091440058129444d28322f3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 05a81c3d5091440058129444d28322f3, type: 3}
       propertyPath: m_Text
@@ -4757,7 +4757,21 @@ MonoBehaviour:
   startButton: {fileID: 210142692}
   desText: {fileID: 1060595417}
   keyText: {fileID: 231841045}
-  uI_Tutorial_Objects: []
+  uI_Tutorial_Objects:
+  - {fileID: 11400000, guid: 42f912b63ceb0a540b157fc7a25162af, type: 2}
+  - {fileID: 11400000, guid: 808df2a56ac4fc145b826cbd7f42e1c4, type: 2}
+  - {fileID: 11400000, guid: d4575e8f289815e478b09baf243dc9c7, type: 2}
+  - {fileID: 11400000, guid: 329a78f91a823f741ad6c476984a7ea4, type: 2}
+  - {fileID: 11400000, guid: e9b212f1d6c008e47a1b41ed6c85617d, type: 2}
+  - {fileID: 11400000, guid: 21501b43934bf6e49a964d15e59be55b, type: 2}
+  - {fileID: 11400000, guid: c64e582c052c2ba45b8d77d4995ab89c, type: 2}
+  - {fileID: 11400000, guid: 14ef49d3cd6c99546b6e9715acbb6edb, type: 2}
+  - {fileID: 11400000, guid: 3a1d8b789c7495141902243e8136a084, type: 2}
+  - {fileID: 11400000, guid: 9b5099e255d1097448e4aef18da98cd5, type: 2}
+  - {fileID: 11400000, guid: 023b2d9868539554e866e135fa0afa27, type: 2}
+  - {fileID: 11400000, guid: 9be00842dfb36ff479327a2d1fcab29e, type: 2}
+  - {fileID: 11400000, guid: db795f013b065e04e9bfc65bbf00aeb4, type: 2}
+  - {fileID: 11400000, guid: 80bc204eed3ed4f49813ca3311d9bfbd, type: 2}
   pauseWindow: {fileID: 2125447347}
   uiHelper: {fileID: 1786635449}
   raycaster: {fileID: 137427382}

@@ -84,6 +84,8 @@ public class TutorialManager : MonoBehaviour
                 yield return null;
             }
         }
+
+        startButton.SetActive(true);
     }
 
     public void StartButton(){
@@ -103,8 +105,8 @@ public class TutorialManager : MonoBehaviour
         audioSource.clip = clips[i];
         audioSource.Play();
 
-        //desText.text = uI_Tutorial_Objects[i].DesText;
-        //keyText.text = uI_Tutorial_Objects[i].KeyText;
+        desText.text = uI_Tutorial_Objects[i].DesText;
+        keyText.text = uI_Tutorial_Objects[i].KeyText;
     }
 
     public void EndTutorial(){
