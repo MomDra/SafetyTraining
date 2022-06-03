@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class HoseGrabEvent : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    TutorialManager manager;
+    GrabbableHose grabbable;
+
+    [SerializeField]
+    GameObject fire;
+
+    private void Awake() {
+        manager = FindObjectOfType<TutorialManager>();
+
+        grabbable = GetComponent<GrabbableHose>();
+
+        grabbable.grabBeginEvent.AddListener(GrabBegin);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void GrabBegin(){
+        if(manager.Index == 11){
+            manager.PlayAudioAndText(11);
+
+            fire.SetActive(true);
+        }
     }
 }

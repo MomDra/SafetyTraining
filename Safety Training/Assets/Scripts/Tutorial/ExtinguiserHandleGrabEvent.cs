@@ -23,7 +23,6 @@ public class ExtinguiserHandleGrabEvent : MonoBehaviour
         if(manager.Index == 10){
             manager.PlayAudioAndText(10);
             
-            
             // 호스에 아웃라인
             if(hoseHandle.GetComponent<OutlineOnly>() == null){
                 OutlineOnly outline =  hoseHandle.gameObject.AddComponent<OutlineOnly>();

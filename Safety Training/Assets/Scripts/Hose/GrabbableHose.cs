@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GrabbableHose : OVRGrabbable
 {
@@ -9,11 +10,16 @@ public class GrabbableHose : OVRGrabbable
 
     [SerializeField] Transform originPos;
 
+    public UnityEvent grabBeginEvent;
+    public UnityEvent grabEndEvent;
+
     public override void GrabBegin(OVRGrabber hand, Collider grabPoint)
     {
         base.GrabBegin(hand, grabPoint);
 
         staticHandle.GetComponent<FollowHose>().setFollow(true);
+
+        grabBeginEvent.Invoke();
     }
 
     public override void GrabEnd(Vector3 linearVelocity, Vector3 angularVelocity)
@@ -33,6 +39,8 @@ public class GrabbableHose : OVRGrabbable
         {
             Destroy(outLineObject.GetComponent<OutlineOnly>());
         }
+
+        grabEndEvent.Invoke();
     }
 
     private void FixedUpdate()
