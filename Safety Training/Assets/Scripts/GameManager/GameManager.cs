@@ -37,8 +37,10 @@ public class GameManager : MonoBehaviour
 
     bool isGameEnded;
 
-    [SerializeField]
     bool isPrevent;
+    [SerializeField]
+    public bool IsPrevent {get => isPrevent; set => isPrevent = value;}
+
 
     private void Awake() {
         if(singleTon != null){
@@ -66,7 +68,8 @@ public class GameManager : MonoBehaviour
     {
         bottleManager.Init();
         uiManager.InitList();
-        singleTon.isGameEnded = false;
+        isGameEnded = false;
+        isPrevent = false;
     }
 
     /*
