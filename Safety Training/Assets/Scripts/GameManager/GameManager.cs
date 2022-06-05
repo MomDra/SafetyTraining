@@ -37,6 +37,9 @@ public class GameManager : MonoBehaviour
 
     bool isGameEnded;
 
+    [SerializeField]
+    bool isPrevent;
+
     private void Awake() {
         if(singleTon != null){
             singleTon.Init();
@@ -77,7 +80,9 @@ public class GameManager : MonoBehaviour
         if(!isGameEnded){
             isGameEnded = true;
             OVRScreenFade.instance.FadeOut();
-            BottleManager.ShowUI();
+
+            if(isPrevent)
+                BottleManager.ShowUI();
 
             Invoke("LoadEndScene", 4f);
         }
