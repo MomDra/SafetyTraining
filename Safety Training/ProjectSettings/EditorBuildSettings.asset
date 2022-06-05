@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 64d13e6d1c192e542a3bb8260d8aa312
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -23,9 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Leaks.unity
     guid: 2bb40e290270f0d46b273c90e6b3657f
-  - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 64d13e6d1c192e542a3bb8260d8aa312
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 83ba117958b67a54387a46b13e8c4554, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e76c9602092b2144e80e0be583cd7ecf, type: 2}
