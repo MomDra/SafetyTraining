@@ -100,7 +100,7 @@ public class EmergencyManager : MonoBehaviour
             {
                 isGameEnded = true;
                 StartCoroutine(EndGameCoroutine());
-                Debug.Log("ºÒÀÌ 10°³°¡ ³Ñ¾úÀ½");
+                Debug.Log("ï¿½ï¿½ï¿½ï¿½ 10ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¾ï¿½ï¿½ï¿½");
             }
 
             
@@ -159,12 +159,12 @@ public class EmergencyManager : MonoBehaviour
                 }
                     
                 
-                //leakUIObject ¼³Á¤
+                //leakUIObject ï¿½ï¿½ï¿½ï¿½
                 leakUIObject.OX = "X";
 
                 GameManager.Instance.UIManager.AddUI(ref leakUIObject);
 
-                // »ç¿îµå
+                // ï¿½ï¿½ï¿½ï¿½
                 leakWarningSound.Play();
              
                 break;
@@ -181,13 +181,16 @@ public class EmergencyManager : MonoBehaviour
                     StartCoroutine(coughCoroutine);
                 }
 
-                // Æ÷±× Ã³¸®..
+                // ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½..
                
 
                 fireUIObject.OX = "X";
                 GameManager.Instance.UIManager.AddUI(ref fireUIObject);
 
                 fireWarningSound.Play();
+
+                StartCoroutine(FogCoroutine());
+                
                 break;
         }
     }
@@ -231,18 +234,18 @@ public class EmergencyManager : MonoBehaviour
                 break;
         }
 
-        // ÄÃ·¯ ÄÚ·çÆ¾ ¸ØÃß±â
+        // ï¿½Ã·ï¿½ ï¿½Ú·ï¿½Æ¾ ï¿½ï¿½ï¿½ß±ï¿½
         StopCoroutine(colorCoroutine);
 
 
-        // Å¸ÀÌ¸Ó ¸ØÃß±â
+        // Å¸ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ß±ï¿½
         uiManager.StopTimer();
         
-        // ui º¯°æ
+        // ui ï¿½ï¿½ï¿½ï¿½
         uiManager.HideAllWindow();
         uiManager.ShowSolveWindow();
 
-        // ÀÏÁ¤ ½Ã°£ ÈÄ Fadout Sceneº¯°æ
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ Fadout Sceneï¿½ï¿½ï¿½ï¿½
         StartCoroutine(EndGameCoroutine());
     }
 
@@ -262,6 +265,15 @@ public class EmergencyManager : MonoBehaviour
         yield return new WaitForSeconds(10f);
         if(type == EmergencyType.Leak)
             breathSound.ShortBreathSoundPlay();
+    }
+
+    IEnumerator FogCoroutine(){
+
+        for(int i = 0 ; i < 60; i ++){
+            RenderSettings.fogDensity += 0.15f / 60f;
+            yield return new WaitForSeconds(1f);
+        }
+        
     }
 
     public void HearBeatSoundPlay()
