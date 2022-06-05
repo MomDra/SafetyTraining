@@ -25,7 +25,7 @@ public class GasValve : MonoBehaviour
     private void Awake()
     {
         coroutine = Timer();
-        audioSource = transform.GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -38,7 +38,7 @@ public class GasValve : MonoBehaviour
         {
             //Debug.Log("Valve opened : "+z);
             gasLocked = false;
-            audioSource.Play();
+            if (!audioSource.isPlaying) audioSource.Play();
 
             if (isCoroutineStarted == false)
             {
@@ -57,7 +57,8 @@ public class GasValve : MonoBehaviour
         {
             //Debug.Log("Valve closed : " + z);
             gasLocked = true;
-            audioSource.Stop();
+            if (audioSource.isPlaying) audioSource.Stop();
+
             if (isCoroutineStarted == true && !isEmergency)
             {
                 isCoroutineStarted = false;

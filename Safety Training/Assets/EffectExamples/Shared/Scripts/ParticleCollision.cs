@@ -34,7 +34,7 @@ public class ParticleCollision : MonoBehaviour
                 cnt++;
                 Debug.Log("cnt" + cnt);
 
-                if (cnt > 300)
+                if (cnt > 240)
                 {
                     fire.Extinguish();
                     cnt = 0;

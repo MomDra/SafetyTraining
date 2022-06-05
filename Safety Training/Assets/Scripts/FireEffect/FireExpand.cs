@@ -27,7 +27,7 @@ public class FireExpand : MonoBehaviour
 
     IEnumerator ExpandFireCoroutine()
     {
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(15f);
 
         Vector3 pos = transform.position;
 
@@ -40,7 +40,7 @@ public class FireExpand : MonoBehaviour
                 Vector2 dir = Random.insideUnitCircle;
                 Vector3 dir3 = new Vector3(dir.x, 0f, dir.y);
 
-                pos = transform.position + dir3.normalized * 2;
+                pos = transform.position + dir3.normalized;
 
                 if ((pos.x < 13.84f && pos.x > 0.65f) && (pos.z > -14.93f && pos.z < -9.29f))
                 {
